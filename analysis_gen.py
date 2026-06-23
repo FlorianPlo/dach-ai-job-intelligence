@@ -43,7 +43,9 @@ else:
         d = share(cur_f.get(s,0),N) - share(prev_f.get(s,0),Np)
         deltas.append((s,d,prev_f.get(s,0),cur_f.get(s,0)))
     rising=[d for d in sorted(deltas,key=lambda x:-x[1]) if d[1]>0][:8]
+    falling=[d for d in sorted(deltas,key=lambda x:x[1]) if d[1]<0][:8]
     new_skills=[s for s in cur_f if s not in prev_f]
+    gone_skills=[s for s in prev_f if s not in cur_f]
     L.append(f"\nDataset grew {Np} → {N} jobs. **Rising share** (Δ percentage points of postings):")
     L.append("\n| Skill | Prev | Now | Δpp |")
     L.append("|---|---|---|---|")
@@ -51,6 +53,18 @@ else:
         L.append(f"| {s} | {pc} | {cc} | +{d:.0f} |")
     if new_skills:
         L.append(f"\n**Newly appearing skills this run:** {', '.join(sorted(new_skills)[:20])}")
+    # falling / disappeared
+    L.append("\n### Falling / disappeared skills")
+    if falling:
+        L.append("\n**Falling share** (Δ percentage points of postings):")
+        L.append("\n| Skill | Prev | Now | Δpp |")
+        L.append("|---|---|---|---|")
+        for s,d,pc,cc in falling:
+            L.append(f"| {s} | {pc} | {cc} | {d:.0f} |")
+    else:
+        L.append("\n_No skill lost share vs the previous snapshot._")
+    if gone_skills:
+        L.append(f"\n**Disappeared this run** (present before, absent now): {', '.join(sorted(gone_skills)[:20])}")
 
 L.append("\n## 1. Most requested skills overall")
 L.append("\n| Skill | Jobs | % of postings |")
@@ -121,7 +135,9 @@ def annual(r):
     vals=[v for v in (lo,hi) if v is not None]
     if not vals: return None
     mid=sum(vals)/len(vals)
-    if r["salary_period"]=="month": mid*=12
+    p=r["salary_period"]
+    if p=="month": mid*=12
+    elif p=="hour": mid*=40*52   # assume 40h/week × 52 weeks
     return mid
 S.append("\n## Disclosed salaries")
 S.append("\n| Role | Seniority | Country | Company | Min | Max | Cur | Period | ~Annualised |")

@@ -53,7 +53,11 @@ For each job, extract:
 - `location` (city, country) + `work_type` → Onsite / Hybrid / Remote
 - `salary_min`, `salary_max`, `salary_currency`, `salary_period` (year/month/hour);
   leave blank if not stated — do NOT guess
-- `required_skills` (list; tools, languages, frameworks, cloud, methods)
+- `required_skills` (list; tools, languages, frameworks, cloud, methods).
+  **Use canonical spellings** so counts don't split across variants — e.g. `scikit-learn`
+  (not "sklearn"), `PyTorch`, `Hugging Face`, `Kubernetes` (not "k8s"), `CI/CD`, and collapse
+  "Microsoft Azure" → `Azure`. See `LEARNINGS.md` → "Extraction & normalization rules" for the
+  full alias map. Keep genuinely distinct items separate (PySpark vs Spark, GraphRAG vs RAG).
 - `nice_to_have_skills` (list)
 - `years_experience` (if stated)
 - `education_required`
