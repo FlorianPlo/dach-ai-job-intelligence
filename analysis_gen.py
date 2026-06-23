@@ -10,7 +10,46 @@ RUN = sys.argv[1]
 rows = list(csv.DictReader(open("jobs.csv")))
 N = len(rows)
 order = ["Intern","Junior","Mid","Senior","Lead/Principal"]
-def sk(r): return [s for s in r["required_skills"].split(";") if s]
+
+# ---------------- in-memory skill canonicalization (backlog #1) ----------------
+# jobs.csv is NEVER modified by this script. The alias map below is applied at READ
+# time only, so that frequency counts don't split across spelling variants
+# (e.g. "Microsoft Azure" and "Azure"). All matching is on the FULL skill token
+# (exact, case-insensitive), never substring — so compound tokens that are
+# genuinely distinct stay distinct: "LLM APIs", "LLM Fine-Tuning", "Azure OpenAI",
+# "Torch Distributor", "torch.distributed", "GraphRAG", "PySpark", "SparkML" are
+# all left untouched. To merge a new variant, add a lowercased key below.
+_SKILL_ALIASES = {
+    # --- cloud ---
+    "microsoft azure": "Azure",
+    "k8s": "Kubernetes",
+    # --- libraries / frameworks ---
+    "sklearn": "scikit-learn",
+    "torch": "PyTorch",            # standalone only; "PyTorch", "torch.distributed" unaffected
+    "tensorflow": "TensorFlow",    # lowercase variant -> canonical case
+    # --- Hugging Face family ---
+    "hf": "Hugging Face",
+    "huggingface": "Hugging Face",
+    "hugging face transformers": "Hugging Face",
+    # --- LLM umbrella (collapse singular/long form to the plural umbrella) ---
+    # NOTE: only the bare tokens collapse; "LLM APIs", "LLM Fine-Tuning", "LLMOps",
+    # "LLM Evals" etc. are distinct concepts and are intentionally NOT mapped here.
+    "llm": "LLMs",
+    "large language models": "LLMs",
+    # --- generative AI (pick one canonical form) ---
+    "genai": "Generative AI",
+    "generative ai": "Generative AI",
+    # --- case collapses observed live in jobs.csv (same concept, different casing) ---
+    "machine learning": "Machine Learning",
+    "deep learning": "Deep Learning",
+}
+def canon(s):
+    """Map a single skill token to its canonical spelling (exact, case-insensitive).
+    Unknown tokens are returned unchanged (preserves their original casing)."""
+    return _SKILL_ALIASES.get(s.strip().lower(), s.strip())
+
+def sk(r): return [canon(s) for s in r["required_skills"].split(";") if s.strip()]
+def nth(r): return [canon(s) for s in r["nice_to_have_skills"].split(";") if s.strip()]
 def country(r): return r["location"].split(",")[-1].strip()
 
 prev = [r for r in rows if r["first_seen_date"] < RUN]
@@ -145,7 +184,13 @@ def annual(r):
     if not vals: return None
     mid=sum(vals)/len(vals)
     p=r["salary_period"]
-    if p=="month": mid*=12
+    if p=="month":
+        # AT convention: Austrian salaries are paid 14×/year (13th + 14th salary).
+        # Annualise AT EUR monthly pay ×14; everything else ×12 (conservative).
+        if r["salary_currency"]=="EUR" and country(r).endswith("Austria"):
+            mid*=14
+        else:
+            mid*=12
     elif p=="hour": mid*=40*52   # assume 40h/week × 52 weeks
     return mid
 S.append("\n## Disclosed salaries")

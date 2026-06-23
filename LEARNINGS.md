@@ -43,14 +43,25 @@ Last audited: 2026-06-23 (self-improvement meta-run).
   - When years conflict with title, prefer the **scope** signal and explain in `seniority_basis`.
 
 ## Data quality issues observed (2026-06-23 audit)
-- **Azure alias still splitting counts.** Despite the canonical rule (collapse "Microsoft
-  Azure" → "Azure"), `jobs.csv` currently holds both `Azure` (8 jobs) and `Microsoft Azure`
-  (4 jobs) as separate skills. Same posting family also shows up in the trend table twice.
-  Root cause: backlog #1 (canonicalization at extraction time) is still NOT applied when rows
-  are written; `analysis_gen.py` reads skills verbatim and must not rewrite CSV data. Fix
-  belongs at extraction/scrape time — apply the alias map before writing `required_skills`.
-  Other live splits to watch: `LLMs` vs `Large Language Models` (treat as one umbrella);
-  `Spark` vs `PySpark`/`SparkML` are intentionally distinct (keep).
+- **Azure alias splitting counts — now fixed in analysis (read-time).** `jobs.csv` holds both
+  `Azure` (18) and `Microsoft Azure` (4) as separate raw tokens (and similarly
+  `machine learning` 17 vs `Machine Learning` 15, `LLMs` 22 vs `Large Language Models` 5,
+  `Generative AI` 6 vs `GenAI` 3). As of the 2026-06-23 swarm run, `analysis_gen.py` applies an
+  **in-memory alias map at read time** (`canon()` / `_SKILL_ALIASES`) so counts no longer split
+  — Azure → 18→22 merged, Machine Learning → 31, LLMs → 27, Generative AI → 10. The CSV itself is
+  still NOT rewritten (deliberate; the script must not mutate source data). A belt-and-suspenders
+  fix at extraction time (write canonical tokens to the CSV) remains desirable so the raw data is
+  clean too — see backlog #1b.
+- **Matching is exact full-token, case-insensitive — NOT substring.** This is load-bearing:
+  collapsing on substring would wrongly merge `LLM APIs`, `LLM Fine-Tuning`, `LLMOps`,
+  `Azure OpenAI`, `Torch Distributor`, `torch.distributed`, `GraphRAG`, `PySpark`, `SparkML`.
+  Verified post-change that all of these survive as distinct tokens. When adding a new alias,
+  add a lowercased full-token key to `_SKILL_ALIASES`; never switch to substring matching.
+- **Case-collapse is doing real work.** The biggest single split in the current data was casing
+  (`machine learning`/`Machine Learning`, `deep learning`/`Deep Learning`,
+  `generative AI`/`Generative AI`), not spelling. These are merged to the Title-Case canonical.
+  Tokens not in the map keep their original casing (unknown tokens pass through `canon()` unchanged).
+- **`Spark` vs `PySpark`/`SparkML`** remain intentionally distinct (kept).
 - **Trend "falling" table was misleading on a growing dataset.** Skills whose absolute count
   held or rose (e.g. `Git` 6→6, `CI/CD` 8→10) showed as "falling" purely because total
   postings grew, diluting their share. Δpp is the right metric but needs a noise floor — see
@@ -64,14 +75,25 @@ Last audited: 2026-06-23 (self-improvement meta-run).
 - On re-seeing an existing `job_id`: skip insert, bump `last_seen_date`. Append-only otherwise.
 
 ## Improvement backlog (prioritized)
-1. **Skill canonicalization at extraction time** — apply the alias map above when writing
-   `required_skills`/`nice_to_have_skills` so counts don't split across variants
-   (Azure vs Microsoft Azure, etc.). Highest analytical impact.
-2. **Salary annualisation fidelity** — DONE: hourly now ×40×52. Still TODO: AT monthly
-   should arguably be ×14 (not ×12) to match 13th/14th salary convention; currently ×12
-   (conservative). Decide and document one convention.
-3. **CHF/EUR FX** — the median-by-role table only pools EUR rows. Add a fixed documented
-   FX rate (or exclude with a note) so CH salaries, if ever disclosed, are comparable.
+1. **Skill canonicalization at read time in analysis_gen.py** — DONE (2026-06-23 swarm run).
+   `analysis_gen.py` now applies `_SKILL_ALIASES` via `canon()` to both `required_skills` and
+   `nice_to_have_skills` at read time, in memory only (CSV untouched). Merges
+   Microsoft Azure→Azure, sklearn→scikit-learn, torch→PyTorch, k8s→Kubernetes, HF/huggingface/
+   Hugging Face Transformers→Hugging Face, LLM/Large Language Models→LLMs, GenAI→Generative AI,
+   tensorflow→TensorFlow, plus case-collapses (machine learning→Machine Learning,
+   deep learning→Deep Learning). Distinct compounds preserved (verified). Highest analytical impact.
+1b. **Skill canonicalization at EXTRACTION time (still open)** — also write canonical tokens to
+   `jobs.csv` when scraping, so the raw data is clean for any consumer, not just this script.
+   Read-time canon is the safety net; extraction-time is the source-of-truth fix.
+2. **Salary annualisation fidelity** — DONE (2026-06-23 swarm run). Hourly ×40×52 (earlier).
+   AT monthly EUR now annualised **×14** (13th/14th-salary convention; 22 AT rows affected),
+   all other monthly stays ×12. Convention is documented inline in `annual()` and in the
+   salary_benchmarks.md caveat note. Decision locked: ×14 for AT-EUR-monthly only.
+3. **CHF/EUR FX** — STILL OPEN. The median-by-role table only pools EUR rows; CH discloses no
+   salary yet so no CHF rows exist to convert. When the first CHF salary appears, adopt a fixed
+   documented rate (suggest **1 CHF = 1.05 EUR**, pinned in this file and re-checked quarterly)
+   rather than a live FX lookup, so runs are reproducible. Until then, EUR-only pooling stands.
+   Not implemented now because there is no CHF data to test against (skip-if-unsure rule).
 4. **Junior coverage** — actively query Junior/Graduate vocabulary each run; n=1 today.
 5. **Trend robustness** — DONE (2026-06-23): `analysis_gen.py` now applies a noise-floor
    `MIN_TREND_COUNT = max(2, round(N/40))` to the rising/falling Δpp tables, so a skill must
@@ -80,6 +102,22 @@ Last audited: 2026-06-23 (self-improvement meta-run).
    size (e.g. N=79 → 2, N=200 → 5). At current N the effect is modest but grows with data.
 
 ## Audit log
+- **2026-06-23** (self-improvement SWARM run): audited all deliverables at N=152 rows
+  (152 total, 80 first-seen this run). Implemented two backlog items, both additive and verified:
+  (1) **backlog #1** — read-time skill canonicalization in `analysis_gen.py` (`canon()` +
+  `_SKILL_ALIASES`), applied to required & nice-to-have skills, CSV untouched. Effect on the
+  overall top-skills table: `Machine Learning` 16→31 (absorbs lowercase variant),
+  `Azure` 14→18 (absorbs `Microsoft Azure`), `LLMs` 22→23, `Generative AI`→9, `Deep Learning`→11.
+  Confirmed distinct compounds survive (`LLM APIs`, `LLM Fine-Tuning`, `Azure OpenAI`,
+  `torch.distributed`, `Torch Distributor`, `PySpark`, `SparkML`, `GraphRAG`).
+  (2) **backlog #2** — AT EUR monthly salaries now annualised ×14 (22 rows affected); all other
+  monthly ×12; documented inline. Tested `python3 analysis_gen.py <RUN_DATE>` on a scratch copy
+  with three run dates (2026-06-23, future 2026-06-27, and 1900-01-01 where new=0) — all three
+  deliverables generate clean on every path; no schema/column change to jobs.csv.
+  Did NOT implement backlog #3 (CHF/EUR FX): no CH salary data exists to test against, so per the
+  skip-if-unsure rule it is documented (proposed pinned rate 1 CHF = 1.05 EUR) rather than coded.
+  Data-quality note: case-splitting (not spelling) was the single largest count distortion in the
+  current dataset — worth catching at extraction time too (backlog #1b).
 - **2026-06-23** (self-improvement meta-run): audited all deliverables at N=79/80 rows.
   Implemented backlog #5 (trend noise floor) — additive, all 3 outputs still generate and
   `python3 analysis_gen.py <RUN_DATE>` runs clean (verified on a scratch copy with both a
