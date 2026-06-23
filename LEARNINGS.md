@@ -42,6 +42,20 @@ Last audited: 2026-06-23 (self-improvement meta-run).
   - Lead/Principal → team leadership, principal/staff scope, or "Lead/Head".
   - When years conflict with title, prefer the **scope** signal and explain in `seniority_basis`.
 
+## Data quality issues observed (2026-06-23 audit)
+- **Azure alias still splitting counts.** Despite the canonical rule (collapse "Microsoft
+  Azure" → "Azure"), `jobs.csv` currently holds both `Azure` (8 jobs) and `Microsoft Azure`
+  (4 jobs) as separate skills. Same posting family also shows up in the trend table twice.
+  Root cause: backlog #1 (canonicalization at extraction time) is still NOT applied when rows
+  are written; `analysis_gen.py` reads skills verbatim and must not rewrite CSV data. Fix
+  belongs at extraction/scrape time — apply the alias map before writing `required_skills`.
+  Other live splits to watch: `LLMs` vs `Large Language Models` (treat as one umbrella);
+  `Spark` vs `PySpark`/`SparkML` are intentionally distinct (keep).
+- **Trend "falling" table was misleading on a growing dataset.** Skills whose absolute count
+  held or rose (e.g. `Git` 6→6, `CI/CD` 8→10) showed as "falling" purely because total
+  postings grew, diluting their share. Δpp is the right metric but needs a noise floor — see
+  backlog #5 (now DONE).
+
 ## Known dedup behavior
 - `job_id = hash(company + normalized_role + location)`. **Intentionally collapses** distinct
   postings sharing those three (e.g. Estateanfrage "Werkstudent AI Engineer" vs "AI Engineer
@@ -59,5 +73,16 @@ Last audited: 2026-06-23 (self-improvement meta-run).
 3. **CHF/EUR FX** — the median-by-role table only pools EUR rows. Add a fixed documented
    FX rate (or exclude with a note) so CH salaries, if ever disclosed, are comparable.
 4. **Junior coverage** — actively query Junior/Graduate vocabulary each run; n=1 today.
-5. **Trend robustness** — falling/disappeared now reported; consider min-count threshold
-   so 1-job noise (n=1 churn) doesn't dominate the falling table on a small dataset.
+5. **Trend robustness** — DONE (2026-06-23): `analysis_gen.py` now applies a noise-floor
+   `MIN_TREND_COUNT = max(2, round(N/40))` to the rising/falling Δpp tables, so a skill must
+   appear in at least that many postings (prev or current) to be ranked. New/disappeared
+   skills are still listed separately, so nothing is hidden. Threshold scales with dataset
+   size (e.g. N=79 → 2, N=200 → 5). At current N the effect is modest but grows with data.
+
+## Audit log
+- **2026-06-23** (self-improvement meta-run): audited all deliverables at N=79/80 rows.
+  Implemented backlog #5 (trend noise floor) — additive, all 3 outputs still generate and
+  `python3 analysis_gen.py <RUN_DATE>` runs clean (verified on a scratch copy with both a
+  2026-06-23 and a 2026-06-27 run date). Documented the live `Azure`/`Microsoft Azure` count
+  split as an extraction-time bug (backlog #1, still open — highest-impact remaining item).
+  Did not touch backlog #2/#3/#4 (each needs a data/convention decision, not just code).

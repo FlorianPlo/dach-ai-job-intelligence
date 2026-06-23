@@ -38,15 +38,24 @@ if Np==0:
     L.append("\n_No previous snapshot — this is the first run._")
 else:
     def share(c,n): return (100*c/n) if n else 0
+    # Min-count threshold (backlog #5): on a small dataset a single job appearing/
+    # disappearing produces large %-share swings that are pure noise. Only surface a
+    # skill in the rising/falling tables if it is requested in at least MIN_TREND_COUNT
+    # postings in either the previous or current snapshot. New/disappeared skills are
+    # still reported separately below, so nothing is hidden — this only de-noises the
+    # ranked Δpp tables. Threshold scales gently with dataset size.
+    MIN_TREND_COUNT = max(2, round(N/40))
     deltas=[]
     for s in set(list(cur_f)+list(prev_f)):
+        if max(cur_f.get(s,0), prev_f.get(s,0)) < MIN_TREND_COUNT: continue
         d = share(cur_f.get(s,0),N) - share(prev_f.get(s,0),Np)
         deltas.append((s,d,prev_f.get(s,0),cur_f.get(s,0)))
     rising=[d for d in sorted(deltas,key=lambda x:-x[1]) if d[1]>0][:8]
     falling=[d for d in sorted(deltas,key=lambda x:x[1]) if d[1]<0][:8]
     new_skills=[s for s in cur_f if s not in prev_f]
     gone_skills=[s for s in prev_f if s not in cur_f]
-    L.append(f"\nDataset grew {Np} → {N} jobs. **Rising share** (Δ percentage points of postings):")
+    L.append(f"\nDataset grew {Np} → {N} jobs. Trend tables exclude skills below "
+             f"**{MIN_TREND_COUNT} postings** (noise floor). **Rising share** (Δ percentage points of postings):")
     L.append("\n| Skill | Prev | Now | Δpp |")
     L.append("|---|---|---|---|")
     for s,d,pc,cc in rising:
