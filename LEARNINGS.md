@@ -1,7 +1,7 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-06-23 (self-improvement meta-run).
+Last audited: 2026-06-24 (self-improvement meta-run on Opus).
 
 ## Source reliability
 - **Arbeitnow API** (`/api/job-board-api?page=N`) — works; structured JSON, DE-heavy.
@@ -12,6 +12,28 @@ Last audited: 2026-06-23 (self-improvement meta-run).
 - **karriere.at** (`/jobs/<query>/wien`) — best AT source. Salaries shown, often **monthly,
   paid 14×/year**. URLs are `/jobs/<numeric-id>`.
 - **swissdevjobs.ch** — HTTP 403, skip.
+- **🚨 EGRESS PROXY BLOCKS ALL PRIMARY JOB BOARDS (2026-06-24).** In the scheduled cloud-agent
+  environment the egress proxy policy now **rejects connections** (`connect_rejected`, policy
+  denial) to every primary source:
+    - `www.arbeitnow.com:443` — connect_rejected
+    - `www.datacareer.ch:443` — connect_rejected
+    - `www.karriere.at:443`   — connect_rejected
+  Impact: the daily discovery step cannot reach its three best sources from this environment.
+  This is a **critical reliability issue** for the automation, not a transient rate-limit.
+  Mitigations to try, in order:
+    1. **WebSearch** uses a different network pathway and still works — lean on it to discover
+       postings, then attempt WebFetch on the original posting URL (may still be blocked if it
+       resolves to a blocked domain; aggregator/company mirrors sometimes are not).
+    2. **Company career pages** on unblocked domains (greenhouse.io, lever.co, ashbyhq.com,
+       personio, workday, smartrecruiters, join.com, etc.) — many DACH employers post here and
+       these hosts are often outside the block list. Prefer them over the blocked boards.
+    3. If a domain you need is blocked, check `curl -sS "$HTTPS_PROXY/__agentproxy/status"` and
+       `/root/.ccr/README.md` for whether an allowlist entry can be requested — do NOT disable
+       TLS or unset HTTPS_PROXY.
+    4. Log every blocked source in the daily report's "sources that failed" section so the gap
+       in coverage is visible and the run stays explainable. Never silently produce a thin run.
+  Until the policy changes, expect **WebSearch + unblocked career pages** to be the only viable
+  discovery channels; treat arbeitnow/datacareer/karriere as unavailable.
 - **LinkedIn / Indeed / StepStone / Glassdoor** — auth/aggregator; use only to discover
   company names, never fetch postings (per spec).
 - Coverage gaps: Junior level is very thin (n=1); pure Data Scientist and Lead/Principal
@@ -62,6 +84,31 @@ Last audited: 2026-06-23 (self-improvement meta-run).
   `generative AI`/`Generative AI`), not spelling. These are merged to the Title-Case canonical.
   Tokens not in the map keep their original casing (unknown tokens pass through `canon()` unchanged).
 - **`Spark` vs `PySpark`/`SparkML`** remain intentionally distinct (kept).
+
+## Data quality issues observed (2026-06-24 audit)
+- **`country()` mis-parses multi-city locations.** `country(r)` returns the last comma-segment of
+  `location`. Rows whose location has **no comma** but a slash (e.g. `Zurich/London`,
+  `Heidelberg/Berlin`, `Munich/Berlin`) return the *whole string* as the "country", polluting the
+  country mix (`{'Zurich/London': 1, 'Heidelberg/Berlin': 1, 'Munich/Berlin': 2, ...}`). This is
+  an **extraction-side** issue: such rows should be stored as `"City, Country"` (pick the primary
+  DACH city). Not fixed in analysis_gen.py — heuristically guessing the country from a slashed
+  city string is unsafe (skip-if-unsure). Fix at extraction time; see backlog #6.
+- **Future-dated `first_seen_date` rows exist.** jobs.csv currently holds rows first-seen on
+  2026-06-25/-26/-27 (prior swarm runs were dated ahead of the real calendar). With
+  `RUN=2026-06-24` these correctly fall outside both `prev` (first_seen < RUN) and `new_today`
+  (first_seen == RUN), so they count toward N but not the delta. Not a bug in the script, but a
+  reminder: **always pass the true run date**; mis-dated rows quietly distort the "new this run"
+  count on the day their date matches RUN.
+- **Read-time canon is exact-full-token (verified again on Opus).** Confirmed the 2026-06-24 alias
+  additions do NOT clobber distinct compounds: `Azure OpenAI`/`Azure OpenAI Service`/`OpenAI Codex`
+  stay distinct from the new bare `openai→OpenAI`; `LlamaIndex`/`LlamaParse`/`Llama 3` stay distinct
+  from bare `llama→Llama`; `Google Cloud→GCP` and `powerbi→Power BI`/`vector databases→Vector
+  Databases` merge correct case splits. `OpenAI API→OpenAI` is a deliberate fold (documented inline).
+- **Defensive CSV read added (additive).** `analysis_gen.py` now normalizes every expected field to
+  a string and skips a row only if it has *neither* `job_id` nor `job_title` (emitting a stderr
+  warning). Verified the OLD direct-access code crashed with `AttributeError: 'NoneType' object has
+  no attribute 'split'` on a ragged row; the new code survives it. Satisfies the quality rule
+  "one bad posting must not abort the run." No change to jobs.csv or its schema.
 - **Trend "falling" table was misleading on a growing dataset.** Skills whose absolute count
   held or rose (e.g. `Git` 6→6, `CI/CD` 8→10) showed as "falling" purely because total
   postings grew, diluting their share. Δpp is the right metric but needs a noise floor — see
@@ -100,8 +147,38 @@ Last audited: 2026-06-23 (self-improvement meta-run).
    appear in at least that many postings (prev or current) to be ranked. New/disappeared
    skills are still listed separately, so nothing is hidden. Threshold scales with dataset
    size (e.g. N=79 → 2, N=200 → 5). At current N the effect is modest but grows with data.
+6. **Location/country normalization at extraction (NEW, open)** — store `location` as
+   `"City, Country"` so `country()` (last comma-segment) is reliable. Slashed multi-city strings
+   without a comma (`Zurich/London`, `Munich/Berlin`) currently pollute the country mix. Fix
+   belongs at extraction time; do not guess the country in analysis_gen.py (skip-if-unsure).
+7. **Discovery resilience under egress block (NEW, open, HIGH PRIORITY)** — primary boards are
+   proxy-blocked in cloud (see Source reliability). Build a WebSearch-first discovery path plus a
+   curated list of unblocked DACH career-page hosts (greenhouse/lever/ashby/personio/join.com).
+   This is now the top operational risk for the daily run.
 
 ## Audit log
+- **2026-06-24** (self-improvement meta-run on Opus): audited all deliverables at N=211 rows
+  (211 valid rows, 10 first-seen on RUN=2026-06-24; jobs.csv parses clean with the stdlib csv
+  reader — 0 ragged rows). Two additive, verified changes to `analysis_gen.py`; **jobs.csv and its
+  schema untouched**:
+  (1) **Expanded `_SKILL_ALIASES`** (backlog #1, additive). Added case-split + provider/lib aliases:
+  `vector databases→Vector Databases` (real case split 5+6), `powerbi→Power BI`, `google cloud`/
+  `google cloud platform→GCP`, `amazon web services→AWS`, `langchain→LangChain`,
+  `llamaindex→LlamaIndex`, and future-proofing provider tokens `openai`/`openai api→OpenAI`,
+  `anthropic→Anthropic`, `vllm→vLLM`, `mistral→Mistral`, `llama→Llama`. Verified via canon() unit
+  checks that distinct compounds survive: `Azure OpenAI`, `Azure OpenAI Service`, `OpenAI Codex`,
+  `Apache Spark`, `PySpark`, `SparkML`, `Vision Transformers`, `LlamaParse`, `Llama 3`,
+  `Torch Distributor`, `torch.distributed` all unchanged. (`OpenAI API→OpenAI` is a deliberate fold.)
+  (2) **Defensive CSV read** (additive, satisfies "one bad posting must not abort the run"). Rows
+  are normalized field-by-field to strings; a row is skipped (with stderr warning) only if it lacks
+  BOTH job_id and job_title. Proved the prior direct-access code crashed (`AttributeError: 'NoneType'
+  ... 'split'`) on a ragged row built in a scratch dir; new code survives and completes.
+  Tested `python3 analysis_gen.py <RUN_DATE>` on RUN=2026-06-24, 2026-06-27, and 1900-01-01
+  (prev=0/new=0 path) — all three deliverables generate clean on every path.
+  Did NOT change: salary/FX logic (backlog #3 still blocked on no CH data), location parsing
+  (backlog #6 — extraction-side, unsafe to guess in analysis), trend logic (already sound).
+  **Critical operational finding logged separately:** the egress proxy now blocks arbeitnow,
+  datacareer.ch, and karriere.at outright (connect_rejected) — see Source reliability + backlog #7.
 - **2026-06-23** (self-improvement SWARM run): audited all deliverables at N=152 rows
   (152 total, 80 first-seen this run). Implemented two backlog items, both additive and verified:
   (1) **backlog #1** — read-time skill canonicalization in `analysis_gen.py` (`canon()` +

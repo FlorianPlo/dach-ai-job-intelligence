@@ -7,7 +7,31 @@ import csv, sys
 from collections import Counter, defaultdict
 
 RUN = sys.argv[1]
-rows = list(csv.DictReader(open("jobs.csv")))
+_raw_rows = list(csv.DictReader(open("jobs.csv")))
+
+# --- defensive read (additive, non-breaking) ---------------------------------
+# csv.DictReader yields None for missing trailing columns on a ragged row, and a
+# stray un-headered column lands under the None key. Normalize every expected field
+# to a string so downstream .split()/index lookups never crash on a single bad row
+# (Quality rule: "one bad posting must not abort the run"). Well-formed rows are
+# unaffected — this only fills missing/None values with "".
+_FIELDS = ("job_id","job_title","normalized_role","seniority","seniority_basis",
+           "company","location","work_type","salary_min","salary_max",
+           "salary_currency","salary_period","required_skills","nice_to_have_skills",
+           "years_experience","education_required","language_requirements",
+           "posting_url","posting_date","source","first_seen_date","last_seen_date")
+rows = []
+_skipped = 0
+for _r in _raw_rows:
+    # A row with no job_id and no title is structurally broken; skip it loudly.
+    if not (_r.get("job_id") or _r.get("job_title")):
+        _skipped += 1
+        continue
+    rows.append({f: (_r.get(f) or "") for f in _FIELDS})
+if _skipped:
+    sys.stderr.write(f"[analysis_gen] WARNING: skipped {_skipped} malformed row(s) "
+                     f"missing job_id and job_title.\n")
+
 N = len(rows)
 order = ["Intern","Junior","Mid","Senior","Lead/Principal"]
 
@@ -42,6 +66,24 @@ _SKILL_ALIASES = {
     # --- case collapses observed live in jobs.csv (same concept, different casing) ---
     "machine learning": "Machine Learning",
     "deep learning": "Deep Learning",
+    "vector databases": "Vector Databases",   # case split: "vector databases"(5)/"Vector Databases"(6)
+    # --- LLM tooling / orchestration libs (case safety nets; bare tokens only) ---
+    "langchain": "LangChain",
+    "llamaindex": "LlamaIndex",
+    # --- model providers / families (future-proofing; bare full tokens only).
+    # NOTE: compounds like "Azure OpenAI", "OpenAI Codex", "OpenAI API" stay distinct —
+    # only the bare provider token collapses. "openai api" folded into OpenAI deliberately. ---
+    "openai": "OpenAI",
+    "openai api": "OpenAI",
+    "anthropic": "Anthropic",
+    "vllm": "vLLM",
+    "mistral": "Mistral",
+    "llama": "Llama",                          # bare "llama" only; "LlamaIndex"/"LlamaParse" unaffected
+    # --- cloud / BI casing collapses ---
+    "google cloud": "GCP",                     # same product as GCP
+    "google cloud platform": "GCP",
+    "powerbi": "Power BI",                     # "PowerBI"(2)/"Power BI"(14)
+    "amazon web services": "AWS",
 }
 def canon(s):
     """Map a single skill token to its canonical spelling (exact, case-insensitive).
