@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-06-24. Only postings with explicitly stated salary — **61 of 228** disclosed pay. Nothing imputed._
+_Generated 2026-06-25. Only postings with explicitly stated salary — **61 of 228** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 

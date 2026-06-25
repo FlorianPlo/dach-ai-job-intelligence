@@ -1,7 +1,7 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-06-24 (self-improvement meta-run on Opus).
+Last audited: 2026-06-25 (self-improvement meta-run on Opus).
 
 ## Source reliability
 - **Arbeitnow API** (`/api/job-board-api?page=N`) — works; structured JSON, DE-heavy.
@@ -114,6 +114,33 @@ Last audited: 2026-06-24 (self-improvement meta-run on Opus).
   postings grew, diluting their share. Δpp is the right metric but needs a noise floor — see
   backlog #5 (now DONE).
 
+## Data quality issues observed (2026-06-25 audit)
+- **Pervasive case-only skill splits (the dominant count distortion).** At N=228 the raw
+  `required_skills`/`nice_to_have_skills` tokens carried **~48 case-only collisions** — the
+  identical skill differing ONLY by letter case, e.g. `Machine Learning` 43 / `machine learning` 17,
+  `pandas` 8 / `Pandas` 5, `MLflow` 12 / `MLFlow` 1, `Computer Vision` 9 / `computer vision` 2 /
+  `Computer vision` 1, `Data Pipelines` 5 / `data pipelines` 11 / `Data pipelines` 2,
+  `Deep Learning` 18 / `deep learning` 8, `Generative AI` 14 / `generative AI` 1,
+  `Vector Databases` 6 / `vector databases` 5, `Kubeflow`/`KubeFlow`, `ElasticSearch`/`Elasticsearch`,
+  `FFmpeg`/`ffmpeg`, etc. The hand-maintained `_SKILL_ALIASES` case entries only covered a few of
+  these. **Fixed in analysis (read-time, additive):** added a GENERIC case-fold pass — see audit log
+  + backlog #8. This is an extraction-side hygiene problem too (postings should be normalized to a
+  canonical casing when scraped); read-time fold is the safety net (backlog #1b still applies).
+- **Slashed multi-city locations now resolved (read-time, additive).** The 4 comma-less slashed
+  rows (`Munich/Berlin` ×2 = Helsing, `Zurich/London` = On AG, `Heidelberg/Berlin` = Aleph Alpha)
+  that polluted the country mix are now mapped to their primary DACH country via a curated
+  unambiguous city→country table applied ONLY to comma-less, slash-containing strings — see
+  backlog #6 (now DONE in analysis). Country mix went from
+  `{Germany 118, Switzerland 51, Austria 55, Munich/Berlin 2, Zurich/London 1, Heidelberg/Berlin 1}`
+  to the clean `{Germany 121, Switzerland 52, Austria 55}`. Extraction should still store
+  `"City, Country"` so the raw CSV is self-describing (backlog #6 extraction-side stays open).
+- **Future-dated `first_seen_date` rows persist (not a bug, reminder).** jobs.csv holds rows
+  first-seen 2026-06-26 (3) and 2026-06-27 (33) — ahead of today's real date 2026-06-25. With
+  `RUN=2026-06-25` these count toward N (228) but fall outside both `prev` and `new_today`, so the
+  "new this run" count is 10 (the genuine 2026-06-25 rows). Always pass the true calendar date.
+- **jobs.csv parses clean.** 228 rows, 0 ragged, 0 empty `job_id`. Defensive read (2026-06-24)
+  still in place and exercised.
+
 ## Known dedup behavior
 - `job_id = hash(company + normalized_role + location)`. **Intentionally collapses** distinct
   postings sharing those three (e.g. Estateanfrage "Werkstudent AI Engineer" vs "AI Engineer
@@ -147,11 +174,14 @@ Last audited: 2026-06-24 (self-improvement meta-run on Opus).
    appear in at least that many postings (prev or current) to be ranked. New/disappeared
    skills are still listed separately, so nothing is hidden. Threshold scales with dataset
    size (e.g. N=79 → 2, N=200 → 5). At current N the effect is modest but grows with data.
-6. **Location/country normalization at extraction (NEW, open)** — store `location` as
-   `"City, Country"` so `country()` (last comma-segment) is reliable. Slashed multi-city strings
-   without a comma (`Zurich/London`, `Munich/Berlin`) currently pollute the country mix. Fix
-   belongs at extraction time; do not guess the country in analysis_gen.py (skip-if-unsure).
-7. **Discovery resilience under egress block (NEW, open, HIGH PRIORITY)** — primary boards are
+6. **Location/country normalization** — DONE in analysis (2026-06-25), extraction-side still open.
+   `analysis_gen.py` `country()` now resolves comma-less SLASHED multi-city strings via a curated
+   UNAMBIGUOUS DACH city→country map (`_CITY_COUNTRY`), applied ONLY when the location has no comma
+   and contains "/". `Zurich/London`→Switzerland, `Munich/Berlin`/`Heidelberg/Berlin`→Germany.
+   Unrecognised slashed strings fall through to the exact prior behaviour (skip-if-unsure preserved),
+   so this is additive/reversible and never guesses a non-DACH country. **Extraction-side fix still
+   wanted:** store `location` as `"City, Country"` so the raw CSV is self-describing without the map.
+7. **Discovery resilience under egress block (open, HIGH PRIORITY)** — primary boards are
    proxy-blocked in cloud (see Source reliability). Build a WebSearch-first discovery path plus a
    curated list of unblocked DACH career-page hosts (greenhouse/lever/ashby/personio/join.com).
    This is now the top operational risk for the daily run.

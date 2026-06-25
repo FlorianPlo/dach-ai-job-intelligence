@@ -85,14 +85,83 @@ _SKILL_ALIASES = {
     "powerbi": "Power BI",                     # "PowerBI"(2)/"Power BI"(14)
     "amazon web services": "AWS",
 }
+# ---------------- generic case-fold canonicalization (additive, 2026-06-25) ----------------
+# The explicit _SKILL_ALIASES map above only collapses the handful of case splits someone
+# remembered to hand-add (machine learning, deep learning, ...). But the live data carries
+# ~48 case-only splits of the SAME skill — e.g. "pandas"/"Pandas", "MLflow"/"MLFlow",
+# "Data Pipelines"/"data pipelines", "Computer Vision"/"computer vision". These are the
+# identical concept differing ONLY by letter case, so counting them separately is pure noise.
+# This pass derives, for every lowercased skill token seen in the dataset, the single casing
+# that appears MOST OFTEN, and folds all other casings of that token to it. It can never merge
+# genuinely distinct skills: two tokens collapse only if they are byte-identical once lowercased
+# (so "Azure OpenAI" vs "Azure" or "RAG" vs "GraphRAG" are untouched — they differ by more than
+# case). Explicit _SKILL_ALIASES still wins (applied first), so curated decisions are preserved.
+# Ties (same frequency) resolve to the lexicographically-larger string, which favours Title/Upper
+# case over lowercase deterministically. jobs.csv is NOT modified — read-time only.
+def _build_case_map():
+    raw = Counter()
+    for _r in rows:
+        for _field in ("required_skills", "nice_to_have_skills"):
+            for _s in _r[_field].split(";"):
+                _s = _s.strip()
+                if not _s:
+                    continue
+                # apply explicit alias first so the case-vote is taken over canonical forms
+                _s = _SKILL_ALIASES.get(_s.lower(), _s)
+                raw[_s] += 1
+    best = {}
+    for tok, n in raw.items():
+        low = tok.lower()
+        prevbest = best.get(low)
+        if prevbest is None or (n, tok) > (raw[prevbest], prevbest):
+            best[low] = tok
+    return best
+
 def canon(s):
-    """Map a single skill token to its canonical spelling (exact, case-insensitive).
-    Unknown tokens are returned unchanged (preserves their original casing)."""
-    return _SKILL_ALIASES.get(s.strip().lower(), s.strip())
+    """Map a single skill token to its canonical spelling.
+    Order: (1) explicit _SKILL_ALIASES (curated), then (2) generic case-fold to the
+    most-frequent casing of that exact token in the dataset. Unknown tokens with a single
+    casing are returned unchanged."""
+    s = s.strip()
+    s = _SKILL_ALIASES.get(s.lower(), s)
+    return _CASE_MAP.get(s.lower(), s)
+
+_CASE_MAP = _build_case_map()
 
 def sk(r): return [canon(s) for s in r["required_skills"].split(";") if s.strip()]
 def nth(r): return [canon(s) for s in r["nice_to_have_skills"].split(";") if s.strip()]
-def country(r): return r["location"].split(",")[-1].strip()
+
+# ---------------- location → country resolution (additive, backlog #6, 2026-06-25) ----------
+# country() takes the last comma-segment of `location`. Rows stored as "City, Country" resolve
+# correctly. But a few rows carry a SLASHED multi-city string with NO comma (e.g. "Munich/Berlin",
+# "Zurich/London", "Heidelberg/Berlin"); for those the whole string was returned as the "country",
+# polluting the country mix. Rather than guess (skip-if-unsure), we use a small curated map of
+# UNAMBIGUOUS DACH cities. It is applied ONLY when the location has no comma and contains a "/".
+# Any slashed string whose first recognised city is in the map resolves to that city's country;
+# anything unrecognised falls through to the exact prior behaviour (returns the raw last segment),
+# so this is purely additive and reversible. jobs.csv is untouched.
+_CITY_COUNTRY = {
+    # Germany
+    "munich": "Germany", "münchen": "Germany", "berlin": "Germany", "hamburg": "Germany",
+    "cologne": "Germany", "köln": "Germany", "frankfurt": "Germany", "stuttgart": "Germany",
+    "heidelberg": "Germany", "karlsruhe": "Germany", "düsseldorf": "Germany", "leipzig": "Germany",
+    "dresden": "Germany", "garching": "Germany", "ludwigsburg": "Germany", "gilching": "Germany",
+    # Switzerland
+    "zurich": "Switzerland", "zürich": "Switzerland", "geneva": "Switzerland",
+    "basel": "Switzerland", "bern": "Switzerland", "lausanne": "Switzerland", "lugano": "Switzerland",
+    "zug": "Switzerland", "lucerne": "Switzerland", "winterthur": "Switzerland",
+    # Austria
+    "vienna": "Austria", "wien": "Austria", "graz": "Austria", "linz": "Austria",
+    "salzburg": "Austria", "innsbruck": "Austria", "klagenfurt": "Austria",
+}
+def country(r):
+    loc = r["location"]
+    if "," not in loc and "/" in loc:
+        for part in loc.split("/"):
+            hit = _CITY_COUNTRY.get(part.strip().lower())
+            if hit:
+                return hit
+    return loc.split(",")[-1].strip()
 
 prev = [r for r in rows if r["first_seen_date"] < RUN]
 new_today = [r for r in rows if r["first_seen_date"] == RUN]
