@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-06-25. Only postings with explicitly stated salary — **61 of 228** disclosed pay. Nothing imputed._
+_Generated 2026-06-25. Only postings with explicitly stated salary — **66 of 298** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 
@@ -20,10 +20,12 @@ _Generated 2026-06-25. Only postings with explicitly stated salary — **61 of 2
 | AI Engineer | Mid | Austria | VERBUND AG | 4738.62 | – | EUR | month | ~66k |
 | AI Engineer | Mid | Austria | OAMTC | 58000 | – | EUR | year | ~58k |
 | AI Engineer | Mid | Austria | Erste Digital | 52136 | – | EUR | year | ~52k |
+| AI Engineer | Mid | Austria | Ketryx | 80000 | – | EUR | year | ~80k |
 | AI Engineer | Senior | Germany | Sikia.ai | 80000 | 100000 | EUR | year | ~90k |
 | AI Engineer | Senior | Austria | FiveSquare GmbH | 4000 | – | EUR | month | ~56k |
 | AI Engineer | Senior | Austria | KERN engineering careers GmbH | 4700 | – | EUR | month | ~66k |
 | AI Engineer | Lead/Principal | Germany | Team Passerelle | 90000 | 110000 | EUR | year | ~100k |
+| AI Researcher | Senior | Austria | Silicon Austria Labs | 85000 | 120000 | EUR | year | ~102k |
 | Data Engineer | Intern | Austria | Vienna Insurance Group | 2074 | – | EUR | month | ~29k |
 | Data Engineer | Junior | Austria | voestalpine AG | 2600 | – | EUR | month | ~36k |
 | Data Engineer | Junior | Austria | Deloitte | 49000 | – | EUR | year | ~49k |
@@ -44,6 +46,7 @@ _Generated 2026-06-25. Only postings with explicitly stated salary — **61 of 2
 | Data Engineer | Lead/Principal | Austria | KERN engineering careers GmbH | 4470 | 6000 | EUR | month | ~73k |
 | Data Scientist | Junior | Germany | Bertelsmann | 65000 | 70000 | EUR | year | ~68k |
 | Data Scientist | Junior | Austria | Invenium Data Insights GmbH | 2700 | – | EUR | month | ~38k |
+| Data Scientist | Junior | Austria | ONDEWO | 35252 | 42000 | EUR | year | ~39k |
 | Data Scientist | Mid | Germany | alphacoders GmbH | 70000 | 80000 | EUR | year | ~75k |
 | Data Scientist | Mid | Austria | Österreichische Lotterien | 55000 | – | EUR | year | ~55k |
 | Data Scientist | Mid | Austria | wikifolio Financial Technologies AG | 3954 | – | EUR | month | ~55k |
@@ -52,6 +55,7 @@ _Generated 2026-06-25. Only postings with explicitly stated salary — **61 of 2
 | Data Scientist | Mid | Austria | voestalpine AG | 4445.95 | – | EUR | month | ~62k |
 | Data Scientist | Mid | Austria | Oesterreichischer Sparkassenverband | 60000 | – | EUR | year | ~60k |
 | Data Scientist | Mid | Austria | Tecan Austria GmbH | 4342 | – | EUR | month | ~61k |
+| Data Scientist | Mid | Austria | AVL | 53200 | – | EUR | year | ~53k |
 | Data Scientist | Senior | Austria | XXXLdigital | 60000 | – | EUR | year | ~60k |
 | Data Scientist | Senior | Austria | Schachinger Logistik | 60000 | 80000 | EUR | year | ~70k |
 | Data Scientist | Senior | Austria | Bundesrechenzentrum | 66806 | – | EUR | year | ~67k |
@@ -69,14 +73,16 @@ _Generated 2026-06-25. Only postings with explicitly stated salary — **61 of 2
 | ML Engineer | Senior | Germany | ai-coustics | 75000 | 95000 | EUR | year | ~85k |
 | ML Engineer | Senior | Germany | Black Forest Labs | 130000 | 340000 | EUR | year | ~235k |
 | ML Engineer | Senior | Austria | KERN engineering careers GmbH | 4700 | – | EUR | month | ~66k |
+| ML Engineer | Senior | Austria | Canva | 70000 | – | EUR | year | ~70k |
 
 ## Rough annualised median by role (EUR-equivalent, all seniorities pooled)
 
 | Role | n | Median ~annual | Range |
 |---|---|---|---|
-| AI Engineer | 16 | ~54k | 24k–100k |
+| AI Engineer | 17 | ~56k | 24k–100k |
+| AI Researcher | 1 | ~102k | 102k–102k |
 | Data Engineer | 18 | ~60k | 29k–165k |
-| Data Scientist | 17 | ~61k | 38k–80k |
-| ML Engineer | 10 | ~60k | 29k–235k |
+| Data Scientist | 19 | ~61k | 38k–80k |
+| ML Engineer | 11 | ~61k | 29k–235k |
 
 **Confidence: LOW.** Switzerland still discloses no salaries. Treat as directional only.
