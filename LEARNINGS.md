@@ -185,8 +185,37 @@ Last audited: 2026-06-25 (self-improvement meta-run on Opus).
    proxy-blocked in cloud (see Source reliability). Build a WebSearch-first discovery path plus a
    curated list of unblocked DACH career-page hosts (greenhouse/lever/ashby/personio/join.com).
    This is now the top operational risk for the daily run.
+8. **Generic case-fold canonicalization** — DONE (2026-06-25). `analysis_gen.py` now derives, per
+   lowercased skill token, the most-frequently-seen casing in the dataset and folds all other
+   casings to it (`_build_case_map()` / `_CASE_MAP`), applied AFTER the explicit `_SKILL_ALIASES`
+   so curated decisions win. Generalises the hand-added case entries to ALL case-only splits
+   (~48 found at N=228). Cannot merge distinct skills (collapse requires byte-identical lowercased
+   tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-06-25** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
+  jobs.csv (228 rows, 0 ragged, 0 empty job_id), reports/2026-06-24.md, skills_by_level.md.
+  Confirmed `python3 analysis_gen.py 2026-06-25` runs clean (EXIT 0, N=228, new=10) before and
+  after changes; also re-verified on RUN=1900-01-01 (prev=0 first-run path) and RUN=2026-06-27
+  (future) — all three deliverables generate on every path. Two additive, verified changes to
+  `analysis_gen.py`; **jobs.csv and its schema untouched**:
+  (1) **Generic case-fold canonicalization** (backlog #8). Added `_build_case_map()`/`_CASE_MAP`:
+  for every lowercased skill token, fold to its most-frequent casing in the dataset, applied after
+  explicit `_SKILL_ALIASES`. Fixes ~48 case-only splits the hand map missed — e.g. `pandas` 8+5→12,
+  `MLflow` 12+1→13(canon MLflow), `Computer Vision` 9+2+1→12, `data pipelines` 5+11+2→18,
+  `machine learning`→`Machine Learning`, `Kubeflow`/`KubeFlow`, `ElasticSearch`/`Elasticsearch`,
+  `FFmpeg`/`ffmpeg`. Verified via canon() that distinct compounds survive: `Azure OpenAI`, `RAG` vs
+  `GraphRAG`, `Spark`/`PySpark`/`SparkML`, `Torch Distributor`/`torch.distributed`, `LLM Fine-Tuning`.
+  (2) **Slashed-location country resolution** (backlog #6, analysis side). `country()` now maps
+  comma-less slashed multi-city strings via a curated UNAMBIGUOUS DACH `_CITY_COUNTRY` table, applied
+  only when the location has no comma and contains "/". Country mix cleaned from
+  `{Germany 118, CH 51, AT 55, Munich/Berlin 2, Zurich/London 1, Heidelberg/Berlin 1}` →
+  `{Germany 121, Switzerland 52, Austria 55}`. Unrecognised slashed strings fall through to prior
+  behaviour (skip-if-unsure preserved). Both changes are read-time only; CSV not rewritten.
+  Did NOT change: salary/FX logic (backlog #3 still blocked on no CH data), trend logic (sound),
+  the defensive CSV read (kept), or the dedup formula. Egress-block on arbeitnow/datacareer/
+  karriere (backlog #7) confirmed still the top operational risk — proxy status checked, no
+  allowlist change attempted (out of scope for this additive audit).
 - **2026-06-24** (self-improvement meta-run on Opus): audited all deliverables at N=211 rows
   (211 valid rows, 10 first-seen on RUN=2026-06-24; jobs.csv parses clean with the stdlib csv
   reader — 0 ragged rows). Two additive, verified changes to `analysis_gen.py`; **jobs.csv and its
