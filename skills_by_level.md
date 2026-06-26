@@ -1,25 +1,25 @@
 # Skills by Level — DACH Data/ML/AI Roles
 
-_Generated 2026-06-25 from the full dataset of **298 jobs** (80 new this run)._
+_Generated 2026-06-26 from the full dataset of **298 jobs** (3 new this run)._
 
-Country mix: {'Germany': 156, 'Switzerland': 73, 'Austria': 68, 'Germany (Remote)': 1} · Role mix: {'AI Engineer': 60, 'Data Engineer': 53, 'ML Engineer': 64, 'Data Scientist': 90, 'Other': 2, 'AI Researcher': 29} · Seniority mix: {'Mid': 87, 'Senior': 88, 'Intern': 59, 'Lead/Principal': 18, 'Junior': 46}
+Country mix: {'Germany': 157, 'Switzerland': 73, 'Austria': 68} · Role mix: {'AI Engineer': 60, 'Data Engineer': 53, 'ML Engineer': 64, 'Data Scientist': 90, 'Other': 2, 'AI Researcher': 29} · Seniority mix: {'Mid': 87, 'Senior': 88, 'Intern': 59, 'Lead/Principal': 18, 'Junior': 46}
 
 ## 0. Trend vs previous run
 
-Dataset grew 182 → 298 jobs. Trend tables exclude skills below **7 postings** (noise floor). **Rising share** (Δ percentage points of postings):
+Dataset grew 262 → 298 jobs. Trend tables exclude skills below **7 postings** (noise floor). **Rising share** (Δ percentage points of postings):
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
-| AWS | 12 | 27 | +2 |
-| ML models | 0 | 7 | +2 |
-| data pipelines | 11 | 22 | +1 |
-| NLP | 13 | 25 | +1 |
-| Computer Vision | 4 | 10 | +1 |
-| Generative AI | 12 | 23 | +1 |
-| Kubernetes | 14 | 26 | +1 |
-| dbt | 3 | 7 | +1 |
+| Power BI | 9 | 14 | +1 |
+| distributed training | 4 | 7 | +1 |
+| Data Modeling | 7 | 10 | +1 |
+| Computer Vision | 7 | 10 | +1 |
+| Data Analysis | 8 | 11 | +1 |
+| Generative AI | 19 | 23 | +0 |
+| Databricks | 14 | 17 | +0 |
+| Kubernetes | 22 | 26 | +0 |
 
-**Newly appearing skills this run:** ABAP, AI Automation, AI Tools, AI evaluation, AI/Automation, AI/ML, AI/ML Systems, AI/ML model optimization, AWS Lambda, AWS SageMaker, Agentic Patterns, Agile, Amazon S3, Anthropic, Apache Kafka, Architecture Design, Arize Phoenix, Autogen, Bash, Basic Computer Science
+**Newly appearing skills this run:** AI/Automation, AI/ML, AI/ML Systems, Agile, Apache Kafka, Architecture Design, Bash, Biomedical Data, CNN, Cloud Architecture, Containers, Cypher, DVC, Data Migration, Data Platforms, Data Preparation, Data Streaming, Database Development, Databases, Dataiku
 
 ### Falling / disappeared skills
 
@@ -27,14 +27,14 @@ Dataset grew 182 → 298 jobs. Trend tables exclude skills below **7 postings** 
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
-| RAG | 25 | 32 | -3 |
-| Hugging Face | 11 | 14 | -1 |
-| CI/CD | 25 | 37 | -1 |
-| ETL | 9 | 11 | -1 |
-| Vector Databases | 7 | 8 | -1 |
-| PySpark | 13 | 18 | -1 |
-| Git | 16 | 23 | -1 |
-| Azure | 20 | 30 | -1 |
+| Python | 224 | 249 | -2 |
+| LLMs | 63 | 66 | -2 |
+| scikit-learn | 37 | 38 | -1 |
+| TensorFlow | 42 | 44 | -1 |
+| PyTorch | 61 | 66 | -1 |
+| Deep Learning | 31 | 32 | -1 |
+| Git | 23 | 23 | -1 |
+| CI/CD | 35 | 37 | -1 |
 
 ## 1. Most requested skills overall
 

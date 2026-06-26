@@ -1,7 +1,7 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-06-25 (self-improvement meta-run on Opus).
+Last audited: 2026-06-26 (self-improvement meta-run on Opus).
 
 ## Source reliability
 - **Arbeitnow API** (`/api/job-board-api?page=N`) — works; structured JSON, DE-heavy.
@@ -141,6 +141,48 @@ Last audited: 2026-06-25 (self-improvement meta-run on Opus).
 - **jobs.csv parses clean.** 228 rows, 0 ragged, 0 empty `job_id`. Defensive read (2026-06-24)
   still in place and exercised.
 
+## Data quality issues observed (2026-06-26 audit)
+- **Database size:** 298 rows, **0 ragged**, **0 empty `job_id`**, **0 duplicate `job_id`**. Grew
+  228 → 298 since the 2026-06-25 audit. `first_seen_date` distribution:
+  `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27, 2026-06-25: 80, 2026-06-26: 3, 2026-06-27: 33}`.
+  With `RUN=2026-06-26` the genuine "new this run" count is **3**; the 33 rows dated 2026-06-27 are
+  future-dated (prior swarm runs ahead of the calendar) and correctly fall outside both `prev` and
+  `new_today`, counting toward N only. Always pass the true calendar date (reminder, not a bug).
+- **NEW bug found & FIXED (read-time, additive): parenthetical-suffix country leak.** `country()`
+  returned the raw last comma-segment, so a row stored as `"Germany (Remote)"` (no comma) leaked
+  into the country mix as its OWN bucket: `{Germany 156, Switzerland 73, Austria 68, Germany (Remote) 1}`.
+  Same class of bug as the slashed-cities issue fixed on 2026-06-25, just with a `(...)` suffix instead
+  of a `/`. **Fix:** `country()` now strips a trailing `"(...)"` from the resolved last segment ONLY
+  when the remainder is an exact DACH country name (`Germany`/`Switzerland`/`Austria`); any other case
+  falls through to the exact prior behaviour (skip-if-unsure preserved — never guesses a non-DACH
+  country, and rows like `"Berlin (Remote)"` still keep their comma and resolve via the last segment).
+  Country mix is now clean `{Germany 157, Switzerland 73, Austria 68}`. Scope verified: this was the
+  ONLY parenthetical last-segment in the dataset. jobs.csv untouched (extraction should still store a
+  clean `"City, Country"` — backlog #6 extraction-side stays open).
+- **Case-only splits all absorbed by the generic case-fold (verified again at N=298).** Found ~60
+  case-only collisions in the raw tokens (e.g. `Machine Learning` 48 / `machine learning` 33,
+  `Deep Learning` 20 / `deep learning` 18, `Generative AI` 18 / `generative AI` 5, `pandas` 8 /
+  `Pandas` 12, `MLflow` 16 / `MLFlow` 1, `data pipelines` 21 / `Data Pipelines` 5 / `Data pipelines` 2,
+  `agentic AI`/`Agentic AI`, `AutoGen`/`Autogen`, `ElasticSearch`/`Elasticsearch`, `KubeFlow`/`Kubeflow`,
+  `FFmpeg`/`ffmpeg`). All are folded to the most-frequent casing by `_CASE_MAP`; no hand-edits needed.
+  Note: a few fold to a lowercase canonical because the lowercase casing is genuinely the most frequent
+  (`data pipelines` 21>7, `agentic AI`) — correct by the documented "most-frequent casing wins" rule,
+  just aesthetically lowercase. Extraction-side canonical casing (backlog #1b) remains the source fix.
+- **No new `_SKILL_ALIASES` entries warranted.** Checked the live synonym pairs (`GenAI`/`Generative AI`,
+  `Large Language Models`/`LLMs`, `Google Cloud`/`GCP`, `sklearn`, `k8s`, `HF`/`huggingface`, etc.) —
+  all already covered. `Azure ML` (n=1) kept distinct from `Azure` per the sub-service rule. Adding
+  more low-frequency aliases would be noise; left unchanged.
+- **CHF/EUR FX (backlog #3) still blocked: 0 CHF salary rows.** 66 rows disclose pay, **all EUR**;
+  Switzerland still discloses no salary. No CHF data to test against → not implemented (skip-if-unsure).
+  Pinned-rate plan (1 CHF = 1.05 EUR) stays documented for when the first CHF salary appears.
+- **Junior coverage (backlog #4) much improved.** Seniority mix now
+  `{Mid 87, Senior 88, Intern 59, Lead/Principal 18, Junior 46}` — Junior n=46 (was n=1 in early
+  audits) and Intern n=59. Entry-level vocabulary targeting is clearly working; backlog #4 can be
+  considered largely addressed, keep querying Junior/Graduate/Working-Student terms each run.
+- **Discovery resilience (backlog #7) still the top operational risk.** Egress proxy still blocks
+  arbeitnow/datacareer/karriere (connect_rejected) in cloud; WebSearch + unblocked career-page hosts
+  remain the only viable channels. No allowlist change attempted (out of scope for this additive audit).
+
 ## Known dedup behavior
 - `job_id = hash(company + normalized_role + location)`. **Intentionally collapses** distinct
   postings sharing those three (e.g. Estateanfrage "Werkstudent AI Engineer" vs "AI Engineer
@@ -179,8 +221,11 @@ Last audited: 2026-06-25 (self-improvement meta-run on Opus).
    UNAMBIGUOUS DACH city→country map (`_CITY_COUNTRY`), applied ONLY when the location has no comma
    and contains "/". `Zurich/London`→Switzerland, `Munich/Berlin`/`Heidelberg/Berlin`→Germany.
    Unrecognised slashed strings fall through to the exact prior behaviour (skip-if-unsure preserved),
-   so this is additive/reversible and never guesses a non-DACH country. **Extraction-side fix still
-   wanted:** store `location` as `"City, Country"` so the raw CSV is self-describing without the map.
+   so this is additive/reversible and never guesses a non-DACH country. **Extended 2026-06-26:**
+   `country()` also strips a trailing work-mode parenthetical (e.g. `"Germany (Remote)"` → `Germany`)
+   ONLY when the remainder is an exact DACH country name, fixing a 1-row leak into the country mix.
+   **Extraction-side fix still wanted:** store `location` as `"City, Country"` so the raw CSV is
+   self-describing without the map.
 7. **Discovery resilience under egress block (open, HIGH PRIORITY)** — primary boards are
    proxy-blocked in cloud (see Source reliability). Build a WebSearch-first discovery path plus a
    curated list of unblocked DACH career-page hosts (greenhouse/lever/ashby/personio/join.com).
@@ -193,6 +238,28 @@ Last audited: 2026-06-25 (self-improvement meta-run on Opus).
    tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-06-26** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
+  jobs.csv (**298 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id**), skills_by_level.md,
+  salary_benchmarks.md, recent reports. Confirmed `python3 analysis_gen.py 2026-06-26` runs clean
+  (EXIT 0, N=298, new=3) BEFORE and AFTER the change; also re-verified in a scratch copy on
+  RUN=1900-01-01 (prev=0 first-run path) and RUN=2026-06-27 (future) — all three deliverables
+  generate on every path. **One additive, verified change to `analysis_gen.py`; jobs.csv and its
+  schema untouched:**
+  (1) **Parenthetical-suffix country resolution** (extends backlog #6, analysis side). `country()`
+  now strips a trailing `"(...)"` from the resolved last comma-segment ONLY when the remainder is an
+  exact DACH country name, then returns it. Fixes `"Germany (Remote)"` leaking into the country mix as
+  its own bucket: mix cleaned from `{Germany 156, Switzerland 73, Austria 68, Germany (Remote) 1}` →
+  `{Germany 157, Switzerland 73, Austria 68}`. Guard ensures it never alters a currently-correct
+  output and never guesses a non-DACH country; unrecognised parentheticals fall through to the exact
+  prior behaviour. Scope-checked: this was the only such row in the dataset. Read-time only; CSV not
+  rewritten.
+  Did NOT change: skill canonicalization (the generic `_CASE_MAP` already absorbs all ~60 case-only
+  splits at N=298, and all live synonym pairs are already in `_SKILL_ALIASES` — no new aliases
+  warranted; `Azure ML` n=1 kept distinct per sub-service rule), salary/FX logic (backlog #3 still
+  blocked — 0 CHF salary rows; all 66 disclosed are EUR), trend logic (sound), the defensive CSV read
+  (kept), or the dedup formula. Backlog status updates: #4 (Junior coverage) largely addressed —
+  Junior n=46 / Intern n=59 (was n=1 early); #7 (discovery resilience under egress block) confirmed
+  STILL the top operational risk — no allowlist change attempted (out of scope for this additive audit).
 - **2026-06-25** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
   jobs.csv (228 rows, 0 ragged, 0 empty job_id), reports/2026-06-24.md, skills_by_level.md.
   Confirmed `python3 analysis_gen.py 2026-06-25` runs clean (EXIT 0, N=228, new=10) before and

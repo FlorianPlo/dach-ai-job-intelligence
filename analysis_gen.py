@@ -154,6 +154,8 @@ _CITY_COUNTRY = {
     "vienna": "Austria", "wien": "Austria", "graz": "Austria", "linz": "Austria",
     "salzburg": "Austria", "innsbruck": "Austria", "klagenfurt": "Austria",
 }
+# DACH country names (lowercased) used as a guard for the parenthetical strip below.
+_DACH_COUNTRIES = {"germany", "switzerland", "austria"}
 def country(r):
     loc = r["location"]
     if "," not in loc and "/" in loc:
@@ -161,7 +163,18 @@ def country(r):
             hit = _CITY_COUNTRY.get(part.strip().lower())
             if hit:
                 return hit
-    return loc.split(",")[-1].strip()
+    last = loc.split(",")[-1].strip()
+    # Parenthetical-suffix cleanup (additive, 2026-06-26): a few rows store the country
+    # with a trailing work-mode parenthetical and no comma, e.g. "Germany (Remote)", which
+    # leaked into the country mix as its own bucket ({'Germany':156,'Germany (Remote)':1}).
+    # Strip a trailing "(...)" ONLY when the remainder is an exact DACH country name; any
+    # other case (e.g. "Berlin (Remote)" still carries its comma → "Germany"; an unknown
+    # remainder) falls through to the exact prior behaviour. Never guesses a non-DACH country.
+    if last.endswith(")") and "(" in last:
+        stripped = last[: last.rindex("(")].strip()
+        if stripped.lower() in _DACH_COUNTRIES:
+            return stripped
+    return last
 
 prev = [r for r in rows if r["first_seen_date"] < RUN]
 new_today = [r for r in rows if r["first_seen_date"] == RUN]
