@@ -1,7 +1,59 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-06-26 (self-improvement meta-run on Opus).
+Last audited: 2026-06-27 (self-improvement meta-run on Opus).
+
+## 2026-06-27 audit (Opus self-improvement agent)
+- **jobs.csv parses clean at N=407.** 408 lines (1 header), **0 duplicate `job_id`**, **0 rows
+  with empty `job_id`**, **0 ragged rows**. `first_seen_date` distribution:
+  `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27, 2026-06-25: 80, 2026-06-26: 58, 2026-06-27: 87}`.
+  Grew 298 → 407 since the 2026-06-26 audit. With `RUN=2026-06-27` the genuine "new this run"
+  count is **87** (the rows dated 2026-06-27 are now the real calendar date, so no future-dating
+  this run). Seniority mix `{Mid 118, Senior 116, Intern 86, Junior 65, Lead/Principal 22}`;
+  role mix `{Data Scientist 126, ML Engineer 95, AI Engineer 84, Data Engineer 66, AI Researcher 34, Other 2}`.
+- **`python3 analysis_gen.py 2026-06-27` runs clean (EXIT 0, N=407, new=87)** both BEFORE and AFTER
+  the change. All three deliverables (skills_by_level.md, salary_benchmarks.md, reports/2026-06-27.md)
+  regenerate.
+- **NEW: added 14 punctuation/spacing/vendor-prefix skill aliases the case-fold cannot catch.**
+  `_CASE_MAP` only merges byte-identical-once-lowercased tokens, so splits that differ by
+  spacing/hyphen/vendor-prefix stayed separate. Added to `_SKILL_ALIASES` (all full lowercased
+  tokens, additive): `apache airflow→Airflow` (8+18), `apache spark→Spark` (6+34),
+  `amazon sagemaker`/`aws sagemaker→SageMaker` (vendor-prefix fold, mirrors Microsoft Azure→Azure),
+  `datamesh→Data Mesh`, `datavault→Data Vault`, `ms-sql→MS SQL`,
+  `infrastructure-as-code→Infrastructure as Code`, `time-series forecasting`/`time series
+  forecasting→Time Series Forecasting`, `time-series analysis`/`time series analysis→Time Series
+  Analysis`, `restful api→REST API`, `restful apis→REST APIs`. Verified via `canon()` that distinct
+  compounds survive (full-token, not substring): `Spark Streaming`, `SparkML`, `SparkSQL`, `PySpark`,
+  `AWS Bedrock`, `AWS Lambda`, `GCP Vertex AI`, `Azure Data Factory`, `Azure OpenAI`, `GraphRAG`,
+  `RAG`, `LLM Fine-Tuning` all unchanged. Effect in output: `Airflow` consolidated to 19 postings.
+- **Generic `_CASE_MAP` still absorbing all case-only splits at N=407.** Found ~78 case-only
+  collisions in the raw tokens (e.g. `Machine Learning` 64/`machine learning` 43, `Deep Learning`
+  27/22, `Generative AI` 34/`generative AI` 6, `Pandas` 16/`pandas` 11, `MLflow` 23/`MLFlow` 1,
+  `data pipelines` 27+5+2, `Computer Vision` 15+11+1, `prompt engineering` 12+9+2, `fine-tuning`
+  8+1+1, `statistics` 13/`Statistics` 4, `Kubeflow`/`KubeFlow`, `Elasticsearch`/`ElasticSearch`,
+  `ffmpeg`/`FFmpeg`, `Autogen`/`AutoGen`). All folded automatically; no hand-edits needed.
+- **No seniority assignment errors found.** Substring scan for title↔level conflicts flagged only
+  4 rows, all defensible: "Member of Technical Staff …" (vendor IC title, "Staff" ≠ Staff-level),
+  "Data Science Trainee (… Future Leaders)" (program name, Trainee→Junior correct), and two
+  "(Senior) Data Engineer" rows where the parenthetical "(Senior)" is optional/preferred so the
+  conservative Mid call is fine. Seniority inference in the script itself (the `order` list and the
+  high/low split in §4) is correct — Intern/Junior/Mid = "lower", Senior/Lead/Principal = "higher".
+- **`country()` resolution clean at N=407.** Country mix `{Germany 221, Switzerland 101, Austria 85}`,
+  zero non-DACH/leftover buckets. All 10 comma-less locations resolve correctly: slashed
+  (`Zurich/London→Switzerland`, `Munich/Berlin`/`Heidelberg/Berlin→Germany`), bare `Germany`, and
+  `Germany (Remote)→Germany` (parenthetical strip). No new `_CITY_COUNTRY` entries needed.
+- **CHF/EUR FX (backlog #3) still blocked.** Switzerland still discloses no salary; all disclosed
+  salary rows remain EUR. Pinned-rate plan (1 CHF = 1.05 EUR) stays documented for the first CHF row.
+- **Discovery resilience (backlog #7) remains the top operational risk.** Egress proxy still blocks
+  arbeitnow.com / datacareer.ch / karriere.at (`connect_rejected`) in cloud — CLAUDE.md's "Sources
+  known to work" section is now stale for the cloud-agent environment and should be read together
+  with this LEARNINGS note: in cloud, treat those three as UNAVAILABLE and rely on WebSearch +
+  unblocked career-page hosts (greenhouse.io, lever.co, ashbyhq.com, smartrecruiters, join.com,
+  personio, workday). No allowlist change attempted (out of scope for this additive audit).
+- **Backlog #1b (extraction-time canonical tokens) still the recommended source-of-truth fix.** The
+  read-time `_SKILL_ALIASES` + `_CASE_MAP` is the safety net; writing canonical skill spellings AND
+  casing into jobs.csv at scrape time would clean the raw data for any consumer. The growing alias
+  map (now ~50 entries) is a symptom that extraction-side normalization is overdue.
 
 ## Source reliability
 - **Arbeitnow API** (`/api/job-board-api?page=N`) — works; structured JSON, DE-heavy.

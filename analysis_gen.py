@@ -84,6 +84,26 @@ _SKILL_ALIASES = {
     "google cloud platform": "GCP",
     "powerbi": "Power BI",                     # "PowerBI"(2)/"Power BI"(14)
     "amazon web services": "AWS",
+    # --- spacing / hyphen / vendor-prefix splits the case-fold can't catch (2026-06-27).
+    # These differ by MORE than case (punctuation/spacing/vendor prefix), so _CASE_MAP
+    # leaves them split. All keys are full lowercased tokens; compounds like "Spark
+    # Streaming", "SparkML", "AWS Bedrock", "GCP Vertex AI" are byte-distinct once
+    # lowercased and stay separate (verified). Vendor-prefix folds mirror the existing
+    # "Microsoft Azure"->Azure / "Google Cloud"->GCP decisions. ---
+    "apache airflow": "Airflow",            # "Apache Airflow"(8) + "Airflow"(18)
+    "apache spark": "Spark",                # "Apache Spark"(6) + "Spark"(34); PySpark/SparkML/SparkSQL/Spark Streaming stay distinct
+    "amazon sagemaker": "SageMaker",        # vendor-prefix fold; "SageMaker"(4)
+    "aws sagemaker": "SageMaker",
+    "datamesh": "Data Mesh",                # "DataMesh"(1) -> "Data Mesh"(3)
+    "datavault": "Data Vault",              # "DataVault"(1) -> "Data Vault"(1)
+    "ms-sql": "MS SQL",                     # "MS-SQL"(1) -> "MS SQL"(1)
+    "infrastructure-as-code": "Infrastructure as Code",  # hyphen split of same concept
+    "time-series forecasting": "Time Series Forecasting",
+    "time series forecasting": "Time Series Forecasting",
+    "time-series analysis": "Time Series Analysis",
+    "time series analysis": "Time Series Analysis",
+    "restful api": "REST API",              # spelling variant of REST API
+    "restful apis": "REST APIs",
 }
 # ---------------- generic case-fold canonicalization (additive, 2026-06-25) ----------------
 # The explicit _SKILL_ALIASES map above only collapses the handful of case splits someone
