@@ -92,6 +92,7 @@ _SKILL_ALIASES = {
     # "Microsoft Azure"->Azure / "Google Cloud"->GCP decisions. ---
     "apache airflow": "Airflow",            # "Apache Airflow"(8) + "Airflow"(18)
     "apache spark": "Spark",                # "Apache Spark"(6) + "Spark"(34); PySpark/SparkML/SparkSQL/Spark Streaming stay distinct
+    "apache kafka": "Kafka",                # "Apache Kafka"(2) + "Kafka"(13); same Apache vendor-prefix fold as Spark/Airflow (2026-06-28)
     "amazon sagemaker": "SageMaker",        # vendor-prefix fold; "SageMaker"(4)
     "aws sagemaker": "SageMaker",
     "datamesh": "Data Mesh",                # "DataMesh"(1) -> "Data Mesh"(3)
@@ -364,12 +365,21 @@ R.append(f"\n## Summary")
 R.append(f"- **New jobs added this run:** {len(new_today)}")
 R.append(f"- **Total in database:** {N} (was {Np})")
 R.append("\n## New this run — breakdown")
-R.append("\n**By country:** " + ", ".join(f"{k} {v}" for k,v in Counter(country(r) for r in new_today).most_common()))
-R.append("\n**By role:** " + ", ".join(f"{k} {v}" for k,v in Counter(r['normalized_role'] for r in new_today).most_common()))
-R.append("\n**By seniority:** " + ", ".join(f"{k} {v}" for k,v in Counter(r['seniority'] for r in new_today).most_common()))
-R.append("\n## Notable new postings")
-for r in new_today[:6]:
-    sal_s = f" — {r['salary_min']}–{r['salary_max'] or ''} {r['salary_currency']}/{r['salary_period']}" if r['salary_min'] else ""
-    R.append(f"- **{r['company']}** ({r['location']}) — {r['job_title']} [{r['seniority']}]{sal_s}")
+# Empty-run guard (additive, 2026-06-28): when a run adds no jobs (new=0, e.g. RUN date
+# with no matching first_seen_date rows), the breakdown lines rendered as bare labels with
+# nothing after them and "Notable new postings" was a dangling header. Emit an explicit note
+# instead so a zero-new report is self-explanatory. Behaviour with new>0 is unchanged.
+if not new_today:
+    R.append("\n_No new jobs were added in this run (database unchanged). "
+             "If this is unexpected, check that the discovery step ran and that new rows "
+             "carry `first_seen_date = " + RUN + "`._")
+else:
+    R.append("\n**By country:** " + ", ".join(f"{k} {v}" for k,v in Counter(country(r) for r in new_today).most_common()))
+    R.append("\n**By role:** " + ", ".join(f"{k} {v}" for k,v in Counter(r['normalized_role'] for r in new_today).most_common()))
+    R.append("\n**By seniority:** " + ", ".join(f"{k} {v}" for k,v in Counter(r['seniority'] for r in new_today).most_common()))
+    R.append("\n## Notable new postings")
+    for r in new_today[:6]:
+        sal_s = f" — {r['salary_min']}–{r['salary_max'] or ''} {r['salary_currency']}/{r['salary_period']}" if r['salary_min'] else ""
+        R.append(f"- **{r['company']}** ({r['location']}) — {r['job_title']} [{r['seniority']}]{sal_s}")
 open(f"reports/{RUN}.md","w").write("\n".join(R))
 print(f"Regenerated skills_by_level.md, salary_benchmarks.md, reports/{RUN}.md  (N={N}, new={len(new_today)})")

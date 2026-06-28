@@ -1,7 +1,63 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-06-27 (self-improvement meta-run on Opus).
+Last audited: 2026-06-28 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-06-28 audit)
+- **Database stats:** **407 rows**, **0 duplicate `job_id`**, **0 empty `job_id`**, **0 ragged
+  rows**. Unchanged in size since the 2026-06-27 audit (no swarm discovery ran in between).
+  `first_seen_date` distribution:
+  `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27, 2026-06-25: 80, 2026-06-26: 58, 2026-06-27: 87}`.
+  Note there are **NO rows dated 2026-06-28**, so with `RUN=2026-06-28` the genuine "new this run"
+  count is **0** and all 407 rows fall into `prev` (first_seen < RUN). Seniority mix
+  `{Mid 118, Senior 116, Intern 86, Junior 65, Lead/Principal 22}`; role mix
+  `{Data Scientist 126, ML Engineer 95, AI Engineer 84, Data Engineer 66, AI Researcher 34, Other 2}`;
+  work_type mix `{Hybrid 280, Onsite 105, Remote 22}`.
+- **`python3 analysis_gen.py 2026-06-28` runs clean (EXIT 0, N=407, new=0)** both BEFORE and AFTER
+  the changes. All three deliverables regenerate. Also re-verified in a scratch copy on
+  RUN=2026-06-27 (new=87, full breakdown path) and RUN=1900-01-01 (prev=0 first-run path) — all
+  three deliverables generate on every path.
+- **NEW alias added: `apache kafka → Kafka`.** The raw data carried `Apache Kafka` (2) split from
+  `Kafka` (13); the generic `_CASE_MAP` cannot merge them (they differ by a vendor prefix, not just
+  case). This is the exact same Apache vendor-prefix fold already applied to `apache spark→Spark`
+  and `apache airflow→Airflow`, so it is a safe, consistent additive entry. Effect: `Kafka`
+  consolidated to **15** postings (was 13). Verified `Kafka Streams` (distinct compound) survives
+  unchanged — fold is full-token, not substring.
+- **NEW: empty-run guard in the daily report (additive output fix).** When a run adds no jobs
+  (new=0, e.g. running on a calendar date with no matching `first_seen_date` rows — exactly today's
+  situation), the report's "By country / By role / By seniority" lines rendered as bare labels with
+  nothing after them, and "## Notable new postings" was a dangling header with no content. The
+  report now emits an explicit "_No new jobs were added in this run…_" note instead, telling the
+  reader to check that discovery ran and new rows carry `first_seen_date = RUN`. The new>0 path is
+  byte-for-byte unchanged (verified on RUN=2026-06-27 → full breakdown + 6 notable postings).
+- **Skill canonicalization otherwise complete at N=407.** Ran every token through the live `canon()`
+  and clustered residuals by punctuation/space/case: the only remaining "near-duplicate" clusters
+  are genuine distinct skills that must NOT merge — `C++`/`C#` (different languages),
+  `AI Automation`/`AI/Automation` and `Multimodal AI`/`multi-modal AI` (n=1 each, ambiguous, left
+  split per skip-if-unsure). All real case-only splits (`Machine Learning`/`machine learning` 64+43,
+  `Computer Vision`/`computer vision`, `Power BI`/`PowerBI`, `Pandas`/`pandas`, `Transformers`/
+  `transformers`, `Graph Neural Networks`/`graph neural networks`, `Statistics`/`statistics`, etc.)
+  are still absorbed by `_CASE_MAP`. **`GCP Vertex AI` (2) left distinct from `Vertex AI` (3)**
+  deliberately — sub-service tokens stay distinct per the documented Azure/GCP sub-service rule
+  (mirrors `Azure OpenAI`/`AWS Bedrock` staying separate); not folded.
+- **`country()` resolution clean at N=407.** Country mix `{Germany 221, Switzerland 101, Austria 85}`,
+  zero non-DACH/leftover buckets across 76 distinct location strings. All comma-less specials still
+  resolve: slashed (`Zurich/London→Switzerland`, `Munich/Berlin`/`Heidelberg/Berlin→Germany`), bare
+  `Germany`, and `Germany (Remote)→Germany` (parenthetical strip). No new `_CITY_COUNTRY` entries
+  needed. (Aesthetic-only: `Dusseldorf`/`Düsseldorf` and `Garching`/`Garching bei München`/`Grodig`/
+  `Grödig` are city-name spelling variants but all carry the correct `, Germany`/`, Austria` country
+  suffix, so the country mix is unaffected — no fix warranted; city-level normalization is out of
+  scope.)
+- **No seniority assignment errors found.** Title↔level scan flagged no new conflicts beyond the
+  defensible ones noted in prior audits. The `order` list and the §4 high/low split
+  (Intern/Junior/Mid = lower, Senior/Lead-Principal = higher) remain correct.
+- **CHF/EUR FX (backlog #3) still blocked.** 0 CHF salary rows; Switzerland still discloses no salary.
+  Pinned-rate plan (1 CHF = 1.05 EUR) stays documented for the first CHF row.
+- **Discovery resilience (backlog #7) remains the top operational risk.** Egress proxy still
+  expected to block arbeitnow/datacareer/karriere in cloud; WebSearch + unblocked career-page hosts
+  remain the only viable channels. No allowlist change attempted (out of scope for this additive
+  audit). The N=407 plateau since 2026-06-27 (no new rows) is consistent with a discovery gap and is
+  exactly what the new empty-run report note is designed to make visible.
 
 ## 2026-06-27 audit (Opus self-improvement agent)
 - **jobs.csv parses clean at N=407.** 408 lines (1 header), **0 duplicate `job_id`**, **0 rows
@@ -290,6 +346,31 @@ Last audited: 2026-06-27 (self-improvement meta-run on Opus).
    tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-06-28** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
+  jobs.csv (**407 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id**), skills_by_level.md,
+  salary_benchmarks.md, reports/2026-06-27.md. Database unchanged in size since the 2026-06-27
+  audit (no swarm discovery between runs); **no rows dated 2026-06-28**, so RUN=2026-06-28 yields
+  new=0. Confirmed `python3 analysis_gen.py 2026-06-28` runs clean (EXIT 0, N=407, new=0) BEFORE
+  and AFTER the changes; re-verified in a scratch copy on RUN=2026-06-27 (new=87, full breakdown
+  path) and RUN=1900-01-01 (prev=0 first-run path) — all three deliverables generate on every path.
+  **Two additive, verified changes to `analysis_gen.py`; jobs.csv and its schema untouched:**
+  (1) **New skill alias `apache kafka → Kafka`** (backlog #1, additive). The raw data split
+  `Apache Kafka`(2) from `Kafka`(13); `_CASE_MAP` can't merge them (vendor prefix, not case). Exact
+  parallel to the existing `apache spark→Spark` / `apache airflow→Airflow` folds. Effect: `Kafka`
+  consolidated to 15. Verified `Kafka Streams` (distinct compound) survives — full-token, not
+  substring.
+  (2) **Empty-run guard in the daily report** (output quality, additive). When new=0 the report's
+  breakdown lines rendered as bare labels and "Notable new postings" was a dangling empty header;
+  now it emits an explicit "no new jobs this run" note pointing the reader to check discovery / the
+  `first_seen_date = RUN` invariant. The new>0 path is unchanged (verified on RUN=2026-06-27 →
+  full breakdown + 6 notable postings render identically).
+  Did NOT change: the generic `_CASE_MAP` (still absorbs all case-only splits — verified no new
+  case splits at N=407); `GCP Vertex AI` kept distinct from `Vertex AI` per the sub-service rule;
+  salary/FX logic (backlog #3 still blocked — 0 CHF rows); trend logic; the defensive CSV read; the
+  dedup formula; `country()` (clean mix `{Germany 221, Switzerland 101, Austria 85}`, no new
+  `_CITY_COUNTRY` entries needed). Backlog status: #7 (discovery resilience under egress block)
+  confirmed STILL the top operational risk — the N=407 plateau since 2026-06-27 (zero new rows) is
+  consistent with a discovery gap, which the new empty-run report note now surfaces explicitly.
 - **2026-06-26** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
   jobs.csv (**298 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id**), skills_by_level.md,
   salary_benchmarks.md, recent reports. Confirmed `python3 analysis_gen.py 2026-06-26` runs clean

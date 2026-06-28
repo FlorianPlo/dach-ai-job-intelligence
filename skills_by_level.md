@@ -1,40 +1,19 @@
 # Skills by Level — DACH Data/ML/AI Roles
 
-_Generated 2026-06-27 from the full dataset of **407 jobs** (87 new this run)._
+_Generated 2026-06-28 from the full dataset of **407 jobs** (0 new this run)._
 
 Country mix: {'Germany': 221, 'Switzerland': 101, 'Austria': 85} · Role mix: {'AI Engineer': 84, 'Data Engineer': 66, 'ML Engineer': 95, 'Data Scientist': 126, 'Other': 2, 'AI Researcher': 34} · Seniority mix: {'Mid': 118, 'Senior': 116, 'Intern': 86, 'Lead/Principal': 22, 'Junior': 65}
 
 ## 0. Trend vs previous run
 
-Dataset grew 320 → 407 jobs. Trend tables exclude skills below **10 postings** (noise floor). **Rising share** (Δ percentage points of postings):
+Dataset grew 407 → 407 jobs. Trend tables exclude skills below **10 postings** (noise floor). **Rising share** (Δ percentage points of postings):
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
-| Generative AI | 22 | 39 | +3 |
-| Computer Vision | 7 | 14 | +1 |
-| R | 11 | 17 | +1 |
-| Airflow | 13 | 19 | +1 |
-| JAX | 7 | 11 | +1 |
-| dbt | 7 | 11 | +1 |
-| Power BI | 11 | 16 | +0 |
-| NLP | 26 | 34 | +0 |
-
-**Newly appearing skills this run:** AI/Automation, AI/ML, AI/ML Systems, Agile, Apache Flink, Apache Kafka, Architecture Design, Bash, Biomedical Data, CNN, Cloud Architecture, Containers, Cypher, DVC, Data Migration, Data Platforms, Data Preparation, Data Streaming, Database Development, Databases
 
 ### Falling / disappeared skills
 
-**Falling share** (Δ percentage points of postings):
-
-| Skill | Prev | Now | Δpp |
-|---|---|---|---|
-| CI/CD | 48 | 55 | -1 |
-| Git | 24 | 25 | -1 |
-| SQL | 117 | 144 | -1 |
-| PyTorch | 80 | 98 | -1 |
-| TensorFlow | 54 | 65 | -1 |
-| MLOps | 23 | 26 | -1 |
-| LLMs | 85 | 105 | -1 |
-| FastAPI | 10 | 10 | -1 |
+_No skill lost share vs the previous snapshot._
 
 ## 1. Most requested skills overall
 
@@ -189,7 +168,7 @@ Dataset grew 320 → 407 jobs. Trend tables exclude skills below **10 postings**
 
 - **Data Engineer — Junior** (n=14): Python (13), SQL (13), PySpark (3), data pipelines (3), ETL (3), Azure (3), AWS (2), dbt (2)
 
-- **Data Engineer — Mid** (n=27): Python (22), SQL (21), data pipelines (8), Spark (6), dbt (5), Airflow (5), CI/CD (5), ETL/ELT (4)
+- **Data Engineer — Mid** (n=27): Python (22), SQL (21), data pipelines (8), Spark (6), dbt (5), Airflow (5), CI/CD (5), Kafka (5)
 
 - **Data Engineer — Senior** (n=17): Python (14), SQL (14), Databricks (7), Azure (5), Airflow (5), CI/CD (4), Spark (4), data pipelines (4)
 
