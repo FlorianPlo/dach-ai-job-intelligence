@@ -1,7 +1,56 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-06-28 (self-improvement meta-run on Opus).
+Last audited: 2026-06-29 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-06-29 audit)
+- **Database stats:** **476 rows** (was 407 at the 2026-06-28 audit; +69 across the 2026-06-28
+  and 2026-06-29 discovery runs). With `RUN=2026-06-29` the genuine "new this run" count is **52**
+  (DE=28, CH=14, AT=10; roles DS=21, AI Eng=9, ML Eng=9, AI Res=8, Data Eng=5; seniority
+  Senior=15, Mid=17, Intern=15, Junior=4, Lead=1). `python3 analysis_gen.py 2026-06-29` runs clean
+  (EXIT 0, N=476, new=52) BEFORE and AFTER the changes; re-verified in a scratch copy on
+  RUN=1900-01-01 (prev=0 first-run path) and RUN=2026-06-28 (new=17) — all three deliverables
+  generate on every path.
+- **CHF salary data is now CONFIRMED in the DB — backlog #3 unblocked and IMPLEMENTED.** Switzerland
+  formerly disclosed no salary; it now does. CHF rows present: Anthropic Zurich 280k–680k CHF/yr,
+  Novartis Basel 102k–190k CHF/yr (prior runs), comparis.ch Zurich 90k–120k CHF/yr, BLP Digital
+  110k–140k CHF/yr, PEAX 140k–180k CHF/yr, Ergon 55k–70k CHF/yr, plus CHF **monthly** rows: CERN
+  Geneva ML Eng 5266–5793 CHF/month, CERN Geneva DS 6372–7004 CHF/month, and the new-today CERN
+  Meyrin studentship **3486 CHF/month**. `analysis_gen.py` now converts CHF→EUR at a pinned
+  **1 CHF = 1.05 EUR** rate (`CHF_TO_EUR`, `to_eur()`): the disclosed-salaries table keeps the
+  original currency/values and adds a new "~Annualised (EUR-eq)" column, and the by-role median pool
+  now includes CHF rows converted to EUR (was EUR-only). Re-check the pinned rate quarterly.
+- **New EUR/hour salary occurrence:** deeplify (Munich) Working Student ML at **28–35 EUR/hour**
+  (annualises ×40×52 → ~66k). Other EUR/hour rows: FREQUENTUM 16–18, KOSTAL 13–15, Delicious Data
+  20–25, CARIAD 12.82–17.80. Hourly handling in `annual()` unchanged (×40×52).
+- **NEW skill-alias decision: collapse time-series phrasings to ONE canonical.** Raw data carried 5
+  split spellings — `Time Series Forecasting`, `time series forecasting`, `Time Series Analysis`,
+  `Time series analysis`, `time series analysis` (seen e.g. in Siemens/ZEISS postings, which use the
+  terms interchangeably). Previously `analysis_gen.py` folded "analysis" → `Time Series Analysis` and
+  "forecasting" → `Time Series Forecasting` (two distinct canonicals, still splitting the count).
+  **Changed 2026-06-29:** all four/five variants now fold to **`Time Series Forecasting`** (verified
+  via `canon()`). Full-token fold, not substring — distinct compounds unaffected.
+- **`Power BI` and `Machine Learning` casing already handled by the generic `_CASE_MAP`** — verified,
+  no hand-alias needed. `Power BI`(25)/`PowerBI`(2)/`powerbi`(1) fold to `Power BI` (the explicit
+  `powerbi→Power BI` alias plus the case-fold). `Machine Learning`(83)/`machine learning`(51) fold to
+  `Machine Learning` via the explicit alias. Both confirmed correct at N=476.
+- **First Lead/Principal row dated 2026-06-29:** Vestiaire Collective "Data Engineering Manager"
+  (Berlin), explicitly a people-manager role leading a team — correctly assigned Lead/Principal.
+- **job_id collision behavior re-confirmed (expected, per spec).** `job_id = hash(company +
+  normalized_role + location)` intentionally collapses distinct postings that share those three.
+  Today's examples: two Aleph Alpha AI Engineer roles (Heidelberg) → one row `79c97a376fde`; two BMW
+  Group ML Engineer roles (Munich) → one row `8b5aa03ed4d5`; two Siemens AI Engineer roles (Munich) →
+  one row `d448c993e614`. Only one row kept each; note the dropped role in the daily report so the
+  count stays explainable.
+- **Discovery via unblocked career-page hosts working well.** Primary boards (arbeitnow,
+  datacareer.ch, karriere.at) remain proxy-blocked in cloud; today's 52 jobs came from WebSearch +
+  direct/ATS career pages. NEW sources confirmed working this run (add to the unblocked-host
+  rotation): Aleph Alpha (ashbyhq), Helsing (direct), Black Forest Labs (greenhouse),
+  Google DeepMind Zurich (greenhouse), BMW Group (bmwgroup.jobs), Rohde & Schwarz (direct),
+  CARIAD/VW (volkswagen-group.com), Continental (direct), Bosch (smartrecruiters),
+  ZEISS (myworkdayjobs), NEURA Robotics (direct), CERN (smartrecruiters). Other new companies
+  discovered today: Inceptive, Commerzbank, ING Germany, DATEV, Scalable Capital, QIMA, Brandback,
+  Kineo, deeplify, Wingtra AG, Skydio, Mercedes-Benz.
 
 ## Data quality issues observed (2026-06-28 audit)
 - **Database stats:** **407 rows**, **0 duplicate `job_id`**, **0 empty `job_id`**, **0 ragged
@@ -142,6 +191,13 @@ Last audited: 2026-06-28 (self-improvement meta-run on Opus).
        in coverage is visible and the run stays explainable. Never silently produce a thin run.
   Until the policy changes, expect **WebSearch + unblocked career pages** to be the only viable
   discovery channels; treat arbeitnow/datacareer/karriere as unavailable.
+- **Unblocked career-page / ATS hosts confirmed working (2026-06-29).** With the primary boards
+  proxy-blocked, these channels delivered today's 52 jobs and should be the default rotation:
+  WebSearch (discovery) → then fetch on: greenhouse.io (Anthropic, Black Forest Labs, Google
+  DeepMind Zurich), ashbyhq.com (Aleph Alpha, BLP Digital), lever.co (Vestiaire Collective),
+  join.com (deeplify, PEAX, Delicious Data), jobs.smartrecruiters.com (CERN, Bosch),
+  myworkdayjobs.com (ZEISS), bmwgroup.jobs (BMW), volkswagen-group.com (CARIAD/VW), plus direct
+  career pages for Helsing, Rohde & Schwarz, Continental, NEURA Robotics.
 - **LinkedIn / Indeed / StepStone / Glassdoor** — auth/aggregator; use only to discover
   company names, never fetch postings (per spec).
 - Coverage gaps: Junior level is very thin (n=1); pure Data Scientist and Lead/Principal
@@ -313,11 +369,13 @@ Last audited: 2026-06-28 (self-improvement meta-run on Opus).
    AT monthly EUR now annualised **×14** (13th/14th-salary convention; 22 AT rows affected),
    all other monthly stays ×12. Convention is documented inline in `annual()` and in the
    salary_benchmarks.md caveat note. Decision locked: ×14 for AT-EUR-monthly only.
-3. **CHF/EUR FX** — STILL OPEN. The median-by-role table only pools EUR rows; CH discloses no
-   salary yet so no CHF rows exist to convert. When the first CHF salary appears, adopt a fixed
-   documented rate (suggest **1 CHF = 1.05 EUR**, pinned in this file and re-checked quarterly)
-   rather than a live FX lookup, so runs are reproducible. Until then, EUR-only pooling stands.
-   Not implemented now because there is no CHF data to test against (skip-if-unsure rule).
+3. **CHF/EUR FX** — DONE (2026-06-29). CHF salary rows now exist (Anthropic, Novartis, comparis.ch,
+   BLP, PEAX, Ergon, CERN ×3), so the conversion is implemented with a pinned, documented
+   **1 CHF = 1.05 EUR** rate (`CHF_TO_EUR` / `to_eur()` in `analysis_gen.py`) — no live FX lookup, so
+   runs stay reproducible. The disclosed-salaries table preserves the original currency/values and
+   adds an EUR-equivalent column; the by-role median pool now includes CHF rows converted to EUR
+   (was EUR-only). Re-check the pinned rate quarterly. Other currencies pass through `to_eur()` as
+   `None` (excluded from the EUR pool, not mis-counted).
 4. **Junior coverage** — actively query Junior/Graduate vocabulary each run; n=1 today.
 5. **Trend robustness** — DONE (2026-06-23): `analysis_gen.py` now applies a noise-floor
    `MIN_TREND_COUNT = max(2, round(N/40))` to the rising/falling Δpp tables, so a skill must
@@ -346,6 +404,27 @@ Last audited: 2026-06-28 (self-improvement meta-run on Opus).
    tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-06-29** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
+  jobs.csv (**476 rows**, parses clean), salary_benchmarks.md, skills_by_level.md. Confirmed
+  `python3 analysis_gen.py 2026-06-29` runs clean (EXIT 0, N=476, new=52) BEFORE and AFTER the
+  changes; re-verified in a scratch copy on RUN=1900-01-01 (prev=0 first-run path) and RUN=2026-06-28
+  (new=17) — all three deliverables generate on every path. **Two additive, verified changes to
+  `analysis_gen.py`; jobs.csv and its schema untouched:**
+  (1) **CHF→EUR salary conversion (backlog #3, now DONE).** Added pinned `CHF_TO_EUR = 1.05` and a
+  `to_eur()` helper. The disclosed-salaries table keeps original currency/values and gains a new
+  "~Annualised (EUR-eq)" column; the by-role median pool now includes CHF rows converted to EUR
+  (previously EUR-only, so all 9 CH salary rows were excluded). Verified outputs, e.g. PEAX 160k CHF →
+  168k EUR, Anthropic 480k CHF → 504k EUR, CERN 42k CHF → 44k EUR. Other currencies return None and
+  stay out of the EUR pool. The stale "Switzerland still discloses no salaries" note was corrected.
+  (2) **Time-series alias consolidation.** Changed the two `time(-) series analysis` aliases to fold
+  to `Time Series Forecasting` instead of a separate `Time Series Analysis` canonical, so all five
+  raw spellings now collapse to one token (verified via `canon()`). Full-token fold, not substring.
+  Did NOT change: jobs.csv schema/columns; the dedup formula; the generic `_CASE_MAP` (already folds
+  `Power BI` and `Machine Learning` casing correctly at N=476 — no new alias needed); the AT ×14
+  monthly convention; the hourly ×40×52 convention; trend logic; the defensive CSV read; `country()`.
+  Backlog status: #3 (CHF/EUR FX) now DONE; #7 (discovery resilience under egress block) remains the
+  top operational risk (primary boards still proxy-blocked; 52 jobs this run came from WebSearch +
+  unblocked ATS/career hosts — new working hosts logged in the Source reliability / 2026-06-29 notes).
 - **2026-06-28** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
   jobs.csv (**407 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id**), skills_by_level.md,
   salary_benchmarks.md, reports/2026-06-27.md. Database unchanged in size since the 2026-06-27

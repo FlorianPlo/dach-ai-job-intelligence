@@ -99,10 +99,15 @@ _SKILL_ALIASES = {
     "datavault": "Data Vault",              # "DataVault"(1) -> "Data Vault"(1)
     "ms-sql": "MS SQL",                     # "MS-SQL"(1) -> "MS SQL"(1)
     "infrastructure-as-code": "Infrastructure as Code",  # hyphen split of same concept
+    # Time-series: fold both "forecasting" and "analysis" phrasings to a single
+    # canonical "Time Series Forecasting" (2026-06-29). The raw data carried 5 split
+    # spellings (Time Series Analysis / Time series analysis / time series analysis /
+    # Time Series Forecasting / time series forecasting) for what postings use
+    # interchangeably (e.g. Siemens). Picking one canonical stops the count splitting.
     "time-series forecasting": "Time Series Forecasting",
     "time series forecasting": "Time Series Forecasting",
-    "time-series analysis": "Time Series Analysis",
-    "time series analysis": "Time Series Analysis",
+    "time-series analysis": "Time Series Forecasting",
+    "time series analysis": "Time Series Forecasting",
     "restful api": "REST API",              # spelling variant of REST API
     "restful apis": "REST APIs",
 }
@@ -319,6 +324,19 @@ S=[]
 S.append("# Salary Benchmarks — DACH Data/ML/AI Roles")
 S.append(f"\n_Generated {RUN}. Only postings with explicitly stated salary — **{len(sal)} of {N}** disclosed pay. Nothing imputed._")
 S.append("\n> ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.")
+# --- CHF→EUR pinned rate (backlog #3, 2026-06-29) ----------------------------------
+# Switzerland now discloses salary (Anthropic, Novartis, comparis.ch, CERN, BLP, PEAX,
+# Ergon). To pool CH pay with DE/AT for the cross-country median we convert CHF→EUR at a
+# FIXED, documented rate so runs stay reproducible (no live FX lookup). Re-check quarterly.
+CHF_TO_EUR = 1.05   # 1 CHF = 1.05 EUR (pinned; see LEARNINGS.md backlog #3)
+def to_eur(amount, currency):
+    """Convert an already-annualised amount to EUR-equivalent using the pinned rate.
+    EUR passes through unchanged; CHF is scaled; any other currency returns None so it is
+    excluded from the EUR-equivalent pool rather than silently mis-counted."""
+    if amount is None: return None
+    if currency=="EUR": return amount
+    if currency=="CHF": return amount*CHF_TO_EUR
+    return None
 # group yearly EUR by role x seniority for a rough median
 def annual(r):
     try:
@@ -339,23 +357,26 @@ def annual(r):
     elif p=="hour": mid*=40*52   # assume 40h/week × 52 weeks
     return mid
 S.append("\n## Disclosed salaries")
-S.append("\n| Role | Seniority | Country | Company | Min | Max | Cur | Period | ~Annualised |")
-S.append("|---|---|---|---|---|---|---|---|---|")
+S.append(f"\n_CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate **1 CHF = {CHF_TO_EUR} EUR** for cross-country comparison; the original currency/values are preserved._")
+S.append("\n| Role | Seniority | Country | Company | Min | Max | Cur | Period | ~Annualised | ~Annualised (EUR-eq) |")
+S.append("|---|---|---|---|---|---|---|---|---|---|")
 for r in sorted(sal, key=lambda r:(r["normalized_role"],order.index(r["seniority"]) if r["seniority"] in order else 99)):
     a=annual(r); astr=f"~{a/1000:.0f}k" if a else "–"
-    S.append(f"| {r['normalized_role']} | {r['seniority']} | {country(r)} | {r['company']} | {r['salary_min'] or '–'} | {r['salary_max'] or '–'} | {r['salary_currency']} | {r['salary_period']} | {astr} |")
+    aeur=to_eur(a, r["salary_currency"]); eurstr=f"~{aeur/1000:.0f}k EUR" if aeur is not None else "–"
+    S.append(f"| {r['normalized_role']} | {r['seniority']} | {country(r)} | {r['company']} | {r['salary_min'] or '–'} | {r['salary_max'] or '–'} | {r['salary_currency']} | {r['salary_period']} | {astr} | {eurstr} |")
 # medians by role
-S.append("\n## Rough annualised median by role (EUR-equivalent, all seniorities pooled)")
+S.append(f"\n## Rough annualised median by role (EUR-equivalent, all seniorities pooled)")
+S.append(f"\n_Pools EUR rows plus CHF rows converted at **1 CHF = {CHF_TO_EUR} EUR** (pinned). All figures EUR-equivalent._")
 byrole=defaultdict(list)
 for r in sal:
-    a=annual(r)
-    if a and r["salary_currency"]=="EUR": byrole[r["normalized_role"]].append(a)
+    a=to_eur(annual(r), r["salary_currency"])
+    if a is not None: byrole[r["normalized_role"]].append(a)
 S.append("\n| Role | n | Median ~annual | Range |")
 S.append("|---|---|---|---|")
 import statistics
 for role,vals in sorted(byrole.items()):
     S.append(f"| {role} | {len(vals)} | ~{statistics.median(vals)/1000:.0f}k | {min(vals)/1000:.0f}k–{max(vals)/1000:.0f}k |")
-S.append("\n**Confidence: LOW.** Switzerland still discloses no salaries. Treat as directional only.")
+S.append(f"\n**Confidence: LOW.** Switzerland now discloses some salaries (converted at the pinned 1 CHF = {CHF_TO_EUR} EUR rate); samples remain small. Treat as directional only.")
 open("salary_benchmarks.md","w").write("\n".join(S))
 
 # ---------------- daily report ----------------
