@@ -3,7 +3,7 @@
 Usage: python3 analysis_gen.py <RUN_DATE>  (e.g. 2026-06-23)
 Trend deltas compare current full dataset vs the snapshot of rows first seen BEFORE RUN_DATE.
 """
-import csv, sys
+import csv, sys, ast
 from collections import Counter, defaultdict
 
 RUN = sys.argv[1]
@@ -128,10 +128,7 @@ def _build_case_map():
     raw = Counter()
     for _r in rows:
         for _field in ("required_skills", "nice_to_have_skills"):
-            for _s in _r[_field].split(";"):
-                _s = _s.strip()
-                if not _s:
-                    continue
+            for _s in _split_skills(_r[_field]):
                 # apply explicit alias first so the case-vote is taken over canonical forms
                 _s = _SKILL_ALIASES.get(_s.lower(), _s)
                 raw[_s] += 1
@@ -152,10 +149,32 @@ def canon(s):
     s = _SKILL_ALIASES.get(s.lower(), s)
     return _CASE_MAP.get(s.lower(), s)
 
+# ---------------- list-repr skill parsing (additive robustness, 2026-06-30) ----------------
+# Spec stores skill lists as SEMICOLON-separated strings. But the 2026-06-30 discovery run
+# wrote 54 rows whose `required_skills`/`nice_to_have_skills` are a stringified Python LIST,
+# e.g. "['Python', 'PyTorch', 'Deep Learning']" (no ';'). With the naive ";"-split that whole
+# blob counts as ONE bogus skill token, making every skill in those 54 rows (47% of the run)
+# invisible to the skills-by-level analysis — a silent, thin result that violates the "one bad
+# posting must not abort the run / never silently produce a thin run" quality rule. This helper
+# detects a list-repr cell (starts "[" + ends "]" + no ";") and safely expands it via
+# ast.literal_eval; anything else falls through to the exact prior ";"-split behaviour, so
+# well-formed rows are byte-for-byte unaffected. jobs.csv is NOT modified — read-time only.
+# (Extraction side should still write semicolon-separated skills; this is the safety net.)
+def _split_skills(field):
+    field = field.strip()
+    if field.startswith("[") and field.endswith("]") and ";" not in field:
+        try:
+            parsed = ast.literal_eval(field)
+            if isinstance(parsed, (list, tuple)):
+                return [str(x).strip() for x in parsed if str(x).strip()]
+        except (ValueError, SyntaxError):
+            pass
+    return [p.strip() for p in field.split(";") if p.strip()]
+
 _CASE_MAP = _build_case_map()
 
-def sk(r): return [canon(s) for s in r["required_skills"].split(";") if s.strip()]
-def nth(r): return [canon(s) for s in r["nice_to_have_skills"].split(";") if s.strip()]
+def sk(r): return [canon(s) for s in _split_skills(r["required_skills"])]
+def nth(r): return [canon(s) for s in _split_skills(r["nice_to_have_skills"])]
 
 # ---------------- location → country resolution (additive, backlog #6, 2026-06-25) ----------
 # country() takes the last comma-segment of `location`. Rows stored as "City, Country" resolve

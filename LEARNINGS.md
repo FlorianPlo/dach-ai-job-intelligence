@@ -1,7 +1,63 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-06-29 (self-improvement meta-run on Opus).
+Last audited: 2026-06-30 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-06-30 audit)
+- **Database stats:** **592 rows** (was 476 at the 2026-06-29 audit; **+116 this run**), **0 ragged
+  rows**, **0 empty `job_id`**, **0 duplicate `job_id`**. `first_seen_date` distribution:
+  `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27, 2026-06-25: 80, 2026-06-26: 58, 2026-06-27: 87,
+  2026-06-28: 17, 2026-06-29: 52, 2026-06-30: 116}`. With `RUN=2026-06-30` the genuine "new this run"
+  count is **116** (country DE=75, CH=24, AT=17 after `country()` resolution; roles DS=38, ML Eng=32,
+  Data Eng=17, AI Eng=15, AI Res=14; seniority Mid=41, Senior=39, Intern=17, Junior=16, Lead=3).
+  `python3 analysis_gen.py 2026-06-30` runs clean (EXIT 0, N=592, new=116) BEFORE and AFTER the change;
+  re-verified in a scratch copy on RUN=1900-01-01 (prev=0 first-run path) and RUN=2026-06-29 — all
+  three deliverables generate on every path.
+- **🚨 NEW data-quality bug found & FIXED (read-time, additive): list-repr skill cells.** **54 of the
+  116 new rows (47%)** stored `required_skills`/`nice_to_have_skills` as a **stringified Python list**,
+  e.g. `"['Python', 'PyTorch', 'Deep Learning']"` (NO semicolons), instead of the spec's
+  semicolon-separated format. The whole run came from the scratchpad `consolidate.py` / per-source
+  JSON files (jobs_germany.json, jobs_switzerland.json, jobs_banks.json, jobs_ai_native.json, …), and
+  roughly half of those sources serialized the skill list with Python `repr()` rather than
+  `";".join(...)`. **Impact before the fix:** `analysis_gen.py` `sk()`/`nth()` split ONLY on `;`, so
+  each `[...]` blob counted as ONE bogus skill token — every skill in those 54 rows was INVISIBLE to
+  the skills-by-level analysis (a silent thin result, violating the "never silently produce a thin run"
+  rule). Affected big names: Aleph Alpha, Helsing, Black Forest Labs, BMW, Siemens, SAP, Bosch,
+  Mercedes-Benz, Canva, Red Bull, Delivery Hero, Scalable Capital, N26, Sportradar.
+  **Fix:** added `_split_skills(field)` — if a cell starts `[`, ends `]`, and has no `;`, it is parsed
+  via `ast.literal_eval` into its elements; everything else falls through to the exact prior `;`-split
+  (so well-formed rows are byte-for-byte unchanged). Wired into `sk()`, `nth()`, AND `_build_case_map()`
+  so the case-vote also sees the recovered tokens. After the fix: 0 residual `[...]` tokens; `Python`
+  jumped to 536, `Machine Learning` 206, `PyTorch` 164 (was undercounting by ~54 each). jobs.csv NOT
+  modified — read-time safety net only. **Extraction-side fix REQUIRED:** `consolidate.py` and every
+  per-source scraper must emit skills as `";".join(skills)` (CSV-safe), never `str(list)` — see new
+  backlog #9. This is the same class as backlog #1b (extraction should write canonical tokens) but more
+  urgent because it silently zeroes whole rows, not just splits counts.
+- **CHF salary data confirmed and growing.** 11 CHF salary rows now in the DB (was 9 at 2026-06-29).
+  New CHF rows this run: CERN Geneva (two monthly bands 5266–5793 and 6372–7004 CHF/month) and
+  **Novartis Basel 102k–190k CHF/yr**. `to_eur()` (pinned 1 CHF = 1.05 EUR) converts them correctly in
+  both the disclosed-salaries table and the by-role EUR median pool (e.g. Novartis ~146k CHF → ~153k EUR,
+  CERN 6372–7004/mo → ~80k CHF → ~84k EUR at ×12). No code change needed — the 2026-06-29 CHF path
+  handles the new rows. New EUR-disclosing rows this run: 10 (mix of AT-monthly and DE/AT-yearly).
+- **Discovery: 100% company-career-page / ATS this run; all primary public boards still blocked.**
+  All 116 jobs came from WebSearch → direct career pages / ATS hosts (arbeitnow/datacareer/karriere
+  remain proxy-blocked in cloud — unchanged). **Sources confirmed working today** (add to rotation):
+  greenhouse.io / Greenhouse ATS (Black Forest Labs, others), ashbyhq.com / Ashby ATS (Aleph Alpha),
+  Helsing direct careers, jobs.smartrecruiters.com / SmartRecruiters (incl. Bosch), join.com (6 jobs),
+  bmwgroup.jobs (BMW), jobs.siemens.com + Siemens/Siemens-Energy Careers Marketplace, jobs.sap.com /
+  SAP Careers (heavy contributor, ~8 rows), jobs.mercedes-benz.com, jobs.check24.de (CHECK24),
+  careers.deliveryhero.com (Delivery Hero), jobs.redbull.com (Red Bull), lifeatcanva.com (Canva),
+  jobs.anton-paar.com, careers.andritz.com, careers.greentube.com, devjobs.at, createyourowncareer.com,
+  N26 careers page. New companies seen today also include: REWE International, Sportradar, A1 Telekom
+  Austria, Machine Learning Reply, EnliteAI, Themisphere, FREENOW, Buynomics, Bertelsmann, Synthflow AI,
+  WeSort.AI, Datasphere Analytics, Greentube, Boehringer Ingelheim, Raiffeisen Bank International.
+- **Minor residual skill near-dups (left split, n=1, per skip-if-unsure):** after `canon()` the only
+  remaining multi-spelling clusters at N=592 are genuine distinct or single-occurrence pairs that must
+  NOT auto-merge: `C++`/`C#` (different languages — never merge), `AI Automation`/`AI/Automation` (n=1),
+  `Multimodal AI`/`multi-modal AI` (n=1), `Vision-Language Models`/`Vision Language Models` (n=1 each,
+  hyphen-only — borderline but left split, too rare to matter). No new `_SKILL_ALIASES` entries
+  warranted this run. NOTE: the recovered list-repr tokens fold cleanly through the existing aliases +
+  `_CASE_MAP` (e.g. `data pipelines`, `statistics`, `matplotlib`, `distributed systems` all case-fold).
 
 ## Data quality issues observed (2026-06-29 audit)
 - **Database stats:** **476 rows** (was 407 at the 2026-06-28 audit; +69 across the 2026-06-28
@@ -396,6 +452,15 @@ Last audited: 2026-06-29 (self-improvement meta-run on Opus).
    proxy-blocked in cloud (see Source reliability). Build a WebSearch-first discovery path plus a
    curated list of unblocked DACH career-page hosts (greenhouse/lever/ashby/personio/join.com).
    This is now the top operational risk for the daily run.
+9. **Extraction must emit semicolon-separated skills, not `str(list)` (open, HIGH PRIORITY).**
+   Found 2026-06-30: 54/116 new rows stored skills as a Python list-repr string
+   (`"['Python', 'PyTorch', ...]"`) because `consolidate.py` / some per-source scrapers used
+   `repr()`/`str(list)` instead of `";".join(skills)`. This silently zeroed those rows' skills in the
+   analysis until the read-time `_split_skills()` safety net was added. **Fix at the source:** every
+   scraper and `consolidate.py` must serialize `required_skills`/`nice_to_have_skills` as
+   `";".join(canonical_skill_list)` (CSV-safe, escape any embedded `;`/`"`). Read-time parsing is the
+   net; extraction-side is the real fix (mirrors backlog #1b). Until then, `analysis_gen.py` handles
+   both formats transparently.
 8. **Generic case-fold canonicalization** — DONE (2026-06-25). `analysis_gen.py` now derives, per
    lowercased skill token, the most-frequently-seen casing in the dataset and folds all other
    casings to it (`_build_case_map()` / `_CASE_MAP`), applied AFTER the explicit `_SKILL_ALIASES`
@@ -404,6 +469,31 @@ Last audited: 2026-06-29 (self-improvement meta-run on Opus).
    tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-06-30** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
+  jobs.csv (**592 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id**), salary_benchmarks.md,
+  skills_by_level.md, reports/2026-06-29.md. Confirmed `python3 analysis_gen.py 2026-06-30` runs clean
+  (EXIT 0, N=592, new=116) BEFORE and AFTER the change; re-verified in a scratch copy on RUN=1900-01-01
+  (prev=0 first-run path) and RUN=2026-06-29 — all three deliverables generate on every path.
+  **One additive, verified change to `analysis_gen.py`; jobs.csv and its schema untouched:**
+  (1) **list-repr skill parsing (`_split_skills`, NEW backlog #9).** 54 of the 116 new rows stored
+  `required_skills`/`nice_to_have_skills` as a stringified Python list (`"['Python', 'PyTorch', …]"`,
+  no `;`); the naive `;`-split counted each blob as ONE bogus token, making every skill in ~47% of the
+  run invisible to the analysis. Added `_split_skills(field)`: detects `[...]`-with-no-`;` cells and
+  expands them via `ast.literal_eval`; all other cells fall through to the exact prior `;`-split, so
+  well-formed rows are byte-for-byte unchanged. Wired into `sk()`, `nth()`, and `_build_case_map()`.
+  Verified: 0 residual list-repr tokens after the fix; recovered counts e.g. `Python` 536,
+  `Machine Learning` 206, `PyTorch` 164. Import of `ast` added at top.
+  Did NOT change: jobs.csv schema/columns; the dedup formula; `_SKILL_ALIASES` (no new alias warranted
+  — residual near-dups are `C++`/`C#`, n=1 hyphen pairs, left split per skip-if-unsure); the generic
+  `_CASE_MAP`; CHF→EUR `to_eur()` (handles the 2 new CHF rows — CERN + Novartis Basel — correctly at
+  the pinned 1.05 rate); the AT ×14 monthly / hourly ×40×52 conventions; trend logic; the defensive
+  CSV read; `country()` (clean mix `{Germany 331, Switzerland 145, Austria 116}` — the 3 pre-existing
+  slashed rows still resolve via `_CITY_COUNTRY`; today's `Germany (Remote)` rows strip cleanly).
+  Backlog status: NEW **#9** (extraction must emit `";".join(skills)`, not `str(list)`) logged as HIGH
+  PRIORITY — same class as #1b but more urgent (silently zeroes rows). #7 (discovery resilience under
+  egress block) remains the top operational risk — all 116 jobs came from WebSearch + unblocked
+  ATS/career hosts (new working hosts logged in the Source reliability / 2026-06-30 notes); SAP Careers
+  and Helsing/Aleph Alpha/Siemens were heavy contributors this run.
 - **2026-06-29** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
   jobs.csv (**476 rows**, parses clean), salary_benchmarks.md, skills_by_level.md. Confirmed
   `python3 analysis_gen.py 2026-06-29` runs clean (EXIT 0, N=476, new=52) BEFORE and AFTER the
