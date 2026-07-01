@@ -1,7 +1,67 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-06-30 (self-improvement meta-run on Opus).
+Last audited: 2026-07-01 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-01 audit)
+- **Database stats:** **592 rows** (unchanged since the 2026-06-30 audit; **no discovery run has
+  written rows dated 2026-07-01**), **0 ragged rows**, **0 empty `job_id`**, **0 duplicate `job_id`**,
+  **0 rows with extra (None-key) columns**, 22 columns on every row. `first_seen_date` distribution
+  is unchanged: `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27, 2026-06-25: 80, 2026-06-26: 58,
+  2026-06-27: 87, 2026-06-28: 17, 2026-06-29: 52, 2026-06-30: 116}`. With `RUN=2026-07-01` the genuine
+  "new this run" count is **0** (all 592 rows fall into `prev`), so the report correctly renders the
+  empty-run guard note. Country mix DE=331, CH=145, AT=116; role mix DS=190, ML Eng=141, AI Eng=108,
+  Data Eng=92, AI Res=59, Other=2; seniority Mid=183, Senior=180, Intern=118, Junior=85, Lead=26.
+- **Confirmed clean run status:** `python3 analysis_gen.py 2026-07-01` runs clean (EXIT 0, N=592,
+  new=0) BEFORE and AFTER the change. Re-verified on the real files at `RUN=1900-01-01` (prev=0
+  first-run path) and `RUN=2026-06-30` (new=116) — all three deliverables generate on every path,
+  EXIT 0 each. skills_by_level.md and salary_benchmarks.md are byte-identical before/after the edit
+  (the only textual delta is a non-deterministic LangChain/Hugging Face row swap in §4 — see below —
+  which is pre-existing and unrelated to the edit).
+- **🛠️ Safe additive hardening applied to `_split_skills` (list-repr parser).** The 2026-06-30 fix
+  detected a stringified-Python-list skill cell with the guard `startswith("[") and endswith("]") and
+  ";" not in field`. That `";" not in field` guard has a latent hole: a list-repr can legitimately
+  carry a `;` INSIDE a quoted element (e.g. `"['Python', 'CI/CD; testing', 'PyTorch']"`), in which
+  case the old code mis-routed the whole cell into the naive `;`-split and shredded the tokens.
+  **Change (2026-07-01):** try `ast.literal_eval` FIRST on ANY `"[...]"` cell; use the result only if
+  it yields a list/tuple, otherwise fall back to the exact prior `;`-split. **Verified byte-for-byte
+  identical to prior behaviour on all 592 current rows (0 differing cells)** — no count changes; this
+  is pure future-proofing of the same bug class. A non-list `"[...]"` string still falls through
+  unchanged. jobs.csv NOT modified — read-time only.
+- **No new skill aliases warranted (pipeline already complete for all live data).** Swept every skill
+  token at N=592. AFTER the full `canon()` pipeline there are **0 residual case splits and 0 residual
+  list-repr tokens** — the generic `_CASE_MAP` (most-frequent-casing fold) already absorbs all ~95
+  case-only pairs seen (pandas/Pandas, MLflow/MLFlow, data pipelines/Data Pipelines, deep learning/
+  Deep Learning, etc.), and the explicit `_SKILL_ALIASES` handle the punctuation/vendor-prefix splits.
+  Spot-checked candidates: `Infrastructure-as-Code`/`infrastructure-as-code`/`Infrastructure as Code`
+  all fold to `Infrastructure as Code`; `MS-SQL`/`MS SQL` fold; all `time series analysis` casings fold
+  to `Time Series Forecasting`. The only remaining multi-spelling clusters are n=1–2 genuinely-distinct
+  or borderline hyphen pairs that must NOT auto-merge: `Vision-Language Models`/`Vision Language Models`
+  (n=1 each), `AI/Automation`/`AI Automation` (n=1/2), `C++`/`C#` (different languages) — left split
+  per skip-if-unsure. No `_SKILL_ALIASES` or `_CITY_COUNTRY` additions needed.
+- **`_CITY_COUNTRY` map verified complete for all live locations.** The only no-comma locations in the
+  DB are `Germany` (8), `Germany (Remote)` (5, stripped by the parenthetical guard), `Munich/Berlin`
+  (2→Germany), `Zurich/London` (1→Switzerland), `Heidelberg/Berlin` (1→Germany) — all resolve to the
+  correct DACH country. No new city entries needed.
+- **Salary logic clean.** 105 of 592 rows disclose pay. AT-monthly ×14, CHF→EUR at pinned 1.05, and
+  hourly ×40×52 all render correctly; CHF rows (Anthropic, Novartis, comparis.ch, CERN, PEAX, BLP,
+  Ergon) carry the `~EUR-eq` column. No anomalies, no code change.
+- **Backlog status updates:**
+  - **#1b** (extraction emits canonical skill spellings) — STILL OPEN. Read-time `canon()` fully
+    neutralises the impact for now; the analysis side needs nothing further.
+  - **#6** (extraction stores `"City, Country"`) — analysis side DONE; extraction side STILL OPEN but
+    zero live locations are currently unresolved, so no analysis impact.
+  - **#7** (discovery resilience under egress block) — STILL OPEN / top operational risk. No discovery
+    ran on 2026-07-01 (0 new rows). WebSearch → career-page/ATS remains the working path; primary boards
+    (arbeitnow, datacareer.ch, karriere.at) presumed still proxy-blocked.
+  - **#9** (extraction must emit `";".join(skills)`, not `str(list)`) — STILL OPEN, HIGH PRIORITY. The
+    read-time `_split_skills` safety net (now hardened) keeps counts correct, but the source scrapers /
+    `consolidate.py` should still write semicolon-separated skills so jobs.csv is self-describing.
+  - **NEW #10 (logged, NOT implemented — low priority):** §4 "What gets added as you go up" iterates a
+    `set()` and sorts only by gap, so equal-gap skills (e.g. LangChain vs Hugging Face, both +4) swap
+    order non-deterministically between runs. Harmless (counts identical) but makes diffs noisy. Safe
+    future fix: add a deterministic secondary tie-break to the `dist.sort` key (e.g. `-gap, skill`).
+    Left for a future run to avoid touching the ranking sort outside today's scope.
 
 ## Data quality issues observed (2026-06-30 audit)
 - **Database stats:** **592 rows** (was 476 at the 2026-06-29 audit; **+116 this run**), **0 ragged

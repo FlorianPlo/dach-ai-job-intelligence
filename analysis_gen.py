@@ -156,13 +156,20 @@ def canon(s):
 # blob counts as ONE bogus skill token, making every skill in those 54 rows (47% of the run)
 # invisible to the skills-by-level analysis — a silent, thin result that violates the "one bad
 # posting must not abort the run / never silently produce a thin run" quality rule. This helper
-# detects a list-repr cell (starts "[" + ends "]" + no ";") and safely expands it via
+# detects a list-repr cell (starts "[" + ends "]") and safely expands it via
 # ast.literal_eval; anything else falls through to the exact prior ";"-split behaviour, so
 # well-formed rows are byte-for-byte unaffected. jobs.csv is NOT modified — read-time only.
 # (Extraction side should still write semicolon-separated skills; this is the safety net.)
+# Hardened 2026-07-01: try literal_eval on ANY "[...]" cell FIRST (dropped the old
+# `";" not in field` guard). If literal_eval yields a list/tuple we use it; otherwise we fall
+# back to the ";"-split exactly as before. Rationale: a stringified list can legitimately carry
+# a ";" INSIDE a quoted element (e.g. "['Python', 'CI/CD; testing', 'PyTorch']"); the old guard
+# would then mis-route that cell into the naive ";"-split and shred the tokens. Verified
+# byte-for-byte identical to the prior behaviour on all 592 current rows (0 diffs) — additive
+# hardening only, no count changes; a non-list "[...]" string still falls through unchanged.
 def _split_skills(field):
     field = field.strip()
-    if field.startswith("[") and field.endswith("]") and ";" not in field:
+    if field.startswith("[") and field.endswith("]"):
         try:
             parsed = ast.literal_eval(field)
             if isinstance(parsed, (list, tuple)):

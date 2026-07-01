@@ -216,8 +216,8 @@ Skills more requested at Senior/Lead level (n=206) than at lower levels (n=386),
 | Spark | 11% | 6% | +5 |
 | Azure | 15% | 10% | +5 |
 | RAG | 13% | 8% | +5 |
-| Hugging Face | 9% | 4% | +4 |
 | LangChain | 9% | 4% | +4 |
+| Hugging Face | 9% | 4% | +4 |
 | MLflow | 7% | 3% | +4 |
 
 **Read:** Seniority adds **distributed data/ML infrastructure** (Spark, Delta Lake, Databricks, Kubernetes, Terraform), **MLOps/DataOps**, and **architecture ownership**. Lead/Principal postings layer **team leadership** on top. Entry levels center on applied-LLM tooling (ChatGPT/Claude/Gemini, prompt engineering, RAG) with little infra expectation.
