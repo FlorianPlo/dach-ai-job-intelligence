@@ -1,7 +1,67 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-01 (self-improvement meta-run on Opus).
+Last audited: 2026-07-02 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-02 audit)
+- **Database stats:** **679 rows** (was 592 at the 2026-07-01 audit; **+87 across the 2026-07-01
+  and 2026-07-02 discovery runs — 55 dated 2026-07-01, 32 dated 2026-07-02**), **0 ragged rows**
+  (22 columns on every row), **0 empty `job_id`**, **0 duplicate `job_id`**, **0 rows with extra
+  (None-key) columns**. `first_seen_date` distribution: `{2026-06-22: 16, 2026-06-23: 139,
+  2026-06-24: 27, 2026-06-25: 80, 2026-06-26: 58, 2026-06-27: 87, 2026-06-28: 17, 2026-06-29: 52,
+  2026-06-30: 116, 2026-07-01: 55, 2026-07-02: 32}`. With `RUN=2026-07-02` the genuine "new this
+  run" count is **32** (matches the swarm consolidation: DE=15, CH=10, AT=7; roles ML Eng=10,
+  DS=9, AI Res=6, AI Eng=6, Data Eng=1; seniority Intern=15, Junior=7, Mid=6, Senior=3, Lead=1).
+  Full-DB seniority mix now `{Mid 209, Senior 196, Intern 147, Junior 100, Lead/Principal 27}` —
+  all values valid (Intern/Junior/Mid/Senior/Lead/Principal). Consolidation reported 86 job_ids
+  skipped as existing dups + 2 batch-internal dups; the 0-duplicate DB confirms dedup held.
+- **Confirmed clean run status:** `python3 analysis_gen.py 2026-07-02` runs clean (EXIT 0, N=679,
+  new=32) BEFORE and AFTER the changes. Re-verified on the real files at `RUN=1900-01-01` (prev=0
+  first-run path) and `RUN=2026-07-01` (new=55) — all three deliverables generate on every path,
+  EXIT 0 each. skills_by_level.md, salary_benchmarks.md and reports/2026-07-02.md are **byte-identical
+  before/after both edits** (the folded tokens sit below the top-N table cutoffs and no equal-gap
+  §4 tie reordered this run) — pure additive changes with zero output regression.
+- **New rows are format-clean (extraction quality improving).** All 32 new rows store skills as
+  **semicolon-separated strings — 0 list-repr (`['Python', …]`) cells among them** (vs 54/116 on
+  2026-06-30). All 32 locations are proper `"City, Country"` (Gland/Lausanne/Zurich/Basel/Geneva CH,
+  Vienna/Villach/Premstätten AT, Munich/Berlin/Hamburg/Frankfurt/etc. DE) — `country()` resolves
+  every one, no slashed/parenthetical specials this run. NOTE: **108 list-repr cells remain in the
+  older DB rows**, still transparently recovered by the hardened `_split_skills()` net (backlog #9
+  extraction-side stays OPEN, but the newest scraper output is clean — trend is in the right direction).
+- **🛠️ Two additive, verified changes to `analysis_gen.py` (jobs.csv + schema untouched):**
+  - **(1) Two new `_SKILL_ALIASES` synonym/spacing folds (backlog #1).** Swept all tokens at N=679
+    through the full `canon()` pipeline — **0 residual case splits, 0 residual list-repr tokens** (the
+    generic `_CASE_MAP` + existing aliases still absorb everything case-only). Two genuine cross-form
+    splits surfaced that the case-fold cannot bridge (differ by word-form / hyphen, not just case):
+    `recommendation systems`(5) + `recommender systems`(9) → **`recommender systems` (14)**, and
+    `Vision-Language Models`(1) + `vision language models`(3) → **`vision language models` (4)**. Both
+    are full-token folds (mirror the existing time-series / infrastructure-as-code / ms-sql curated
+    folds). Verified distinct compounds survive: `real-time recommender systems` (1) and
+    `Vision Transformers` (3) unchanged. No output-table change (both below the top-15/20 cutoffs) —
+    the merge is latent until either token climbs into a ranked table.
+  - **(2) Deterministic §4 tie-break (backlog #10, now DONE).** §4 "What gets added as you go up"
+    iterates a `set()` and previously sorted by gap ALONE (`key=lambda x:-x[3]`), so equal-gap skills
+    (e.g. LangChain vs Hugging Face, both +4) swapped order non-deterministically between runs —
+    harmless (counts identical) but noisy in diffs. Changed to `key=lambda x:(-x[3], x[0])` (gap desc,
+    then skill name asc). No value/membership change, only stable ordering; output byte-identical this
+    run (no top-15 tie happened to reorder). Closes the last logged low-priority code-hygiene item.
+- **`_CITY_COUNTRY` / `country()` verified complete.** All 32 new locations carry a comma and resolve
+  via the last-segment path; the map needed no new entries. Country mix full-DB stays clean DACH-only.
+- **Salary logic clean (no change).** AT-monthly ×14, CHF→EUR pinned 1.05, hourly ×40×52 all render
+  correctly; the new CH rows (Gland/Lausanne/Zurich/Basel/Geneva) that disclose pay flow through
+  `to_eur()` with the `~EUR-eq` column. No anomalies.
+- **Backlog status updates:**
+  - **#1** (read-time skill canonicalization) — still DONE; extended today with 2 synonym/spacing
+    folds. **#1b** (extraction emits canonical spellings) — STILL OPEN; `canon()` neutralises impact.
+  - **#9** (extraction must emit `";".join(skills)`, not `str(list)`) — STILL OPEN, but **improving**:
+    0/32 new rows used list-repr this run (108 legacy cells remain, all recovered by `_split_skills`).
+  - **#10** (deterministic §4 tie-break) — **DONE this run** (see change 2 above).
+  - **#7** (discovery resilience under egress block) — STILL OPEN / top operational risk. All primary
+    boards (arbeitnow, datacareer.ch, karriere.at) remain proxy-blocked; all 120 discovered / 32 kept
+    jobs came from WebSearch + ATS/career pages (greenhouse.io, ashbyhq.com, smartrecruiters,
+    bmwgroup.jobs, etc.). WebSearch → career-page/ATS remains the only viable channel.
+  - **#6** (extraction stores `"City, Country"`) — analysis side DONE; extraction side effectively
+    honoured this run (all 32 new locations already `"City, Country"`), map unchanged.
 
 ## Data quality issues observed (2026-07-01 audit)
 - **Database stats:** **592 rows** (unchanged since the 2026-06-30 audit; **no discovery run has
@@ -529,6 +589,27 @@ Last audited: 2026-07-01 (self-improvement meta-run on Opus).
    tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-07-02** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
+  jobs.csv (**679 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows**),
+  skills_by_level.md, salary_benchmarks.md, reports/2026-07-02.md. Confirmed
+  `python3 analysis_gen.py 2026-07-02` runs clean (EXIT 0, N=679, new=32) BEFORE and AFTER the
+  changes; re-verified on RUN=1900-01-01 (prev=0 first-run path) and RUN=2026-07-01 (new=55) — all
+  three deliverables generate on every path. **Two additive, verified changes to `analysis_gen.py`;
+  jobs.csv and its schema untouched:** (1) two new `_SKILL_ALIASES` folds —
+  `recommendation systems→recommender systems` (5+9→14) and `vision-language models→vision language
+  models` (1+3→4), both cross-form/hyphen splits the case-fold can't bridge, mirroring the existing
+  time-series / infrastructure-as-code folds; distinct compounds (`real-time recommender systems`,
+  `Vision Transformers`) verified to survive. (2) deterministic §4 tie-break (backlog #10) —
+  `dist.sort` key changed from `-gap` to `(-gap, skill)` so equal-gap skills no longer swap order
+  between runs. All three deliverables byte-identical before/after (folds sit below top-N cutoffs;
+  no §4 tie reordered this run) — zero output regression. Swept N=679: **0 residual case splits, 0
+  residual list-repr tokens** after `canon()`. Did NOT change: dedup formula; `_CASE_MAP`; CHF→EUR
+  `to_eur()`; AT ×14 / hourly ×40×52; trend logic; defensive CSV read; `country()`/`_CITY_COUNTRY`
+  (all 32 new locations are clean `"City, Country"`, no new entries needed). Backlog: #10 DONE; #9
+  still OPEN but improving (0/32 new rows used list-repr, vs 54/116 on 06-30; 108 legacy cells remain,
+  all recovered by `_split_skills`); #7 remains top operational risk (all 3 primary boards still
+  proxy-blocked — 32 kept jobs from WebSearch + ATS/career pages: greenhouse.io, ashbyhq.com,
+  smartrecruiters, bmwgroup.jobs, etc.).
 - **2026-06-30** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
   jobs.csv (**592 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id**), salary_benchmarks.md,
   skills_by_level.md, reports/2026-06-29.md. Confirmed `python3 analysis_gen.py 2026-06-30` runs clean
