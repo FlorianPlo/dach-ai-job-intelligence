@@ -110,6 +110,17 @@ _SKILL_ALIASES = {
     "time series analysis": "Time Series Forecasting",
     "restful api": "REST API",              # spelling variant of REST API
     "restful apis": "REST APIs",
+    # --- synonym / spacing folds observed 2026-07-02 (differ by more than case) ---
+    # "recommendation systems"(5) and "recommender systems"(9) are the SAME skill using
+    # interchangeable word-forms (recommendation/recommender); fold the less-frequent form
+    # to the more-frequent one. Full-token only: the qualified compound "real-time recommender
+    # systems"(1) is byte-distinct and stays separate.
+    "recommendation systems": "recommender systems",
+    # "Vision-Language Models"(1, hyphen) vs "vision language models"(3, space): identical
+    # concept split only by a hyphen the case-fold can't bridge (same class as the existing
+    # infrastructure-as-code / ms-sql folds). Fold the hyphen form to the more-frequent space
+    # form; distinct compounds (e.g. "Vision Transformers") are unaffected (full-token match).
+    "vision-language models": "vision language models",
 }
 # ---------------- generic case-fold canonicalization (additive, 2026-06-25) ----------------
 # The explicit _SKILL_ALIASES map above only collapses the handful of case splits someone
@@ -332,7 +343,10 @@ dist=[]
 for s in set(list(high)+list(low)):
     sp=100*high.get(s,0)/nh if nh else 0; lp=100*low.get(s,0)/nl if nl else 0
     if sp-lp>0 and high.get(s,0)>=2: dist.append((s,round(sp),round(lp),sp-lp))
-dist.sort(key=lambda x:-x[3])
+# Deterministic ordering (backlog #10): §4 iterates a set() and previously sorted by gap
+# ALONE, so equal-gap skills swapped order non-deterministically between runs (harmless —
+# counts identical — but made diffs noisy). Add skill name as a stable secondary tie-break.
+dist.sort(key=lambda x:(-x[3], x[0]))
 L.append("\n## 4. What gets added as you go up (Senior+Lead vs Intern/Junior/Mid)")
 L.append(f"\nSkills more requested at Senior/Lead level (n={nh}) than at lower levels (n={nl}), ranked by gap:")
 L.append("\n| Skill | Senior+Lead % | Lower % | Gap (pp) |")

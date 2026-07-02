@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-07-02. Only postings with explicitly stated salary — **110 of 647** disclosed pay. Nothing imputed._
+_Generated 2026-07-02. Only postings with explicitly stated salary — **111 of 679** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 
@@ -85,6 +85,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Scientist | Mid | Austria | REWE International Dienstleistungsgesellschaft | 43000 | – | EUR | year | ~43k | ~43k EUR |
 | Data Scientist | Mid | Switzerland | CERN | 6372 | 7004 | CHF | month | ~80k | ~84k EUR |
 | Data Scientist | Mid | Austria | AVL List | 61000 | – | EUR | year | ~61k | ~61k EUR |
+| Data Scientist | Mid | Austria | Boehringer Ingelheim | 64170 | – | EUR | year | ~64k | ~64k EUR |
 | Data Scientist | Senior | Austria | XXXLdigital | 60000 | – | EUR | year | ~60k | ~60k EUR |
 | Data Scientist | Senior | Austria | Schachinger Logistik | 60000 | 80000 | EUR | year | ~70k | ~70k EUR |
 | Data Scientist | Senior | Austria | Bundesrechenzentrum | 66806 | – | EUR | year | ~67k | ~67k EUR |
@@ -130,7 +131,7 @@ _Pools EUR rows plus CHF rows converted at **1 CHF = 1.05 EUR** (pinned). All fi
 | AI Engineer | 23 | ~58k | 24k–168k |
 | AI Researcher | 5 | ~102k | 65k–504k |
 | Data Engineer | 24 | ~60k | 29k–165k |
-| Data Scientist | 38 | ~61k | 38k–110k |
+| Data Scientist | 39 | ~61k | 38k–110k |
 | ML Engineer | 20 | ~63k | 29k–235k |
 
 **Confidence: LOW.** Switzerland now discloses some salaries (converted at the pinned 1 CHF = 1.05 EUR rate); samples remain small. Treat as directional only.
