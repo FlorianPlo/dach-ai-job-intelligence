@@ -1,40 +1,19 @@
 # Skills by Level — DACH Data/ML/AI Roles
 
-_Generated 2026-07-01 from the full dataset of **647 jobs** (55 new this run)._
+_Generated 2026-07-02 from the full dataset of **647 jobs** (0 new this run)._
 
 Country mix: {'Germany': 364, 'Switzerland': 159, 'Austria': 124} · Role mix: {'AI Engineer': 116, 'Data Engineer': 104, 'ML Engineer': 159, 'Data Scientist': 205, 'Other': 2, 'AI Researcher': 61} · Seniority mix: {'Mid': 203, 'Senior': 193, 'Intern': 132, 'Lead/Principal': 26, 'Junior': 93}
 
 ## 0. Trend vs previous run
 
-Dataset grew 592 → 647 jobs. Trend tables exclude skills below **16 postings** (noise floor). **Rising share** (Δ percentage points of postings):
+Dataset grew 647 → 647 jobs. Trend tables exclude skills below **16 postings** (noise floor). **Rising share** (Δ percentage points of postings):
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
-| CI/CD | 73 | 87 | +1 |
-| MLOps | 35 | 44 | +1 |
-| SQL | 221 | 247 | +1 |
-| Python | 536 | 591 | +1 |
-| GCP | 30 | 37 | +1 |
-| Spark | 45 | 53 | +1 |
-| Airflow | 35 | 42 | +1 |
-| data analysis | 14 | 19 | +1 |
-
-**Newly appearing skills this run:** AWS Glue, AWS Redshift, Azure ML, GPU clusters, ML Modeling, ML Ops, MPI, Mathematics, NCCL, automated driving, customer-centric platform development, data pipeline design, data pipeline engineering, data-driven solutions, distributed AI training, experiment tracking, inference services, inference systems, model deployment, model evaluation
 
 ### Falling / disappeared skills
 
-**Falling share** (Δ percentage points of postings):
-
-| Skill | Prev | Now | Δpp |
-|---|---|---|---|
-| LLMs | 158 | 169 | -1 |
-| Deep Learning | 83 | 88 | -0 |
-| R | 26 | 26 | -0 |
-| Statistics | 43 | 45 | -0 |
-| Power BI | 18 | 18 | -0 |
-| Azure | 69 | 74 | -0 |
-| Hugging Face | 35 | 37 | -0 |
-| LangChain | 35 | 37 | -0 |
+_No skill lost share vs the previous snapshot._
 
 ## 1. Most requested skills overall
 
@@ -237,8 +216,8 @@ Skills more requested at Senior/Lead level (n=219) than at lower levels (n=428),
 | Databricks | 8% | 3% | +5 |
 | Azure | 15% | 10% | +5 |
 | RAG | 13% | 8% | +5 |
-| Hugging Face | 9% | 4% | +4 |
 | LangChain | 9% | 4% | +4 |
+| Hugging Face | 9% | 4% | +4 |
 | NLP | 11% | 7% | +4 |
 
 **Read:** Seniority adds **distributed data/ML infrastructure** (Spark, Delta Lake, Databricks, Kubernetes, Terraform), **MLOps/DataOps**, and **architecture ownership**. Lead/Principal postings layer **team leadership** on top. Entry levels center on applied-LLM tooling (ChatGPT/Claude/Gemini, prompt engineering, RAG) with little infra expectation.
