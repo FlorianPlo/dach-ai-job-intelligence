@@ -1,7 +1,47 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-02 (self-improvement meta-run on Opus).
+Last audited: 2026-07-03 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-03 audit)
+- **Database stats:** **679 rows** (unchanged since the 2026-07-02 audit; **no discovery run has
+  written rows dated 2026-07-03**), **0 ragged rows** (22 columns on every row), **0 empty `job_id`**,
+  **0 duplicate `job_id`**, **0 rows with extra (None-key) columns**. `first_seen_date` distribution
+  unchanged: `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27, 2026-06-25: 80, 2026-06-26: 58,
+  2026-06-27: 87, 2026-06-28: 17, 2026-06-29: 52, 2026-06-30: 116, 2026-07-01: 55, 2026-07-02: 32}`.
+  With `RUN=2026-07-03` the genuine "new this run" count is **0** (all 679 rows fall into `prev`), so
+  the report correctly renders the empty-run guard note. Country mix `{Germany 379, Switzerland 169,
+  Austria 131}` (clean DACH-only, no leftover buckets); no-comma locations all still resolve
+  (`Zurich/London`→CH, `Munich/Berlin`×2 / `Heidelberg/Berlin`→DE via `_CITY_COUNTRY`, bare `Germany`
+  ×10, `Germany (Remote)`×5 via the parenthetical strip).
+- **Confirmed clean run status:** `python3 analysis_gen.py 2026-07-03` runs clean (EXIT 0, N=679,
+  new=0) BEFORE and AFTER the change. Re-verified on `RUN=1900-01-01` (prev=0 first-run path),
+  `RUN=2026-07-02` (new=32) and `RUN=2026-07-01` (new=55) — all three deliverables generate on every
+  path, EXIT 0 each. (The scratch `reports/1900-01-01.md` verification artifact was removed after
+  testing.)
+- **🛠️ One additive, verified change to `analysis_gen.py` (jobs.csv + schema untouched):**
+  - **New `_SKILL_ALIASES` acronym fold `natural language processing → NLP` (backlog #1).** Swept all
+    tokens at N=679 through the full `canon()` pipeline — **0 residual case splits, 0 residual
+    list-repr tokens** (the generic `_CASE_MAP` + existing aliases still absorb everything case-only).
+    The one genuine cross-form split meeting the "n≥3 for BOTH forms" bar was `Natural Language
+    Processing`(12) vs the dominant acronym `NLP`(77) — identical concept, same class as the existing
+    `large language models→LLMs` / `genai→Generative AI` acronym folds. Folded the long form to the
+    acronym → **`NLP` (89)**. Full-token only: verified the distinct compounds `medical NLP`,
+    `NLP Transformers`, `NLP publications`, `NLP project experience` (all n=1) survive unchanged. This
+    fold DOES move the §1 top-skills table (NLP climbs 77→89), a correct de-duplication, not noise.
+- **No other aliases warranted (strict n≥3-both-forms bar).** The remaining punctuation/word-form
+  near-dup clusters at N=679 all fail the bar and are left split per skip-if-unsure: `MLOps`(64)/
+  `ML Ops`(1), `AI Automation`(3)/`AI/Automation`(1), `Multimodal AI`(3)/`multi-modal AI`(1) — second
+  form n=1 each; `C++`(32)/`C#`(7) are different languages (never merge); `REST API`(5)/`REST APIs`(12)
+  are deliberately kept split by the existing `restful api`/`restful apis` aliases (singular/plural
+  decision preserved). `GCP Vertex AI`(4)/`Vertex AI`(6) stay distinct per the sub-service rule.
+- **`_CITY_COUNTRY` / `country()` verified complete; salary logic clean (no change).** All locations
+  resolve to a DACH country; AT-monthly ×14, CHF→EUR pinned 1.05, hourly ×40×52 all render correctly.
+  No new city entries, no FX change.
+- **Backlog status:** #1 still DONE (extended today with the NLP acronym fold); #1b, #6 (extraction
+  side), #7 (discovery resilience under egress block — TOP operational risk, all 3 primary boards
+  still presumed proxy-blocked), #9 (extraction should emit `";".join(skills)` — 108 legacy list-repr
+  cells remain, all recovered by `_split_skills`) all STILL OPEN. #3, #5, #8, #10 remain DONE.
 
 ## Data quality issues observed (2026-07-02 audit)
 - **Database stats:** **679 rows** (was 592 at the 2026-07-01 audit; **+87 across the 2026-07-01
@@ -589,6 +629,24 @@ Last audited: 2026-07-02 (self-improvement meta-run on Opus).
    tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-07-03** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
+  jobs.csv (**679 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows** — all 22
+  columns present on every row), skills_by_level.md, salary_benchmarks.md, reports/2026-07-03.md.
+  Confirmed `python3 analysis_gen.py 2026-07-03` runs clean (EXIT 0, N=679, new=0) BEFORE and AFTER
+  the change; re-verified on RUN=1900-01-01 (prev=0 first-run path), RUN=2026-07-02 (new=32) and
+  RUN=2026-07-01 (new=55) — all three deliverables generate on every path (scratch 1900-01-01 report
+  removed). **One additive, verified change to `analysis_gen.py`; jobs.csv and its schema untouched:**
+  added `_SKILL_ALIASES` acronym fold `natural language processing → NLP` (the only cross-form split
+  meeting the n≥3-both-forms bar: `Natural Language Processing`(12) → dominant acronym `NLP`(77) →
+  **NLP 89**; same class as `large language models→LLMs`). Full-token verified: `medical NLP`,
+  `NLP Transformers`, `NLP publications`, `NLP project experience` all survive distinct. Swept N=679:
+  **0 residual case splits, 0 residual list-repr tokens** after `canon()`. Did NOT change: dedup
+  formula; `_CASE_MAP`; CHF→EUR `to_eur()`; AT ×14 / hourly ×40×52; trend logic; defensive CSV read;
+  `country()`/`_CITY_COUNTRY` (country mix clean `{Germany 379, Switzerland 169, Austria 131}`, all
+  no-comma/slashed/parenthetical locations resolve — no new entries). No other aliases warranted
+  (MLOps/ML Ops, AI Automation/AI-Automation, Multimodal AI second forms all n=1; C++/C# distinct;
+  REST API/REST APIs deliberately split). Backlog: #1 DONE (extended); #7 remains top operational
+  risk; #9 OPEN but stable (108 legacy list-repr cells, all recovered by `_split_skills`).
 - **2026-07-02** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
   jobs.csv (**679 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows**),
   skills_by_level.md, salary_benchmarks.md, reports/2026-07-02.md. Confirmed

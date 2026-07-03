@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-07-02. Only postings with explicitly stated salary — **111 of 679** disclosed pay. Nothing imputed._
+_Generated 2026-07-03. Only postings with explicitly stated salary — **112 of 703** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 
@@ -69,6 +69,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Scientist | Junior | Austria | REWE International | 43000 | – | EUR | year | ~43k | ~43k EUR |
 | Data Scientist | Junior | Germany | FREENOW | 45000 | 65000 | EUR | year | ~55k | ~55k EUR |
 | Data Scientist | Junior | Germany | Bertelsmann | 65000 | 70000 | EUR | year | ~68k | ~68k EUR |
+| Data Scientist | Junior | Austria | Invenium Data Insights | 2700 | – | EUR | month | ~38k | ~38k EUR |
 | Data Scientist | Mid | Germany | alphacoders GmbH | 70000 | 80000 | EUR | year | ~75k | ~75k EUR |
 | Data Scientist | Mid | Austria | Österreichische Lotterien | 55000 | – | EUR | year | ~55k | ~55k EUR |
 | Data Scientist | Mid | Austria | wikifolio Financial Technologies AG | 3954 | – | EUR | month | ~55k | ~55k EUR |
@@ -131,7 +132,7 @@ _Pools EUR rows plus CHF rows converted at **1 CHF = 1.05 EUR** (pinned). All fi
 | AI Engineer | 23 | ~58k | 24k–168k |
 | AI Researcher | 5 | ~102k | 65k–504k |
 | Data Engineer | 24 | ~60k | 29k–165k |
-| Data Scientist | 39 | ~61k | 38k–110k |
+| Data Scientist | 40 | ~61k | 38k–110k |
 | ML Engineer | 20 | ~63k | 29k–235k |
 
 **Confidence: LOW.** Switzerland now discloses some salaries (converted at the pinned 1 CHF = 1.05 EUR rate); samples remain small. Treat as directional only.

@@ -60,6 +60,12 @@ _SKILL_ALIASES = {
     # "LLM Evals" etc. are distinct concepts and are intentionally NOT mapped here.
     "llm": "LLMs",
     "large language models": "LLMs",
+    # acronym-expansion fold (2026-07-03): "Natural Language Processing"(12) is the same skill as
+    # the dominant acronym "NLP"(77) — identical concept, same class as the large-language-models
+    # ->LLMs / genai->Generative AI folds. Fold the long form to the acronym. Full-token only:
+    # compounds "medical NLP", "NLP Transformers", "NLP publications", "NLP project experience" are
+    # byte-distinct tokens and stay separate (verified at N=679).
+    "natural language processing": "NLP",
     # --- generative AI (pick one canonical form) ---
     "genai": "Generative AI",
     "generative ai": "Generative AI",
