@@ -1,40 +1,19 @@
 # Skills by Level — DACH Data/ML/AI Roles
 
-_Generated 2026-07-03 from the full dataset of **703 jobs** (24 new this run)._
+_Generated 2026-07-04 from the full dataset of **703 jobs** (0 new this run)._
 
 Country mix: {'Germany': 393, 'Switzerland': 177, 'Austria': 133} · Role mix: {'AI Engineer': 126, 'Data Engineer': 105, 'ML Engineer': 177, 'Data Scientist': 225, 'Other': 2, 'AI Researcher': 68} · Seniority mix: {'Mid': 212, 'Senior': 202, 'Intern': 156, 'Lead/Principal': 29, 'Junior': 104}
 
 ## 0. Trend vs previous run
 
-Dataset grew 679 → 703 jobs. Trend tables exclude skills below **18 postings** (noise floor). **Rising share** (Δ percentage points of postings):
+Dataset grew 703 → 703 jobs. Trend tables exclude skills below **18 postings** (noise floor). **Rising share** (Δ percentage points of postings):
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
-| NumPy | 27 | 32 | +1 |
-| pandas | 44 | 49 | +0 |
-| MLflow | 31 | 34 | +0 |
-| scikit-learn | 119 | 125 | +0 |
-| LangChain | 37 | 40 | +0 |
-| Git | 41 | 44 | +0 |
-| Airflow | 44 | 47 | +0 |
-| Kubernetes | 74 | 78 | +0 |
-
-**Newly appearing skills this run:** dimensionality reduction, feature selection, real-world data analytics, statsmodels, supervised ML, unsupervised ML
 
 ### Falling / disappeared skills
 
-**Falling share** (Δ percentage points of postings):
-
-| Skill | Prev | Now | Δpp |
-|---|---|---|---|
-| PyTorch | 191 | 193 | -1 |
-| LLMs | 175 | 177 | -1 |
-| SQL | 249 | 254 | -1 |
-| data pipelines | 41 | 41 | -0 |
-| GCP | 39 | 39 | -0 |
-| Machine Learning | 237 | 244 | -0 |
-| NLP | 62 | 63 | -0 |
-| PySpark | 33 | 33 | -0 |
+_No skill lost share vs the previous snapshot._
 
 ## 1. Most requested skills overall
 
