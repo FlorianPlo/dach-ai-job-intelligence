@@ -1,74 +1,95 @@
 # Skills by Level — DACH Data/ML/AI Roles
 
-_Generated 2026-07-04 from the full dataset of **703 jobs** (0 new this run)._
+_Generated 2026-07-04 from the full dataset of **713 jobs** (10 new this run)._
 
-Country mix: {'Germany': 393, 'Switzerland': 177, 'Austria': 133} · Role mix: {'AI Engineer': 126, 'Data Engineer': 105, 'ML Engineer': 177, 'Data Scientist': 225, 'Other': 2, 'AI Researcher': 68} · Seniority mix: {'Mid': 212, 'Senior': 202, 'Intern': 156, 'Lead/Principal': 29, 'Junior': 104}
+Country mix: {'Germany': 401, 'Switzerland': 178, 'Austria': 134} · Role mix: {'AI Engineer': 129, 'Data Engineer': 105, 'ML Engineer': 181, 'Data Scientist': 227, 'Other': 2, 'AI Researcher': 69} · Seniority mix: {'Mid': 215, 'Senior': 204, 'Intern': 160, 'Lead/Principal': 29, 'Junior': 105}
 
 ## 0. Trend vs previous run
 
-Dataset grew 703 → 703 jobs. Trend tables exclude skills below **18 postings** (noise floor). **Rising share** (Δ percentage points of postings):
+Dataset grew 703 → 713 jobs. Trend tables exclude skills below **18 postings** (noise floor). **Rising share** (Δ percentage points of postings):
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
+| Machine Learning | 244 | 252 | +1 |
+| MLOps | 46 | 48 | +0 |
+| PyTorch | 193 | 197 | +0 |
+| Generative AI | 54 | 56 | +0 |
+| Python | 642 | 652 | +0 |
+| Docker | 96 | 98 | +0 |
+| PySpark | 33 | 34 | +0 |
+| TensorFlow | 110 | 112 | +0 |
+
+**Newly appearing skills this run:** AI Systems Architecture, benchmark design, inference optimization, robotics
 
 ### Falling / disappeared skills
 
-_No skill lost share vs the previous snapshot._
+**Falling share** (Δ percentage points of postings):
+
+| Skill | Prev | Now | Δpp |
+|---|---|---|---|
+| SQL | 254 | 256 | -0 |
+| LLMs | 177 | 178 | -0 |
+| Deep Learning | 101 | 101 | -0 |
+| CI/CD | 94 | 94 | -0 |
+| Azure | 83 | 83 | -0 |
+| AWS | 81 | 81 | -0 |
+| Kubernetes | 78 | 78 | -0 |
+| RAG | 69 | 69 | -0 |
 
 ## 1. Most requested skills overall
 
 | Skill | Jobs | % of postings |
 |---|---|---|
-| Python | 642 | 91% |
-| SQL | 254 | 36% |
-| Machine Learning | 244 | 35% |
-| PyTorch | 193 | 27% |
-| LLMs | 177 | 25% |
-| scikit-learn | 125 | 18% |
-| TensorFlow | 110 | 16% |
+| Python | 652 | 91% |
+| SQL | 256 | 36% |
+| Machine Learning | 252 | 35% |
+| PyTorch | 197 | 28% |
+| LLMs | 178 | 25% |
+| scikit-learn | 126 | 18% |
+| TensorFlow | 112 | 16% |
 | Deep Learning | 101 | 14% |
-| Docker | 96 | 14% |
+| Docker | 98 | 14% |
 | CI/CD | 94 | 13% |
 | Azure | 83 | 12% |
-| AWS | 81 | 12% |
+| AWS | 81 | 11% |
 | Kubernetes | 78 | 11% |
 | RAG | 69 | 10% |
-| NLP | 63 | 9% |
+| NLP | 64 | 9% |
 | Spark | 57 | 8% |
-| Generative AI | 54 | 8% |
+| Generative AI | 56 | 8% |
 | pandas | 49 | 7% |
 | Statistics | 49 | 7% |
-| Airflow | 47 | 7% |
+| MLOps | 48 | 7% |
 
 ## 2. Skills by seniority level
 
-### Intern (n=156)
+### Intern (n=160)
 
 | Skill | Count | % |
 |---|---|---|
-| Python | 139 | 89% |
-| Machine Learning | 64 | 41% |
-| LLMs | 36 | 23% |
-| PyTorch | 29 | 19% |
-| scikit-learn | 26 | 17% |
-| SQL | 23 | 15% |
-| TensorFlow | 23 | 15% |
-| Deep Learning | 20 | 13% |
+| Python | 143 | 89% |
+| Machine Learning | 68 | 42% |
+| LLMs | 36 | 22% |
+| PyTorch | 31 | 19% |
+| scikit-learn | 27 | 17% |
+| TensorFlow | 25 | 16% |
+| SQL | 24 | 15% |
+| Deep Learning | 20 | 12% |
 | pandas | 16 | 10% |
 | data analysis | 12 | 8% |
 | Generative AI | 12 | 8% |
+| Git | 10 | 6% |
 | NLP | 10 | 6% |
 | RAG | 9 | 6% |
-| Git | 9 | 6% |
 | CI/CD | 9 | 6% |
 
-### Junior (n=104)
+### Junior (n=105)
 
 | Skill | Count | % |
 |---|---|---|
-| Python | 96 | 92% |
-| SQL | 58 | 56% |
-| Machine Learning | 52 | 50% |
+| Python | 97 | 92% |
+| SQL | 59 | 56% |
+| Machine Learning | 53 | 50% |
 | LLMs | 24 | 23% |
 | scikit-learn | 19 | 18% |
 | Deep Learning | 14 | 13% |
@@ -82,15 +103,15 @@ _No skill lost share vs the previous snapshot._
 | NLP | 8 | 8% |
 | AWS | 8 | 8% |
 
-### Mid (n=212)
+### Mid (n=215)
 
 | Skill | Count | % |
 |---|---|---|
-| Python | 199 | 94% |
+| Python | 202 | 94% |
 | SQL | 90 | 42% |
-| PyTorch | 65 | 31% |
-| Machine Learning | 58 | 27% |
-| LLMs | 48 | 23% |
+| PyTorch | 66 | 31% |
+| Machine Learning | 60 | 28% |
+| LLMs | 49 | 23% |
 | scikit-learn | 41 | 19% |
 | Docker | 40 | 19% |
 | CI/CD | 38 | 18% |
@@ -102,16 +123,16 @@ _No skill lost share vs the previous snapshot._
 | Spark | 23 | 11% |
 | RAG | 20 | 9% |
 
-### Senior (n=202)
+### Senior (n=204)
 
 | Skill | Count | % |
 |---|---|---|
-| Python | 184 | 91% |
-| PyTorch | 76 | 38% |
+| Python | 186 | 91% |
+| PyTorch | 77 | 38% |
 | SQL | 75 | 37% |
-| LLMs | 60 | 30% |
-| Machine Learning | 60 | 30% |
-| Docker | 42 | 21% |
+| Machine Learning | 61 | 30% |
+| LLMs | 60 | 29% |
+| Docker | 43 | 21% |
 | Kubernetes | 41 | 20% |
 | CI/CD | 40 | 20% |
 | AWS | 36 | 18% |
@@ -144,11 +165,11 @@ _No skill lost share vs the previous snapshot._
 
 ## 3. Skills by role × seniority
 
-- **AI Engineer — Intern** (n=34): Python (28), LLMs (12), RAG (7), Generative AI (6), Machine Learning (4), Git (4), PyTorch (4), TensorFlow (4)
+- **AI Engineer — Intern** (n=36): Python (30), LLMs (12), RAG (7), Machine Learning (6), Generative AI (6), Git (4), PyTorch (4), TensorFlow (4)
 
 - **AI Engineer — Junior** (n=24): Python (18), LLMs (10), Machine Learning (7), SQL (6), RAG (6), Generative AI (5), PyTorch (4), Azure (4)
 
-- **AI Engineer — Mid** (n=38): Python (33), LLMs (22), RAG (14), Machine Learning (10), LangChain (9), Azure (9), CI/CD (8), Docker (7)
+- **AI Engineer — Mid** (n=39): Python (34), LLMs (22), RAG (14), Machine Learning (10), LangChain (9), Azure (9), CI/CD (8), Docker (7)
 
 - **AI Engineer — Senior** (n=25): Python (25), LLMs (20), RAG (16), LangChain (11), Docker (9), CI/CD (8), Azure (8), PyTorch (7)
 
@@ -158,11 +179,11 @@ _No skill lost share vs the previous snapshot._
 
 - **AI Researcher — Junior** (n=4): Python (4), Machine Learning (3), Transformers (3), Deep Learning (2), LLMs (2), TensorFlow (1), JAX (1), PyTorch (1)
 
-- **AI Researcher — Mid** (n=17): Python (16), LLMs (9), Deep Learning (9), PyTorch (9), NLP (3), Distributed Training (2), Computer Vision (2), C++ (2)
+- **AI Researcher — Mid** (n=18): Python (17), LLMs (10), Deep Learning (9), PyTorch (9), NLP (4), Machine Learning (3), Distributed Training (2), Computer Vision (2)
 
 - **AI Researcher — Senior** (n=29): Python (25), PyTorch (19), Deep Learning (15), Machine Learning (14), LLMs (12), NLP (7), Generative AI (5), Computer Vision (4)
 
-- **AI Researcher — Lead/Principal** (n=7): Python (5), PyTorch (5), Machine Learning (3), Research (3), Deep Learning (3), TensorFlow (2), LLMs (2), foundation models (2)
+- **AI Researcher — Lead/Principal** (n=7): Python (5), PyTorch (5), Machine Learning (3), Research (3), Deep Learning (3), TensorFlow (2), LLMs (2), Foundation Models (2)
 
 - **Data Engineer — Intern** (n=8): Python (7), SQL (4), CI/CD (2), data pipelines (2), Medical Imaging (1), data annotation (1), R (1), Power BI (1)
 
@@ -174,9 +195,9 @@ _No skill lost share vs the previous snapshot._
 
 - **Data Engineer — Lead/Principal** (n=4): Python (2), Databricks (2), Spark (2), CI/CD (2), Git (2), Team Leadership (2), SQL (1), Scala (1)
 
-- **Data Scientist — Intern** (n=56): Python (53), Machine Learning (28), SQL (18), scikit-learn (13), pandas (13), data analysis (10), TensorFlow (9), PyTorch (7)
+- **Data Scientist — Intern** (n=57): Python (54), Machine Learning (29), SQL (18), scikit-learn (14), pandas (13), data analysis (10), TensorFlow (10), PyTorch (8)
 
-- **Data Scientist — Junior** (n=44): Python (44), Machine Learning (30), SQL (30), Statistics (10), scikit-learn (10), LLMs (7), Git (7), R (6)
+- **Data Scientist — Junior** (n=45): Python (45), Machine Learning (31), SQL (31), Statistics (10), scikit-learn (10), LLMs (7), Git (7), R (6)
 
 - **Data Scientist — Mid** (n=53): Python (53), SQL (36), Machine Learning (28), scikit-learn (21), TensorFlow (13), PyTorch (11), Statistics (11), pandas (9)
 
@@ -184,13 +205,13 @@ _No skill lost share vs the previous snapshot._
 
 - **Data Scientist — Lead/Principal** (n=9): Python (9), SQL (5), Machine Learning (5), scikit-learn (3), Statistics (3), pandas (2), PyTorch (2), LLMs (2)
 
-- **ML Engineer — Intern** (n=47): Python (43), Machine Learning (27), PyTorch (13), scikit-learn (12), LLMs (11), Deep Learning (8), TensorFlow (8), CI/CD (6)
+- **ML Engineer — Intern** (n=48): Python (44), Machine Learning (28), PyTorch (14), scikit-learn (12), LLMs (11), TensorFlow (9), Deep Learning (8), CI/CD (6)
 
 - **ML Engineer — Junior** (n=13): Python (12), Machine Learning (10), scikit-learn (7), TensorFlow (6), PyTorch (6), Deep Learning (5), LLMs (4), prompt engineering (4)
 
-- **ML Engineer — Mid** (n=55): Python (54), PyTorch (39), TensorFlow (20), scikit-learn (17), Docker (16), Machine Learning (15), CI/CD (15), SQL (14)
+- **ML Engineer — Mid** (n=56): Python (55), PyTorch (39), TensorFlow (20), scikit-learn (17), Docker (16), Machine Learning (16), CI/CD (15), SQL (14)
 
-- **ML Engineer — Senior** (n=58): Python (50), PyTorch (34), Kubernetes (25), Docker (24), CI/CD (21), AWS (19), TensorFlow (15), LLMs (15)
+- **ML Engineer — Senior** (n=60): Python (52), PyTorch (35), Kubernetes (25), Docker (25), CI/CD (21), AWS (19), TensorFlow (15), LLMs (15)
 
 - **ML Engineer — Lead/Principal** (n=4): Python (4), MLOps (2), LLMs (2), AWS (2), ML systems (1), team management (1), PyTorch (1), TensorFlow (1)
 
@@ -200,19 +221,19 @@ _No skill lost share vs the previous snapshot._
 
 ## 4. What gets added as you go up (Senior+Lead vs Intern/Junior/Mid)
 
-Skills more requested at Senior/Lead level (n=231) than at lower levels (n=472), ranked by gap:
+Skills more requested at Senior/Lead level (n=233) than at lower levels (n=480), ranked by gap:
 
 | Skill | Senior+Lead % | Lower % | Gap (pp) |
 |---|---|---|---|
-| PyTorch | 37% | 23% | +15 |
+| PyTorch | 37% | 23% | +14 |
 | Kubernetes | 19% | 7% | +12 |
 | AWS | 18% | 8% | +9 |
-| CI/CD | 19% | 11% | +8 |
-| Docker | 19% | 11% | +7 |
+| CI/CD | 18% | 11% | +8 |
+| Docker | 19% | 11% | +8 |
 | LLMs | 30% | 23% | +7 |
 | MLflow | 9% | 3% | +6 |
-| NLP | 13% | 7% | +6 |
 | Spark | 12% | 6% | +6 |
+| NLP | 13% | 7% | +6 |
 | Airflow | 10% | 5% | +6 |
 | Databricks | 8% | 3% | +5 |
 | RAG | 13% | 8% | +5 |
