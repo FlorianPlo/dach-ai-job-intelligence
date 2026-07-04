@@ -127,6 +127,13 @@ _SKILL_ALIASES = {
     # infrastructure-as-code / ms-sql folds). Fold the hyphen form to the more-frequent space
     # form; distinct compounds (e.g. "Vision Transformers") are unaffected (full-token match).
     "vision-language models": "vision language models",
+    # --- programming-language synonym fold observed 2026-07-04 (differ by more than case) ---
+    # "Golang"(3) is the exact same programming language as "Go"(7) — "Golang" is merely the
+    # informal / search-friendly name for Go. Both forms now clear the n>=3-both-forms bar, so
+    # fold the less-frequent synonym to the canonical "Go" (same class as the k8s->Kubernetes /
+    # recommendation systems->recommender systems synonym folds). Full-token match only: this
+    # maps the exact token "golang" and can never touch "Go" itself or substrings like MongoDB.
+    "golang": "Go",
 }
 # ---------------- generic case-fold canonicalization (additive, 2026-06-25) ----------------
 # The explicit _SKILL_ALIASES map above only collapses the handful of case splits someone

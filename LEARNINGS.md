@@ -1,7 +1,62 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-03 (self-improvement meta-run on Opus).
+Last audited: 2026-07-04 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-04 audit)
+- **Database stats:** **703 rows** (was 679 at the 2026-07-03 audit; **+24 from the 2026-07-03
+  discovery run — 24 rows dated 2026-07-03**), **0 ragged rows** (22 columns on every row),
+  **0 empty `job_id`**, **0 duplicate `job_id`**, **0 rows with extra (None-key) columns**.
+  `first_seen_date` distribution: `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27, 2026-06-25: 80,
+  2026-06-26: 58, 2026-06-27: 87, 2026-06-28: 17, 2026-06-29: 52, 2026-06-30: 116, 2026-07-01: 55,
+  2026-07-02: 32, 2026-07-03: 24}`. **No rows dated 2026-07-04**, so with `RUN=2026-07-04` the genuine
+  "new this run" count is **0** (all 703 rows fall into `prev`), and the report correctly renders the
+  empty-run guard note. Country mix `{Germany 393, Switzerland 177, Austria 133}` (clean DACH-only, no
+  leftover buckets); role mix `{Data Scientist 225, ML Engineer 177, AI Engineer 126, Data Engineer 105,
+  AI Researcher 68, Other 2}`; seniority mix `{Mid 212, Senior 202, Intern 156, Junior 104,
+  Lead/Principal 29}` — all values valid. No-comma locations all still resolve (`Zurich/London`→CH,
+  `Munich/Berlin`×2 / `Heidelberg/Berlin`→DE via `_CITY_COUNTRY`, bare `Germany`×10,
+  `Germany (Remote)`×5 via the parenthetical strip).
+- **Confirmed clean run status:** `python3 analysis_gen.py 2026-07-04` runs clean (EXIT 0, N=703,
+  new=0) BEFORE and AFTER the change. Re-verified on `RUN=1900-01-01` (prev=0 first-run path) and
+  `RUN=2026-07-02` (new=32) — all three deliverables generate on every path, EXIT 0 each. (The scratch
+  `reports/1900-01-01.md` verification artifact was removed after testing.)
+- **🛠️ One additive, verified change to `analysis_gen.py` (jobs.csv + schema untouched):**
+  - **New `_SKILL_ALIASES` synonym fold `golang → Go` (backlog #1).** Swept all tokens at N=703 through
+    the full `canon()` pipeline — **0 residual case splits, 0 residual list-repr tokens** (the generic
+    `_CASE_MAP` + existing aliases still absorb everything case-only). The one clear cross-form split
+    meeting the strict "n≥3 for BOTH forms" bar was `Golang`(3) vs the canonical `Go`(7) — the exact
+    same programming language (`Golang` is merely the informal/search-friendly name for `Go`), same
+    class as the existing `k8s→Kubernetes` / `recommendation systems→recommender systems` synonym folds.
+    Folded the synonym to the more-frequent canonical → **`Go` (10)**. Full-token only: the alias maps
+    the exact token `golang` and can never touch `Go` itself or substrings (e.g. MongoDB). Latent merge
+    (Go 10 sits below the top-15/20 table cutoffs) — no output-table regression this run.
+- **Considered but NOT folded (deferred to standing curated decisions / skip-if-unsure):**
+  - **`GCP Vertex AI`(4) vs `Vertex AI`(6)** — both now clear the n≥3-both-forms bar, same GCP product,
+    and folding would mirror the existing vendor-prefix `amazon/aws sagemaker → SageMaker` precedent.
+    HOWEVER there is an **explicit, repeated prior curated decision** (2026-06-28 / 2026-07-03 audits) to
+    keep these split under the "GCP/Azure sub-service rule." Rather than reverse a standing decision in an
+    additive audit, LEFT SPLIT and flagged here as a candidate for reconsideration next run (the SageMaker
+    inconsistency is real: `Vertex AI` is a standalone product like SageMaker, not a distinct offering like
+    `Azure OpenAI`). Skip-if-unsure applied.
+  - **`data analysis`(23)/`data analytics`(3)** — analysis vs analytics is a genuine word-form/scope
+    distinction (act vs discipline/BI); left split. **`Speech Recognition`(3)/`Speech-to-Text`(3)** —
+    both exactly at threshold, close but with semantic room; left split. **`Data Warehouse`(4)/`Data
+    Warehousing`(3)** — noun (tech) vs practice; left split. **`Multimodal AI`(3)/`multimodal models`(6)**
+    — differ by AI-field vs model-artifacts; left split. **`MLOps`(65)/`ML Ops`(1)**, **`AI Automation`(3)/
+    `AI/ML`(3)** (distinct concepts), **`C++`(32)/`C#`(7)** (different languages), **`REST API`(5)/`REST
+    APIs`(12)** (deliberate singular/plural split) — all left split per prior decisions.
+- **`_CITY_COUNTRY` / `country()` verified complete; salary logic clean (no change).** All locations
+  resolve to a DACH country; **112 rows disclose pay (12 CHF)**; AT-monthly ×14, CHF→EUR pinned 1.05,
+  hourly ×40×52 all render correctly. No new city entries, no FX change.
+- **Extraction quality holding:** all **24 new 2026-07-03 rows store skills as semicolon-separated
+  strings — 0 list-repr cells among them** (extraction side stays clean, trend continues from 06-30).
+  **108 legacy list-repr cells remain** in older DB rows, all transparently recovered by `_split_skills`
+  (backlog #9 extraction-side stays OPEN but stable).
+- **Backlog status:** #1 still DONE (extended today with the `golang→Go` synonym fold); #1b, #6
+  (extraction side), #7 (discovery resilience under egress block — **TOP operational risk**, all 3
+  primary boards arbeitnow/datacareer/karriere still presumed proxy-blocked; the 24 new rows came from
+  WebSearch + ATS/career pages), #9 (108 legacy list-repr cells) all STILL OPEN. #3, #5, #8, #10 remain DONE.
 
 ## Data quality issues observed (2026-07-03 audit)
 - **Database stats:** **679 rows** (unchanged since the 2026-07-02 audit; **no discovery run has
@@ -629,6 +684,26 @@ Last audited: 2026-07-03 (self-improvement meta-run on Opus).
    tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-07-04** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
+  jobs.csv (**703 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows** — all 22
+  columns present on every row), skills_by_level.md, salary_benchmarks.md, reports/2026-07-04.md.
+  Confirmed `python3 analysis_gen.py 2026-07-04` runs clean (EXIT 0, N=703, new=0) BEFORE and AFTER the
+  change; re-verified on RUN=1900-01-01 (prev=0 first-run path) and RUN=2026-07-02 (new=32) — all three
+  deliverables generate on every path (scratch 1900-01-01 report removed). **One additive, verified
+  change to `analysis_gen.py`; jobs.csv and its schema untouched:** added `_SKILL_ALIASES` synonym fold
+  `golang → Go` (the one clear cross-form split meeting the n≥3-both-forms bar: `Golang`(3) → canonical
+  `Go`(7) → **Go 10**; same class as `k8s→Kubernetes`). Full-token verified: the alias maps only the
+  exact token `golang` and never touches `Go` or substrings. Swept N=703: **0 residual case splits, 0
+  residual list-repr tokens** after `canon()`. Considered but did NOT fold `GCP Vertex AI`(4)/`Vertex
+  AI`(6) — deferred to the standing curated sub-service decision despite the SageMaker vendor-prefix
+  inconsistency (flagged for reconsideration); also left split data analysis/analytics, Speech
+  Recognition/Speech-to-Text, Data Warehouse/Warehousing, Multimodal AI/multimodal models (borderline
+  word-form/scope), C++/C#, REST API/REST APIs (all per prior decisions / skip-if-unsure). Did NOT
+  change: dedup formula; `_CASE_MAP`; CHF→EUR `to_eur()`; AT ×14 / hourly ×40×52; trend logic; defensive
+  CSV read; `country()`/`_CITY_COUNTRY` (country mix clean `{Germany 393, Switzerland 177, Austria 133}`,
+  all no-comma/slashed/parenthetical locations resolve). Backlog: #1 DONE (extended); #7 remains top
+  operational risk; #9 OPEN but stable (108 legacy list-repr cells recovered by `_split_skills`; 0/24 new
+  2026-07-03 rows used list-repr).
 - **2026-07-03** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
   jobs.csv (**679 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows** — all 22
   columns present on every row), skills_by_level.md, salary_benchmarks.md, reports/2026-07-03.md.
