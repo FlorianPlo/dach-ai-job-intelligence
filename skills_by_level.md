@@ -1,25 +1,25 @@
 # Skills by Level — DACH Data/ML/AI Roles
 
-_Generated 2026-07-04 from the full dataset of **713 jobs** (10 new this run)._
+_Generated 2026-07-04 from the full dataset of **714 jobs** (11 new this run)._
 
-Country mix: {'Germany': 401, 'Switzerland': 178, 'Austria': 134} · Role mix: {'AI Engineer': 129, 'Data Engineer': 105, 'ML Engineer': 181, 'Data Scientist': 227, 'Other': 2, 'AI Researcher': 69} · Seniority mix: {'Mid': 215, 'Senior': 204, 'Intern': 160, 'Lead/Principal': 29, 'Junior': 105}
+Country mix: {'Germany': 401, 'Switzerland': 179, 'Austria': 134} · Role mix: {'AI Engineer': 129, 'Data Engineer': 105, 'ML Engineer': 182, 'Data Scientist': 227, 'Other': 2, 'AI Researcher': 69} · Seniority mix: {'Mid': 216, 'Senior': 204, 'Intern': 160, 'Lead/Principal': 29, 'Junior': 105}
 
 ## 0. Trend vs previous run
 
-Dataset grew 703 → 713 jobs. Trend tables exclude skills below **18 postings** (noise floor). **Rising share** (Δ percentage points of postings):
+Dataset grew 703 → 714 jobs. Trend tables exclude skills below **18 postings** (noise floor). **Rising share** (Δ percentage points of postings):
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
 | Machine Learning | 244 | 252 | +1 |
 | MLOps | 46 | 48 | +0 |
-| PyTorch | 193 | 197 | +0 |
 | Generative AI | 54 | 56 | +0 |
-| Python | 642 | 652 | +0 |
+| NLP | 63 | 65 | +0 |
+| PyTorch | 193 | 197 | +0 |
+| Python | 642 | 653 | +0 |
 | Docker | 96 | 98 | +0 |
 | PySpark | 33 | 34 | +0 |
-| TensorFlow | 110 | 112 | +0 |
 
-**Newly appearing skills this run:** AI Systems Architecture, benchmark design, inference optimization, robotics
+**Newly appearing skills this run:** AI Systems Architecture, ML model development, benchmark design, inference optimization, protein sequence modeling, robotics
 
 ### Falling / disappeared skills
 
@@ -29,32 +29,32 @@ Dataset grew 703 → 713 jobs. Trend tables exclude skills below **18 postings**
 |---|---|---|---|
 | SQL | 254 | 256 | -0 |
 | LLMs | 177 | 178 | -0 |
-| Deep Learning | 101 | 101 | -0 |
 | CI/CD | 94 | 94 | -0 |
 | Azure | 83 | 83 | -0 |
 | AWS | 81 | 81 | -0 |
 | Kubernetes | 78 | 78 | -0 |
 | RAG | 69 | 69 | -0 |
+| scikit-learn | 125 | 126 | -0 |
 
 ## 1. Most requested skills overall
 
 | Skill | Jobs | % of postings |
 |---|---|---|
-| Python | 652 | 91% |
+| Python | 653 | 91% |
 | SQL | 256 | 36% |
 | Machine Learning | 252 | 35% |
 | PyTorch | 197 | 28% |
 | LLMs | 178 | 25% |
 | scikit-learn | 126 | 18% |
 | TensorFlow | 112 | 16% |
-| Deep Learning | 101 | 14% |
+| Deep Learning | 102 | 14% |
 | Docker | 98 | 14% |
 | CI/CD | 94 | 13% |
 | Azure | 83 | 12% |
 | AWS | 81 | 11% |
 | Kubernetes | 78 | 11% |
 | RAG | 69 | 10% |
-| NLP | 64 | 9% |
+| NLP | 65 | 9% |
 | Spark | 57 | 8% |
 | Generative AI | 56 | 8% |
 | pandas | 49 | 7% |
@@ -103,11 +103,11 @@ Dataset grew 703 → 713 jobs. Trend tables exclude skills below **18 postings**
 | NLP | 8 | 8% |
 | AWS | 8 | 8% |
 
-### Mid (n=215)
+### Mid (n=216)
 
 | Skill | Count | % |
 |---|---|---|
-| Python | 202 | 94% |
+| Python | 203 | 94% |
 | SQL | 90 | 42% |
 | PyTorch | 66 | 31% |
 | Machine Learning | 60 | 28% |
@@ -117,7 +117,7 @@ Dataset grew 703 → 713 jobs. Trend tables exclude skills below **18 postings**
 | CI/CD | 38 | 18% |
 | TensorFlow | 36 | 17% |
 | Azure | 32 | 15% |
-| Deep Learning | 28 | 13% |
+| Deep Learning | 29 | 13% |
 | AWS | 28 | 13% |
 | Kubernetes | 24 | 11% |
 | Spark | 23 | 11% |
@@ -209,7 +209,7 @@ Dataset grew 703 → 713 jobs. Trend tables exclude skills below **18 postings**
 
 - **ML Engineer — Junior** (n=13): Python (12), Machine Learning (10), scikit-learn (7), TensorFlow (6), PyTorch (6), Deep Learning (5), LLMs (4), prompt engineering (4)
 
-- **ML Engineer — Mid** (n=56): Python (55), PyTorch (39), TensorFlow (20), scikit-learn (17), Docker (16), Machine Learning (16), CI/CD (15), SQL (14)
+- **ML Engineer — Mid** (n=57): Python (56), PyTorch (39), TensorFlow (20), scikit-learn (17), Docker (16), Machine Learning (16), CI/CD (15), SQL (14)
 
 - **ML Engineer — Senior** (n=60): Python (52), PyTorch (35), Kubernetes (25), Docker (25), CI/CD (21), AWS (19), TensorFlow (15), LLMs (15)
 
@@ -221,7 +221,7 @@ Dataset grew 703 → 713 jobs. Trend tables exclude skills below **18 postings**
 
 ## 4. What gets added as you go up (Senior+Lead vs Intern/Junior/Mid)
 
-Skills more requested at Senior/Lead level (n=233) than at lower levels (n=480), ranked by gap:
+Skills more requested at Senior/Lead level (n=233) than at lower levels (n=481), ranked by gap:
 
 | Skill | Senior+Lead % | Lower % | Gap (pp) |
 |---|---|---|---|
