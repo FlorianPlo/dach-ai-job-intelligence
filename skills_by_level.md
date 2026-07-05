@@ -172,7 +172,7 @@ _No skill lost share vs the previous snapshot._
 
 - **Data Engineer — Senior** (n=26): Python (23), SQL (22), Airflow (12), Spark (10), Databricks (9), data pipelines (7), PySpark (6), CI/CD (6)
 
-- **Data Engineer — Lead/Principal** (n=4): Python (2), Databricks (2), Spark (2), CI/CD (2), Git (2), Team Leadership (2), Data Warehouse (2), SQL (1)
+- **Data Engineer — Lead/Principal** (n=4): Python (2), Databricks (2), Spark (2), CI/CD (2), Git (2), Team Leadership (2), SQL (1), Scala (1)
 
 - **Data Scientist — Intern** (n=57): Python (54), Machine Learning (29), SQL (18), scikit-learn (14), pandas (13), data analysis (10), TensorFlow (10), PyTorch (8)
 
