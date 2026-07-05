@@ -103,6 +103,15 @@ _SKILL_ALIASES = {
     "aws sagemaker": "SageMaker",
     "datamesh": "Data Mesh",                # "DataMesh"(1) -> "Data Mesh"(3)
     "datavault": "Data Vault",              # "DataVault"(1) -> "Data Vault"(1)
+    # morphological (noun/gerund) synonym fold observed 2026-07-05 (differ by more than case):
+    # "Data Warehousing"(3, after case-fold: "Data Warehousing"2 + "data warehousing"1) is the
+    # SAME competency as "Data Warehouse"(4) — the gerund names the practice, the noun names the
+    # artifact, and skill lists use them interchangeably. Both forms clear the n>=3-both-forms bar,
+    # so fold the less-frequent gerund to the more-frequent noun (same class as the recommendation
+    # systems->recommender systems / time series analysis->Time Series Forecasting word-form folds).
+    # Full-token match only. The plural "Data Warehouses"(1) is deliberately left split, mirroring
+    # the REST API/REST APIs singular/plural KEEP-SPLIT convention.
+    "data warehousing": "Data Warehouse",
     "ms-sql": "MS SQL",                     # "MS-SQL"(1) -> "MS SQL"(1)
     "infrastructure-as-code": "Infrastructure as Code",  # hyphen split of same concept
     # Time-series: fold both "forecasting" and "analysis" phrasings to a single

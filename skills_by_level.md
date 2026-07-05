@@ -1,40 +1,19 @@
 # Skills by Level — DACH Data/ML/AI Roles
 
-_Generated 2026-07-04 from the full dataset of **714 jobs** (11 new this run)._
+_Generated 2026-07-05 from the full dataset of **714 jobs** (0 new this run)._
 
 Country mix: {'Germany': 401, 'Switzerland': 179, 'Austria': 134} · Role mix: {'AI Engineer': 129, 'Data Engineer': 105, 'ML Engineer': 182, 'Data Scientist': 227, 'Other': 2, 'AI Researcher': 69} · Seniority mix: {'Mid': 216, 'Senior': 204, 'Intern': 160, 'Lead/Principal': 29, 'Junior': 105}
 
 ## 0. Trend vs previous run
 
-Dataset grew 703 → 714 jobs. Trend tables exclude skills below **18 postings** (noise floor). **Rising share** (Δ percentage points of postings):
+Dataset grew 714 → 714 jobs. Trend tables exclude skills below **18 postings** (noise floor). **Rising share** (Δ percentage points of postings):
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
-| Machine Learning | 244 | 252 | +1 |
-| MLOps | 46 | 48 | +0 |
-| Generative AI | 54 | 56 | +0 |
-| NLP | 63 | 65 | +0 |
-| PyTorch | 193 | 197 | +0 |
-| Python | 642 | 653 | +0 |
-| Docker | 96 | 98 | +0 |
-| PySpark | 33 | 34 | +0 |
-
-**Newly appearing skills this run:** AI Systems Architecture, ML model development, benchmark design, inference optimization, protein sequence modeling, robotics
 
 ### Falling / disappeared skills
 
-**Falling share** (Δ percentage points of postings):
-
-| Skill | Prev | Now | Δpp |
-|---|---|---|---|
-| SQL | 254 | 256 | -0 |
-| LLMs | 177 | 178 | -0 |
-| CI/CD | 94 | 94 | -0 |
-| Azure | 83 | 83 | -0 |
-| AWS | 81 | 81 | -0 |
-| Kubernetes | 78 | 78 | -0 |
-| RAG | 69 | 69 | -0 |
-| scikit-learn | 125 | 126 | -0 |
+_No skill lost share vs the previous snapshot._
 
 ## 1. Most requested skills overall
 
@@ -193,7 +172,7 @@ Dataset grew 703 → 714 jobs. Trend tables exclude skills below **18 postings**
 
 - **Data Engineer — Senior** (n=26): Python (23), SQL (22), Airflow (12), Spark (10), Databricks (9), data pipelines (7), PySpark (6), CI/CD (6)
 
-- **Data Engineer — Lead/Principal** (n=4): Python (2), Databricks (2), Spark (2), CI/CD (2), Git (2), Team Leadership (2), SQL (1), Scala (1)
+- **Data Engineer — Lead/Principal** (n=4): Python (2), Databricks (2), Spark (2), CI/CD (2), Git (2), Team Leadership (2), Data Warehouse (2), SQL (1)
 
 - **Data Scientist — Intern** (n=57): Python (54), Machine Learning (29), SQL (18), scikit-learn (14), pandas (13), data analysis (10), TensorFlow (10), PyTorch (8)
 
