@@ -1,7 +1,70 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-04 (self-improvement meta-run on Opus).
+Last audited: 2026-07-05 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-05 audit)
+- **Database stats:** **714 rows** (was 703 at the 2026-07-04 audit; **+11 from discovery runs since
+  then — 11 rows dated 2026-07-04**, added after that audit's 703-row snapshot), **0 ragged rows** (22
+  columns on every row), **0 empty `job_id`**, **0 duplicate `job_id`**, **0 rows with extra (None-key)
+  columns**. `first_seen_date` distribution: `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27,
+  2026-06-25: 80, 2026-06-26: 58, 2026-06-27: 87, 2026-06-28: 17, 2026-06-29: 52, 2026-06-30: 116,
+  2026-07-01: 55, 2026-07-02: 32, 2026-07-03: 24, 2026-07-04: 11}`. **No rows dated 2026-07-05** yet
+  (discovery agents run in parallel and may add 07-05 rows later), so with `RUN=2026-07-05` the genuine
+  "new this run" count is **0** (all 714 rows fall into `prev`) and the report correctly renders the
+  empty-run guard note. Country mix `{Germany 401, Switzerland 179, Austria 134}` (clean DACH-only);
+  role mix `{Data Scientist 227, ML Engineer 182, AI Engineer 129, Data Engineer 105, AI Researcher 69,
+  Other 2}`; seniority mix `{Mid 216, Senior 204, Intern 160, Junior 105, Lead/Principal 29}` — all
+  values valid.
+- **Confirmed clean run status:** `python3 analysis_gen.py 2026-07-05` runs clean (EXIT 0, N=714,
+  new=0). Re-verified on `RUN=1900-01-01` (prev=0 first-run path) — EXIT 0, all three deliverables
+  generate (scratch `reports/1900-01-01.md` removed after testing).
+- **Skill-alias audit (strict n≥3-for-BOTH-forms bar, at N=714):** swept every `required_skills` /
+  `nice_to_have_skills` token and aggressive-normalized (strip case + punctuation/spacing) to hunt
+  cross-form splits. **The only n≥3-both-forms cross-form candidate this run was `Data Warehouse` vs
+  `Data Warehousing`** (both-fields counts 4 / 3; required-only 2 / 2). **This pair is an EXPLICIT
+  standing keep-split** — the 2026-07-04 audit considered it and deliberately left it split ("noun
+  (tech) vs practice", same class as data analysis/analytics and Multimodal AI/multimodal models). Per
+  "respect standing curated decisions" + skip-if-unsure, **the correct alias-dict action this run is NO
+  new fold.** (The only aggressive-normalize collision found was `C++`/`C#` — the documented
+  different-languages keep-split.)
+- **⚠️ REGRESSION FOUND IN COMMITTED HEAD `d9123a2` — flagged for repair next run (NOT fixed this run;
+  see rationale below):** the currently-committed `analysis_gen.py` is an OLDER base that has silently
+  LOST three curated improvements documented in prior audits:
+  - **Dropped `_split_skills()` + the `ast` import (the 2026-07-01 list-repr parser).** `sk()`/`nth()`/
+    `_build_case_map()` are back to naive `.split(";")`. **54 rows (7.6% of the DB) store skills as a
+    stringified Python list** (e.g. `['Python','PyTorch',...]`) and are now each collapsed into ONE bogus
+    single token — so those 54 postings' real skills are **invisible to every table in
+    `skills_by_level.md` (§1–§4)**. This is a MATERIAL degradation of the PRIMARY deliverable (backlog #9
+    regressed from "recovered by `_split_skills`" to "mangled").
+  - **Dropped `_SKILL_ALIASES` folds `natural language processing → NLP` (added 2026-07-03) and
+    `golang → Go` (added 2026-07-04)** — both curated cross-form folds are absent from the committed map.
+  - **Dropped the §4 deterministic secondary tie-break** (`dist.sort(key=lambda x:(-x[3], x[0]))`
+    reverted to `key=lambda x:-x[3]`), reintroducing non-deterministic ordering of equal-gap skills.
+  - **HEAD's commit message claims "…, LEARNINGS audit" but no 2026-07-05 LEARNINGS entry was actually
+    written** (this entry fills that gap).
+- **⚠️ The committed data-warehousing fold contradicts the 2026-07-04 keep-split.** HEAD `d9123a2` added
+  `"data warehousing": "Data Warehouse"` to `_SKILL_ALIASES`, which reverses the explicit 2026-07-04
+  decision to keep that pair split. Impact is **latent** (both forms sit below the top-15/20 table
+  cutoffs, so no visible output-table change), but it is an unintended flip-flop of a one-day-old curated
+  decision. **Recommend reverting it** alongside restoring the lost robustness above.
+- **Why NO code change was made by this run (deliberate skip):** (1) the only strict-bar alias candidate
+  is a standing keep-split → correct action = no new fold; (2) `analysis_gen.py` is being actively
+  rewritten by a parallel meta-instance (the harness flagged the external edit as intentional and
+  advised against reverting it), so in-race structural surgery risks clobbering/conflict; (3) restoring
+  `_split_skills` + the two lost folds is a multi-point structural change, outside this run's
+  "minimal additive change to the `_SKILL_ALIASES` dict" scope and the additive-only / one-change /
+  skip-if-unsure rules. The disciplined action for an auditor finding a regression in code another
+  process is actively editing is to **document + escalate**, which this entry (and the run's final
+  report) does. `jobs.csv` and its schema were left untouched; the dedup formula was untouched.
+- **Salary/country logic unchanged and clean:** **112 rows disclose pay (12 CHF)**; `country()` /
+  `_CITY_COUNTRY`, AT-monthly ×14, CHF→EUR pinned 1.05, hourly ×40×52 all still render correctly.
+- **Backlog status:** #9 (list-repr) **REGRESSED to OPEN-CRITICAL** — the `_split_skills` recovery was
+  removed from committed HEAD; 54 list-repr rows currently mangled → **top repair priority for next
+  run: restore `_split_skills`+`ast`, the `natural language processing→NLP` and `golang→Go` folds, and
+  the §4 tie-break; and revert the contradictory data-warehousing fold**. #7 (discovery resilience under
+  egress block) remains the top operational risk. #1, #3, #5, #8, #10 were DONE but #10 (tie-break) and
+  part of #1 (NLP/golang folds) are regressed in committed HEAD as noted.
 
 ## Data quality issues observed (2026-07-04 audit)
 - **Database stats:** **703 rows** (was 679 at the 2026-07-03 audit; **+24 from the 2026-07-03
@@ -684,6 +747,22 @@ Last audited: 2026-07-04 (self-improvement meta-run on Opus).
    tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-07-05** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md, jobs.csv
+  (**714 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows** — 22 cols every row;
+  +11 vs the 703 at the 2026-07-04 audit, all 11 dated 2026-07-04), skills_by_level.md,
+  salary_benchmarks.md, reports/2026-07-05.md. Confirmed `python3 analysis_gen.py 2026-07-05` runs clean
+  (EXIT 0, N=714, new=0); re-verified RUN=1900-01-01 first-run path (scratch report removed). **Made NO
+  code change** (deliberate skip): the only strict n≥3-both-forms cross-form alias candidate was
+  `Data Warehouse`/`Data Warehousing`, an EXPLICIT standing 2026-07-04 keep-split → correct action = no
+  new fold. **Found + escalated two problems in the committed HEAD `d9123a2` (a parallel meta-instance's
+  commit):** (1) it reverted `analysis_gen.py` to an older base that DROPPED the 2026-07-01
+  `_split_skills`/`ast` list-repr parser — **54 list-repr rows (7.6%) now mangled in every skills table**
+  — plus the `natural language processing→NLP` (07-03) and `golang→Go` (07-04) folds and the §4
+  deterministic tie-break; (2) it added `data warehousing→Data Warehouse`, contradicting the 2026-07-04
+  keep-split (latent, below table cutoffs). Did NOT do in-race code surgery (harness flagged the external
+  edit as intentional; additive-only / one-change / skip-if-unsure) — documented as **top repair priority
+  for next run** (restore `_split_skills`+folds+tie-break, revert the data-warehousing fold). jobs.csv,
+  schema, and dedup formula untouched.
 - **2026-07-04** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md,
   jobs.csv (**703 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows** — all 22
   columns present on every row), skills_by_level.md, salary_benchmarks.md, reports/2026-07-04.md.
