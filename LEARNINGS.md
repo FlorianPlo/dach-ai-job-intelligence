@@ -1,7 +1,55 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-05 (self-improvement meta-run on Opus).
+Last audited: 2026-07-06 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-06 audit)
+- **Database stats:** **769 rows** (was 714 at the 2026-07-05 audit; **+55 from the 2026-07-05
+  discovery run — 55 rows dated 2026-07-05**, added after that audit's 714-row snapshot), **0 ragged
+  rows** (22 columns on every row), **0 empty `job_id`**, **0 duplicate `job_id`**, **0 rows with extra
+  (None-key) columns**. `first_seen_date` distribution: `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27,
+  2026-06-25: 80, 2026-06-26: 58, 2026-06-27: 87, 2026-06-28: 17, 2026-06-29: 52, 2026-06-30: 116,
+  2026-07-01: 55, 2026-07-02: 32, 2026-07-03: 24, 2026-07-04: 11, 2026-07-05: 55}`. **No rows dated
+  2026-07-06** yet (discovery agents run in parallel and may add 07-06 rows later), so with
+  `RUN=2026-07-06` the genuine "new this run" count is **0** (all 769 rows fall into `prev`) and the
+  report correctly renders the empty-run guard note. Country mix `{Germany 427, Switzerland 188,
+  Austria 154}` (clean DACH-only, no leftover buckets); N=769 accounts fully.
+- **Confirmed clean run status:** `python3 analysis_gen.py 2026-07-06` runs clean (EXIT 0, N=769,
+  new=0). Re-verified on `RUN=1900-01-01` (prev=0 first-run path) — EXIT 0, all three deliverables
+  generate (scratch `reports/1900-01-01.md` removed after testing).
+- **✅ Prior-run regressions confirmed ALREADY REPAIRED in committed HEAD.** The 2026-07-05 audit
+  escalated that committed HEAD `d9123a2` had dropped `_split_skills`/`ast`, the `natural language
+  processing→NLP` + `golang→Go` folds, and the §4 tie-break, and had added a contradictory
+  `data warehousing→Data Warehouse` fold. All are now correct in the working tree: `_split_skills()`
+  with `ast.literal_eval` present (0 residual list-repr tokens after `canon()`), `natural language
+  processing→NLP` (NLP=98) and `golang→Go` (Go=10, Golang=0) folds present, §4 tie-break
+  `dist.sort(key=lambda x:(-x[3], x[0]))` present, and the data-warehousing fold reverted (git shows
+  `1e1598f` added it, `f2f4173` "Revert contradictory data warehousing fold" removed it). Nothing to
+  repair this run.
+- **Skill-alias audit (strict n≥3-for-BOTH-forms bar, at N=769):** swept every `required_skills` /
+  `nice_to_have_skills` token, aggressive-normalized (strip case + punctuation/spacing), and re-ran the
+  full `canon()` pipeline — **0 residual case splits, 0 residual list-repr tokens** (the generic
+  `_CASE_MAP` + explicit aliases absorb every case-only pair, e.g. pandas/Pandas 36/24,
+  MLflow/MLFlow 55/3, machine learning→Machine Learning 88→201). **Every cross-form cluster clearing
+  the n≥3-both-forms bar is a STANDING KEEP-SPLIT**: `GCP Vertex AI`(4)/`Vertex AI`(6) (sub-service
+  rule, flagged for reconsideration), `data analysis`(27)/`data analytics`(3), `Speech Recognition`(3)/
+  `Speech-to-Text`(3), `Multimodal AI`(3)/`multimodal models`(6), `REST API`(5)/`REST APIs`(12), and the
+  `C++`(34)/`C#`(7) different-languages false-positive (norm collision). `Data Warehouse`(4)/
+  `Data Warehousing`(**now 0**) no longer even clears the bar. Per respect-standing-decisions +
+  skip-if-unsure, **the correct action is NO new fold.**
+- **Why NO code change was made this run (deliberate skip, "if warranted" not met):** (1) the robustness
+  features flagged as regressed on 2026-07-05 are already restored in HEAD; (2) the only cross-form
+  alias candidates at the strict bar are standing keep-splits → correct action = no new fold; (3) all
+  other output/salary/location logic verified clean and unchanged. Making a change with nothing
+  warranted would violate additive-only / skip-if-unsure. `jobs.csv`, its schema, and the dedup formula
+  were untouched.
+- **Salary/country logic unchanged and clean:** **123 rows disclose pay (12 CHF)**; `country()` /
+  `_CITY_COUNTRY`, AT-monthly ×14, CHF→EUR pinned 1.05, hourly ×40×52 all still render correctly. No new
+  city/location issues (all 769 locations resolve to a DACH country).
+- **Backlog status:** #9 (list-repr) recovery is INTACT again — `_split_skills` restored, 0 residual
+  list-repr tokens; extraction side stays OPEN (legacy list-repr cells still transparently recovered).
+  #7 (discovery resilience under egress block) remains the top operational risk. #1, #3, #5, #8, #10 all
+  DONE and present in HEAD (previously-noted 07-05 regressions of #10 and part of #1 are resolved).
 
 ## Data quality issues observed (2026-07-05 audit)
 - **Database stats:** **714 rows** (was 703 at the 2026-07-04 audit; **+11 from discovery runs since
@@ -747,6 +795,25 @@ Last audited: 2026-07-05 (self-improvement meta-run on Opus).
    tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-07-06** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md, jobs.csv
+  (**769 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows** — 22 cols every row;
+  +55 vs the 714 at the 2026-07-05 audit, all 55 dated 2026-07-05), skills_by_level.md,
+  salary_benchmarks.md, reports/2026-07-06.md. Confirmed `python3 analysis_gen.py 2026-07-06` runs clean
+  (EXIT 0, N=769, new=0); re-verified RUN=1900-01-01 first-run path (EXIT 0, scratch report removed).
+  **Made NO code change** (deliberate skip; "if warranted" not met): (a) the robustness features the
+  2026-07-05 audit escalated as regressed in committed HEAD `d9123a2` are ALL already restored —
+  `_split_skills`+`ast` (0 residual list-repr tokens), `natural language processing→NLP` (NLP=98),
+  `golang→Go` (Go=10, Golang=0), §4 tie-break `(-x[3], x[0])` — and the contradictory
+  `data warehousing→Data Warehouse` fold was reverted (git `1e1598f` added it, `f2f4173` reverted it);
+  (b) swept all tokens at N=769 through the full `canon()` pipeline — **0 residual case splits, 0 residual
+  list-repr tokens** — and the only cross-form clusters clearing the strict n≥3-both-forms bar are all
+  STANDING KEEP-SPLITS (`GCP Vertex AI`/`Vertex AI`, `data analysis`/`data analytics`, `Speech
+  Recognition`/`Speech-to-Text`, `Multimodal AI`/`multimodal models`, `REST API`/`REST APIs`, `C++`/`C#`
+  false-positive; `Data Warehouse`(4)/`Data Warehousing`(now 0) no longer clears the bar) → correct
+  action = no new fold. Country mix clean `{Germany 427, Switzerland 188, Austria 154}`; all 769
+  locations resolve to a DACH country. Salary logic clean: **123 rows disclose pay (12 CHF)**, AT ×14 /
+  CHF→EUR pinned 1.05 / hourly ×40×52 all render. jobs.csv, schema, and dedup formula untouched. Backlog:
+  #9 recovery INTACT (extraction side still OPEN); #7 remains top operational risk; #1/#3/#5/#8/#10 DONE.
 - **2026-07-05** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md, jobs.csv
   (**714 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows** — 22 cols every row;
   +11 vs the 703 at the 2026-07-04 audit, all 11 dated 2026-07-04), skills_by_level.md,

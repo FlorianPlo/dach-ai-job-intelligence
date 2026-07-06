@@ -1,40 +1,19 @@
 # Skills by Level — DACH Data/ML/AI Roles
 
-_Generated 2026-07-05 from the full dataset of **769 jobs** (55 new this run)._
+_Generated 2026-07-06 from the full dataset of **769 jobs** (0 new this run)._
 
 Country mix: {'Germany': 427, 'Switzerland': 188, 'Austria': 154} · Role mix: {'AI Engineer': 139, 'Data Engineer': 112, 'ML Engineer': 195, 'Data Scientist': 246, 'Other': 3, 'AI Researcher': 74} · Seniority mix: {'Mid': 235, 'Senior': 222, 'Intern': 170, 'Lead/Principal': 29, 'Junior': 113}
 
 ## 0. Trend vs previous run
 
-Dataset grew 714 → 769 jobs. Trend tables exclude skills below **19 postings** (noise floor). **Rising share** (Δ percentage points of postings):
+Dataset grew 769 → 769 jobs. Trend tables exclude skills below **19 postings** (noise floor). **Rising share** (Δ percentage points of postings):
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
-| R | 30 | 37 | +1 |
-| MLOps | 48 | 55 | +0 |
-| Kubernetes | 78 | 87 | +0 |
-| AWS | 81 | 90 | +0 |
-| data analysis | 20 | 24 | +0 |
-| Docker | 98 | 108 | +0 |
-| GCP | 39 | 44 | +0 |
-| FastAPI | 16 | 19 | +0 |
-
-**Newly appearing skills this run:** AI prototyping, AutoML, BI, CasADi, KNIME, Oracle, Pyomo, ZenML, algorithm development, data mining, data preprocessing, differential privacy, manufacturing analytics, multimodal ML, privacy-preserving ML, process automation, protein modelling, stochastic programming, visual analytics
 
 ### Falling / disappeared skills
 
-**Falling share** (Δ percentage points of postings):
-
-| Skill | Prev | Now | Δpp |
-|---|---|---|---|
-| PyTorch | 197 | 208 | -1 |
-| RAG | 69 | 71 | -0 |
-| SQL | 256 | 273 | -0 |
-| data pipelines | 41 | 42 | -0 |
-| NLP | 65 | 68 | -0 |
-| Kafka | 25 | 25 | -0 |
-| scikit-learn | 126 | 134 | -0 |
-| PySpark | 34 | 35 | -0 |
+_No skill lost share vs the previous snapshot._
 
 ## 1. Most requested skills overall
 
