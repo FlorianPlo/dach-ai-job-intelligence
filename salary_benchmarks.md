@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-07-07. Only postings with explicitly stated salary — **128 of 797** disclosed pay. Nothing imputed._
+_Generated 2026-07-07. Only postings with explicitly stated salary — **129 of 816** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 
@@ -137,6 +137,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | ML Engineer | Senior | Austria | KERN engineering careers GmbH | 4700 | – | EUR | month | ~66k | ~66k EUR |
 | ML Engineer | Senior | Austria | Canva | 70000 | – | EUR | year | ~70k | ~70k EUR |
 | ML Engineer | Senior | Switzerland | BLP Digital AG | 110000 | 140000 | CHF | year | ~125k | ~131k EUR |
+| ML Engineer | Lead/Principal | Germany | Bayer | 104000 | 127000 | EUR | year | ~116k | ~116k EUR |
 | Other | Mid | Austria | wikifolio Financial Technologies AG | 3954 | – | EUR | month | ~55k | ~55k EUR |
 
 ## Rough annualised median by role (EUR-equivalent, all seniorities pooled)
@@ -149,7 +150,7 @@ _Pools EUR rows plus CHF rows converted at **1 CHF = 1.05 EUR** (pinned). All fi
 | AI Researcher | 6 | ~102k | 65k–504k |
 | Data Engineer | 25 | ~60k | 29k–165k |
 | Data Scientist | 48 | ~61k | 38k–110k |
-| ML Engineer | 21 | ~61k | 29k–235k |
+| ML Engineer | 22 | ~63k | 29k–235k |
 | Other | 1 | ~55k | 55k–55k |
 
 **Confidence: LOW.** Switzerland now discloses some salaries (converted at the pinned 1 CHF = 1.05 EUR rate); samples remain small. Treat as directional only.
