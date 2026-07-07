@@ -1,7 +1,55 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-06 (self-improvement meta-run on Opus).
+Last audited: 2026-07-07 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-07 audit)
+- **Database stats:** **797 rows** (was 769 at the 2026-07-06 audit; **+28 from the 2026-07-06
+  discovery run — 28 rows dated 2026-07-06**, added after that audit's 769-row snapshot), **0 ragged
+  rows** (22 columns on every row), **0 empty `job_id`**, **0 duplicate `job_id`**, **0 rows with extra
+  (None-key) columns**. `first_seen_date` distribution: `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27,
+  2026-06-25: 80, 2026-06-26: 58, 2026-06-27: 87, 2026-06-28: 17, 2026-06-29: 52, 2026-06-30: 116,
+  2026-07-01: 55, 2026-07-02: 32, 2026-07-03: 24, 2026-07-04: 11, 2026-07-05: 55, 2026-07-06: 28}`.
+  **No rows dated 2026-07-07** yet (discovery agents run in parallel and may add 07-07 rows later), so
+  with `RUN=2026-07-07` the genuine "new this run" count is **0** (all 797 rows fall into `prev`) and the
+  report correctly renders the empty-run guard note. Country mix `{Germany 440, Switzerland 195,
+  Austria 162}` (clean DACH-only, no leftover buckets; N=797 accounts fully). Role mix `{Data Scientist
+  258, ML Engineer 198, AI Engineer 144, Data Engineer 113, AI Researcher 81, Other 3}`; seniority mix
+  `{Mid 247, Senior 231, Intern 174, Junior 115, Lead/Principal 30}`; work_type mix `{Hybrid 564,
+  Onsite 196, Remote 37}` — all values valid.
+- **Confirmed clean run status:** `python3 analysis_gen.py 2026-07-07` runs clean (EXIT 0, N=797,
+  new=0). Re-verified on `RUN=1900-01-01` (prev=0 first-run path) — EXIT 0, all three deliverables
+  generate (scratch `reports/1900-01-01.md` removed after testing).
+- **Code integrity confirmed in committed HEAD (`627dba8`).** All robustness features flagged/repaired in
+  prior audits are present and correct in the working tree: `_split_skills()` with `ast.literal_eval`
+  (0 residual list-repr tokens after `canon()`), the `natural language processing→NLP` fold (**NLP=108**),
+  the `golang→Go` fold (**Go=10, Golang=0**), the §4 deterministic tie-break
+  `dist.sort(key=lambda x:(-x[3], x[0]))`, and no contradictory `data warehousing→Data Warehouse` fold
+  (`Data Warehousing`=0 in the data anyway). Nothing to repair this run.
+- **Skill-alias audit (strict n≥3-for-BOTH-forms bar, at N=797):** swept every `required_skills` /
+  `nice_to_have_skills` token, aggressive-normalized (strip case + punctuation/spacing), and re-ran the
+  full `canon()` pipeline — **0 residual case splits, 0 residual list-repr tokens** (the generic
+  `_CASE_MAP` + explicit aliases absorb every case-only pair). The **only** aggressive-normalize cluster
+  with two distinct forms both at n≥3 is the documented **`C++`(37)/`C#`(7)** different-languages
+  false-positive (both normalize to `c` — must NEVER merge). Every genuine cross-form cluster near the bar
+  remains a **STANDING KEEP-SPLIT**: `GCP Vertex AI`(4)/`Vertex AI`(6) (sub-service rule, flagged for
+  reconsideration), `data analysis`(27)/`data analytics`(3), `Speech Recognition`(3)/`Speech-to-Text`(3),
+  `Multimodal AI`(3)/`multimodal models`(6), `REST API`(5)/`REST APIs`(12); `Data Warehouse`(4)/
+  `Data Warehousing`(**0**) doesn't even clear the bar. Per respect-standing-decisions + skip-if-unsure,
+  **the correct action is NO new fold.**
+- **Why NO code change was made this run (deliberate skip, "if warranted" not met):** (1) all
+  robustness features are already present/correct in HEAD; (2) the only strict-bar cross-form cluster is
+  the C++/C# false-positive; every real near-dup pair is a standing keep-split → correct action = no new
+  fold; (3) all output/salary/location logic verified clean and unchanged. Making a change with nothing
+  warranted would violate additive-only / skip-if-unsure. `jobs.csv`, its 22-column schema, and the dedup
+  formula were untouched.
+- **Salary/country logic unchanged and clean:** **128 rows disclose pay (13 CHF)**; `country()` /
+  `_CITY_COUNTRY`, AT-monthly ×14, CHF→EUR pinned 1.05, hourly ×40×52 all still render correctly. No new
+  city/location issues (all 797 locations resolve to a DACH country; 0 non-DACH/leftover buckets).
+- **Backlog status:** #9 (list-repr) recovery INTACT — `_split_skills` present, 0 residual list-repr
+  tokens; extraction side stays OPEN (legacy list-repr cells still transparently recovered). #7 (discovery
+  resilience under egress block) remains the top operational risk. #1, #3, #5, #8, #10 all DONE and
+  present in HEAD.
 
 ## Data quality issues observed (2026-07-06 audit)
 - **Database stats:** **769 rows** (was 714 at the 2026-07-05 audit; **+55 from the 2026-07-05
@@ -795,6 +843,24 @@ Last audited: 2026-07-06 (self-improvement meta-run on Opus).
    tokens). Extraction-time canonical casing (backlog #1b) remains the source-of-truth fix.
 
 ## Audit log
+- **2026-07-07** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md, jobs.csv
+  (**797 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows** — 22 cols every row;
+  +28 vs the 769 at the 2026-07-06 audit, all 28 dated 2026-07-06), skills_by_level.md,
+  salary_benchmarks.md, reports/2026-07-07.md. Confirmed `python3 analysis_gen.py 2026-07-07` runs clean
+  (EXIT 0, N=797, new=0); re-verified RUN=1900-01-01 first-run path (EXIT 0, scratch report removed).
+  **Made NO code change** (deliberate skip; "if warranted" not met): (a) all robustness features are
+  present/correct in committed HEAD `627dba8` — `_split_skills`+`ast` (0 residual list-repr tokens),
+  `natural language processing→NLP` (NLP=108), `golang→Go` (Go=10, Golang=0), §4 tie-break
+  `(-x[3], x[0])`, no contradictory data-warehousing fold; (b) swept all tokens at N=797 through the full
+  `canon()` pipeline — **0 residual case splits, 0 residual list-repr tokens** — and the only
+  aggressive-normalize cluster with two forms both at n≥3 is the documented `C++`(37)/`C#`(7)
+  different-languages false-positive; every genuine near-dup (`GCP Vertex AI`/`Vertex AI`, `data analysis`/
+  `data analytics`, `Speech Recognition`/`Speech-to-Text`, `Multimodal AI`/`multimodal models`, `REST API`/
+  `REST APIs`) is a STANDING KEEP-SPLIT → correct action = no new fold. Country mix clean `{Germany 440,
+  Switzerland 195, Austria 162}`; all 797 locations resolve to a DACH country. Salary logic clean:
+  **128 rows disclose pay (13 CHF)**, AT ×14 / CHF→EUR pinned 1.05 / hourly ×40×52 all render. jobs.csv,
+  schema, and dedup formula untouched. Backlog: #9 recovery INTACT (extraction side still OPEN); #7 remains
+  top operational risk; #1/#3/#5/#8/#10 DONE.
 - **2026-07-06** (self-improvement meta-run on Opus): audited analysis_gen.py, LEARNINGS.md, jobs.csv
   (**769 rows, 0 ragged, 0 empty job_id, 0 duplicate job_id, 0 extra-column rows** — 22 cols every row;
   +55 vs the 714 at the 2026-07-05 audit, all 55 dated 2026-07-05), skills_by_level.md,

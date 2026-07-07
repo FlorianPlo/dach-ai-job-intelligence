@@ -1,38 +1,19 @@
 # Skills by Level — DACH Data/ML/AI Roles
 
-_Generated 2026-07-06 from the full dataset of **797 jobs** (28 new this run)._
+_Generated 2026-07-07 from the full dataset of **797 jobs** (0 new this run)._
 
 Country mix: {'Germany': 440, 'Switzerland': 195, 'Austria': 162} · Role mix: {'AI Engineer': 144, 'Data Engineer': 113, 'ML Engineer': 198, 'Data Scientist': 258, 'Other': 3, 'AI Researcher': 81} · Seniority mix: {'Mid': 247, 'Senior': 231, 'Intern': 174, 'Lead/Principal': 30, 'Junior': 115}
 
 ## 0. Trend vs previous run
 
-Dataset grew 769 → 797 jobs. Trend tables exclude skills below **20 postings** (noise floor). **Rising share** (Δ percentage points of postings):
+Dataset grew 797 → 797 jobs. Trend tables exclude skills below **20 postings** (noise floor). **Rising share** (Δ percentage points of postings):
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
-| Machine Learning | 272 | 298 | +2 |
-| Deep Learning | 110 | 120 | +1 |
-| NLP | 68 | 76 | +1 |
-| Computer Vision | 42 | 48 | +1 |
-| Generative AI | 60 | 66 | +0 |
-| LLMs | 192 | 202 | +0 |
-| PyTorch | 208 | 218 | +0 |
-| RAG | 71 | 76 | +0 |
 
 ### Falling / disappeared skills
 
-**Falling share** (Δ percentage points of postings):
-
-| Skill | Prev | Now | Δpp |
-|---|---|---|---|
-| SQL | 273 | 279 | -0 |
-| scikit-learn | 134 | 135 | -0 |
-| Docker | 108 | 109 | -0 |
-| Spark | 60 | 60 | -0 |
-| MLOps | 55 | 55 | -0 |
-| pandas | 54 | 54 | -0 |
-| Git | 49 | 49 | -0 |
-| CI/CD | 103 | 105 | -0 |
+_No skill lost share vs the previous snapshot._
 
 ## 1. Most requested skills overall
 
