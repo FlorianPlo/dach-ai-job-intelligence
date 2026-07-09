@@ -1,7 +1,62 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-08 (self-improvement meta-run on Opus).
+Last audited: 2026-07-09 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-09 audit)
+- **Database stats:** **853 rows** (was 816 at the 2026-07-08 audit; **+37 from the 2026-07-08
+  discovery run — 37 rows dated 2026-07-08**, added after that audit's 816-row snapshot), **0 ragged
+  rows** (22 columns on every one of 853 rows; column-count distribution `{22: 853}`), **0 empty
+  `job_id`**, **0 duplicate `job_id`** (853 unique), **0 rows with extra (None-key) columns**.
+- **`first_seen_date` distribution (full):** `{2026-06-22: 16, 2026-06-23: 139, 2026-06-24: 27,
+  2026-06-25: 80, 2026-06-26: 58, 2026-06-27: 87, 2026-06-28: 17, 2026-06-29: 52, 2026-06-30: 116,
+  2026-07-01: 55, 2026-07-02: 32, 2026-07-03: 24, 2026-07-04: 11, 2026-07-05: 55, 2026-07-06: 28,
+  2026-07-07: 19, 2026-07-08: 37}`. **No rows dated 2026-07-09** yet (discovery agents run in parallel
+  and add 07-09 rows AFTER this audit), so with `RUN=2026-07-09` the genuine "new this run" count is
+  **0** (all 853 rows fall into `prev`) and the report correctly renders the empty-run guard note.
+- **Mixes:** Country mix (via `country()`, **after today's fix**) clean `{Germany 473, Switzerland 210,
+  Austria 170}` — 0 non-DACH / leftover buckets; N=853 accounts fully. Role mix `{Data Scientist 276,
+  ML Engineer 217, AI Engineer 151, Data Engineer 121, AI Researcher 85, Other 3}`; seniority mix
+  `{Mid 262, Senior 248, Intern 190, Junior 120, Lead/Principal 33}`; work_type mix `{Hybrid 600,
+  Onsite 210, Remote 43}` — all values valid.
+- **CODE CHANGE MADE this run (one, additive/safe) — `country()` reversed-order suffix cleanup.**
+  The 2026-07-08 discovery run added a row (Yoummday GmbH) whose `location` is **`"Germany, Remote"`** —
+  country FIRST, then a work-mode token. Because it contains a comma, the naive last-comma-segment rule
+  returned `"Remote"`, polluting the country mix with a bogus `{'Remote': 1}` bucket (pre-fix mix was
+  `{Germany 472, Switzerland 210, Austria 170, Remote 1}`). This is the SAME class as the already-handled
+  `"Germany (Remote)"` parenthetical case, but comma-separated so the paren-strip couldn't catch it.
+  **Fix (added right before the final `return last` in `country()`):** ONLY when the last comma-segment is
+  NOT itself a DACH country, scan the remaining comma-segments and return the first EXACT DACH country
+  name found; otherwise fall through to the exact prior behaviour. It is additive, reversible, read-time
+  only (jobs.csv untouched), and **never guesses a non-DACH country** — it returns a DACH country only
+  when one is explicitly present in the string. Normal `"City, Country"` rows return early via `last` and
+  never reach the new branch. Post-fix the only changed row is the Yoummday one (Germany 472→473, Remote
+  bucket eliminated); all other country resolutions are byte-identical. Verified: `python3 analysis_gen.py
+  2026-07-09` EXIT 0 both before and after; N unchanged at 853.
+- **Confirmed clean run status:** `python3 analysis_gen.py 2026-07-09` runs clean (EXIT 0, N=853, new=0)
+  both before and after the change. The `1900-01-01` first-run path (prev=0) was also exercised during the
+  skill-alias audit (EXIT 0, all three deliverables generate; scratch `reports/1900-01-01.md` removed).
+- **Skill-alias audit (strict n≥3-for-BOTH-forms bar, at N=853):** swept every `required_skills` /
+  `nice_to_have_skills` token through the full `canon()` pipeline (explicit `_SKILL_ALIASES` + generic
+  `_CASE_MAP`) and re-clustered by aggressive normalization (strip case + punctuation/spacing) —
+  **0 residual case splits, 0 residual list-repr tokens**. Only four aggressive-normalize clusters carry
+  two distinct canonical forms: **`C++`(43)/`C#`(8)** — the documented different-languages false-positive
+  (both normalize to `c`; must NEVER merge); **`MLOps`(82)/`ML Ops`(1)**; **`AI Automation`(3)/
+  `AI/Automation`(1)**; **`Multimodal AI`(3)/`multi-modal AI`(1)**. Every one of the last three has its
+  second form at **n=1**, so NONE clears the n≥3-for-both bar (and `Multimodal AI` is additionally a
+  standing keep-split family). Standing keep-splits re-verified as either below the bar or intentionally
+  split: `GCP Vertex AI`/`Vertex AI`, `data analysis`/`data analytics`, `Speech Recognition`/
+  `Speech-to-Text`, `Multimodal AI`/`multimodal models`, `REST API`/`REST APIs`, `Data Warehouse`/
+  `Data Warehousing`. Per respect-standing-decisions + skip-if-unsure, **NO new fold was added.**
+- **Salary/country logic unchanged and clean:** **137 rows disclose pay (15 CHF)**; `country()` /
+  `_CITY_COUNTRY`, AT-monthly ×14, CHF→EUR pinned 1.05, hourly ×40×52 all still render correctly. No new
+  city/location issues beyond the `"Germany, Remote"` row fixed above (all 853 locations now resolve to a
+  DACH country; 0 non-DACH/leftover buckets).
+- **Backlog status:** #6 (location→country resolution) extended today with the reversed-order comma-suffix
+  handler — the paren-strip + slash-city-map + this new branch now cover every location form seen in 853
+  rows. #9 (list-repr) recovery INTACT — `_split_skills` present, 0 residual unparsed list-repr tokens;
+  extraction side stays OPEN. #7 (discovery resilience under egress block) remains the top operational
+  risk. #1, #3, #5, #8, #10 all DONE and present in the working tree.
 
 ## Data quality issues observed (2026-07-08 audit)
 - **Database stats:** **816 rows** (was 797 at the 2026-07-07 audit; **+19 from the 2026-07-07

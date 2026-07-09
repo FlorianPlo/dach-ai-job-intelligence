@@ -253,6 +253,20 @@ def country(r):
         stripped = last[: last.rindex("(")].strip()
         if stripped.lower() in _DACH_COUNTRIES:
             return stripped
+    # Reversed-order suffix cleanup (additive, 2026-07-09): a row may store the country
+    # FIRST followed by a trailing work-mode token, e.g. "Germany, Remote" — the naive
+    # last-comma-segment rule then returns "Remote" and pollutes the country mix with a bogus
+    # bucket (same class as the "Germany (Remote)" parenthetical case handled just above, but
+    # comma-separated so that strip can't catch it). ONLY when the last segment is NOT itself a
+    # DACH country, scan the remaining comma-segments and return the first that is an EXACT DACH
+    # country name. Normal "City, Country" rows return early via `last` and never reach this;
+    # if no segment is an exact DACH country the function falls through to the exact prior
+    # behaviour (returns the raw last segment). Never guesses a non-DACH country. jobs.csv is
+    # untouched — read-time only.
+    if last.lower() not in _DACH_COUNTRIES:
+        for seg in loc.split(","):
+            if seg.strip().lower() in _DACH_COUNTRIES:
+                return seg.strip()
     return last
 
 prev = [r for r in rows if r["first_seen_date"] < RUN]
