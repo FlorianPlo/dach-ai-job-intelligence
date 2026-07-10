@@ -1,7 +1,80 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-09 (self-improvement meta-run on Opus).
+Last audited: 2026-07-10 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-10 audit)
+- **Database stats:** **918 rows** (was 853 at the 2026-07-09 audit snapshot; **+25 from the 2026-07-09
+  discovery run — 25 rows dated 2026-07-09, added after that audit's 853-row snapshot → 878 — then +40
+  from today's 2026-07-10 run**), **0 ragged rows** (22 columns on every one of 918 rows; column-count
+  distribution `{22: 918}`), **0 empty `job_id`**, **0 duplicate `job_id`** (918 unique), **0 rows with
+  extra (None-key) columns**. `first_seen_date` distribution (full): `{2026-06-22: 16, 2026-06-23: 139,
+  2026-06-24: 27, 2026-06-25: 80, 2026-06-26: 58, 2026-06-27: 87, 2026-06-28: 17, 2026-06-29: 52,
+  2026-06-30: 116, 2026-07-01: 55, 2026-07-02: 32, 2026-07-03: 24, 2026-07-04: 11, 2026-07-05: 55,
+  2026-07-06: 28, 2026-07-07: 19, 2026-07-08: 37, 2026-07-09: 25, 2026-07-10: 40}`. Unlike most prior
+  audits, **the 40 rows dated 2026-07-10 ARE present at audit time**, so with `RUN=2026-07-10` the genuine
+  "new this run" count is **40** (not the usual 0 — the discovery run's rows were already written before
+  this meta-run).
+- **This run's discovery (40 new / 118 raw):** consolidation reported 118 raw discovered → **40 new, 76
+  already-existing `job_id` dups, 2 batch-internal dups** (dedup working well). Raw source split: Austria 26,
+  Entry-level 29, Germany 27, Switzerland 27, company career pages 9. The 40 kept rows resolve to **country
+  DE 20, AT 12, CH 8**; **role AI Engineer 14, Data Scientist 10, Data Engineer 8, ML Engineer 7, AI
+  Researcher 1**; **seniority Mid 11, Intern 10, Junior 8, Senior 7, Lead/Principal 4**. Notable
+  new/updated companies flagged by discovery — **Anthropic Zurich (CHF 280–680k), Google DeepMind Zurich,
+  Nexthink Lausanne, Apple Zurich (Agentic AI team), CARIAD Berlin, Erste Digital Vienna** — several
+  already existed from prior runs and were **collapsed by dedup** (76 dups), so they do NOT all appear as
+  new rows; CARIAD is present among the 40. Other genuinely-new companies today: Canva, Qualysoft, Fronius
+  International, Machine Learning Reply, UBIMET, ÖBB, A1 Telekom Austria, TrueChoice Solutions, Siemens
+  Energy, Seven Senders, Swissquote Bank, Scalable Capital, Deutsche Telekom, Vodafone, Deloitte, Allianz,
+  amber, pacemaker.ai, Bending Spoons, Baker Hughes, Infineon Technologies, Rohde & Schwarz, IFTA, SAP,
+  Axel Springer, SMG Swiss Marketplace Group, CERN, Visium, Unit8, Riverkin, Vontobel, Swiss Re, Raiffeisen
+  Bank International, HypoVereinsbank UniCredit.
+- **Full-DB mixes (all valid):** Country mix (via `country()`) clean `{Germany 507, Switzerland 224,
+  Austria 187}` — 0 non-DACH / leftover buckets; N=918 accounts fully. (The raw last-comma-segment still
+  shows a stray `Remote 1` for the 2026-07-08 `"Germany, Remote"` row, but `country()`'s 2026-07-09
+  reversed-order-suffix handler still folds it correctly to Germany.) Role mix `{Data Scientist 299,
+  ML Engineer 230, AI Engineer 169, Data Engineer 129, AI Researcher 88, Other 3}`; seniority mix
+  `{Mid 283, Senior 263, Intern 204, Junior 130, Lead/Principal 38}`; work_type mix `{Hybrid 647,
+  Onsite 223, Remote 48}`.
+- **🛠️ CODE CHANGE MADE this run (one, additive/safe) — `annual()` day-rate handling.** Today's run added
+  the **first-ever `salary_period="day"` row: Qualysoft, "Azure AI / ML Engineer", Vienna, 520–560 EUR/day**
+  (a contractor day rate). `annual()` handled `month` and `hour` but had **no `day` branch**, so a day rate
+  fell through the `else` and was returned **unmultiplied** — i.e. ~540 EUR treated as a full-year figure.
+  Impact before fix: the disclosed-salaries table showed Qualysoft as **`~1k`**, and — worse — that bogus
+  ~540 EUR polluted the **AI Engineer by-role EUR median pool**, dragging its range MIN down to a nonsense
+  **`1k`** (range read `1k–168k`, median `~60k`). **Fix (added right after the `hour` branch):
+  `elif p=="day": mid*=5*52`** — 5 working days/week × 52 weeks = 260 days/yr, exactly mirroring the existing
+  `hour` ×40×52 (52-week, no-holiday) convention. Post-fix Qualysoft annualises to **`~140k`** (a sensible
+  contractor figure) and the AI Engineer range corrects to **`24k–168k`, median `~62k`** (24k = the
+  FREQUENTUM intern hourly row, the true min). It is additive (one new `elif`), read-time only (jobs.csv
+  untouched), affects ONLY rows with `salary_period="day"` (currently exactly 1), and leaves every
+  `year`/`month`/`hour`/blank row byte-identical. Verified: `python3 analysis_gen.py 2026-07-10` EXIT 0
+  before and after; the `RUN=1900-01-01` prev=0 first-run path re-verified EXIT 0 (scratch report removed);
+  N unchanged at 918.
+- **Salary/country logic otherwise clean:** **151 rows disclose pay (17 CHF)**; period distribution
+  `{year 94, month 50, hour 6, day 1}`. `country()` / `_CITY_COUNTRY`, AT-monthly ×14, CHF→EUR pinned 1.05,
+  hourly ×40×52 all still render correctly. All 40 new locations resolve to a DACH country (comma
+  `"City, Country"` or a single bare `"Germany"`); no new no-comma slashed/parenthetical specials this run,
+  so **no `_CITY_COUNTRY` entry needed**.
+- **Skill-alias audit (strict n≥3-for-BOTH-forms bar, at N=918):** swept every `required_skills` /
+  `nice_to_have_skills` token through the full `canon()` pipeline (explicit `_SKILL_ALIASES` + generic
+  `_CASE_MAP`) and re-clustered by aggressive normalization (strip case + punctuation/spacing) —
+  **0 residual case splits, 0 residual list-repr tokens**. Only four aggressive-normalize clusters carry
+  two distinct canonical forms: **`C++`(50)/`C#`(9)** — the documented different-languages false-positive
+  (both normalize to `c`; must NEVER merge); **`MLOps`(88)/`ML Ops`(1)**; **`AI Automation`(3)/
+  `AI/Automation`(1)**; **`Multimodal AI`(3)/`multi-modal AI`(2)**. Every one of the last three has its
+  second form at **n≤2**, so NONE clears the n≥3-for-both bar (and `Multimodal AI` is additionally a
+  standing keep-split family). Per respect-standing-decisions + skip-if-unsure, **NO new fold was added.**
+- **Extraction quality:** all **40 new 2026-07-10 rows store skills as semicolon-separated strings —
+  0 list-repr cells among them** (extraction side stays clean, trend continues). **54 legacy list-repr
+  cells remain** in older DB rows, all transparently recovered by `_split_skills` (backlog #9
+  extraction-side stays OPEN but stable).
+- **Backlog status:** #7 (discovery resilience under egress block) remains the TOP operational risk —
+  primary boards arbeitnow/datacareer.ch/karriere.at still proxy-blocked in cloud; all 40 new rows came
+  from WebSearch + ATS/career pages (greenhouse.io, ashbyhq.com, smartrecruiters.com, join.com, lever.co).
+  #9 (list-repr) recovery INTACT (`_split_skills` present, 0 residual unparsed list-repr tokens after
+  `canon()`); extraction side stays OPEN. #1, #3, #5, #6, #8, #10 all DONE and present in the working tree
+  (#3 salary-period coverage extended today with the `day` branch).
 
 ## Data quality issues observed (2026-07-09 audit)
 - **Database stats:** **853 rows** (was 816 at the 2026-07-08 audit; **+37 from the 2026-07-08
