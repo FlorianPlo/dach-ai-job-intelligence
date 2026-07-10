@@ -425,6 +425,7 @@ def annual(r):
         else:
             mid*=12
     elif p=="hour": mid*=40*52   # assume 40h/week × 52 weeks
+    elif p=="day": mid*=5*52     # day rate (contractor): 5 working days/week × 52 weeks (2026-07-10)
     return mid
 S.append("\n## Disclosed salaries")
 S.append(f"\n_CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate **1 CHF = {CHF_TO_EUR} EUR** for cross-country comparison; the original currency/values are preserved._")

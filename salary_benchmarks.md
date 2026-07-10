@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-07-09. Only postings with explicitly stated salary — **142 of 878** disclosed pay. Nothing imputed._
+_Generated 2026-07-10. Only postings with explicitly stated salary — **151 of 918** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 
@@ -14,6 +14,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | AI Engineer | Intern | Germany | Pflegia | 1500 | 2420 | EUR | month | ~24k | ~24k EUR |
 | AI Engineer | Junior | Germany | DCF Verlag GmbH | 36000 | 40000 | EUR | year | ~38k | ~38k EUR |
 | AI Engineer | Junior | Austria | ANDRITZ | 3396 | – | EUR | month | ~48k | ~48k EUR |
+| AI Engineer | Junior | Germany | Bending Spoons | 66065 | 66065 | EUR | year | ~66k | ~66k EUR |
 | AI Engineer | Mid | Austria | epunkt GmbH | 4500 | 5500 | EUR | month | ~70k | ~70k EUR |
 | AI Engineer | Mid | Austria | ÖAMTC | 3500 | – | EUR | month | ~49k | ~49k EUR |
 | AI Engineer | Mid | Austria | Erste Bank | 46276 | – | EUR | year | ~46k | ~46k EUR |
@@ -29,6 +30,8 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | AI Engineer | Mid | Austria | Anton Paar GmbH | 4300 | – | EUR | month | ~60k | ~60k EUR |
 | AI Engineer | Mid | Austria | Anton Paar | 4300 | – | EUR | month | ~60k | ~60k EUR |
 | AI Engineer | Mid | Austria | KNAPP AG | 3800 | – | EUR | month | ~53k | ~53k EUR |
+| AI Engineer | Mid | Austria | Qualysoft | 520 | 560 | EUR | day | ~140k | ~140k EUR |
+| AI Engineer | Mid | Austria | Fronius International | 3889 | 4993 | EUR | month | ~62k | ~62k EUR |
 | AI Engineer | Senior | Germany | Sikia.ai | 80000 | 100000 | EUR | year | ~90k | ~90k EUR |
 | AI Engineer | Senior | Austria | FiveSquare GmbH | 4000 | – | EUR | month | ~56k | ~56k EUR |
 | AI Engineer | Senior | Austria | KERN engineering careers GmbH | 4700 | – | EUR | month | ~66k | ~66k EUR |
@@ -64,6 +67,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Engineer | Mid | Austria | Adevinta | 43000 | – | EUR | year | ~43k | ~43k EUR |
 | Data Engineer | Mid | Austria | Greentube GmbH | 70000 | 75000 | EUR | year | ~72k | ~72k EUR |
 | Data Engineer | Mid | Austria | REWE International Dienstleistungsgesellschaft m.b.H. | 43000 | – | EUR | year | ~43k | ~43k EUR |
+| Data Engineer | Mid | Austria | A1 Telekom Austria | 45817 | – | EUR | year | ~46k | ~46k EUR |
 | Data Engineer | Senior | Austria | Capgemini | 67000 | – | EUR | year | ~67k | ~67k EUR |
 | Data Engineer | Senior | Austria | Tieto Austria | 3954 | – | EUR | month | ~55k | ~55k EUR |
 | Data Engineer | Senior | Austria | APG - Austrian Power Grid AG | 4309.51 | – | EUR | month | ~60k | ~60k EUR |
@@ -74,6 +78,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Engineer | Senior | Austria | Red Bull | 2535 | – | EUR | month | ~35k | ~35k EUR |
 | Data Engineer | Senior | Austria | A1 Telekom Austria | 66000 | – | EUR | year | ~66k | ~66k EUR |
 | Data Engineer | Senior | Austria | Dynatrace | 61000 | – | EUR | year | ~61k | ~61k EUR |
+| Data Engineer | Senior | Austria | ÖBB | 56854 | – | EUR | year | ~57k | ~57k EUR |
 | Data Engineer | Lead/Principal | Austria | KERN engineering careers GmbH | 4470 | 6000 | EUR | month | ~73k | ~73k EUR |
 | Data Scientist | Intern | Switzerland | CERN | 3486 | 3486 | CHF | month | ~42k | ~44k EUR |
 | Data Scientist | Intern | Switzerland | Dialectic | 60000 | 85000 | CHF | year | ~72k | ~76k EUR |
@@ -86,6 +91,8 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Scientist | Junior | Austria | Invenium Data Insights | 2700 | – | EUR | month | ~38k | ~38k EUR |
 | Data Scientist | Junior | Austria | REWE International AG | 45000 | – | EUR | year | ~45k | ~45k EUR |
 | Data Scientist | Junior | Germany | Bertelsmann | 65000 | 70000 | EUR | year | ~68k | ~68k EUR |
+| Data Scientist | Junior | Austria | TrueChoice Solutions | 50000 | – | EUR | year | ~50k | ~50k EUR |
+| Data Scientist | Junior | Switzerland | Swissquote Bank SA | 80000 | 95000 | CHF | year | ~88k | ~92k EUR |
 | Data Scientist | Mid | Germany | alphacoders GmbH | 70000 | 80000 | EUR | year | ~75k | ~75k EUR |
 | Data Scientist | Mid | Austria | Österreichische Lotterien | 55000 | – | EUR | year | ~55k | ~55k EUR |
 | Data Scientist | Mid | Austria | wikifolio Financial Technologies AG | 3954 | – | EUR | month | ~55k | ~55k EUR |
@@ -109,6 +116,8 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Scientist | Mid | Austria | Accenture | 48160 | – | EUR | year | ~48k | ~48k EUR |
 | Data Scientist | Mid | Austria | Fronius International GmbH | 3775 | 4863 | EUR | month | ~60k | ~60k EUR |
 | Data Scientist | Mid | Austria | Samsung SDI Battery Systems GmbH | 54500 | – | EUR | year | ~54k | ~54k EUR |
+| Data Scientist | Mid | Austria | Fronius International | 3775 | 4863 | EUR | month | ~60k | ~60k EUR |
+| Data Scientist | Mid | Austria | UBIMET | 50000 | – | EUR | year | ~50k | ~50k EUR |
 | Data Scientist | Senior | Austria | XXXLdigital | 60000 | – | EUR | year | ~60k | ~60k EUR |
 | Data Scientist | Senior | Austria | Schachinger Logistik | 60000 | 80000 | EUR | year | ~70k | ~70k EUR |
 | Data Scientist | Senior | Austria | Bundesrechenzentrum | 66806 | – | EUR | year | ~67k | ~67k EUR |
@@ -159,10 +168,10 @@ _Pools EUR rows plus CHF rows converted at **1 CHF = 1.05 EUR** (pinned). All fi
 
 | Role | n | Median ~annual | Range |
 |---|---|---|---|
-| AI Engineer | 30 | ~60k | 24k–168k |
+| AI Engineer | 33 | ~62k | 24k–168k |
 | AI Researcher | 8 | ~102k | 57k–504k |
-| Data Engineer | 27 | ~60k | 29k–165k |
-| Data Scientist | 53 | ~61k | 38k–115k |
+| Data Engineer | 29 | ~60k | 29k–165k |
+| Data Scientist | 57 | ~61k | 38k–115k |
 | ML Engineer | 23 | ~61k | 29k–235k |
 | Other | 1 | ~55k | 55k–55k |
 
