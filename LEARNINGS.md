@@ -1,7 +1,73 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-10 (self-improvement meta-run on Opus).
+Last audited: 2026-07-11 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-11 audit)
+- **Database stats:** **943 rows** (was 918 at the 2026-07-10 audit; **+25 from today's 2026-07-11
+  discovery run — 25 rows dated 2026-07-11**, already written before this meta-run), **0 ragged rows**
+  (22 columns on every one of 943 rows; column-count distribution `{22: 943}`), **0 empty `job_id`**,
+  **0 duplicate `job_id`** (943 unique). `first_seen_date` (recent tail): `{…, 2026-07-06: 28,
+  2026-07-07: 19, 2026-07-08: 37, 2026-07-09: 25, 2026-07-10: 40, 2026-07-11: 25}`. With
+  `RUN=2026-07-11` the genuine "new this run" count is **25** (matches the swarm consolidation).
+- **This run's discovery (25 new / 109 raw across 5 agents):** raw source split **Germany 28,
+  Company pages 22, Switzerland 22, Entry-level 20, Austria 17**; dedup **83 already-in-DB `job_id`
+  dups + 1 batch-internal dup, 0 invalid → 25 kept**. **Dedup hit rate 84/109 = 77% existing** — a
+  healthy sign of coverage overlap/saturation across agents (the DB now re-surfaces most live postings
+  before finding a new one). The 25 kept rows resolve to **country DE 13, AT 6, CH 6**; **role
+  ML Engineer 7, Data Scientist 5, Data Engineer 5, AI Researcher 5, AI Engineer 3**; **seniority
+  Mid 8, Intern 8, Senior 8, Junior 1** (0 Lead/Principal this run). All 25 locations resolve to a
+  DACH country (13 bare `"Germany"` or `"City, Germany"`, rest `"City, Country"`); **no new no-comma
+  slashed/parenthetical specials, so no `_CITY_COUNTRY` entry needed**.
+- **Full-DB mixes (all valid):** Country mix (via `country()`) clean `{Germany 520, Switzerland 230,
+  Austria 193}` — 0 non-DACH / leftover buckets; N=943 accounts fully. (The raw last-comma-segment
+  still shows the historical strays `Germany (Remote) 5, Munich/Berlin 2, Zurich/London 1,
+  Heidelberg/Berlin 1, Remote 1`, all correctly folded to their DACH country by the paren-strip /
+  slash-city-map / reversed-order-suffix handlers.) Role mix `{Data Scientist 304, ML Engineer 237,
+  AI Engineer 172, Data Engineer 134, AI Researcher 93, Other 3}`; seniority mix `{Mid 291, Senior 271,
+  Intern 212, Junior 131, Lead/Principal 38}`.
+- **🛠️ CODE CHANGE MADE this run (one, additive/safe) — new vendor-prefix alias `google bigquery →
+  BigQuery`.** The skill sweep surfaced **`Google BigQuery`(1)** split from the canonical **`BigQuery`(17)**
+  — the exact same Google product, differing only by the vendor prefix (`_CASE_MAP` can't bridge it).
+  This is the SAME class as the four existing vendor-prefix folds (`microsoft azure→Azure`,
+  `google cloud→GCP`, `amazon web services→AWS`, `amazon/aws sagemaker→SageMaker`), so it is a safe,
+  consistent additive entry. Full-token only (never touches substrings). **Latent merge** — BigQuery
+  17→18 sits far below every table cutoff (§1 top-20's floor is ~70), so **all three deliverables are
+  byte-identical before/after** (verified via diff). Read-time only, jobs.csv untouched, reversible.
+  Verified `python3 analysis_gen.py 2026-07-11` EXIT 0 before and after; the `RUN=1900-01-01` prev=0
+  first-run path re-verified EXIT 0 (scratch report removed); N unchanged at 943.
+- **Skill-alias audit (strict n≥3-for-BOTH-forms bar, at N=943):** swept every `required_skills` /
+  `nice_to_have_skills` token through the full `canon()` pipeline (`_SKILL_ALIASES` + `_CASE_MAP`) and
+  re-clustered by aggressive normalization (strip case + punctuation/spacing) — **0 residual case
+  splits, 0 residual list-repr tokens**. Only four aggressive-normalize clusters carry two distinct
+  canonical forms: **`C++`(50)/`C#`(10)** — the documented different-languages false-positive (both
+  normalize to `c`; NEVER merge); **`MLOps`(91)/`ML Ops`(1)**; **`AI Automation`(3)/`AI/Automation`(1)**;
+  **`Multimodal AI`(3)/`multi-modal AI`(2)** — each second form at n≤2, none clears the bar. Standing
+  keep-splits re-verified as either below the bar or intentionally split: **`GCP Vertex AI`(4)/
+  `Vertex AI`(7)** (both clear the bar and mirror the SageMaker vendor-prefix precedent — the recurring
+  candidate for reconsideration — but left split again per the repeated GCP/Azure sub-service standing
+  decision; NOT reversed in a safe-additive audit), `Speech Recognition`(5)/`Speech-to-Text`(3),
+  `Data Warehouse`(4)/`Data Warehouses`(1), `REST API`(5)/`REST APIs`(15). `Microsoft SQL Server`(2)/
+  `SQL Server`(1)/`MS SQL`(2) noted (all n≤2, fragmented across the existing `ms-sql→MS SQL` canonical)
+  — left as-is per skip-if-unsure (all below the bar; unifying would re-pick a canonical against a
+  standing decision). Per respect-standing-decisions, the ONLY fold added was the unambiguous
+  `google bigquery→BigQuery` vendor-prefix normalization above.
+- **Extraction quality:** all **25 new 2026-07-11 rows store skills as semicolon-separated strings —
+  0 list-repr cells among them** (extraction side stays clean, trend continues). **108 legacy list-repr
+  cells remain** in older DB rows (across both skill fields), all transparently recovered by
+  `_split_skills` (backlog #9 extraction-side stays OPEN but stable). Salary: 6 of the 25 new rows
+  disclose pay (5 EUR + 1 CHF; periods month/year); **5 are min-only (blank `salary_max`)** — mostly
+  Austrian statutory-minimum disclosures (Tecan, VIG, TU Wien, Raiffeisen monthly; Frequentis yearly).
+  `annual()` handles min-only correctly (uses the single stated value; AT-EUR-monthly ×14). No new
+  `salary_period` (still year/month/hour/day) and no new currency, so no `annual()`/`to_eur()` change.
+- **Backlog status:** #7 (discovery resilience under egress block) remains the TOP operational risk —
+  primary boards **arbeitnow.com / datacareer.ch / karriere.at still proxy-blocked** in the cloud
+  environment; all 109 discovered / 25 kept jobs came from **WebSearch + ATS/career pages**
+  (greenhouse.io, ashbyhq.com, smartrecruiters, join.com, lever.co, workday, direct career pages). The
+  77% dedup hit rate suggests the WebSearch+ATS channel is now saturating known live postings — a known
+  gap is that without the structured boards, genuinely-new listings are harder to surface (net-new rate
+  is trending down: 40→25 over the last two runs). #9 (list-repr) recovery INTACT. #1, #3, #5, #6, #8,
+  #10 all DONE and present in the working tree (#1 extended today with the `google bigquery→BigQuery` fold).
 
 ## Data quality issues observed (2026-07-10 audit)
 - **Database stats:** **918 rows** (was 853 at the 2026-07-09 audit snapshot; **+25 from the 2026-07-09

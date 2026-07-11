@@ -90,6 +90,7 @@ _SKILL_ALIASES = {
     "google cloud platform": "GCP",
     "powerbi": "Power BI",                     # "PowerBI"(2)/"Power BI"(14)
     "amazon web services": "AWS",
+    "google bigquery": "BigQuery",             # vendor-prefix fold (2026-07-11): "Google BigQuery"(1) is the exact same Google product as "BigQuery"(17); same class as the google cloud->GCP / amazon web services->AWS / amazon sagemaker->SageMaker vendor-prefix folds. Full-token only.
     # --- spacing / hyphen / vendor-prefix splits the case-fold can't catch (2026-06-27).
     # These differ by MORE than case (punctuation/spacing/vendor prefix), so _CASE_MAP
     # leaves them split. All keys are full lowercased tokens; compounds like "Spark
