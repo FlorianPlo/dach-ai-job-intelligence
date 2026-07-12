@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-07-11. Only postings with explicitly stated salary — **158 of 943** disclosed pay. Nothing imputed._
+_Generated 1900-01-01. Only postings with explicitly stated salary — **160 of 961** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 
@@ -96,6 +96,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Scientist | Junior | Germany | Bertelsmann | 65000 | 70000 | EUR | year | ~68k | ~68k EUR |
 | Data Scientist | Junior | Austria | TrueChoice Solutions | 50000 | – | EUR | year | ~50k | ~50k EUR |
 | Data Scientist | Junior | Switzerland | Swissquote Bank SA | 80000 | 95000 | CHF | year | ~88k | ~92k EUR |
+| Data Scientist | Junior | Germany | Bertelsmann SE | 65000 | 70000 | EUR | year | ~68k | ~68k EUR |
 | Data Scientist | Mid | Germany | alphacoders GmbH | 70000 | 80000 | EUR | year | ~75k | ~75k EUR |
 | Data Scientist | Mid | Austria | Österreichische Lotterien | 55000 | – | EUR | year | ~55k | ~55k EUR |
 | Data Scientist | Mid | Austria | wikifolio Financial Technologies AG | 3954 | – | EUR | month | ~55k | ~55k EUR |
@@ -140,6 +141,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Scientist | Senior | Austria | Anton Paar GmbH | 4500 | 6000 | EUR | month | ~74k | ~74k EUR |
 | Data Scientist | Senior | Austria | craftworks GmbH | 55000 | – | EUR | year | ~55k | ~55k EUR |
 | Data Scientist | Senior | Germany | FINN | 80000 | 92000 | EUR | year | ~86k | ~86k EUR |
+| Data Scientist | Senior | Austria | Bundesrechenzentrum GmbH | 66806.88 | – | EUR | year | ~67k | ~67k EUR |
 | Data Scientist | Lead/Principal | Germany | Knuddels GmbH & Co. KG | 70000 | 90000 | EUR | year | ~80k | ~80k EUR |
 | Data Scientist | Lead/Principal | Germany | Bayer AG | 104300 | 126500 | EUR | year | ~115k | ~115k EUR |
 | ML Engineer | Intern | Germany | KOSTAL Automobil Elektrik | 13 | 15 | EUR | hour | ~29k | ~29k EUR |
@@ -178,7 +180,7 @@ _Pools EUR rows plus CHF rows converted at **1 CHF = 1.05 EUR** (pinned). All fi
 | AI Engineer | 33 | ~62k | 24k–168k |
 | AI Researcher | 9 | ~102k | 53k–504k |
 | Data Engineer | 31 | ~60k | 29k–165k |
-| Data Scientist | 59 | ~61k | 38k–139k |
+| Data Scientist | 61 | ~61k | 38k–139k |
 | ML Engineer | 25 | ~61k | 29k–235k |
 | Other | 1 | ~55k | 55k–55k |
 

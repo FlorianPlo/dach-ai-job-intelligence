@@ -76,6 +76,19 @@ _SKILL_ALIASES = {
     # --- LLM tooling / orchestration libs (case safety nets; bare tokens only) ---
     "langchain": "LangChain",
     "llamaindex": "LlamaIndex",
+    # --- agent-framework / LLM-tooling case safety nets (2026-07-12; future-proofing).
+    # Same class as the langchain->LangChain / llamaindex->LlamaIndex entries above: each
+    # is a single-canonical-casing 2025-2026 framework token already present in the data
+    # (LangGraph 19, CrewAI 6, LangSmith 3, AutoGen 4/Autogen 1, Ollama 1). Locking the
+    # curated canonical casing here makes the fold deterministic regardless of how a future
+    # scrape capitalizes it, instead of relying on the frequency-vote _CASE_MAP. Full
+    # lowercased-token match only — can never touch substrings/compounds. Output is
+    # byte-identical to the pre-change _CASE_MAP result on all current rows (verified). ---
+    "langgraph": "LangGraph",
+    "crewai": "CrewAI",
+    "langsmith": "LangSmith",
+    "autogen": "AutoGen",       # consolidates "Autogen"(1)/"AutoGen"(4) to Microsoft's canonical casing
+    "ollama": "Ollama",
     # --- model providers / families (future-proofing; bare full tokens only).
     # NOTE: compounds like "Azure OpenAI", "OpenAI Codex", "OpenAI API" stay distinct —
     # only the bare provider token collapses. "openai api" folded into OpenAI deliberately. ---
