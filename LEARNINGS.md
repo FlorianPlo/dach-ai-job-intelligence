@@ -1,7 +1,59 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-11 (self-improvement meta-run on Opus).
+Last audited: 2026-07-12 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-12 audit)
+- **Database stats:** **961 rows** (was 943 at the 2026-07-11 audit; **+18 from today's 2026-07-12
+  discovery run — 18 rows dated 2026-07-12**, already written before this meta-run), **0 ragged rows**
+  (22 columns on every one of 961 rows), **0 empty `job_id`**, **0 duplicate `job_id`** (961 unique).
+  With `RUN=2026-07-12` the genuine "new this run" count is **18** (matches the swarm consolidation).
+  `python3 analysis_gen.py 2026-07-12` runs clean (EXIT 0, N=961, new=18); the `RUN=1900-01-01` prev=0
+  first-run path re-verified EXIT 0 (scratch report removed).
+- **This run's discovery (18 new / 91 raw across 5 agents):** dedup **73 already-in-DB `job_id` dups →
+  18 kept**, an **80% dedup hit rate** (73/91) — up from 77% on 2026-07-11, continuing the
+  coverage-saturation trend (net-new rate 40→25→18 over the last three runs; without the structured
+  boards, genuinely-new listings keep getting harder to surface — see backlog #7). The 18 kept rows
+  resolve to **country DE 11, AT 7, CH 0** (**100% dedup on Switzerland this run — every CH posting
+  discovered was already in the DB**); **role Data Scientist 11, AI Engineer 4, ML Engineer 3**;
+  **seniority Mid 7, Intern 5, Senior 4, Junior 2** (0 Lead/Principal, 0 Data Engineer, 0 AI Researcher
+  this run). All 18 locations resolve to a DACH country; no new no-comma slashed/parenthetical specials,
+  so **no `_CITY_COUNTRY` entry needed**.
+- **🛠️ CODE CHANGE MADE this run (one, additive/safe) — five agent-framework case-safety-net aliases.**
+  Added `langgraph→LangGraph`, `crewai→CrewAI`, `langsmith→LangSmith`, `autogen→AutoGen`, `ollama→Ollama`
+  to `_SKILL_ALIASES`. These are the **same class as the existing `langchain→LangChain` /
+  `llamaindex→LlamaIndex` future-proofing case safety nets** — each is a single-canonical-casing
+  2025-2026 agent-framework token already live in the data (**LangGraph 19, CrewAI 6, LangSmith 3,
+  AutoGen 4/Autogen 1, Ollama 1**). Locking the curated canonical casing makes the fold deterministic
+  regardless of how a future scrape capitalizes the token, rather than relying on the frequency-vote
+  `_CASE_MAP`. Full lowercased-token match only (never touches substrings/compounds). **Output is
+  byte-identical before/after on all 961 current rows** (verified via diff of all three deliverables) —
+  `_CASE_MAP` already resolved the current casings identically (including the `Autogen`(1)/`AutoGen`(4)
+  case pair), and the single-form tokens sit far below every table cutoff, so the merge is latent.
+  Read-time only, jobs.csv untouched, reversible. Verified `python3 analysis_gen.py 2026-07-12` EXIT 0
+  before and after.
+- **Skill-alias audit (strict n≥3-for-BOTH-forms bar, at N=961):** swept every `required_skills` /
+  `nice_to_have_skills` token through the full `canon()` pipeline and re-clustered by aggressive
+  normalization. **0 residual case splits after `_CASE_MAP`** (it absorbs `MLflow`(67)/`MLFlow`(3),
+  `Kubeflow`(11)/`KubeFlow`(1), `AutoGen`/`Autogen`, `agentic AI`(11)/`Agentic AI`(6), `LLaMA`/`Llama`
+  — all case-only). **No cross-form pair clears the n≥3-both-forms bar** that isn't already folded or a
+  standing keep-split: **`GCP Vertex AI`(4)/`Vertex AI`(7)** (standing GCP sub-service keep-split, the
+  recurring reconsideration candidate — left split again per skip-if-unsure); **`Triton`(2)/`NVIDIA
+  Triton`(2)** — DO NOT MERGE (ambiguous: OpenAI Triton GPU-kernel language, e.g. `Triton kernels`, vs
+  NVIDIA Triton Inference Server — genuinely different products; both below the bar anyway);
+  **`C++`(≈50)/`C#`(≈10)** the documented different-languages false-positive (never merge). SageMaker
+  family already unified via the existing `amazon/aws sagemaker→SageMaker` folds (`SageMaker` 17+3+1).
+  Per respect-standing-decisions, the ONLY change added was the five future-proofing case safety nets
+  above.
+- **Extraction quality:** all 18 new 2026-07-12 rows store skills as semicolon-separated strings (0
+  list-repr cells among them — extraction side stays clean). Legacy list-repr cells remain in older DB
+  rows, all transparently recovered by `_split_skills` (backlog #9 extraction-side stays OPEN but stable).
+- **Backlog status:** #7 (discovery resilience under egress block) remains the TOP operational risk —
+  primary boards **arbeitnow.com / datacareer.ch / karriere.at still proxy-blocked** in the cloud
+  environment; all 18 kept jobs came from **WebSearch + ATS/career pages**. The 80% dedup hit rate + the
+  0-net-new-CH result underline the saturation gap. #9 (list-repr) recovery INTACT. #1 (read-time skill
+  canonicalization) extended today with the five agent-framework case safety nets. #3, #5, #6, #8, #10
+  all DONE and present in the working tree.
 
 ## Data quality issues observed (2026-07-11 audit)
 - **Database stats:** **943 rows** (was 918 at the 2026-07-10 audit; **+25 from today's 2026-07-11
