@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-07-12. Only postings with explicitly stated salary — **160 of 961** disclosed pay. Nothing imputed._
+_Generated 2026-07-13. Only postings with explicitly stated salary — **162 of 988** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 
@@ -82,6 +82,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Engineer | Senior | Austria | A1 Telekom Austria | 66000 | – | EUR | year | ~66k | ~66k EUR |
 | Data Engineer | Senior | Austria | Dynatrace | 61000 | – | EUR | year | ~61k | ~61k EUR |
 | Data Engineer | Senior | Austria | ÖBB | 56854 | – | EUR | year | ~57k | ~57k EUR |
+| Data Engineer | Senior | Germany | Monda Labs | 75000 | 75000 | EUR | year | ~75k | ~75k EUR |
 | Data Engineer | Lead/Principal | Austria | KERN engineering careers GmbH | 4470 | 6000 | EUR | month | ~73k | ~73k EUR |
 | Data Scientist | Intern | Switzerland | CERN | 3486 | 3486 | CHF | month | ~42k | ~44k EUR |
 | Data Scientist | Intern | Switzerland | Dialectic | 60000 | 85000 | CHF | year | ~72k | ~76k EUR |
@@ -149,6 +150,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | ML Engineer | Intern | Germany | deeplify | 28 | 35 | EUR | hour | ~66k | ~66k EUR |
 | ML Engineer | Intern | Germany | Delicious Data | 20 | 25 | EUR | hour | ~47k | ~47k EUR |
 | ML Engineer | Intern | Germany | Volkswagen AG (CARIAD) | 12.82 | 17.80 | EUR | hour | ~32k | ~32k EUR |
+| ML Engineer | Intern | Germany | Deeplify | 28 | 35 | EUR | hour | ~66k | ~66k EUR |
 | ML Engineer | Junior | Germany | AMAI GmbH | 36000 | 60000 | EUR | year | ~48k | ~48k EUR |
 | ML Engineer | Junior | Switzerland | CERN | 5266 | 5793 | CHF | month | ~66k | ~70k EUR |
 | ML Engineer | Junior | Switzerland | CERN | 5266 | 5793 | CHF | month | ~66k | ~70k EUR |
@@ -179,9 +181,9 @@ _Pools EUR rows plus CHF rows converted at **1 CHF = 1.05 EUR** (pinned). All fi
 |---|---|---|---|
 | AI Engineer | 33 | ~62k | 24k–168k |
 | AI Researcher | 9 | ~102k | 53k–504k |
-| Data Engineer | 31 | ~60k | 29k–165k |
+| Data Engineer | 32 | ~60k | 29k–165k |
 | Data Scientist | 61 | ~61k | 38k–139k |
-| ML Engineer | 25 | ~61k | 29k–235k |
+| ML Engineer | 26 | ~61k | 29k–235k |
 | Other | 1 | ~55k | 55k–55k |
 
 **Confidence: LOW.** Switzerland now discloses some salaries (converted at the pinned 1 CHF = 1.05 EUR rate); samples remain small. Treat as directional only.
