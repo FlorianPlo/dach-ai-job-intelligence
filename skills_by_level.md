@@ -1,40 +1,19 @@
 # Skills by Level — DACH Data/ML/AI Roles
 
-_Generated 2026-07-13 from the full dataset of **988 jobs** (27 new this run)._
+_Generated 2026-07-14 from the full dataset of **988 jobs** (0 new this run)._
 
 Country mix: {'Germany': 549, 'Switzerland': 236, 'Austria': 203} · Role mix: {'AI Engineer': 178, 'Data Engineer': 141, 'ML Engineer': 250, 'Data Scientist': 322, 'Other': 3, 'AI Researcher': 94} · Seniority mix: {'Mid': 304, 'Senior': 281, 'Intern': 231, 'Lead/Principal': 38, 'Junior': 134}
 
 ## 0. Trend vs previous run
 
-Dataset grew 961 → 988 jobs. Trend tables exclude skills below **25 postings** (noise floor). **Rising share** (Δ percentage points of postings):
+Dataset grew 988 → 988 jobs. Trend tables exclude skills below **25 postings** (noise floor). **Rising share** (Δ percentage points of postings):
 
 | Skill | Prev | Now | Δpp |
 |---|---|---|---|
-| ETL | 25 | 29 | +0 |
-| Databricks | 49 | 53 | +0 |
-| Computer Vision | 58 | 61 | +0 |
-| Spark | 78 | 81 | +0 |
-| MLflow | 43 | 45 | +0 |
-| Azure | 120 | 124 | +0 |
-| GCP | 54 | 56 | +0 |
-| scikit-learn | 164 | 169 | +0 |
-
-**Newly appearing skills this run:** ELT, Grafana, Polars, Prometheus, applied statistics, asynchronous data fetching, automation, cloud data platforms, cloud data warehouses, data pipeline architecture, data quality, domain adaptation, perception, tabular data
 
 ### Falling / disappeared skills
 
-**Falling share** (Δ percentage points of postings):
-
-| Skill | Prev | Now | Δpp |
-|---|---|---|---|
-| Generative AI | 88 | 88 | -0 |
-| Deep Learning | 148 | 150 | -0 |
-| SQL | 319 | 326 | -0 |
-| Statistics | 62 | 62 | -0 |
-| LLMs | 238 | 243 | -0 |
-| PyTorch | 265 | 271 | -0 |
-| TensorFlow | 156 | 159 | -0 |
-| data pipelines | 44 | 44 | -0 |
+_No skill lost share vs the previous snapshot._
 
 ## 1. Most requested skills overall
 

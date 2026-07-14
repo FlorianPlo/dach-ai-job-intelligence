@@ -1,7 +1,59 @@
 # LEARNINGS — persistent skill memory for the DACH job-intelligence agent
 
 Accumulated across runs. Append/update; do not delete history without reason.
-Last audited: 2026-07-13 (self-improvement meta-run on Opus).
+Last audited: 2026-07-14 (self-improvement meta-run on Opus).
+
+## Data quality issues observed (2026-07-14 audit)
+- **Database stats:** **988 rows** (was 961 at the 2026-07-13 audit; **+27 from the 2026-07-13
+  discovery run — 27 rows dated 2026-07-13**, already written before this meta-run), **0 ragged rows**
+  (column-count distribution `{22: 988}`), **0 empty `job_id`**, **0 duplicate `job_id`** (988 unique).
+  `first_seen_date` (recent tail): `{2026-07-06: 28, 2026-07-07: 19, 2026-07-08: 37, 2026-07-09: 25,
+  2026-07-10: 40, 2026-07-11: 25, 2026-07-12: 18, 2026-07-13: 27}`. With `RUN=2026-07-14` the genuine
+  "new this run" count is **0** (no rows dated 2026-07-14 at meta-run time — all 988 fall into `prev`);
+  the report correctly renders the empty-run guard note.
+- **Full-DB mixes (all valid):** Country mix (via `country()`) clean `{Germany 549, Switzerland 236,
+  Austria 203}` — 0 non-DACH / leftover buckets; N=988 accounts fully. Role mix `{Data Scientist 322,
+  ML Engineer 250, AI Engineer 178, Data Engineer 141, AI Researcher 94, Other 3}`; seniority mix
+  `{Mid 304, Senior 281, Intern 231, Junior 134, Lead/Principal 38}`.
+- **Confirmed clean run status:** `python3 analysis_gen.py 2026-07-14` runs clean (EXIT 0, N=988,
+  new=0), verified BEFORE and AFTER the audit (no code change made, so output is unchanged).
+- **Location check (last 27 rows, first_seen ≥ 2026-07-13):** all 27 stored as clean `City, Country`
+  form (Zurich/Aarau/Nanikon-Greifensee CH; Vienna/Graz/Villach AT; Berlin/Munich/Hamburg/Karlsruhe/
+  Erlangen/Eschborn/Stuttgart/Ditzingen DE). Recent-rows country mix via `country()` = `{Germany 18,
+  Switzerland 6, Austria 3}`; every row resolves to a DACH country. **No new slashed/parenthetical/
+  reversed-order specials → no `_CITY_COUNTRY` entry needed.**
+- **Skill-alias audit (strict n≥3-for-BOTH-forms bar, at N=988):** swept every `required_skills` /
+  `nice_to_have_skills` token through the full `canon()` pipeline and re-clustered by aggressive
+  normalization (strip case + punctuation/spacing). **0 residual case splits after `_CASE_MAP`.** The
+  ONLY aggressive-normalize cluster with BOTH forms at n≥3 is the documented **`C++`(50)/`C#`(10)**
+  different-languages false-positive (both normalize to `c` — must NEVER merge). All other multi-form
+  clusters have their second form below the bar and/or are standing keep-splits: **`AI Automation`(3)/
+  `AI/Automation`(1)**, **`MLOps`(95)/`ML Ops`(1)**, **`Multimodal AI`(3)/`multi-modal AI`(2)** (standing
+  keep-split family, second form below bar), **`geo-spatial data`(1)/`geospatial data`(1)** (both below
+  bar). Recurring standing keep-splits re-verified (differ by more than case, so they don't cluster under
+  aggressive-normalize): **`GCP Vertex AI`(4)/`Vertex AI`(7)** (both clear the bar but left split again
+  per the repeated GCP sub-service standing decision + skip-if-unsure — the perennial reconsideration
+  candidate), **`Data Warehouse`(4)/`Data Warehousing`(0 this run)**, **`Triton`(2)/`NVIDIA Triton`(2)**
+  (different products, both below bar; DO NOT MERGE), **`REST API`(5)/`REST APIs`(15)** (deliberate
+  singular/plural), **`Speech Recognition`(5)/`Speech-to-Text`(3)** (both now clear n≥3 but are the
+  documented keep-split — ASR general vs the specific transcription task; distinct tokens, no aggressive-
+  normalize cluster). No cross-form pair clears the n≥3-both-forms bar that is not already folded or a
+  standing keep-split → correct action = no new fold.
+- **🛠️ NO CODE CHANGE MADE (deliberate skip, "if warranted" not met):** the DB is structurally clean
+  (0 ragged / 0 dup / 0 empty ids), all curated robustness features remain present and correct in the
+  working tree (`_split_skills` list-repr parser, `_CASE_MAP` case-fold, `natural language processing→
+  NLP` + `golang→Go` folds, §4 deterministic tie-break, `annual()` day-rate branch, `country()`
+  slash-city-map + parenthetical + reversed-order handlers, CHF→EUR 1.05, AT-monthly ×14), and the only
+  both-forms-≥3 skill cluster is the C++/C# never-merge false-positive. Every genuine near-dup pair is a
+  standing keep-split or fails the bar. Making a change with nothing warranted would violate additive-
+  only / one-change / skip-if-unsure. `jobs.csv`, its 22-column schema, and the dedup formula untouched.
+- **Backlog status:** #7 (discovery resilience under egress block) remains the TOP operational risk —
+  primary structured boards **arbeitnow.com / datacareer.ch / karriere.at presumed still proxy-blocked**
+  in the cloud environment; the recent net-new tail (40→25→18→27) shows discovery is still working via
+  WebSearch+ATS/career pages. #9 (list-repr) recovery INTACT (`_split_skills` present; legacy list-repr
+  cells transparently recovered; extraction side stays OPEN but stable). #1 (read-time skill
+  canonicalization), #3, #5, #6, #8, #10 all DONE and present in the working tree (no extension warranted
+  this run — nothing cleared the bar).
 
 ## Data quality issues observed (2026-07-13 audit)
 - **Database stats:** **961 rows** (unchanged since the 2026-07-12 audit; **no discovery run has yet
