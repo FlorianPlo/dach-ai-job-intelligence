@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-07-14. Only postings with explicitly stated salary — **162 of 988** disclosed pay. Nothing imputed._
+_Generated 2026-07-14. Only postings with explicitly stated salary — **167 of 1011** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 
@@ -15,6 +15,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | AI Engineer | Junior | Germany | DCF Verlag GmbH | 36000 | 40000 | EUR | year | ~38k | ~38k EUR |
 | AI Engineer | Junior | Austria | ANDRITZ | 3396 | – | EUR | month | ~48k | ~48k EUR |
 | AI Engineer | Junior | Germany | Bending Spoons | 66065 | 66065 | EUR | year | ~66k | ~66k EUR |
+| AI Engineer | Junior | Germany | ZDF Sparks GmbH | 36000 | 60000 | EUR | year | ~48k | ~48k EUR |
 | AI Engineer | Mid | Austria | epunkt GmbH | 4500 | 5500 | EUR | month | ~70k | ~70k EUR |
 | AI Engineer | Mid | Austria | ÖAMTC | 3500 | – | EUR | month | ~49k | ~49k EUR |
 | AI Engineer | Mid | Austria | Erste Bank | 46276 | – | EUR | year | ~46k | ~46k EUR |
@@ -32,6 +33,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | AI Engineer | Mid | Austria | KNAPP AG | 3800 | – | EUR | month | ~53k | ~53k EUR |
 | AI Engineer | Mid | Austria | Qualysoft | 520 | 560 | EUR | day | ~140k | ~140k EUR |
 | AI Engineer | Mid | Austria | Fronius International | 3889 | 4993 | EUR | month | ~62k | ~62k EUR |
+| AI Engineer | Mid | Austria | AVL List | 53500 | – | EUR | year | ~54k | ~54k EUR |
 | AI Engineer | Senior | Germany | Sikia.ai | 80000 | 100000 | EUR | year | ~90k | ~90k EUR |
 | AI Engineer | Senior | Austria | FiveSquare GmbH | 4000 | – | EUR | month | ~56k | ~56k EUR |
 | AI Engineer | Senior | Austria | KERN engineering careers GmbH | 4700 | – | EUR | month | ~66k | ~66k EUR |
@@ -56,6 +58,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Engineer | Junior | Austria | voestalpine AG | 2600 | – | EUR | month | ~36k | ~36k EUR |
 | Data Engineer | Junior | Austria | Deloitte | 49000 | – | EUR | year | ~49k | ~49k EUR |
 | Data Engineer | Junior | Germany | idalab | 15 | 15 | EUR | hour | ~31k | ~31k EUR |
+| Data Engineer | Junior | Austria | ADMIRAL Technologies | 43000 | – | EUR | year | ~43k | ~43k EUR |
 | Data Engineer | Mid | Germany | Team Passerelle | 80000 | 95000 | EUR | year | ~88k | ~88k EUR |
 | Data Engineer | Mid | Austria | TÜV AUSTRIA | 60000 | – | EUR | year | ~60k | ~60k EUR |
 | Data Engineer | Mid | Austria | ZETA | 3200 | – | EUR | month | ~45k | ~45k EUR |
@@ -98,6 +101,8 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Scientist | Junior | Austria | TrueChoice Solutions | 50000 | – | EUR | year | ~50k | ~50k EUR |
 | Data Scientist | Junior | Switzerland | Swissquote Bank SA | 80000 | 95000 | CHF | year | ~88k | ~92k EUR |
 | Data Scientist | Junior | Germany | Bertelsmann SE | 65000 | 70000 | EUR | year | ~68k | ~68k EUR |
+| Data Scientist | Junior | Switzerland | Mobiliar | 79300 | – | CHF | year | ~79k | ~83k EUR |
+| Data Scientist | Junior | Germany | Bertelsmann | 65000 | 70000 | EUR | year | ~68k | ~68k EUR |
 | Data Scientist | Mid | Germany | alphacoders GmbH | 70000 | 80000 | EUR | year | ~75k | ~75k EUR |
 | Data Scientist | Mid | Austria | Österreichische Lotterien | 55000 | – | EUR | year | ~55k | ~55k EUR |
 | Data Scientist | Mid | Austria | wikifolio Financial Technologies AG | 3954 | – | EUR | month | ~55k | ~55k EUR |
@@ -179,10 +184,10 @@ _Pools EUR rows plus CHF rows converted at **1 CHF = 1.05 EUR** (pinned). All fi
 
 | Role | n | Median ~annual | Range |
 |---|---|---|---|
-| AI Engineer | 33 | ~62k | 24k–168k |
+| AI Engineer | 35 | ~60k | 24k–168k |
 | AI Researcher | 9 | ~102k | 53k–504k |
-| Data Engineer | 32 | ~60k | 29k–165k |
-| Data Scientist | 61 | ~61k | 38k–139k |
+| Data Engineer | 33 | ~60k | 29k–165k |
+| Data Scientist | 63 | ~61k | 38k–139k |
 | ML Engineer | 26 | ~61k | 29k–235k |
 | Other | 1 | ~55k | 55k–55k |
 
