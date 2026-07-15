@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-07-14. Only postings with explicitly stated salary — **167 of 1011** disclosed pay. Nothing imputed._
+_Generated 2026-07-15. Only postings with explicitly stated salary — **171 of 1040** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 
@@ -59,6 +59,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Engineer | Junior | Austria | Deloitte | 49000 | – | EUR | year | ~49k | ~49k EUR |
 | Data Engineer | Junior | Germany | idalab | 15 | 15 | EUR | hour | ~31k | ~31k EUR |
 | Data Engineer | Junior | Austria | ADMIRAL Technologies | 43000 | – | EUR | year | ~43k | ~43k EUR |
+| Data Engineer | Junior | Germany | Alcemy GmbH | 60000 | 75000 | EUR | year | ~68k | ~68k EUR |
 | Data Engineer | Mid | Germany | Team Passerelle | 80000 | 95000 | EUR | year | ~88k | ~88k EUR |
 | Data Engineer | Mid | Austria | TÜV AUSTRIA | 60000 | – | EUR | year | ~60k | ~60k EUR |
 | Data Engineer | Mid | Austria | ZETA | 3200 | – | EUR | month | ~45k | ~45k EUR |
@@ -103,6 +104,8 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Scientist | Junior | Germany | Bertelsmann SE | 65000 | 70000 | EUR | year | ~68k | ~68k EUR |
 | Data Scientist | Junior | Switzerland | Mobiliar | 79300 | – | CHF | year | ~79k | ~83k EUR |
 | Data Scientist | Junior | Germany | Bertelsmann | 65000 | 70000 | EUR | year | ~68k | ~68k EUR |
+| Data Scientist | Junior | Austria | UBIMET GmbH | 50000 | – | EUR | year | ~50k | ~50k EUR |
+| Data Scientist | Junior | Germany | Bertelsmann SE | 65000 | 70000 | EUR | year | ~68k | ~68k EUR |
 | Data Scientist | Mid | Germany | alphacoders GmbH | 70000 | 80000 | EUR | year | ~75k | ~75k EUR |
 | Data Scientist | Mid | Austria | Österreichische Lotterien | 55000 | – | EUR | year | ~55k | ~55k EUR |
 | Data Scientist | Mid | Austria | wikifolio Financial Technologies AG | 3954 | – | EUR | month | ~55k | ~55k EUR |
@@ -130,6 +133,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Scientist | Mid | Austria | UBIMET | 50000 | – | EUR | year | ~50k | ~50k EUR |
 | Data Scientist | Mid | Austria | Frequentis | 41033 | – | EUR | year | ~41k | ~41k EUR |
 | Data Scientist | Mid | Switzerland | PostFinance | 120000 | 145000 | CHF | year | ~132k | ~139k EUR |
+| Data Scientist | Mid | Austria | REWE International | 43000 | – | EUR | year | ~43k | ~43k EUR |
 | Data Scientist | Senior | Austria | XXXLdigital | 60000 | – | EUR | year | ~60k | ~60k EUR |
 | Data Scientist | Senior | Austria | Schachinger Logistik | 60000 | 80000 | EUR | year | ~70k | ~70k EUR |
 | Data Scientist | Senior | Austria | Bundesrechenzentrum | 66806 | – | EUR | year | ~67k | ~67k EUR |
@@ -186,8 +190,8 @@ _Pools EUR rows plus CHF rows converted at **1 CHF = 1.05 EUR** (pinned). All fi
 |---|---|---|---|
 | AI Engineer | 35 | ~60k | 24k–168k |
 | AI Researcher | 9 | ~102k | 53k–504k |
-| Data Engineer | 33 | ~60k | 29k–165k |
-| Data Scientist | 63 | ~61k | 38k–139k |
+| Data Engineer | 34 | ~60k | 29k–165k |
+| Data Scientist | 66 | ~61k | 38k–139k |
 | ML Engineer | 26 | ~61k | 29k–235k |
 | Other | 1 | ~55k | 55k–55k |
 
