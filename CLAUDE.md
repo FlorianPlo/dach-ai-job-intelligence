@@ -25,7 +25,8 @@ python3 jobs.py detect                     #    find feeds for newly registered 
 python3 jobs.py fetch --date $D            # 2. structured sources -> inbox/$D/batch_NN.jsonl
 #                                            3. extraction: one job-extractor subagent per batch file
 python3 jobs.py ingest --date $D           # 4. validate + canonicalize + dedupe -> jobs.csv
-python3 jobs.py analyze --date $D          # 5. regenerate skills_by_level.md, salary_benchmarks.md, reports/$D.md
+python3 jobs.py check-active               #    re-check postings not seen in a feed for 30+ days -> is_active
+python3 jobs.py analyze --date $D          # 5. regenerate skills_by_level.md, salary_benchmarks.md, open_jobs.md, reports/$D.md
 ```
 
 ### 1. Fetch (automated, free)
@@ -80,7 +81,11 @@ computes `job_id`, dedupes and appends; it prints problems — fix obvious ones,
 location, country, work_type, salary_min/max/currency/period, required_skills,
 nice_to_have_skills (semicolon-separated), years_experience, education_required,
 language_requirements, posting_url, posting_date, source, first_seen_date, last_seen_date,
-status (open/closed — closed when gone from the company's own feed).
+status (open / closed / unknown / unverified), is_active (yes / no / ? — 2nd column, derived
+from status), active_checked_date. A posting is `open` when seen in a feed or confirmed by
+`check-active` (ATS API where possible, else page check); `closed` on 404/410, redirect away
+from the posting, "no longer available" notice, or expired JSON-LD; `unknown` when the site
+blocks checks (403/429/bot wall) — never guessed. `open_jobs.md` lists all is_active = yes.
 
 `job_id = sha1(normalized company | normalized title | primary city)[:12]` — distinct roles at
 one company stay separate; the same posting seen via two sources collapses.

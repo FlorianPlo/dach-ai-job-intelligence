@@ -19,6 +19,12 @@ Both histories were merged on 2026-11-24 (1,040 cloud rows + 276 new → 1,121 u
 - **Skill canonicalization** now lives in `pipeline/skills.py` (applied at ingest to the WHOLE
   DB, incl. list-repr cells). The cloud agent's curated alias decisions were ported there;
   `analysis_gen.py` still applies its read-time aliases + case-vote as a second safety net.
+- **check-active (2026-11-24):** of 844 postings last seen Jun–Jul, 561 were gone, 345 open, 215
+  unverifiable. Signals: arbeitnow/join.com → 410; jobs.ch → 404; karriere.at → redirect to a search
+  page; SmartRecruiters pages always contain "expired" in JS → use the API. karriere.at and the
+  Greenhouse API refuse connections for a few minutes after a burst (>16 parallel) → run with
+  `--workers 2–4` on re-checks. datacareer.ch, jobs.sap.com, startup.jobs, helsing.ai (429) block checks.
+  ~65 cloud-era rows stored a search/landing page instead of a posting URL → stay `?`.
 - **canon_url** keeps id-bearing query params (index.php?id=…, ?p=…); only tracking params are
   dropped. URL-based dedupe additionally requires matching titles (generic landing URLs).
 

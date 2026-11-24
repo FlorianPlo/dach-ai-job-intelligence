@@ -21,7 +21,7 @@ _FIELDS = ("job_id","job_title","normalized_role","seniority","seniority_basis",
            "salary_currency","salary_period","required_skills","nice_to_have_skills",
            "years_experience","education_required","language_requirements",
            "posting_url","posting_date","source","first_seen_date","last_seen_date",
-           "country","status")   # country/status columns added 2026-11-24 (blank on old rows is fine)
+           "country","status","is_active")   # country/status columns added 2026-11-24 (blank on old rows is fine)
 rows = []
 _skipped = 0
 for _r in _raw_rows:
@@ -486,6 +486,26 @@ for (c,lv),vals in sorted(bycs.items(), key=lambda x:(x[0][0], order.index(x[0][
 S.append(f"\n**Confidence: LOW.** Switzerland now discloses some salaries (converted at the pinned 1 CHF = {CHF_TO_EUR} EUR rate); samples remain small. Treat as directional only.")
 open("salary_benchmarks.md","w").write("\n".join(S))
 
+# ---------------- open_jobs.md (is_active = yes) ----------------
+O=[]
+_open=[r for r in rows if r.get("is_active")=="yes"]
+_unk=sum(1 for r in rows if r.get("is_active") not in ("yes","no"))
+O.append("# Open Jobs — DACH Data/ML/AI")
+O.append(f"\n_Generated {RUN}. **{len(_open)} postings confirmed open** (is_active = yes) of {N} in jobs.csv; "
+         f"{sum(1 for r in rows if r.get('is_active')=='no')} no longer active, {_unk} could not be verified "
+         f"(site blocks automated checks). Filter `jobs.csv` on `is_active` for the full data._")
+for c in ("Switzerland","Germany","Austria"):
+    sub=[r for r in _open if country(r)==c]
+    if not sub: continue
+    O.append(f"\n## {c} ({len(sub)})")
+    O.append("\n| Level | Role | Title | Company | City | Last seen |")
+    O.append("|---|---|---|---|---|---|")
+    for r in sorted(sub, key=lambda r:(order.index(r["seniority"]) if r["seniority"] in order else 9, r["normalized_role"], r["company"].lower())):
+        t=r["job_title"].replace("|","/")[:80]
+        O.append(f"| {r['seniority']} | {r['normalized_role']} | [{t}]({r['posting_url']}) | {r['company'].replace('|','/')[:40]} | "
+                 f"{r['location'].split(',')[0][:25]} | {r['last_seen_date']} |")
+open("open_jobs.md","w").write("\n".join(O))
+
 # ---------------- daily report ----------------
 R=[]
 R.append(f"# Run Report — {RUN}")
@@ -523,4 +543,4 @@ if os.path.exists(_rp):
     _old=open(_rp).read(); _i=_old.find("\n\n<!-- manual -->")
     if _i>=0: _keep=_old[_i:]
 open(_rp,"w").write("\n".join(R)+_keep)
-print(f"Regenerated skills_by_level.md, salary_benchmarks.md, reports/{RUN}.md  (N={N}, new={len(new_today)})")
+print(f"Regenerated skills_by_level.md, salary_benchmarks.md, open_jobs.md, reports/{RUN}.md  (N={N}, new={len(new_today)})")

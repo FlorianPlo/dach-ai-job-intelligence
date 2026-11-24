@@ -13,8 +13,8 @@ Dataset grew 852 → 1121 jobs. Trend tables exclude skills below **28 postings*
 | Vector Databases | 11 | 28 | +1 |
 | RAG | 89 | 129 | +1 |
 | CI/CD | 124 | 175 | +1 |
-| C++ | 18 | 35 | +1 |
 | Java | 18 | 35 | +1 |
+| C++ | 18 | 35 | +1 |
 | Git | 57 | 84 | +1 |
 | ETL | 27 | 43 | +1 |
 | Prompt Engineering | 23 | 37 | +1 |
@@ -36,7 +36,7 @@ Dataset grew 852 → 1121 jobs. Trend tables exclude skills below **28 postings*
 | PyTorch | 214 | 256 | -2 |
 | NLP | 87 | 89 | -2 |
 
-_Status: 355 of 1121 postings confirmed open at last check ('unverified' = not re-checked since the Jun–Jul cloud runs; closed = gone from the company's own feed)._
+_Status: 345 of 1121 postings confirmed open at last check ('unverified' = not re-checked since the Jun–Jul cloud runs; closed = gone from the company's own feed)._
 
 ## 1. Most requested skills overall
 

@@ -10,6 +10,7 @@
   python3 jobs.py detect [--limit N] [--workers N] [--only NAME]   # find each company's ATS feed
   python3 jobs.py queries [--n 15]                      # next web-search queries to try
   python3 jobs.py log-query "QUERY" --found N
+  python3 jobs.py check-active [--older-than 30]        # re-check postings not seen recently -> is_active
   python3 jobs.py status                                # registry / inbox / coverage overview
 """
 import argparse, datetime as dt, json, subprocess, sys
@@ -86,6 +87,9 @@ def main():
     s.add_argument("--only")
     s = sub.add_parser("queries"); s.add_argument("--n", type=int, default=15)
     s = sub.add_parser("log-query"); s.add_argument("query"); s.add_argument("--found", type=int, default=0)
+    s = sub.add_parser("check-active"); s.add_argument("--older-than", type=int, default=30)
+    s.add_argument("--workers", type=int, default=16); s.add_argument("--limit", type=int)
+    s.add_argument("--dry", action="store_true")
     sub.add_parser("status")
     a = ap.parse_args()
 
@@ -109,6 +113,9 @@ def main():
         print("\n".join(queries.next_queries(a.n)))
     elif a.cmd == "log-query":
         queries.log_query(a.query, a.found)
+    elif a.cmd == "check-active":
+        from pipeline import active
+        active.run(a.older_than, a.workers, dry=a.dry, limit=a.limit)
     elif a.cmd == "status":
         status()
 
