@@ -24,7 +24,7 @@ python3 jobs.py status
 ```
 
 ## Outputs
-`jobs.csv` (column `is_active`: yes / no / ?) · [`open_jobs.md`](open_jobs.md) (all open postings) ·
+`jobs.csv` (2nd column `status`: open / closed / unknown / unverified) · [`open_jobs.md`](open_jobs.md) (all open postings) ·
 `skills_by_level.md` · `salary_benchmarks.md` · `reports/YYYY-MM-DD.md`
 
 Re-check whether older postings are still online: `python3 jobs.py check-active` (default: not seen for 30+ days).

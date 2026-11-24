@@ -10,7 +10,7 @@
   python3 jobs.py detect [--limit N] [--workers N] [--only NAME]   # find each company's ATS feed
   python3 jobs.py queries [--n 15]                      # next web-search queries to try
   python3 jobs.py log-query "QUERY" --found N
-  python3 jobs.py check-active [--older-than 30]        # re-check postings not seen recently -> is_active
+  python3 jobs.py check-active [--older-than 30]        # re-check postings not seen recently -> status
   python3 jobs.py status                                # registry / inbox / coverage overview
 """
 import argparse, datetime as dt, json, subprocess, sys

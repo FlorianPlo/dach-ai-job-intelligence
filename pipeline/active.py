@@ -1,4 +1,4 @@
-"""Check whether stored postings are still online -> jobs.csv `status` + `is_active`.
+"""Check whether stored postings are still online -> jobs.csv `status` (2nd column).
 
 Order of evidence per posting (first conclusive answer wins):
   1. ATS API (exact): Greenhouse, Lever, Ashby, SmartRecruiters, Personio, Recruitee,
@@ -9,18 +9,11 @@ Order of evidence per posting (first conclusive answer wins):
   3. Anything else (403, bot wall, timeout, ambiguous page) -> unknown. Never guessed.
 
 status values: open | closed | unknown (checked, inconclusive) | unverified (never checked)
-is_active:     yes  | no     | ?
 """
 import base64, datetime as dt, json, re, threading, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlsplit, parse_qs
 from .common import UA, JOBS_CSV, JOB_FIELDS, http, http_json, norm_title, read_csv, write_csv
-
-ACTIVE = {"open": "yes", "closed": "no"}
-
-def sync_active(rows):
-    for r in rows:
-        r["is_active"] = ACTIVE.get(r.get("status", ""), "?")
 
 # ---------------------------------------------------------------- feed caches (one call per board)
 _cache, _lock = {}, threading.Lock()
@@ -242,12 +235,11 @@ def run(older_than_days=30, workers=16, today=None, dry=False, limit=None):
             j["active_checked_date"] = today
             if s == "open":
                 j["last_seen_date"] = today
-    sync_active(jobs)
     if not dry:
         write_csv(JOBS_CSV, jobs, JOB_FIELDS)
     from collections import Counter
     summary = {"checked": len(todo), "result": dict(Counter(res.values())),
                "reasons": dict(Counter(why.values()).most_common(12)),
-               "is_active_all_jobs": dict(Counter(j["is_active"] for j in jobs))}
+               "status_all_jobs": dict(Counter(j.get("status") or "?" for j in jobs))}
     print(json.dumps(summary, indent=1, ensure_ascii=False))
     return summary, res, why

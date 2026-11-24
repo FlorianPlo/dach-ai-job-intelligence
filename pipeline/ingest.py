@@ -98,8 +98,6 @@ def run(date=None):
     for j in jobs:
         for k in ("required_skills", "nice_to_have_skills"):
             j[k] = ";".join(canon_list(j.get(k, "").split(";")))
-    from .active import sync_active
-    sync_active(jobs)
     write_csv(JOBS_CSV, jobs, JOB_FIELDS)
     save_json(SEEN_JSON, seen)
     res = {"added": added, "rejected": rejected, "duplicates": dup, "not_extracted": len(missing),

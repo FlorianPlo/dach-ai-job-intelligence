@@ -21,7 +21,7 @@ _FIELDS = ("job_id","job_title","normalized_role","seniority","seniority_basis",
            "salary_currency","salary_period","required_skills","nice_to_have_skills",
            "years_experience","education_required","language_requirements",
            "posting_url","posting_date","source","first_seen_date","last_seen_date",
-           "country","status","is_active")   # country/status columns added 2026-11-24 (blank on old rows is fine)
+           "country","status")   # country/status columns added 2026-11-24 (blank on old rows is fine)
 rows = []
 _skipped = 0
 for _r in _raw_rows:
@@ -486,14 +486,14 @@ for (c,lv),vals in sorted(bycs.items(), key=lambda x:(x[0][0], order.index(x[0][
 S.append(f"\n**Confidence: LOW.** Switzerland now discloses some salaries (converted at the pinned 1 CHF = {CHF_TO_EUR} EUR rate); samples remain small. Treat as directional only.")
 open("salary_benchmarks.md","w").write("\n".join(S))
 
-# ---------------- open_jobs.md (is_active = yes) ----------------
+# ---------------- open_jobs.md (status = open) ----------------
 O=[]
-_open=[r for r in rows if r.get("is_active")=="yes"]
-_unk=sum(1 for r in rows if r.get("is_active") not in ("yes","no"))
+_open=[r for r in rows if r.get("status")=="open"]
+_unk=sum(1 for r in rows if r.get("status") not in ("open","closed"))
 O.append("# Open Jobs — DACH Data/ML/AI")
-O.append(f"\n_Generated {RUN}. **{len(_open)} postings confirmed open** (is_active = yes) of {N} in jobs.csv; "
-         f"{sum(1 for r in rows if r.get('is_active')=='no')} no longer active, {_unk} could not be verified "
-         f"(site blocks automated checks). Filter `jobs.csv` on `is_active` for the full data._")
+O.append(f"\n_Generated {RUN}. **{len(_open)} postings confirmed open** (status = open) of {N} in jobs.csv; "
+         f"{sum(1 for r in rows if r.get('status')=='closed')} closed, {_unk} could not be verified "
+         f"(site blocks automated checks). Filter `jobs.csv` on `status` (2nd column) for the full data._")
 for c in ("Switzerland","Germany","Austria"):
     sub=[r for r in _open if country(r)==c]
     if not sub: continue

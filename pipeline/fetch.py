@@ -197,8 +197,6 @@ def run(date=None, sources=("ats", "arbeitnow", "ba", "karriere"), stale_days=0,
             seen[canon_url(p["url"])] = {"state": "pending", "first": today, "last": today, "job_id": p["job_id"]}
         save_json(SEEN_JSON, seen)
         reg.save(regrows)
-        from .active import sync_active
-        sync_active(jobs)
         write_csv(JOBS_CSV, jobs, JOB_FIELDS)
 
     chars = sum(len(p["text"]) for p in out)

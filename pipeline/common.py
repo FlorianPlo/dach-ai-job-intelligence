@@ -295,11 +295,11 @@ def save_json(path, obj):
     tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     os.replace(tmp, p)
 
-JOB_FIELDS = ["job_id", "is_active", "job_title", "normalized_role", "seniority", "seniority_basis", "company", "location",
+JOB_FIELDS = ["job_id", "status", "job_title", "normalized_role", "seniority", "seniority_basis", "company", "location",
               "country", "work_type", "salary_min", "salary_max", "salary_currency", "salary_period",
               "required_skills", "nice_to_have_skills", "years_experience", "education_required",
               "language_requirements", "posting_url", "posting_date", "source", "first_seen_date",
-              "last_seen_date", "status", "active_checked_date"]
+              "last_seen_date", "active_checked_date"]
 
 COMPANY_FIELDS = ["company", "domain", "careers_url", "country", "ats", "ats_slug", "detect_status",
                   "detect_date", "last_fetched", "relevant_open", "relevant_total", "added_date", "added_via",

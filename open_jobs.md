@@ -1,6 +1,6 @@
 # Open Jobs — DACH Data/ML/AI
 
-_Generated 2026-11-24. **345 postings confirmed open** (is_active = yes) of 1121 in jobs.csv; 561 no longer active, 215 could not be verified (site blocks automated checks). Filter `jobs.csv` on `is_active` for the full data._
+_Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 in jobs.csv; 561 closed, 215 could not be verified (site blocks automated checks). Filter `jobs.csv` on `status` (2nd column) for the full data._
 
 ## Switzerland (79)
 
