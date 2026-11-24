@@ -1,0 +1,26 @@
+name: Stale issue reminders (test)
+
+on:
+  schedule:
+    - cron: "0 7 * * 5"   # Fridays 07:00 UTC = 08:00 Vienna
+  workflow_dispatch:       # "Run workflow" button for testing
+
+permissions:
+  issues: read
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Send reminders
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STALE_DAYS: ${{ vars.STALE_DAYS || '7' }}      # set to 0 for testing
+          TEST_TO: florian03ploder@gmail.com
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          OPT_OUT_ISSUE: ${{ vars.OPT_OUT_ISSUE }}
+          DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
+        run: python3 scripts/stale_reminders.py
