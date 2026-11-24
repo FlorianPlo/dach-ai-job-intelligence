@@ -1,30 +1,27 @@
 # DACH Data/ML/AI Job Intelligence
 
-Autonomous daily agent that scans Switzerland / Germany / Austria for
-Data Science · ML Engineer · AI Engineer · Data Engineer · AI Researcher roles,
-maintains a deduplicated database, and regenerates skills/salary analysis.
+Tracks Data Science · ML · AI Engineering · Data Engineering · AI Research roles in
+Switzerland / Germany / Austria, keeps a deduplicated database, and generates
+skills-by-level and salary analysis. Run on demand or monthly.
 
-Full agent spec: [`CLAUDE.md`](CLAUDE.md).
+Agent spec: [`CLAUDE.md`](CLAUDE.md) · extraction spec: [`.claude/agents/job-extractor.md`](.claude/agents/job-extractor.md)
 
-## Files
-| File | What it is |
-|---|---|
-| `jobs.csv` | Master deduplicated job database (one row per `job_id`) |
-| `analysis_gen.py` | Regenerates the three reports below from `jobs.csv` |
-| `skills_by_level.md` | **Primary** — most-requested skills per role × seniority, with trends |
-| `salary_benchmarks.md` | Salary medians/ranges per role × seniority × country |
-| `reports/YYYY-MM-DD.md` | Daily delta report (new jobs, breakdowns, sources) |
+## How it works
+1. `python3 jobs.py fetch` — Python pulls public job feeds (company ATS feeds, Bundesagentur
+   für Arbeit, Arbeitnow, karriere.at), keeps only new relevant DACH postings, writes small
+   batches to `inbox/<date>/`. No tokens spent.
+2. Claude runs ~15–25 rotating web searches for what feeds miss (Indeed/LinkedIn snippets →
+   company → original posting) and queues finds with `jobs.py add-url` / `add-company`.
+3. Haiku subagents extract structured fields per batch.
+4. `python3 jobs.py ingest` then `python3 jobs.py analyze`.
 
-## Run a cycle manually
+## Company index
+`companies.csv` grows every run. To load a big list:
 ```
-python3 analysis_gen.py 2026-06-27   # regenerate analysis for a given run date
+python3 jobs.py import-companies my_companies.csv   # columns like name, website, country
+python3 jobs.py detect                              # finds each company's job feed (~1 min / 70)
+python3 jobs.py status
 ```
 
-## Schedule
-Runs daily as a Claude Code cloud agent (07:00 Europe/Vienna). The cloud run
-discovers new postings, dedupes into `jobs.csv`, regenerates the reports, and
-commits the results back to this repo.
-
-## Working sources
-Arbeitnow API · datacareer.ch · karriere.at. LinkedIn/Indeed/StepStone/Glassdoor
-are intentionally **not** scraped (auth/aggregator).
+## Outputs
+`jobs.csv` · `skills_by_level.md` · `salary_benchmarks.md` · `reports/YYYY-MM-DD.md`

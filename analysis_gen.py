@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
-"""Regenerate skills_by_level.md, salary_benchmarks.md and the daily report from jobs.csv.
+"""Regenerate skills_by_level.md, salary_benchmarks.md and the run report from jobs.csv.
 Usage: python3 analysis_gen.py <RUN_DATE>  (e.g. 2026-06-23)
 Trend deltas compare current full dataset vs the snapshot of rows first seen BEFORE RUN_DATE.
 """
-import csv, sys
+import csv, json, os, sys
 from collections import Counter, defaultdict
+from pipeline.common import country_of
 
 RUN = sys.argv[1]
 rows = list(csv.DictReader(open("jobs.csv")))
 N = len(rows)
 order = ["Intern","Junior","Mid","Senior","Lead/Principal"]
 def sk(r): return [s for s in r["required_skills"].split(";") if s]
-def country(r): return r["location"].split(",")[-1].strip()
+def country(r): return r.get("country") or country_of(r["location"]) or "Unknown"
+MIN_TREND = 3   # ignore skills with < MIN_TREND postings in both snapshots (n=1 churn is noise)
 
 prev = [r for r in rows if r["first_seen_date"] < RUN]
 new_today = [r for r in rows if r["first_seen_date"] == RUN]
@@ -40,6 +42,7 @@ else:
     def share(c,n): return (100*c/n) if n else 0
     deltas=[]
     for s in set(list(cur_f)+list(prev_f)):
+        if max(cur_f.get(s,0), prev_f.get(s,0)) < MIN_TREND: continue
         d = share(cur_f.get(s,0),N) - share(prev_f.get(s,0),Np)
         deltas.append((s,d,prev_f.get(s,0),cur_f.get(s,0)))
     rising=[d for d in sorted(deltas,key=lambda x:-x[1]) if d[1]>0][:8]
@@ -66,6 +69,9 @@ else:
     if gone_skills:
         L.append(f"\n**Disappeared this run** (present before, absent now): {', '.join(sorted(gone_skills)[:20])}")
 
+n_open=sum(1 for r in rows if r.get("status")!="closed")
+L.append(f"\n_Status: {n_open} of {N} postings still open at last check (closed = gone from the company's own job feed)._")
+L.append(f"\n_Trend tables only include skills seen in ≥{MIN_TREND} postings._")
 L.append("\n## 1. Most requested skills overall")
 L.append("\n| Skill | Jobs | % of postings |")
 L.append("|---|---|---|")
@@ -136,7 +142,7 @@ def annual(r):
     if not vals: return None
     mid=sum(vals)/len(vals)
     p=r["salary_period"]
-    if p=="month": mid*=12
+    if p=="month": mid*= 14 if country(r)=="Austria" else 12   # AT: 13th+14th salary convention
     elif p=="hour": mid*=40*52   # assume 40h/week × 52 weeks
     return mid
 S.append("\n## Disclosed salaries")
@@ -146,22 +152,27 @@ for r in sorted(sal, key=lambda r:(r["normalized_role"],order.index(r["seniority
     a=annual(r); astr=f"~{a/1000:.0f}k" if a else "–"
     S.append(f"| {r['normalized_role']} | {r['seniority']} | {country(r)} | {r['company']} | {r['salary_min'] or '–'} | {r['salary_max'] or '–'} | {r['salary_currency']} | {r['salary_period']} | {astr} |")
 # medians by role
-S.append("\n## Rough annualised median by role (EUR-equivalent, all seniorities pooled)")
-byrole=defaultdict(list)
-for r in sal:
-    a=annual(r)
-    if a and r["salary_currency"]=="EUR": byrole[r["normalized_role"]].append(a)
-S.append("\n| Role | n | Median ~annual | Range |")
-S.append("|---|---|---|---|")
 import statistics
-for role,vals in sorted(byrole.items()):
-    S.append(f"| {role} | {len(vals)} | ~{statistics.median(vals)/1000:.0f}k | {min(vals)/1000:.0f}k–{max(vals)/1000:.0f}k |")
-S.append("\n**Confidence: LOW.** Switzerland still discloses no salaries. Treat as directional only.")
+def med_table(title, keyf):
+    S.append(f"\n## {title}")
+    grp=defaultdict(list)
+    for r in sal:
+        a=annual(r)
+        if a: grp[keyf(r)+(r["salary_currency"] or "?",)].append(a)
+    S.append("\n| Group | Cur | n | Median ~annual | Range | Confidence |")
+    S.append("|---|---|---|---|---|---|")
+    for k,vals in sorted(grp.items()):
+        conf = "ok" if len(vals)>=8 else ("low" if len(vals)>=3 else "very low")
+        S.append(f"| {' · '.join(k[:-1])} | {k[-1]} | {len(vals)} | ~{statistics.median(vals)/1000:.0f}k | {min(vals)/1000:.0f}k–{max(vals)/1000:.0f}k | {conf} |")
+med_table("Median by role (all seniorities, per currency — no FX conversion)", lambda r:(r["normalized_role"],))
+med_table("Median by country × seniority", lambda r:(country(r), r["seniority"]))
+S.append("\n_Annualisation: month ×14 for Austria (13th/14th salary), ×12 elsewhere; hour ×40×52. Midpoint of min/max._")
+S.append("\n**Confidence is per row above.** Swiss postings rarely disclose pay. Treat as directional only.")
 open("salary_benchmarks.md","w").write("\n".join(S))
 
 # ---------------- daily report ----------------
 R=[]
-R.append(f"# Daily Report — {RUN}")
+R.append(f"# Run Report — {RUN}")
 R.append(f"\n## Summary")
 R.append(f"- **New jobs added this run:** {len(new_today)}")
 R.append(f"- **Total in database:** {N} (was {Np})")
@@ -173,5 +184,13 @@ R.append("\n## Notable new postings")
 for r in new_today[:6]:
     sal_s = f" — {r['salary_min']}–{r['salary_max'] or ''} {r['salary_currency']}/{r['salary_period']}" if r['salary_min'] else ""
     R.append(f"- **{r['company']}** ({r['location']}) — {r['job_title']} [{r['seniority']}]{sal_s}")
+man=f"inbox/{RUN}/manifest.json"
+if os.path.exists(man):
+    m=json.load(open(man))
+    R.append("\n## Sources (automated fetch)")
+    for line in m.get("log",[]): R.append(f"- {line}")
+    R.append(f"- New postings queued: {m.get('new_postings')} (~{m.get('approx_input_tokens')} input tokens for extraction)")
+    R.append(f"- Known jobs re-seen: {m.get('known_jobs_reseen')} · marked closed: {m.get('marked_closed')} · companies added to registry: {m.get('companies_added')}")
+R.append(f"\n**Open postings in DB:** {sum(1 for r in rows if r.get('status')!='closed')} of {N}")
 open(f"reports/{RUN}.md","w").write("\n".join(R))
 print(f"Regenerated skills_by_level.md, salary_benchmarks.md, reports/{RUN}.md  (N={N}, new={len(new_today)})")

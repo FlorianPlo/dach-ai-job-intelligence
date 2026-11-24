@@ -7,3 +7,7 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Per-run work files (rebuilt by jobs.py fetch)
+inbox/
+*.tmp
