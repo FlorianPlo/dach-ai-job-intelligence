@@ -1,4 +1,893 @@
 {
+"1komma5grad.jobs.personio.com/job/2645316": {
+"first": "2026-07-13",
+"job_id": "acbb3266b9c0",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"1komma5grad.jobs.personio.de/job/2645316": {
+"first": "2026-07-01",
+"job_id": "6ae89649d079",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"adjoe.io/careers/open-positions/16bf350d-3cd2-4dc2-98cb-cb6d589bae30": {
+"first": "2026-06-28",
+"job_id": "24af6751a8fa",
+"last": "2026-06-28",
+"state": "ingested"
+},
+"adjoe.io/careers/open-positions/1d7e558c-8e16-4c11-9c5f-ce6061cc71e0": {
+"first": "2026-06-27",
+"job_id": "d33fb56c59cc",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"adjoe.io/careers/open-positions/1f4c2a9e-366d-40dc-ab3c-b27263dc9e22": {
+"first": "2026-06-27",
+"job_id": "4d65d2f21342",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"adsquare.jobs.personio.de/job/2573280": {
+"first": "2026-07-12",
+"job_id": "fe6583a82d01",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"ag.wd3.myworkdayjobs.com/en-us/airbus/job/immenstaad-am-bodensee/internship--d-f-m--in-ai-for-functional-avionics_jr10417809": {
+"first": "2026-07-08",
+"job_id": "01d608a42a5c",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"ai-jobs.net/job/51842-junior-data-engineer-fmx": {
+"first": "2026-06-23",
+"job_id": "172b8f5047f6",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"ai.works-hub.com/jobs/werkstudent-w-slash-m-slash-d-ki-slash-ai-datenmanagement-2b7": {
+"first": "2026-06-23",
+"job_id": "f90ac14e3be0",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"aijobs.net/job/1208835-ai-software-developer-fmd": {
+"first": "2026-07-14",
+"job_id": "caed448a666b",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"aijobs.net/job/1344803-werkstudent-data-engineering-wmd": {
+"first": "2026-07-11",
+"job_id": "e3942356a400",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"aijobs.net/job/148629-data-scientist-mfx-with-focus-on-large-language-models-llms": {
+"first": "2026-06-28",
+"job_id": "576321c37996",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"aijobs.net/job/370308-working-student-ai-and-cyber-security": {
+"first": "2026-07-04",
+"job_id": "6fb157e257ca",
+"last": "2026-07-04",
+"state": "ingested"
+},
+"aijobs.net/job/65538-internship-generative-ai-with-llms": {
+"first": "2026-07-03",
+"job_id": "88c0ef8db138",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"aijobs.net/job/813301-reinforcement-learning-intern": {
+"first": "2026-07-11",
+"job_id": "c3f31c795fb5",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"aijobs.net/job/943248-werkstudent-machine-learning-mwd-bereich-software-engineering": {
+"first": "2026-07-11",
+"job_id": "c8827ba8235d",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"aijobs.net/job/955112-data-scientist-ai-engineer-mfd": {
+"first": "2026-07-05",
+"job_id": "1db2f6c492e7",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"alpas.ai/careers": {
+"first": "2026-06-30",
+"job_id": "24c470648b97",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"appliedai.jobs.personio.de/job/2420035": {
+"first": "2026-06-26",
+"job_id": "f96ca3089bf5",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"applike-group.com/jobs/f2f88590-c489-4daa-ac08-7402f49b7d53": {
+"first": "2026-07-02",
+"job_id": "4b72f691676e",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"applike.com/careers": {
+"first": "2026-06-30",
+"job_id": "1a32ba8f8f52",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"apply.workable.com/alcemy/j/9bc7512ef4": {
+"first": "2026-07-15",
+"job_id": "c40bfae35144",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"apply.workable.com/unit8/j/ae858815bb": {
+"first": "2026-07-10",
+"job_id": "c9883e1d59c5",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"apply.workable.com/visium/j/a3b33035f8": {
+"first": "2026-07-05",
+"job_id": "4254ee6e1711",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"apply.workable.com/visium/j/ad9529061f": {
+"first": "2026-07-05",
+"job_id": "e0e860eeef83",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"at.indeed.com/viewjob?jk=afdad099dc4ab376": {
+"first": "2026-06-29",
+"job_id": "dfa00553e359",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"at.linkedin.com/jobs/view/machine-learning-engineer-w-m-d-at-anton-paar-4102190427": {
+"first": "2026-07-04",
+"job_id": "90c9d19d8237",
+"last": "2026-07-04",
+"state": "ingested"
+},
+"basf.jobs/light_green_eu/job/ludwigshafen-machine-learning-engineer-large-language-models-(mfd)-67061/933147701": {
+"first": "2026-06-27",
+"job_id": "45fa976ca286",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"basf.jobs/orange_eu/job/ludwigshafen-data-scientist-(mfd)-67061/758199301": {
+"first": "2026-06-27",
+"job_id": "11a7eae3c906",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"biped.dbm.unibas.ch/apply/data-scientist-oncology-start-july-september-2026": {
+"first": "2026-06-26",
+"job_id": "467660287d07",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"blackforestlabs.ai/careers": {
+"first": "2026-06-30",
+"job_id": "5f7a1aec8673",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"boards.greenhouse.io/doctolib/jobs/6106814003": {
+"first": "2026-06-25",
+"job_id": "ec7dee3c37f6",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"boards.greenhouse.io/eyeo/jobs/4598651": {
+"first": "2026-07-01",
+"job_id": "6af159bf3e04",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"boards.greenhouse.io/freenow/jobs/5045335": {
+"first": "2026-06-26",
+"job_id": "7ef5f0015da8",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"boards.greenhouse.io/nubank/jobs/3820236": {
+"first": "2026-06-26",
+"job_id": "d5d8ebc8fad4",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"boards.greenhouse.io/traderepublicbank/jobs/4566430003": {
+"first": "2026-06-26",
+"job_id": "ceb28cc9e08f",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"brlriskconsulting.recruitee.com/o/praktikant-wmd-data-science-artificial-intelligence-dsa-im-bereich-risk-advisory-services-ras": {
+"first": "2026-07-14",
+"job_id": "e9e1cff72a93",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"builtin.com/job/ai-engineerresearcher-intern/4259166": {
+"first": "2026-06-25",
+"job_id": "2cfb4231f84f",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"builtin.com/job/machine-learning-engineer-mfx/4110385": {
+"first": "2026-07-05",
+"job_id": "797b0252c95a",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"cadence.wd1.myworkdayjobs.com/en-us/external_careers/job/feldkirchen-munich/intern-ai-driven-flow-validation-for-analog-design--f-m-d-_r54955": {
+"first": "2026-07-02",
+"job_id": "fdbb5b67106b",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"career.ifta.com/jobposting/7916bc70f8aec1321c06f10ae7e6b3344fb27b68": {
+"first": "2026-07-10",
+"job_id": "bf115d855c0b",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"career.nx-ai.com/o/robotics-research-engineer-fmd": {
+"first": "2026-11-24",
+"job_id": "ff5bcf78193c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"career.silicon-austria-labs.com/staff-scientist-embedded-ai-all-genders-eng-j41.html": {
+"first": "2026-07-06",
+"job_id": "39a267f2e55c",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"careerlift.jobs/a1-telekom-austria-big-data-engineer-f-m-group-bi-and-advanced-analytics-93489098": {
+"first": "2026-07-10",
+"job_id": "70165d40e987",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"careers.allianz.com/global/en/job/99961/werkstudent-im-bereich-data-engineering-data-analytics-und-genai-m-w-d": {
+"first": "2026-07-10",
+"job_id": "be8ef0fe7e4a",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"careers.allianz.com/job/m%c3%bcnchen-junior-machine-learning-scientist-(mfd)-80802/1187749201": {
+"first": "2026-07-05",
+"job_id": "31943f114fc8",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"careers.allianz.com/job/unterf%c3%b6hring-(bei-m%c3%bcnchen)-data-scientist-intern-(mfd)-85774/845878501": {
+"first": "2026-06-26",
+"job_id": "5ec9aa5201c0",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"careers.allianz.com/job/unterf%c3%b6hring-junior-aktuar-data-scientist-(mwd)-f%c3%bcr-das-pricing-aktuariat-85774/746996701": {
+"first": "2026-07-05",
+"job_id": "f410915b5df8",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"careers.andritz.com/andritz/job/graz-ai-&-digitalization-engineer-(mfd)-for-20hweek-styr/1357640757": {
+"first": "2026-06-30",
+"job_id": "ef870fd5d4cf",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"careers.andritz.com/andritz/job/graz-ai-digitalization-engineer-(mfd)-for-20hweek-styr/1357640757": {
+"first": "2026-07-01",
+"job_id": "4617df30b29b",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"careers.bakerhughes.com/my/ms/job/r162413/emerging-talent-working-student-intern-computational-imaging-pytorch-2026-garching": {
+"first": "2026-07-10",
+"job_id": "660ad26a56c7",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"careers.celonis.com/join-us/open-positions": {
+"first": "2026-06-26",
+"job_id": "1fc1484cec6c",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"careers.celonis.com/join-us/open-positions/job-detail?jobid=7635158003": {
+"first": "2026-06-27",
+"job_id": "0102bd549922",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"careers.cern/jobs/ai-solutions-engineer": {
+"first": "2026-07-10",
+"job_id": "575aab78cd65",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"careers.db.com": {
+"first": "2026-06-30",
+"job_id": "26b2e3b797f1",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"careers.db.com/jobs": {
+"first": "2026-07-01",
+"job_id": "5638c419b326",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"careers.db.com/professionals/search-roles": {
+"first": "2026-06-23",
+"job_id": "a87faee3b490",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"careers.deliveryhero.com/job/associate-data-scientist-2026-tech-grad-program-in-berlin-germany-jid-8142": {
+"first": "2026-06-30",
+"job_id": "b054ca0bd93d",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"careers.deliveryhero.com/job/associate-machine-learning-engineer-l-2026-tech-grad-program-in-berlin-germany-jid-8009": {
+"first": "2026-06-25",
+"job_id": "c9f9bcc08ee9",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"careers.deliveryhero.com/job/data-engineer-l-2026-tech-grad-program-in-berlin-germany-jid-8006": {
+"first": "2026-06-30",
+"job_id": "6751951d1bfd",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"careers.deliveryhero.com/job/junior-data-engineer-quick-commerce-in-berlin-germany-jid-3247": {
+"first": "2026-06-25",
+"job_id": "1f80b0083efd",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"careers.deliveryhero.com/job/junior-data-scientist-consumer-all-genders-in-berlin-germany-jid-1929": {
+"first": "2026-06-25",
+"job_id": "82dd7afbab3d",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"careers.deliveryhero.com/job/senior-ai-engineer-agentic-ai-in-berlin-germany-jid-5224": {
+"first": "2026-06-25",
+"job_id": "8aa8f69891ff",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"careers.dsm.com": {
+"first": "2026-06-30",
+"job_id": "47df7debdb14",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"careers.dynatrace.com/jobs/9133ff1d-df58-45d0-b2c8-cbf4f51fb6e1": {
+"first": "2026-06-28",
+"job_id": "1c2d923cce9b",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"careers.epfl.ch/job/lausanne-ai-research-engineers-swiss-ai-initiative/1163856855": {
+"first": "2026-07-01",
+"job_id": "4d03eae368ac",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"careers.epfl.ch/job/lausanne-machine-learning-engineer/1163693155": {
+"first": "2026-06-28",
+"job_id": "7797397c6873",
+"last": "2026-06-28",
+"state": "ingested"
+},
+"careers.ey.com/ey/job/zurich-ai-junior-engineer-zurich-8005/1229857901": {
+"first": "2026-06-23",
+"job_id": "26726923881d",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"careers.getyourguide.com/positions/engineering/senior-data-scientist-data-product/berlin": {
+"first": "2026-07-07",
+"job_id": "2d8733b9fd52",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"careers.greentube.com/finance-ai-process-automation-engineer-fmd-eng-j627.html": {
+"first": "2026-07-05",
+"job_id": "6dfa41a5bff5",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"careers.greentube.com/real-time-data-engineer-fmd-eng-j377.html": {
+"first": "2026-06-30",
+"job_id": "0dde77dba756",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"careers.greentube.com/senior-data-scientist-eng-j360.html": {
+"first": "2026-07-01",
+"job_id": "903d7ee1ba39",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"careers.hellofresh.com/global/en/job/7454717": {
+"first": "2026-07-06",
+"job_id": "4fc1f65b6ab9",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"careers.ing.com/en/job/frankfurt-am-main/data-engineer-w-m-d/3121/29874125952": {
+"first": "2026-07-01",
+"job_id": "c01ffcb3005d",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"careers.ing.com/en/job/frankfurt-am-main/senior-data-scientist-conversation-analytics-and-dashboarding-w-m-d/3121/28092464576": {
+"first": "2026-06-29",
+"job_id": "d9a040544b12",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"careers.knapp.com/job/hart-bei-graz-ai-solutions-engineer-(mwd)-stei-8075/826991002": {
+"first": "2026-07-08",
+"job_id": "a9b5a88849a8",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"careers.mahle.com/job/stuttgart-praktikum-machine-learning-und-data-science-(mwd)-70376/1371956833": {
+"first": "2026-06-23",
+"job_id": "4e7a39d681ff",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"careers.merantix-aicampus.com/companies/merantix-momentum-2/jobs/36296738-staff-machine-learning-researcher-m-f-d": {
+"first": "2026-06-27",
+"job_id": "7a0fa8e782ea",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"careers.merantix.com/companies/merantix-momentum-2/jobs/37743679-machine-learning-engineer-computer-vision-team": {
+"first": "2026-07-01",
+"job_id": "5af86007cd30",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"careers.merantix.com/companies/merantix-momentum-2/jobs/45266687-ai-platform-engineer-m-w-d": {
+"first": "2026-06-25",
+"job_id": "b5c728032767",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"careers.mt.com/en_us/careers/jobdetail/1/21130": {
+"first": "2026-07-13",
+"job_id": "e720a241e106",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"careers.munichre.com/en/job/munich/ai-and-ml-engineer-insurance-m-f-d/3342/32707659328": {
+"first": "2026-06-28",
+"job_id": "bed2b1ed1376",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"careers.munichre.com/en/job/munich/intern-artificial-intelligence-m-f-d/3342/35537000064": {
+"first": "2026-06-23",
+"job_id": "1c8db179e44b",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"careers.munichre.com/en/job/munich/intern-consultant-data-science-and-ai-m-f-d/3342/34823833792": {
+"first": "2026-06-23",
+"job_id": "74c8ecaa4848",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"careers.osapiens.com/postings/6cc19247-7b48-4132-ae0f-e8b54f143460": {
+"first": "2026-07-13",
+"job_id": "8ce81966300e",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"careers.roche.com/global/en/job/rochglobal202602105076externalenglobal/machine-learning-scientist": {
+"first": "2026-06-25",
+"job_id": "0e8d29e6166b",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"careers.roche.com/global/en/job/rochglobal202604109153externalenglobal/principal-real-world-data-scientist": {
+"first": "2026-07-03",
+"job_id": "e1d20615c937",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"careers.snap.com/job?id=r0045304": {
+"first": "2026-06-25",
+"job_id": "7cd6fdb038cd",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"careers.soprasteria.de/job/werkstudent-data-science-and-kuenstliche-intelligenz-m-w-d-in-muenchen-germany-jid-2748": {
+"first": "2026-06-23",
+"job_id": "22e38ebd2b7a",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"careers.speedinvest.com/companies/bitmovin/jobs/53304794-ai-beyond-internship-incubator-summer-2026": {
+"first": "2026-07-14",
+"job_id": "914194c607a6",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"careers.thomsonreuters.com/us/en/job/jreq189559/senior-applied-scientist-nlp-ml-genai": {
+"first": "2026-07-03",
+"job_id": "bbd2b0065c3e",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"careers.trivago.com/job/r7996853002": {
+"first": "2026-06-23",
+"job_id": "fd7af9350098",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"careers.trivago.com/job/r8464320002": {
+"first": "2026-07-06",
+"job_id": "9ab66714afb8",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"careers.vattenfall.com/global/job/junior-ml-engineer-in-berlin-jid-50508": {
+"first": "2026-07-13",
+"job_id": "fc7d6987f04e",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"careers.vattenfall.com/job/machine-learning-engineer-in-hamburg-jid-50261": {
+"first": "2026-07-13",
+"job_id": "287fe3d9138a",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"careers.vinted.com/jobs/4995959101?gh_jid=4995959101": {
+"first": "2026-11-24",
+"job_id": "0f0a411ac7d1",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"careers.vinted.com/jobs/4995961101?gh_jid=4995961101": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Primary location Vilnius, Lithuania"
+},
+"careers.vinted.com/jobs/4995963101?gh_jid=4995963101": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Primary location Kaunas, Lithuania"
+},
+"careers.wolt.com/en/jobs/6700810": {
+"first": "2026-07-03",
+"job_id": "f71c883c5f11",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"cariad.technology/de/en/careers/jobdetail.jobid4354.html": {
+"first": "2026-07-09",
+"job_id": "b3efd3dfb20f",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"cheil-germany-gmbh.jobs.personio.de/job/2631929": {
+"first": "2026-07-13",
+"job_id": "eaf900873b13",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"cinemo.jobs.personio.com/job/1675843": {
+"first": "2026-07-13",
+"job_id": "5e835ea81db2",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"corporate.aboutyou.de/en/jobs/senior-data-scientist-m-f-d-search-engine-onsite-in-hamburg-or-berlin": {
+"first": "2026-06-25",
+"job_id": "554cb06a1cfc",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"createyourowncareer.com/graduates/bertelsmann-future-leaders/data-track": {
+"first": "2026-06-30",
+"job_id": "b7f5db08635a",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"createyourowncareer.de/absolventen/bertelsmann-future-leaders/data-track": {
+"first": "2026-06-27",
+"job_id": "739be82e7ce7",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"cryptojobslist.com/jobs/data-ml-ai-internship-zug-switzerland-at-dialectic": {
+"first": "2026-07-09",
+"job_id": "df9d413d60c5",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"databricks.com/company/careers/open-positions/job?gh_jid=8892971002": {
+"first": "2026-11-24",
+"job_id": "87c19b4ab940",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"databricks.com/company/careers/open-positions/job?gh_jid=8930374002": {
+"first": "2026-11-24",
+"job_id": "2a1307e9613d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"databricks.com/company/careers/open-positions/job?gh_jid=8948870002": {
+"first": "2026-11-24",
+"job_id": "533a9d298425",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"datasciencejobs.com/jobs/junior-data-scientist-octopus-energy-germany-2": {
+"first": "2026-06-27",
+"job_id": "5a732403993d",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"datev.wd3.myworkdayjobs.com/de-de/datev_careers/job/nuremberg/werkstudent-data-science---machine-learning--m-w-d-_id13220": {
+"first": "2026-06-29",
+"job_id": "8e2d13a5e1df",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"db.wd3.myworkdayjobs.com/en-us/dbwebsite/job/senior-data-scientist-anti-financial-crime--f-m-x-_r0328364": {
+"first": "2026-06-23",
+"job_id": "b2988a31bf31",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"de.linkedin.com/jobs/view/junior-ai-engineer-m-f-d-at-zdf-sparks-4357478647": {
+"first": "2026-07-14",
+"job_id": "be5985eb9a93",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"de.linkedin.com/jobs/view/senior-data-scientist-machine-learning-generative-ki-m-w-d-at-dz-bank-ag-3943359046": {
+"first": "2026-06-27",
+"job_id": "a5e113bd6802",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"decentriq.com/careers": {
+"first": "2026-06-30",
+"job_id": "fa70cb7f1aa2",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"deepeye.ai/careers": {
+"first": "2026-06-30",
+"job_id": "6ad0e7b8c17c",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"deeplify.de/jobs": {
+"first": "2026-06-30",
+"job_id": "b017fdbab5f7",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"deepmind.google/careers": {
+"first": "2026-06-30",
+"job_id": "9ee1905d6150",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"deepset.jobs.personio.de/job/1944959": {
+"first": "2026-07-01",
+"job_id": "2dd54797a406",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"devjobs.at/job/97886821032705440": {
+"first": "2026-06-30",
+"job_id": "bcd12122e76f",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"dida.jobs.personio.de/job/239760": {
+"first": "2026-07-01",
+"job_id": "6f1904bc5496",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"dida.jobs.personio.de/job/2478991": {
+"first": "2026-07-13",
+"job_id": "d2bab5908a73",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"en.comparis.ch/people/jobs/detail/2280110": {
+"first": "2026-07-08",
+"job_id": "b739b1c57589",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"en.wizbii.com/company/siemens/job/werkstudent-w-m-d-computer-vision-and-machine-learning": {
+"first": "2026-07-06",
+"job_id": "c5e567571fa9",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"entrix.jobs.personio.com/job/1824095": {
+"first": "2026-06-25",
+"job_id": "dc2fbc8b4c73",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"entrix.jobs.personio.com/job/1942726": {
+"first": "2026-06-27",
+"job_id": "25a53e5dbd0b",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"erstedigital.recruitee.com/o/databricks-expert-all-genders": {
+"first": "2026-06-23",
+"job_id": "8620896a5457",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"erstedigital.recruitee.com/o/template-standard-bratislava-2024-all-humans-3-24": {
+"first": "2026-06-23",
+"job_id": "80140b403bfd",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"eurowings-digital.com/jobs": {
+"first": "2026-06-30",
+"job_id": "efd6f3edf98f",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"felfel.jobs.personio.de/job/2385507": {
+"first": "2026-06-25",
+"job_id": "ebc9e4c3faad",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"finiata.join.com/jobs/2411335-senior-data-scientist-f-m-d": {
+"first": "2026-07-05",
+"job_id": "e8c28cb20ed0",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"free-now.com/careers": {
+"first": "2026-06-30",
+"job_id": "a3e1941f6979",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"fronius.wd3.myworkdayjobs.com/en-us/job_board/job/data-scientist--m-w-d-_req-10007973": {
+"first": "2026-07-06",
+"job_id": "dd87ee03c0ce",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"fronius.wd3.myworkdayjobs.com/en-us/job_board/job/thalheim-bei-wels/data-scientist--m-w-d-_req-10007973": {
+"first": "2026-07-10",
+"job_id": "fd885a56242c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"gini.net/en/machine-learning-working-student-internship-mfd": {
+"first": "2026-06-23",
+"job_id": "f6082050d38b",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"helsing.ai/jobs": {
+"first": "2026-07-12",
+"job_id": "5486747a0ff6",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"helsing.ai/jobs/4233250101": {
+"first": "2026-06-28",
+"job_id": "913455f5a503",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"helsing.ai/jobs/4334842101": {
+"first": "2026-06-27",
+"job_id": "4155ae9095f0",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"helsing.ai/jobs/4372802101": {
+"first": "2026-06-23",
+"job_id": "5c6102a50683",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"helsing.ai/jobs/4516967101": {
+"first": "2026-06-30",
+"job_id": "e10219347e62",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"helsing.ai/jobs/4516967101?gh_jid=4516967101": {
+"first": "2026-11-24",
+"job_id": "5d8dcf456716",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"helsing.ai/jobs/4676357101": {
+"first": "2026-06-23",
+"job_id": "40a6e2f92860",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"helsing.ai/jobs/4678205101": {
+"first": "2026-06-23",
+"job_id": "ad4e6a476e68",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"helsing.ai/jobs/4766708101": {
+"first": "2026-06-30",
+"job_id": "02ad211065de",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"helsing.ai/jobs/4778869101": {
+"first": "2026-06-23",
+"job_id": "b689dd5d301f",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"helsing.ai/jobs/4941957101?gh_jid=4941957101": {
+"first": "2026-11-24",
+"job_id": "6a43f1f16b4e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"helsing.ai/jobs/4953387101?gh_jid=4953387101": {
+"first": "2026-11-24",
+"job_id": "fe49059b8b48",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"helsing.ai/jobs/5028731101?gh_jid=5028731101": {
+"job_id": "40a6e2f92860",
+"state": "ingested"
+},
+"helsing.ai/jobs/5028848101?gh_jid=5028848101": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Roles based in Barcelona/London"
+},
 "https://career.nx-ai.com/o/robotics-research-engineer-fmd": {
 "first": "2026-11-24",
 "job_id": "ff5bcf78193c",
@@ -3655,6 +4544,5956 @@
 "https://zuehlke.wd3.myworkdayjobs.com/zuhlke-careers/job/vienna/principal-ai---data-consultant_jr100945-1": {
 "first": "2026-11-24",
 "job_id": "6ac72cfde1b1",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Consulting and sales focused, not technical"
+},
+"huntsman.wd1.myworkdayjobs.com/en-us/huntsman/job/switzerland---basel/intern---data-science_j-020004": {
+"first": "2026-07-02",
+"job_id": "56e6e3178627",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"hv.getro.com/companies/flixbus-2/jobs/26655464-senior-data-scientist-m-f-d-exploration-team": {
+"first": "2026-07-14",
+"job_id": "7569abed61f4",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"ibmix.de/job/r1118-data-scientist-mit-ai-fokus-w-m-x": {
+"first": "2026-06-29",
+"job_id": "bad13e9c1000",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"idalab.softgarden.io/job/6752951": {
+"first": "2026-07-08",
+"job_id": "3adb8a0e5f1f",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"inovex.recruitee.com/o/senior-data-engineer-microsoft-fabric": {
+"first": "2026-11-24",
+"job_id": "83d563b5cbdb",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"inovex.recruitee.com/o/senior-technical-data-und-ai-consultant": {
+"first": "2026-11-24",
+"job_id": "6653cdfcfa11",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"inovex.recruitee.com/o/werkstudent-in-im-bereich-data-ai": {
+"first": "2026-11-24",
+"job_id": "0e57066ae1ea",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"ista.ac.at/en/job/postdoc-research-group-locatello": {
+"first": "2026-06-29",
+"job_id": "7bcee666043f",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"itjobsswiss.ch/job/10891/internship-ai-data-engineering-f-m-div": {
+"first": "2026-07-13",
+"job_id": "817ae2cb17e4",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jacob-elektronik.jobs.personio.de/job/2307032": {
+"first": "2026-07-01",
+"job_id": "4085726081f3",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"jj.wd5.myworkdayjobs.com/en-us/jj/job/norderstedt-schleswig-holstein-germany/data-science-intern---praktikant-in--m-w-d-_r-084850": {
+"first": "2026-07-08",
+"job_id": "f1bbfc8064da",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/alpineeagle/jobs/4584007101": {
+"first": "2026-11-24",
+"job_id": "4873a7e71e4b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/arxroboticsgmbh/jobs/4875205101": {
+"first": "2026-11-24",
+"job_id": "cccf6d3d76ca",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/arxroboticsgmbh/jobs/4998863101": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "HR people analytics, BI-focused"
+},
+"job-boards.eu.greenhouse.io/intellishore/jobs/4566420101": {
+"first": "2026-07-01",
+"job_id": "c303d0554232",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/intellishore/jobs/4670375101": {
+"first": "2026-06-28",
+"job_id": "bffbc3b0ea95",
+"last": "2026-06-28",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/jetbrains/jobs/4695301101": {
+"first": "2026-06-29",
+"job_id": "1c9a970a2de1",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/jetbrains/jobs/4764813101": {
+"first": "2026-07-05",
+"job_id": "d6d6b65913a2",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/paradoxcatgmbh/jobs/4473069101": {
+"first": "2026-07-09",
+"job_id": "68870b377fe3",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/phoenixtechnologiesag/jobs/4948622101": {
+"first": "2026-11-24",
+"job_id": "d3d39d644e07",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/skdse/jobs/4994136101": {
+"first": "2026-11-24",
+"job_id": "484b4d93cde8",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/skdse/jobs/5043808101": {
+"first": "2026-11-24",
+"job_id": "7273c4c00be8",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/skdse/jobs/5043809101": {
+"first": "2026-11-24",
+"job_id": "8c45f64ce9f3",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/terraquantum/jobs/4334807101": {
+"first": "2026-11-24",
+"job_id": "db956e5ac0da",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/ultratendency/jobs/4888567101": {
+"first": "2026-06-26",
+"job_id": "f32f8f17e374",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/anthropic/jobs/5112018008": {
+"first": "2026-11-24",
+"job_id": "2a3d5059aa20",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/anthropic/jobs/5135168008": {
+"first": "2026-06-26",
+"job_id": "2df6dd8b938c",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/anthropic/jobs/5226862008": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Pre-sales solutions architect role"
+},
+"job-boards.greenhouse.io/anthropic/jobs/5412334008": {
+"first": "2026-11-24",
+"job_id": "6e18a37b2748",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/artefactjobs/jobs/8388619002": {
+"first": "2026-06-26",
+"job_id": "d2d550980ae0",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/autoscout24/jobs/7594404003": {
+"first": "2026-07-09",
+"job_id": "f7fe652efcb9",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/autoscout24/jobs/7751011003": {
+"first": "2026-06-29",
+"job_id": "fe5fee6ebf22",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/awin/jobs/7571203003": {
+"first": "2026-06-25",
+"job_id": "a2ecd0f60b8f",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/blackforestlabs/jobs/4132217008": {
+"first": "2026-06-23",
+"job_id": "ad8467ee6719",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/blackforestlabs/jobs/5019171008": {
+"first": "2026-06-27",
+"job_id": "5b52cdb9d4e3",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/blackforestlabs/jobs/5193508008": {
+"first": "2026-06-27",
+"job_id": "1f6b7106ad8f",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/buynomics/jobs/4524398101": {
+"first": "2026-06-25",
+"job_id": "7287f49efd59",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/capco/jobs/7682127": {
+"first": "2026-11-24",
+"job_id": "1daf3db3b3b0",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/capco/jobs/7774952": {
+"first": "2026-11-24",
+"job_id": "742007a3925c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/capco/jobs/8395617": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "IT infrastructure project management"
+},
+"job-boards.greenhouse.io/celonis/jobs/6245727003": {
+"first": "2026-07-06",
+"job_id": "fa42c7585f0b",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/celonis/jobs/7788761003": {
+"first": "2026-07-06",
+"job_id": "fc956eea9141",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/celonis/jobs/7925721003?gh_jid=7925721003": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Sales-focused value engineering internship"
+},
+"job-boards.greenhouse.io/celonis/jobs/8199112003?gh_jid=8199112003": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Madrid-based pre-sales value engineering"
+},
+"job-boards.greenhouse.io/celonis/jobs/8209081003?gh_jid=8209081003": {
+"first": "2026-11-24",
+"job_id": "9f81fe67320b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/commercetools/jobs/7774983003": {
+"first": "2026-07-12",
+"job_id": "711185e2143f",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/dataiku/jobs/5529971004": {
+"first": "2026-06-25",
+"job_id": "d42fc92cc81f",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/deepmind/jobs/6476412": {
+"first": "2026-06-27",
+"job_id": "2dc8231711a8",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/deepmind/jobs/7552677": {
+"first": "2026-06-23",
+"job_id": "81107071ec31",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/eurowingsdigital/jobs/6597406003": {
+"first": "2026-06-25",
+"job_id": "a89cfc700cfc",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/freenow/jobs/6517040": {
+"first": "2026-06-26",
+"job_id": "288c21b4fa40",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/freenow/jobs/7735234": {
+"first": "2026-06-27",
+"job_id": "a3ba027b651a",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/gardacp/jobs/5813158004": {
+"first": "2026-06-29",
+"job_id": "643cc31c59c7",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/inceptive/jobs/4961579007": {
+"first": "2026-06-26",
+"job_id": "8c674628fe52",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/intellishoredk/jobs/7741425003": {
+"first": "2026-07-01",
+"job_id": "89418cf63773",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/isomorphiclabs/jobs/5224363004": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Role based in London, UK"
+},
+"job-boards.greenhouse.io/isomorphiclabs/jobs/5460704004": {
+"first": "2026-06-25",
+"job_id": "93d18e990c1a",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/isomorphiclabs/jobs/5578430004": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Role based in London, UK"
+},
+"job-boards.greenhouse.io/isomorphiclabs/jobs/6100340004": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Security engineering role, not AI building"
+},
+"job-boards.greenhouse.io/jetbrains/jobs/4726551101": {
+"first": "2026-06-29",
+"job_id": "ba4103f5587a",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/ketryx/jobs/4796961008": {
+"first": "2026-06-25",
+"job_id": "4f30cef816e2",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/microsoftcorporation/jobs/4390719009": {
+"first": "2026-11-24",
+"job_id": "288fadb256ed",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/microsoftcorporation/jobs/4398696009": {
+"first": "2026-11-24",
+"job_id": "4c06bb5e331d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/microsoftcorporation/jobs/4506128009": {
+"first": "2026-11-24",
+"job_id": "c1803d6e30a8",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/soundcloud71/jobs/8485177002": {
+"first": "2026-06-29",
+"job_id": "66eebf3c43d9",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/speechify/jobs/5613983004": {
+"first": "2026-07-14",
+"job_id": "23a760c8ee65",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/speechify/jobs/5613984004": {
+"first": "2026-07-14",
+"job_id": "56f2201382de",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/speechify/jobs/5614023004": {
+"first": "2026-06-26",
+"job_id": "3aade56ab055",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/tensordyne/jobs/7853359002": {
+"first": "2026-11-24",
+"job_id": "23cd40034bf9",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/tensordyne/jobs/8886436002": {
+"first": "2026-11-24",
+"job_id": "894c020d7f1e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/tensordyne/jobs/8926409002": {
+"first": "2026-11-24",
+"job_id": "9b19dc43c75c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/tensordyne/jobs/8926410002": {
+"first": "2026-11-24",
+"job_id": "feccda81609b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job.deloitte.com/job-werkstudent-praktikant-im-bereich-digital-und-ai-analytics-mwd-_49258": {
+"first": "2026-06-23",
+"job_id": "192019e06580",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"job.deloitte.com/trainee-ai-and-data-_ljp3": {
+"first": "2026-06-24",
+"job_id": "df63462c0447",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"jobgether.com/offer/695d1cab2b723d71f726a737-senior-data-scientist-f-m-x": {
+"first": "2026-07-06",
+"job_id": "cba98554fcf7",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"jobright.ai/jobs/info/68e45674b99ec3563b0e9595": {
+"first": "2026-07-09",
+"job_id": "0b539f7a31a1",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.ait.ac.at/job/135266": {
+"first": "2026-07-07",
+"job_id": "8066da7b2ea1",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"jobs.ait.ac.at/job/158770": {
+"first": "2026-07-09",
+"job_id": "4ea22bb18b49",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobs.ait.ac.at/job/238005": {
+"first": "2026-06-29",
+"job_id": "301e07859a85",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.ait.ac.at/job/260562": {
+"first": "2026-06-29",
+"job_id": "e71a29c0debb",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"jobs.ait.ac.at/jobs": {
+"first": "2026-07-08",
+"job_id": "0fffc5326502",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.ams-osram.com/en/job/ai-data-scientist-automation-digitalization-d_m_f-premstaetten?id=22536": {
+"first": "2026-07-02",
+"job_id": "a91dda8a273f",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.anton-paar.com/job/graz-senior-data-scientist-diffraction-and-small-angle-x-ray-scattering-(fmx)/1142141701": {
+"first": "2026-06-25",
+"job_id": "5c742dcd7be0",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobs.apple.com/en-us/search?location=zurich-zur": {
+"first": "2026-07-01",
+"job_id": "f3214bd0ff96",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/actcareers/04bc96e6-a2a2-4c4b-a091-afe4ed44dd9a": {
+"first": "2026-11-24",
+"job_id": "898cbed91cb5",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/actcareers/42c19463-9e6d-4856-9b37-f86b9a436f9c": {
+"first": "2026-11-24",
+"job_id": "831a9faf04c7",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/actcareers/48e52b42-3b13-47c5-bb41-c8b33337252b": {
+"first": "2026-11-24",
+"job_id": "594dfcf4d98b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/adjoe/147d4798-84f3-4110-b7c4-3ffb2106bb51": {
+"first": "2026-11-24",
+"job_id": "42318d1867a0",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/adjoe/2fefdfde-0c43-4c56-b572-4775aba10257": {
+"first": "2026-11-24",
+"job_id": "04be49ed5fb3",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/adjoe/5c1d70f8-e163-424f-b9af-91745beb1e06": {
+"job_id": "4d65d2f21342",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/0ed0c9ef-8e9f-4161-80e6-55fc95c93736": {
+"first": "2026-11-24",
+"job_id": "88a422dc0383",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/17ced66b-37bd-48d8-8b09-74d9e7f5e223": {
+"first": "2026-06-30",
+"job_id": "9df80bec49b3",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/1963147c-dc27-416e-b432-065295733bef": {
+"first": "2026-06-23",
+"job_id": "8aa86fdb3957",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/2faca6ec-69bd-4e04-b055-05f24ddf0f4d": {
+"first": "2026-11-24",
+"job_id": "27c9cb424663",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/47d5c59a-5ec5-481a-820f-f1227d9242d9": {
+"first": "2026-11-24",
+"job_id": "0a05dc9bb430",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/518d3da6-eecc-439f-9e6f-7105b649eaa4": {
+"first": "2026-11-24",
+"job_id": "a326bc3dc499",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/6ba9a82b-7ac9-4f71-b078-61c5dd0c5bc3": {
+"first": "2026-06-23",
+"job_id": "76d79ff27779",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/80dc6ee6-dece-4d4b-9906-ea930338f245": {
+"first": "2026-11-24",
+"job_id": "40f4cccc7b93",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/9547f465-c0a2-45c6-b88b-378447e1f3e6": {
+"first": "2026-06-23",
+"job_id": "0d5aa9d8c40a",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/af5ac8a9-31a7-4017-9cd9-0a8b360ad937": {
+"first": "2026-06-25",
+"job_id": "420c85e4a082",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/ed326a0a-1cab-425a-b9c1-ae617d6d1cce": {
+"first": "2026-06-27",
+"job_id": "92c867f93594",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/alephalpha/fce0b58f-e95a-45bc-9ca5-b47b1c3cbabd": {
+"first": "2026-11-24",
+"job_id": "503c108cb7b1",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/black-forest-labs/e7935ad1-7b9a-4c85-8b40-09cafedf7d63": {
+"first": "2026-11-24",
+"job_id": "2246ed6b6ba8",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/blp-digital/ca3b29db-b84a-4652-a935-78827508b1a2": {
+"first": "2026-06-27",
+"job_id": "f68a30011795",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/bug-bounty-switzerland/88279ded-9b2d-499f-8ab3-895edee51e1d": {
+"first": "2026-07-08",
+"job_id": "f7498a1a3218",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/clera/4104adb8-aeec-48c5-b548-1424ecaceed6": {
+"first": "2026-11-24",
+"job_id": "5b48e8e06223",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/clera/babe7410-c239-49ea-a1e7-2e8a6d3a8c3e": {
+"first": "2026-11-24",
+"job_id": "793183133e4b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/clera/e10ecb2e-5055-4bcf-a7bc-ff06203fe411": {
+"first": "2026-11-24",
+"job_id": "e8c728e2df46",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/cohere/2a9a9b65-4f1b-4387-aa7f-d58c78e738c4": {
+"first": "2026-11-24",
+"job_id": "a4f47adf2dd7",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/cohere/b04cf265-c4f7-48bf-88ec-d4d71f3bdfaa": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Technical program management role"
+},
+"jobs.ashbyhq.com/cradlebio/49ab4ff1-cf2c-4347-a3a7-23bd5611d37a": {
+"first": "2026-06-29",
+"job_id": "e74b620c7e62",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/cradlebio/76e0d7e4-af4e-4804-9dc7-24074542b8e7": {
+"first": "2026-07-04",
+"job_id": "681935e61e0f",
+"last": "2026-07-04",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/deepl/22c4e48d-09ed-446d-bf74-4a546db31e8c": {
+"first": "2026-11-24",
+"job_id": "6322779c1e51",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/deepl/275fad55-db26-4724-9bfb-8ca7d1efedfb": {
+"first": "2026-06-23",
+"job_id": "327743acaf83",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/deepl/7c4a28da-3ccc-486f-9442-a850886e228f": {
+"first": "2026-06-23",
+"job_id": "90af1719c937",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/doctolib/4f59e9cf-6d3c-41df-93ed-f3f461dcb475": {
+"job_id": "c81ef083478f",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/doctolib/65c5b8bb-18dc-46d4-878a-8890eb2d877a": {
+"first": "2026-11-24",
+"job_id": "f13413c14137",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/doctolib/d5da6e90-5168-4ec9-b69a-6cbb768a8e51": {
+"first": "2026-11-24",
+"job_id": "43e4e839bae5",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/doit/080a1ae3-a39f-4b84-8bed-2e32fbca8105": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Product management role, not technical"
+},
+"jobs.ashbyhq.com/doit/26db9d57-c8b0-45d8-be4b-d458bbf1001a": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Product management role, not technical"
+},
+"jobs.ashbyhq.com/doit/dcae8448-81bc-48bb-a042-f262861a657f": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Product management role, not technical"
+},
+"jobs.ashbyhq.com/enactintelligence/8c4728e2-39f3-48f8-a091-a1f04c46ded1": {
+"job_id": "0beb52891cbf",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/enactintelligence/b1a36a14-5340-4ca1-a877-a5bc292ce48a": {
+"first": "2026-11-24",
+"job_id": "b2ee2783321c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/enpal/92a4b0d6-3eeb-414d-b609-7aa2d796734c": {
+"first": "2026-11-24",
+"job_id": "ae242f6cd25a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/enpal/f0cdd84d-bbd8-4841-8e4a-2755181a1bf1": {
+"first": "2026-11-24",
+"job_id": "eaa2f5a8a762",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/enpal/fdb35915-85a7-4616-bc78-c7db06e2411f": {
+"first": "2026-11-24",
+"job_id": "a2cc1b0a251e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/exa/1c2d19a3-60ab-454b-a196-ee63757c618c": {
+"first": "2026-11-24",
+"job_id": "f97fc888450c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/exa/bb4217ac-4a03-42ac-b388-cbf15933c708": {
+"first": "2026-11-24",
+"job_id": "79b2a10f270d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/harmattan-ai/4e63d35a-935f-4f1d-9076-5a75a7f50ea9": {
+"first": "2026-11-24",
+"job_id": "ebdecad6b6b2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/harmattan-ai/785027fc-f918-4503-91f6-1b9c5a3c6e07": {
+"first": "2026-11-24",
+"job_id": "e409077c6102",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/harmattan-ai/99006360-58bc-4d9b-b8f7-f1fc0dba9c56": {
+"first": "2026-11-24",
+"job_id": "254cfa492908",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/kayak/2063db99-2a6c-415c-b8d1-8f6e358c6942": {
+"first": "2026-11-24",
+"job_id": "42405a57a6ee",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/kayak/3d64ffdf-5cec-4bf1-b0c7-53acee834163": {
+"first": "2026-11-24",
+"job_id": "d2e9941f40d4",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/kayak/b50015a4-b1c0-4220-b098-f752cfec826c": {
+"first": "2026-11-24",
+"job_id": "bc6b85e76a44",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/laelaps/0ca2f371-3993-4622-9dcc-9962402f4694": {
+"job_id": "970803871bb9",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/laelaps/21bc9c3c-af10-47c0-93ca-0461636f4950": {
+"job_id": "ec74505f2741",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/lakera.ai/158d9a05-bc1d-49fd-81f1-bf1229e8021f": {
+"first": "2026-06-25",
+"job_id": "47ef2cacce58",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/lakera.ai/32a92101-5b75-4714-95a4-8a8297fada6b": {
+"first": "2026-06-29",
+"job_id": "83706eb611bc",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/lakera.ai/9b4138c8-6b76-42bd-9d15-aae91432691c": {
+"first": "2026-07-11",
+"job_id": "5e0d51833791",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/limetax": {
+"first": "2026-06-29",
+"job_id": "b3cb2233da53",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/mercura/90bb4d91-9311-4d6c-a30b-a2d6dc783a13": {
+"first": "2026-11-24",
+"job_id": "9653b6a76bb5",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/microagi/7ef1c941-a8fe-4b2d-b265-5611291ef9ba": {
+"first": "2026-11-24",
+"job_id": "fc1e504525e8",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/microagi/81992690-b991-4804-bf47-f97ab98fbaa6": {
+"first": "2026-11-24",
+"job_id": "0f4ca6ff8a9e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/munich-electrification/ba1a138b-d85a-45ea-b560-e0e7ffcce356": {
+"first": "2026-07-09",
+"job_id": "0c908d27ec6a",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/neuralconcept/b8c0c95e-3279-4259-8c21-80014db3b4dd": {
+"first": "2026-11-24",
+"job_id": "9552a7511709",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c": {
+"first": "2026-07-08",
+"job_id": "16402298eba0",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/prior-labs/b37463f2-775d-42e0-8c58-4ec26927534b": {
+"first": "2026-07-11",
+"job_id": "c93123bd934b",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/quantexa/f4f43e13-3171-4cb1-9785-507695dafffb": {
+"first": "2026-11-24",
+"job_id": "07602ea51d8c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/se3/1a038a2a-1f1f-4c43-a2a1-8147205ac6dd": {
+"first": "2026-11-24",
+"job_id": "9c0b150c4239",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/se3/1c7105fb-26f1-4b1e-bc62-aea0af2ce690": {
+"first": "2026-11-24",
+"job_id": "4a5460ddf0ef",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/se3/6e8bb35e-4205-4f26-885d-d74a8a173212": {
+"first": "2026-11-24",
+"job_id": "40df9bc5eba0",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/skydio/1208ec60-0fb6-4e5d-bf1f-af1312139a84": {
+"first": "2026-11-24",
+"job_id": "7b14d2aae48d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/skydio/4ded3e5e-cdfe-4dc5-bbaf-0d3023521246": {
+"first": "2026-11-24",
+"job_id": "8c0acf5be2ee",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/skydio/bdf927bf-8ec0-4bf4-9145-8211db836b6a": {
+"first": "2026-11-24",
+"job_id": "054ad87a46f3",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/synthflow/89c0a6b1-5581-4b50-9cc2-53a3e7fe9845": {
+"first": "2026-06-30",
+"job_id": "d0c817b76dbc",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/true-talent-solutions-partners/860cc897-534b-4000-b975-2788eb51d05c": {
+"first": "2026-11-24",
+"job_id": "7e3705cb1de5",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.avl.com/job/graz-data-scientist-wmd/1368950433": {
+"first": "2026-06-25",
+"job_id": "5c4f68bec2b6",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.bd.com/en/job/vienna/senior-machine-learning-engineer-m-f-d-full-part-time/159/88793817696": {
+"first": "2026-07-15",
+"job_id": "fb47c439f748",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.bendingspoons.com/positions/695a6f1127aeb1bf21a1b44d": {
+"first": "2026-07-10",
+"job_id": "5364ff428166",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.bmwgroup.com/job/munich-working-student-artificial-intelligence-and-multi-agent-systems-(fmx)-by-80809/1370370133": {
+"first": "2026-06-24",
+"job_id": "1405c4db1469",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.bmwgroup.com/job/munich-working-student-machine-learning-software-engineering-(fmx)-by-80809/1282357501": {
+"first": "2026-06-23",
+"job_id": "13b18f8808da",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.boehringer-ingelheim.com/job/vienna-quality-medicine-data-scientist-(mfd)-aust/1366863933": {
+"first": "2026-06-29",
+"job_id": "22dc47775c76",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.bosch.com/de/job/ref270612c-senior-data-engineer": {
+"first": "2026-07-01",
+"job_id": "d003e799668d",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"jobs.bosch.com/en/job/ref226065v-praktikum-im-bereich-data-science-machine-learning": {
+"first": "2026-06-23",
+"job_id": "3c8fc9f05239",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.bosch.com/en/job/ref249849f-ai-engineer": {
+"first": "2026-06-23",
+"job_id": "a747aaf91218",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.bosch.de/en/job/research-engineer-for-ai-validation-f_m_div.-renningen?id=744000119067257": {
+"first": "2026-07-11",
+"job_id": "035d07fd3029",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.bosch.de/job/praktikum-in-der-technologieentwicklung-mit-fokus-auf-machine-learning-und-data-science-elchingen?id=744000052308105": {
+"first": "2026-06-27",
+"job_id": "7a0a7fbcaa40",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.bosch.de/job/research-engineer-vision-language-action-models-for-intelligent-cyber-physical-systems-f_m_div.-renningen?id=744000112602507": {
+"first": "2026-06-27",
+"job_id": "6998bc915685",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.check24.de/en/jobs/business-intelligence-data-science/11019-junior-data-scientist-machine-learning-engineer-mwd-shopping": {
+"first": "2026-07-05",
+"job_id": "7fa8f36c17bd",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.check24.de/en/jobs/data-science/13763-werkstudent-mwd-ai-entwicklung-c24-bank": {
+"first": "2026-06-23",
+"job_id": "354c69f798d6",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"jobs.check24.de/en/jobs/data-science/13776-junior-data-scientist-mwd-shopping": {
+"first": "2026-06-30",
+"job_id": "d18e157ccb02",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.check24.de/en/jobs/data-science/ref102f-professional-machine-learning-entwickler-mwd-gen-ai-recommender-systems-explorer": {
+"first": "2026-07-01",
+"job_id": "4297c404c7c2",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.check24.de/en/jobs/data-science/ref425f-junior-data-scientist-mfd-machine-learning-insurtech": {
+"first": "2026-06-23",
+"job_id": "e1b3cbb78b68",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.check24.de/en/jobs/data-science/ref512j-working-student-mfd-data-science-computer-vision-identitycheck": {
+"first": "2026-06-23",
+"job_id": "536da37cdc61",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"jobs.commerzbank.com/index.php?ac=jobad&id=54611": {
+"first": "2026-06-23",
+"job_id": "da5fad28d8fe",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"jobs.commerzbank.com/index.php?ac=jobad&id=60477": {
+"first": "2026-06-23",
+"job_id": "800f38d5938b",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.continental.com/en/detail-page/job-detail/ref84058i": {
+"first": "2026-07-01",
+"job_id": "6ed41135df4a",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"jobs.continental.com/en/detail-page/job-detail/ref84058i-p-d2b4c283ef159777ea3325ddba024259/data-scientist": {
+"first": "2026-06-29",
+"job_id": "fe20f4846ba3",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.continental.com/en/detail-page/job-detail/ref88143x-p-d2b4c283ef159777ea3325ddba024259/it-engineer-machine-learning": {
+"first": "2026-06-29",
+"job_id": "9e342b931f4a",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"jobs.deepl.com/l/en/o/machine-learning-engineer-data-analytics-platform-fmd-ger-uk-nl-pl": {
+"first": "2026-06-24",
+"job_id": "f53f9bfe17c0",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"jobs.deepl.com/o/research-scientist-fmd-cologne": {
+"first": "2026-06-23",
+"job_id": "571b1adad1c2",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.digital.orange-business.com/jobs/7264494-ai-engineer": {
+"first": "2026-07-14",
+"job_id": "66555fe31862",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.ethz.ch/job/view/jopg_ethz_os0vw4v8qjxzmvsqoy": {
+"first": "2026-06-27",
+"job_id": "327235c2443d",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.ethz.ch/job/view/jopg_ethz_y0arocz2u7u6evauhh": {
+"first": "2026-06-27",
+"job_id": "689cfc245b40",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.eu.lever.co/olx/5709c6de-f4b6-4922-9c85-0b415f1b830a": {
+"first": "2026-06-26",
+"job_id": "14bce8f0c093",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"jobs.eu.lever.co/xentral/166bf949-657b-44f5-8147-aa7ea7d563a2": {
+"first": "2026-06-29",
+"job_id": "aa1c544e8efa",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.fraunhofer.de/job/bayreuth-wissenschaftliche-mitarbeitende-mit-promotionsoption-im-bereich-k%c3%bcnstliche-intelligenz-(all-genders)-95444/1292150301": {
+"first": "2026-06-23",
+"job_id": "30f6587d0a41",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"jobs.fraunhofer.de/job/berlin-machine-learning-scientist-10587/1275765001": {
+"first": "2026-06-23",
+"job_id": "13c888bca16f",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.fraunhofer.de/job/dresden-research-engineer-f%c3%bcr-genai-mit-fokus-auf-post-training-und-agentic-ai-(all-genders)-01069/1386866933": {
+"first": "2026-06-23",
+"job_id": "77f86b5a10dd",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"jobs.fraunhofer.de/job/sankt-augustin-senior-research-scientist-on-human-centred-machine-learning-53757/925350701": {
+"first": "2026-07-05",
+"job_id": "09af66261ae7",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.frequentis.com/careers/jobdetail/vie-data-scientist-all-genders/2767": {
+"first": "2026-07-11",
+"job_id": "59e6c951ebe6",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.generalcatalyst.com/companies/black-forest-labs/jobs/41280221-member-of-technical-staff-image-video-data-engineer": {
+"first": "2026-06-23",
+"job_id": "2f57fc8fd2ef",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.generalcatalyst.com/companies/black-forest-labs/jobs/49695633-member-of-technical-staff-research-engineer-applied-research": {
+"first": "2026-07-04",
+"job_id": "69c9919f862d",
+"last": "2026-07-04",
+"state": "ingested"
+},
+"jobs.infineon.com/careers/job/563808957562846-internship-data-science-enabling-in-product-engineering-graz-austria-?domain=infineon.com": {
+"first": "2026-07-13",
+"job_id": "8810ace69206",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.infineon.com/careers/job/563808957906524": {
+"first": "2026-06-26",
+"job_id": "78e0adff4bf5",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"jobs.infineon.com/careers/job/563808957906524-working-student-data-and-machine-learning-engineer-in-software-development-munich-germany-?domain=infineon.com": {
+"first": "2026-06-29",
+"job_id": "ea792499f041",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.infineon.com/careers/job/563808959898149-internship-software-developer-with-ai-ml-focus-for-chip-package-board-codesign-villach-austria-?domain=infineon.com": {
+"first": "2026-07-02",
+"job_id": "85960bda6ce3",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.infineon.com/careers/job/563808961421171-internship-reliability-data-analysis-villach-austria-?domain=infineon.com": {
+"first": "2026-07-02",
+"job_id": "2b84441d1123",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"jobs.infineon.com/careers/job/563808967327619-internship-application-of-generative-artificial-intelligence-technology-for-systemverilog-code-generation-villach-austria-?domain=infineon.com": {
+"first": "2026-07-02",
+"job_id": "564de69722b8",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"jobs.infineon.com/careers/job/563808970160434?hl=en": {
+"first": "2026-07-09",
+"job_id": "46cab98ad65e",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.infineon.com/careers/job/563808971371902": {
+"first": "2026-07-10",
+"job_id": "6093e5686dbc",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.kpmg.de/job/praktikum-data-science-data-analytics-&-bi-(wmd)/11385-de_de": {
+"first": "2026-07-05",
+"job_id": "55e5e34fedd7",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.lever.co/anybotics/63f0c6db-0a1f-4a4a-87dd-9a43c9c2bdd2": {
+"first": "2026-11-24",
+"job_id": "5e1e4b64779a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.lever.co/anybotics/9d34ce1f-0dae-4cf3-85b0-d231dfb4851b": {
+"first": "2026-11-24",
+"job_id": "571c3a4733f5",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.lever.co/applike/1f4c2a9e-366d-40dc-ab3c-b27263dc9e22": {
+"first": "2026-06-28",
+"job_id": "ba1489078956",
+"last": "2026-06-28",
+"state": "ingested"
+},
+"jobs.lever.co/applike/e0f29a2d-e788-48d6-bf8e-920914979bb2": {
+"first": "2026-06-29",
+"job_id": "89937a5ca9a1",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"jobs.lever.co/finn/e8fb0360-11c1-418a-af53-a317fb5d648c": {
+"first": "2026-07-08",
+"job_id": "b10d031763dc",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.lever.co/frontify": {
+"first": "2026-06-29",
+"job_id": "bcc7028058d0",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"jobs.lever.co/jobgether/ba1a3875-3df5-4cfd-b3d9-3e04b5860dcf": {
+"first": "2026-06-29",
+"job_id": "45785ab5674c",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"jobs.lever.co/kpler/fd027bed-7a3f-4e51-ab7b-6da91fcf26bb": {
+"first": "2026-11-24",
+"job_id": "88af0478fd6a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.lever.co/mistral/07447e1d-7900-46d4-b61b-186f2f76847f": {
+"first": "2026-06-26",
+"job_id": "5d7ba15de144",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.lever.co/mistral/45b0fae3-61ea-4cb0-8cd1-c1bc2a43a84a": {
+"first": "2026-06-25",
+"job_id": "f72bb4a630c3",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"jobs.lever.co/mistral/aff9f13c-e79f-4d66-98b1-f62dd1c552cd": {
+"first": "2026-06-25",
+"job_id": "a762fd081c4d",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.lever.co/mistral/bedfc2aa-f1b6-4136-bd17-b3abe4c06120": {
+"first": "2026-06-26",
+"job_id": "eb023f52a5fc",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.lever.co/nelly/a77b5335-74fa-4be1-b2c2-3e6a2d80204e": {
+"first": "2026-06-26",
+"job_id": "59482a924a17",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.lever.co/octoenergy/df7809cc-3e40-44d7-91f6-07e6b1144984": {
+"first": "2026-06-26",
+"job_id": "62241435e14d",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0": {
+"first": "2026-06-26",
+"job_id": "f3ad8e4c2266",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"jobs.lever.co/qualysoft/53170833-319a-413e-ba21-e05a0d48c111": {
+"first": "2026-07-10",
+"job_id": "c67293fea279",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.lever.co/quantco-/3e18574e-ab5a-46a2-8714-a0221fb937e7": {
+"first": "2026-06-25",
+"job_id": "04d5e8bbd543",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.lever.co/quantco-/a9862eb3-bbfa-4cdc-862d-ad614f20b1e4": {
+"first": "2026-06-29",
+"job_id": "9f1cad072cb6",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.lever.co/rai/19db0e83-532a-4ac9-9887-74df968f6ee8": {
+"first": "2026-11-24",
+"job_id": "9c9def46243c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.lever.co/rai/45f40b1a-0191-411a-bc6e-67043e676427": {
+"first": "2026-07-13",
+"job_id": "5e427087f756",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.lever.co/rai/567c4e33-ca4a-4693-9e54-fa8d038189e4": {
+"first": "2026-11-24",
+"job_id": "1f9afbd0a56d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.lever.co/rai/bc686db9-9b82-42aa-ba65-b086f8a423d4": {
+"first": "2026-11-24",
+"job_id": "86d7560a2855",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.lever.co/sonarsource/19d88777-744e-4496-a94a-6560770198bd": {
+"first": "2026-11-24",
+"job_id": "e64384ccec67",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.lever.co/sonarsource/3cae19c4-144b-41b9-89c1-03203547a8d3": {
+"first": "2026-11-24",
+"job_id": "4a136b5f2171",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.lever.co/sonarsource/a0535931-bce3-4159-b43d-15ca3eb4d17f": {
+"first": "2026-07-05",
+"job_id": "9c5f1d0841d7",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.lever.co/sonarsource/c7230950-417e-4db8-92bd-06370e3aff16": {
+"first": "2026-06-27",
+"job_id": "c189728b59c8",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.lever.co/swiss-mile/e94d29c9-647f-4c4b-9ce0-b39b75f78d25": {
+"first": "2026-07-13",
+"job_id": "fbb2d31793dd",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.lever.co/vestiairecollective/33da34d4-417b-42c4-8678-e21ce9da0331": {
+"first": "2026-06-29",
+"job_id": "8f12360f987e",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"jobs.lever.co/vestiairecollective/cf3e89a2-0444-4ed5-8f95-c10aec6fda2a": {
+"first": "2026-06-29",
+"job_id": "dfacf77b21b0",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"jobs.lever.co/wingtra-2": {
+"first": "2026-06-29",
+"job_id": "1fae0ee5f46c",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"jobs.magna.com/job/graz-machine-learning-&-ai-engineer-(mfd)/568252417": {
+"first": "2026-06-29",
+"job_id": "962faec4c9fa",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"jobs.mercedes-benz.com/en/ai-data-scientist-195490-mer0003wq5": {
+"first": "2026-06-28",
+"job_id": "4c7c7646f389",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.mercedes-benz.com/en/intern-generative-and-agentic-ai-engineering-mandatory-internship-211740-mer00041cw": {
+"first": "2026-07-07",
+"job_id": "145d180d8fba",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"jobs.mercedes-benz.com/en/internship-machine-learning-ai-for-future-interior-189458-mer0003w6l": {
+"first": "2026-06-30",
+"job_id": "12623f6a0db3",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.mercedes-benz.com/en/machine-learning-engineer-ai-products": {
+"first": "2026-07-01",
+"job_id": "e802220d4df6",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.mercedes-benz.com/en/trainee-data-science-ai-engineer-dfmx-195012-mer0003vtg": {
+"first": "2026-06-23",
+"job_id": "b6182c69cca1",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.mercedes-benz.com/en/werkstudent-data-engineering-data-science-d-m-w-x--225282-j000225282": {
+"first": "2026-07-13",
+"job_id": "37cedd6729d4",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.mercedes-benz.com/en/werkstudent-data-science-fahrzeugdaten-m-w-d--179922-j000179922": {
+"first": "2026-06-27",
+"job_id": "1163e7256d63",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.mercedes-benz.com/en/werkstudent-genai-and-automatisierung-im-bereich-mbos-mwd-187070-j000187070": {
+"first": "2026-06-27",
+"job_id": "55edb214337b",
+"last": "2026-06-28",
+"state": "ingested"
+},
+"jobs.mercedes-benz.com/en/werkstudent-machine-learning-engineer-d-m-w-x--224463-j000224463": {
+"first": "2026-07-06",
+"job_id": "bd52d43e941c",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"jobs.mercedes-benz.com/en/working-student-data-and-machine-learning-engineer-177093-mer0003qk9": {
+"first": "2026-06-30",
+"job_id": "876d13f9c361",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.migros.ch/de/unsere-unternehmen/job/galaxus/machine-learning-engineer-data-scientist-wmd/34310e9b-1abf-4157-bdd8-5f4cee7e6a52": {
+"first": "2026-07-01",
+"job_id": "c872ef8b575b",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"jobs.migros.ch/de/unsere-unternehmen/job/migros-genossenschafts-bund/machine-learning-engineer-wmd/09eb1d9f-aea3-4141-b73d-77240b1cf816": {
+"first": "2026-07-01",
+"job_id": "6640d89d525c",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"jobs.migros.ch/en/our-companies/job/galaxus/senior-data-engineer-analytics-and-ai-fmd/88e743c2-ab6e-42c5-b165-e22321cf2a78": {
+"first": "2026-07-11",
+"job_id": "f21216ad2567",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.ml6.eu/jobs/6916659-experienced-ai-engineer-munich": {
+"first": "2026-07-11",
+"job_id": "2346f24c6652",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.ml6.eu/jobs/7521521-senior-ai-engineer": {
+"first": "2026-07-11",
+"job_id": "02b03fcdce6f",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.mobiliar.ch/vacancies/1172/description/1": {
+"first": "2026-07-14",
+"job_id": "6879f24ba44c",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.neura-robotics.com/offer/ai-data-engineer-human/31ce9890-86bd-4b41-94b2-959fe6b99c5a": {
+"first": "2026-07-06",
+"job_id": "64562f929471",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"jobs.neura-robotics.com/offer/ai-engineering-intern-human/0f75393c-3210-41d0-a899-ad6e7e446df5": {
+"first": "2026-06-29",
+"job_id": "855bf162c9f4",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.neura-robotics.com/offer/foundation-model-distributed-traini/d28611a3-71ab-44a2-bab3-9fbfec7ebe81": {
+"first": "2026-07-06",
+"job_id": "624ec922a2d1",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"jobs.neura-robotics.com/offer/reinforcement-learning-expert-human/ee7555d5-fe10-4d6e-be92-0baa0de62054": {
+"first": "2026-07-04",
+"job_id": "98eed1dc0ac2",
+"last": "2026-07-04",
+"state": "ingested"
+},
+"jobs.neura-robotics.com/offer/robotic-foundation-model-engineer-h/37112c1f-ec36-471a-8888-adf2140f77bd": {
+"first": "2026-07-02",
+"job_id": "bc0d27d99731",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"jobs.nzz.ch/job/medical-imaging-data-scientist-80/492371": {
+"first": "2026-07-06",
+"job_id": "c40103bc1a42",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"jobs.porsche.com/index.php?ac=jobad&id=11154": {
+"first": "2026-07-09",
+"job_id": "9889bb5bb7e6",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.porsche.com/index.php?ac=jobad&id=1388": {
+"first": "2026-06-23",
+"job_id": "123232e5df05",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"jobs.porsche.com/index.php?ac=jobad&id=18514": {
+"first": "2026-06-24",
+"job_id": "7491713afe6f",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"jobs.porsche.com/index.php?ac=jobad&id=20454": {
+"first": "2026-06-23",
+"job_id": "c341134501ef",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"jobs.postfinance.ch/offene-stellen/data-scientist-w-m-d/d6aacc2b-9d7e-442a-962f-edc42b9e144f": {
+"first": "2026-07-11",
+"job_id": "001d4509ae52",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobs.rbinternational.com/eng": {
+"first": "2026-07-11",
+"job_id": "7d049ce7a04d",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.rbinternational.com/job/wien-senior-data-engineer-(fmx)-1190/802040902": {
+"first": "2026-07-10",
+"job_id": "3e03310228d2",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.rbinternational.com/senior-data-scientist-with-generative-ai-focus-fmx-eng-j9626.html": {
+"first": "2026-06-26",
+"job_id": "dea10e819f27",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.redbull.com/at-de/elsbethen-ai-technology-trainee-red-bull-hq-graduate-program-2026-ref28077n": {
+"first": "2026-06-27",
+"job_id": "0dd4d95f6d2e",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.redbull.com/at-de/elsbethen-data-ai-scientist-ref27984u": {
+"first": "2026-06-30",
+"job_id": "9dced9524122",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.redbull.com/at-de/elsbethen-data-engineer-ref18327q": {
+"first": "2026-06-27",
+"job_id": "5b1ec246de67",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.redbull.com/at-de/elsbethen-data-science-engineering-trainee-red-bull-hq-graduate-program-2026": {
+"first": "2026-07-05",
+"job_id": "b6f776f9abfc",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobs.redbull.com/at-de/elsbethen-junior-data-scientist-ref27990k": {
+"first": "2026-06-27",
+"job_id": "174a4201d629",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.redbull.com/at-de/elsbethen-senior-data-engineer-ref27266i": {
+"first": "2026-06-30",
+"job_id": "750441f2ede6",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.redbull.com/at-de/elsbethen-senior-data-scientist-statistics-ml-expert-ref25686l": {
+"first": "2026-06-30",
+"job_id": "b81368e3baf5",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.renesas.com/job/working-student-ai-model-development-in-munich-germany-jid-2929": {
+"first": "2026-06-23",
+"job_id": "3756fd8d2421",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.sap.com": {
+"first": "2026-06-30",
+"job_id": "c6a138d156d8",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.sap.com/job/berlin-lead-machine-learning-scientist-(fmd)-generative-ai-and-knowledge-graphs-10557/1034080601": {
+"first": "2026-06-23",
+"job_id": "b08993add910",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.sap.com/job/berlin-senior-applied-ai-and-data-scientist-(fmd)-sap-knowledge-graph-10557/1385798633": {
+"first": "2026-06-23",
+"job_id": "06e8025c4faf",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.sap.com/job/berlin-working-student-(fmd)-ai-data-engineer-10557/1195925201": {
+"first": "2026-06-25",
+"job_id": "fb13f7924308",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"jobs.sap.com/job/garching-(senior)-data-scientist-(fmd)-for-private-cloud-cross-technology-and-architecture-unit-85748/1251881801": {
+"first": "2026-06-30",
+"job_id": "f81fbc14e35f",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.sap.com/job/garching-bei-m%c3%bcnchen(munich)-applied-seniorstaff-scientist-with-relational-sap-enterprise-data-skills-(fmd)-85748/1371661933": {
+"first": "2026-07-10",
+"job_id": "484a78889be2",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.sap.com/job/garching-bei-m%c3%bcnchen-(munich)-forward-deployed-data-scientist-expert-(fmd)-85748/1398627333": {
+"first": "2026-07-10",
+"job_id": "36167b5c459f",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.sap.com/job/garching-bei-m%c3%bcnchen-(senior)-researcher-(fmd)-knowledge-graphs-and-generative-ai-85748/1274749901": {
+"first": "2026-06-23",
+"job_id": "700806bce5cd",
+"last": "2026-07-04",
+"state": "ingested"
+},
+"jobs.sap.com/job/garching-bei-m%c3%bcnchen-(senior)-sap-ai-engineer-(fmd)-85748/1394454133": {
+"first": "2026-06-23",
+"job_id": "f8d29a8da519",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"jobs.sap.com/job/garching-bei-m%c3%bcnchen-ai-data-engineer-sap-rpt-model-family-(fmd)-85748/1368763633": {
+"first": "2026-06-23",
+"job_id": "9365b363be33",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.sap.com/job/garching-bei-m%c3%bcnchen-principal-agentic-ai-engineer-architect-at-ai-coe-(fmd)-85748/1372983333": {
+"first": "2026-07-08",
+"job_id": "d1bc18f4aab7",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.sap.com/job/garching-bei-m%c3%bcnchen-senior-ml-engineer-architect-sap-rpt-family-(fmd)-85748/1371660133": {
+"first": "2026-07-04",
+"job_id": "2c0be9d29b7c",
+"last": "2026-07-04",
+"state": "ingested"
+},
+"jobs.sap.com/job/garching-bei-munchen-(senior)-sap-ai-engineer-(fmd)-85748/1394454133": {
+"first": "2026-07-15",
+"job_id": "59842f05b724",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.sap.com/job/garching-bei-munchen-ai-data-engineer-sap-rpt-model-family-(fmd)-85748/1368763633": {
+"first": "2026-06-24",
+"job_id": "7dd2170bfb26",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"jobs.sap.com/job/walldorf-(senior)-(agentic)-ai-engineer-at-ai-coe-(fmd)-69190/1248020901": {
+"first": "2026-06-25",
+"job_id": "c92ac8f02081",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.sap.com/job/walldorf-machine-learning-engineer-(associate)-developer-(fmd)-69190/1293299301": {
+"first": "2026-06-23",
+"job_id": "25738f3c5ebb",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.sap.com/job/walldorf-phd-internship-(fmd)-ai-research-knowledge-graphs-for-agentic-ai-69190/1284344001": {
+"first": "2026-06-27",
+"job_id": "0cf0202fbd36",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.sap.com/job/walldorf-sap-ixp-intern-(fmd)-data-analytics-&-ai-data-preparation-69190/1282357601": {
+"first": "2026-06-30",
+"job_id": "2c0a737e9a18",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.sap.com/job/walldorf-senior-data-scientist-(fmd)-for-btp-abap-ai-69190/1129944401": {
+"first": "2026-06-25",
+"job_id": "b1cf05ebdb4e",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.sap.com/job/walldorf-working-student-(fmd)-ai-engineer-intern-69190/1374973333": {
+"first": "2026-06-30",
+"job_id": "d9c67c387257",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.sap.com/job/walldorf-working-student-(fmd)-data-engineer-69190/1369052033": {
+"first": "2026-06-24",
+"job_id": "78ff60fdd22a",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"jobs.sbb.ch/v2/offene-stellen/career-starter-data-science-m-w-d/657dcfeb-6aa5-4183-b851-262fe21d650c": {
+"first": "2026-07-11",
+"job_id": "50c441a4b0fa",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.sbb.ch/v2/offene-stellen/data-scientist-im-bereich-artificial-intelligence-w-m-d/04753690-ba24-4da5-8587-b8d2df9ac17e": {
+"first": "2026-07-14",
+"job_id": "6d847dec205c",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.siemens-energy.com/en_us/careersmarketplace/folderdetail/experienced-ai-data-scientist-m-f-d/281763": {
+"first": "2026-07-09",
+"job_id": "e277e3b2acea",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.siemens-energy.com/en_us/careersmarketplace/folderdetail/experienced-ai-ml-engineer-f-m-d/281752": {
+"first": "2026-07-07",
+"job_id": "0cbe900b7daf",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"jobs.siemens-energy.com/en_us/careersmarketplace/folderdetail/werkstudent-w-m-d-ki-basierte-optimierungsinitiativen/295654": {
+"first": "2026-07-10",
+"job_id": "e6806e67df81",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.siemens-energy.com/en_us/jobs/folderdetail/experienced-ai-data-scientist-m-f-d/281763": {
+"first": "2026-06-30",
+"job_id": "c5c9689dde12",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.siemens-energy.com/en_us/jobs/folderdetail/werkstudent-data-analytics-m-w-d-im-bereich-offer-management/286509": {
+"first": "2026-06-27",
+"job_id": "11457be6d8be",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.siemens-energy.com/en_us/jobs/folderdetail/working-student-f-m-d-data-science/286373": {
+"first": "2026-07-01",
+"job_id": "73522111c732",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"jobs.siemens-energy.com/en_us/jobs/folderdetail?folderid=295076": {
+"first": "2026-07-11",
+"job_id": "9dcacf0506ee",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.siemens-energy.com/en_us/jobs/folderdetail?folderid=295076&sourcetype=premium_post_site": {
+"first": "2026-07-11",
+"job_id": "39668fa68204",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.siemens-energy.com/en_us/jobs/folderdetailapplied?folderid=281763": {
+"first": "2026-06-27",
+"job_id": "8369b7b2c869",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.siemens-healthineers.com/en_us/searchjobs/home": {
+"first": "2026-07-04",
+"job_id": "ed9bb8d6e4d0",
+"last": "2026-07-04",
+"state": "ingested"
+},
+"jobs.siemens-healthineers.com/en_us/searchjobs/jobdetail/504996": {
+"first": "2026-07-13",
+"job_id": "21ded776429b",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.siemens.com": {
+"first": "2026-06-30",
+"job_id": "6f49d9c99059",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.siemens.com/careers/job/563156126593342": {
+"first": "2026-06-23",
+"job_id": "dc39e80183a3",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.siemens.com/de_de/externaljobs/jobdetail/476129": {
+"first": "2026-06-26",
+"job_id": "c4cf8878dd28",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.siemens.com/de_de/externaljobs/jobdetail/493832": {
+"first": "2026-06-23",
+"job_id": "a8c55c51f3ae",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"jobs.siemens.com/de_de/externaljobs/jobdetail/505199": {
+"first": "2026-07-05",
+"job_id": "1b73fa071e64",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobs.siemens.com/en_us/externaljobs/jobdetail/468493": {
+"first": "2026-06-23",
+"job_id": "ddd57150bb4e",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.siemens.com/en_us/externaljobs/jobdetail/476129": {
+"first": "2026-06-23",
+"job_id": "5f7cf3795f8d",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.siemens.com/en_us/externaljobs/jobdetail/496472": {
+"first": "2026-07-15",
+"job_id": "16dc9d0b77b4",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.siemens.com/en_us/externaljobs/jobdetail/502899": {
+"first": "2026-06-23",
+"job_id": "84afdfa8473f",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.siemens.com/en_us/externaljobs/jobdetail/503133": {
+"first": "2026-06-23",
+"job_id": "f5d57f777752",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.siemens.com/en_us/externaljobs/jobdetail/503634": {
+"first": "2026-07-12",
+"job_id": "e54c55cd2f8e",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobs.siemens.com/jobs/197292": {
+"first": "2026-07-09",
+"job_id": "7a30645616a4",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/aboutyougmbh/743999692953272-machine-learning-engineer-pricing": {
+"first": "2026-07-03",
+"job_id": "3701b8b64809",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/aboutyougmbh/743999695318415--senior-data-scientist": {
+"first": "2026-06-25",
+"job_id": "1bec8cd3a0c2",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/adevinta/743999710473644-data-engineer-m-f-x-": {
+"first": "2026-06-27",
+"job_id": "d410a2c3330e",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/axelspringernewsmedianational/744000122439989-staff-senior-software-engineer-machine-learning-m-f-d-": {
+"first": "2026-07-10",
+"job_id": "da56c6e3c9d3",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/743999702351828-internship-in-the-area-of-ml-robotics-data-and-process-analytics": {
+"first": "2026-07-03",
+"job_id": "34c30c7596ab",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/743999748407347-data-scientist-machine-learning": {
+"first": "2026-06-30",
+"job_id": "e4e1fd870c9b",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/743999766571307-werkstudent-data-science-fur-visuelle-erkennung-mit-deep-learning-w-m-div-": {
+"first": "2026-07-11",
+"job_id": "3064694cf781",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/743999849470481": {
+"first": "2026-07-01",
+"job_id": "14e1732e0f2a",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/743999917981160-research-group-leader-natural-language-processing-and-neuro-symbolic-ai-f-m-div-": {
+"first": "2026-07-09",
+"job_id": "48c88dabcbb2",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/744000120383126-werkstudent-machine-learning-engineering-w-m-div-": {
+"first": "2026-07-02",
+"job_id": "3964391caad3",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/744000123611471-mandatory-internship-in-the-area-of-data-analytics-and-generative-ai": {
+"first": "2026-06-29",
+"job_id": "f752e0bed78d",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/744000132590903-mandatory-internship-in-automation-of-process-development-with-agentic-ai-in-manufacturing": {
+"first": "2026-07-02",
+"job_id": "3a68d3196972",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/744000133011799-mandatory-internship-in-the-area-of-data-analytics-and-generative-ai": {
+"first": "2026-07-08",
+"job_id": "873d325bcd35",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/744000162486754": {
+"first": "2026-11-24",
+"job_id": "5a419b6e0462",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/744000162723219": {
+"first": "2026-11-24",
+"job_id": "4e46ae306d55",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/744000162723399": {
+"first": "2026-11-24",
+"job_id": "94646b5bdf30",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/cern": {
+"first": "2026-06-30",
+"job_id": "bb9542472577",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/cern/744000117610379-data-scientist-te-dps-aim-2026-75-grap-": {
+"first": "2026-06-27",
+"job_id": "73b43b536657",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/cern/744000117611022-machine-learning-engineer-te-dps-aim-2026-94-grae-": {
+"first": "2026-06-27",
+"job_id": "17f892f7378d",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/cern/744000118189617-technical-studentship-it-mathematics-robotics-2026-3": {
+"first": "2026-06-29",
+"job_id": "683ed8997b9a",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/cern/744000159629244": {
+"first": "2026-11-24",
+"job_id": "5f2b5e91682e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/cern/744000161227765": {
+"first": "2026-11-24",
+"job_id": "05b0264d2885",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/cern/744000163158559": {
+"first": "2026-11-24",
+"job_id": "5b056b5e6687",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/checkpointsoftwaretechnologies2/744000162276705": {
+"first": "2026-11-24",
+"job_id": "dbf91fa5ee3c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/checkpointsoftwaretechnologies2/744000162344134": {
+"first": "2026-11-24",
+"job_id": "61be497ea249",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/deliveryhero/744000158026859": {
+"first": "2026-11-24",
+"job_id": "4a352c646743",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/deliveryhero/744000162541049": {
+"first": "2026-11-24",
+"job_id": "53c35daf4482",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/ebreuningergmbhco/743999691878102-intern-data-science-m-f-d-machine-learning-model-compression": {
+"first": "2026-07-03",
+"job_id": "a2e2f11a7ee5",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/enpalbv/744000101609325-data-science-intern-f-m-d-": {
+"first": "2026-06-29",
+"job_id": "6cd528d2db65",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/experian/744000103568202-senior-data-scientist-m-f-d-": {
+"first": "2026-06-25",
+"job_id": "d6d089d3985f",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/koenatecgmbh/743999756663487-werkstudent-data-science-machine-learning-m-w-d-": {
+"first": "2026-07-13",
+"job_id": "634ffa13ac52",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/lmgroup/743999662441247-machine-learning-scientist": {
+"first": "2026-07-01",
+"job_id": "0d95dedbfe32",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/nagarro1/744000134283173-python-developer-genai-agentic-ai-m-f-d-": {
+"first": "2026-07-12",
+"job_id": "1d7ad0838241",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/nexthink/744000040852235-junior-ai-engineer": {
+"first": "2026-06-25",
+"job_id": "41cd2ae11e14",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/nexthink/744000130034719-senior-ai-machine-learning-engineer": {
+"first": "2026-07-09",
+"job_id": "cf51ed29c3bd",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/nexxiot/743999760025373-data-engineer": {
+"first": "2026-07-01",
+"job_id": "9c0defcd91c8",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/publicisgroupe/743999729211485-senior-data-scientist-all-genders-german-speaker": {
+"first": "2026-06-25",
+"job_id": "ab243a73977c",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/qima/744000127166734-junior-developer-scientific-data-applications-m-f-d-": {
+"first": "2026-06-29",
+"job_id": "e86fd0067f10",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/raylyticgmbh/743999713823743-internship-bachelor-or-master-thesis-m-f-d-artificial-intelligence-data-science": {
+"first": "2026-07-03",
+"job_id": "bb6ca5bc4f19",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/raylyticgmbh/743999736710328-praktikum-im-bereich-artificial-intelligence-ai-data-science-m-w-d-optional-mit-masterarbeit": {
+"first": "2026-07-07",
+"job_id": "1f2bb10c36b0",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/repriskag/744000130408989-senior-ai-engineer": {
+"first": "2026-06-25",
+"job_id": "e5ac6cb87b13",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/reweinternationaldienstleistungsgesellschaftmbh/744000021114549-expert-data-engineer-m-w-x-": {
+"first": "2026-06-27",
+"job_id": "985d30c8505f",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/reweinternationaldienstleistungsgesellschaftmbh/744000051504975-data-scientist-m-f-x-": {
+"first": "2026-06-30",
+"job_id": "6be9df2d60c3",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/rolandberger/744000023786885-internship-analytics-consulting-m-f-d-": {
+"first": "2026-06-29",
+"job_id": "e8340dc8d82e",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/rolandberger/744000023787525-intern-or-working-student-m-f-d-data-analytics-with-data-engineering-focus": {
+"first": "2026-07-08",
+"job_id": "8e9c390321da",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/scalablecapitalgmbh/743999767119901--junior-data-engineer-m-f-x-onsite-or-remote-in-germany-": {
+"first": "2026-07-10",
+"job_id": "92a8463ef839",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/scalablecapitalgmbh/743999779032372-internship-data-science-m-f-x-": {
+"first": "2026-07-03",
+"job_id": "cd99127937c4",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/scalablegmbh/743999996830855--senior-ml-engineer-software-engineer-machine-learning-ai-m-f-x-onsite-or-remote-in-germany": {
+"first": "2026-06-30",
+"job_id": "15e39bf6550a",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/scalablegmbh/744000040254327--senior-data-engineer-m-f-x-onsite-remote-in-germany-": {
+"first": "2026-06-25",
+"job_id": "d0b8fe4aa413",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/scalablegmbh/744000072640741--senior-ml-engineer-software-engineer-machine-learning-ai-m-f-x-onsite-or-remote-in-germany-": {
+"first": "2026-07-10",
+"job_id": "7412a07b6a1b",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/scalablegmbh/744000110695895-internship-ai-ml-engineering-m-f-x-": {
+"first": "2026-07-03",
+"job_id": "fc4d69aa233b",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/scalablegmbh/744000124572789-ai-software-engineer-python-m-f-x-": {
+"first": "2026-06-26",
+"job_id": "55ab5c72e6fc",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/scalablegmbh/744000129716926-ai-platform-engineer-m-f-x-": {
+"first": "2026-07-05",
+"job_id": "14a97707d4d1",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sevensenders/744000133372730-working-student-ai-process-automation-f-m-x-": {
+"first": "2026-07-10",
+"job_id": "abcf2ef26cd2",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sixt/744000068178165-senior-data-scientist-operations-research-m-f-d-": {
+"first": "2026-07-03",
+"job_id": "90c3499de0d0",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sixt/744000104684846-machine-learning-engineering-manager-m-f-d-": {
+"first": "2026-06-25",
+"job_id": "a14def617149",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/smgswissmarketplacegroup/744000072617465-head-of-data-engineering-f-m-d-80-100-hybrid-working-model-zurich-switzerland": {
+"first": "2026-07-10",
+"job_id": "2ed0cbad3409",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sportradar/744000065681073-senior-data-scientist-machine-learning": {
+"first": "2026-06-25",
+"job_id": "64ef088f78c7",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sportradar/744000085060763-mid-level-machine-learning-engineer": {
+"first": "2026-06-25",
+"job_id": "9f753c8af80a",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sportradar/744000095366592-staff-ai-engineer-m-f-d-": {
+"first": "2026-06-26",
+"job_id": "bf61a2c56199",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sportradar/744000160833376": {
+"first": "2026-11-24",
+"job_id": "7f8dcb418a59",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sportradar/744000160915461": {
+"first": "2026-11-24",
+"job_id": "f5658321af5a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sportradar/744000160916399": {
+"first": "2026-11-24",
+"job_id": "f2aae1f2cd32",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/swissquote/744000111808661-junior-machine-learning-engineer": {
+"first": "2026-06-26",
+"job_id": "d9c57fe37e78",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/talan/743999815384055-data-engineer": {
+"first": "2026-06-25",
+"job_id": "c98248140605",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/tietoevry1/744000120617907--senior-data-engineer-m-f-d-tieto-tech-consulting": {
+"first": "2026-07-14",
+"job_id": "038b7d138435",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/tietoevry1/744000123704933--senior-data-ai-engineer-m-f-d-tieto-tech-consulting": {
+"first": "2026-07-14",
+"job_id": "ffc4de66e71d",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/tomra/744000133012014-machine-learning-engineer-": {
+"first": "2026-07-14",
+"job_id": "03b4d984db5a",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.ubimet.com/o/meteorological-machine-learning": {
+"first": "2026-07-10",
+"job_id": "b75368ceb5cf",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.ubs.com/tgnewui/search/home/homewithpreload?pagetype=jobdetails&jobid=333977&partnerid=25008&siteid=5131": {
+"first": "2026-07-08",
+"job_id": "85a7844f0c22",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.ubs.com/tgnewui/search/home/homewithpreload?pagetype=jobdetails&jobid=334022&partnerid=25008&siteid=5131": {
+"first": "2026-06-23",
+"job_id": "9f5c32c98c43",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.ubs.com/tgnewui/search/home/homewithpreload?pagetype=jobdetails&jobid=336648&partnerid=25008&siteid=5131": {
+"first": "2026-06-23",
+"job_id": "59a7bc42b08a",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.ubs.com/tgnewui/search/home/homewithpreload?pagetype=jobdetails&jobid=336991&partnerid=25008&siteid=5012": {
+"first": "2026-06-23",
+"job_id": "c0691469d3f6",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.ubs.com/tgnewui/search/home/homewithpreload?pagetype=jobdetails&jobid=337696&partnerid=25008&siteid=5176": {
+"first": "2026-06-27",
+"job_id": "c7393c72ed2f",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.vodafone.com/careers/job/563018680286173-discover-trainee-big-data-data-science-m-w-d-in-d%c3%bcsseldorf-d%c3%bcsseldorf-germany?domain=vodafone.com": {
+"first": "2026-07-10",
+"job_id": "654367159b6e",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.volkswagen-group.com/cariad/job/berlin-architect-ai-data-strategy-ai-architecture-(mfd)-10587/1253926901": {
+"first": "2026-07-10",
+"job_id": "1d1537a1c037",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"jobs.volkswagen-group.com/cariad/job/berlin-internship-working-student-large-language-models-(llms),-ai-agents-&-data-engineering-(fmd)-10587/1260367101": {
+"first": "2026-06-29",
+"job_id": "d8f0f7b69ae8",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.volkswagen-group.com/cariad/job/ingolstadt-working-student-internship-thesis-end-to-end-automated-driving-with-world-models-(mwd)-85053/1288004101": {
+"first": "2026-07-09",
+"job_id": "d92c4ed64ebb",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"jobs.volkswagen-group.com/cariad/job/m%c3%bcnchen-working-student-deep-learning-for-adasad-(fmd)-80807/1222153201": {
+"first": "2026-07-07",
+"job_id": "5aa70bc2e9bc",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"jobs.volkswagen-group.com/volkswagen/job/wolfsburg-working-student-ai-driven-process-planning-generative-artificial-intelligence-(fmd)-38436/1230366301": {
+"first": "2026-06-27",
+"job_id": "12546f694763",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.volkswagen-group.com/vw_infotainment/job/bochum-working-student-ai-assisted-software-architecture-&-engineering-automation-(mfd)-nort-44803/1401655533": {
+"first": "2026-06-27",
+"job_id": "71362ea1c943",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.volkswagen-group.com/vwfs/job/staff-data-scientist/1280806801": {
+"first": "2026-06-27",
+"job_id": "ce98a56aa4ed",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"jobs.wallstreetfriends.org/companies/deutsche-bank-2/jobs/51695295-bus-artificial-intelligence-ai-engineer-associate": {
+"first": "2026-07-14",
+"job_id": "0c007c8bc80e",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.weekday.works/institute-of-science-and-technology-austria-(ista)-postdoc-in-machine-learning-(basic-research)-at-ista": {
+"first": "2026-07-06",
+"job_id": "bc13cdead6b8",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"jobs.workable.com/view/57kacwxhtk7yjx8rixmu16/hybrid-ai-engineer-in-z%c3%bcrich-at-crypto-finance-ag": {
+"first": "2026-07-01",
+"job_id": "d470f6ae555e",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"jobs.zalando.com/en/jobs/2720306": {
+"first": "2026-06-26",
+"job_id": "939d80d50626",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"jobs.zalando.com/en/jobs/2721449": {
+"first": "2026-07-01",
+"job_id": "695065959d21",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"jobs.zalando.com/en/jobs/2723350-senior-machine-learning-engineer-(all-genders)": {
+"first": "2026-06-23",
+"job_id": "375109dce95c",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.zalando.com/en/jobs/2723604": {
+"first": "2026-06-26",
+"job_id": "4ba8510bd993",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.zalando.com/en/jobs/2724307": {
+"first": "2026-06-23",
+"job_id": "6edb148709ee",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"jobsearch.createyourowncareer.com/bertelsmann_corporate/job/data-science-trainee-(wmd)/285996-de_de": {
+"first": "2026-07-08",
+"job_id": "3638681e7a3e",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"jobsearch.createyourowncareer.com/bertelsmann_corporate/job/g%c3%bctersloh-data-science-graduate-program-nw-33311/766757201": {
+"first": "2026-07-14",
+"job_id": "eb29d47205ed",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"join.com/companies/1komma5grad/13208541-senior-data-engineer-data-platform-m-f-d-berlin-munich-or-hamburg": {
+"first": "2026-07-05",
+"job_id": "9c49f4c55085",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"join.com/companies/ai-impact/16251850-lead-ai-engineer-senior-ai-engineer": {
+"first": "2026-07-15",
+"job_id": "67a860888cd9",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"join.com/companies/alpas/16054641-senior-ai-engineer-f-m-d": {
+"first": "2026-07-13",
+"job_id": "52cbdd85b1a5",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"join.com/companies/ambersearch/15772392-ai-engineering-intern-f-m": {
+"first": "2026-07-10",
+"job_id": "576ee73f0e32",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"join.com/companies/aspaara/16065393-machine-learning-engineer-applied-ml-b2b-saas": {
+"first": "2026-06-28",
+"job_id": "1566e0428b09",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"join.com/companies/auto1/14246415-junior-data-scientist-f-m-d": {
+"first": "2026-06-25",
+"job_id": "398912939ad4",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"join.com/companies/autoscout24/5957455-data-scientist-m-f-d": {
+"first": "2026-07-05",
+"job_id": "1f06af4cebb7",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"join.com/companies/brandbackde/14911893-junior-software-engineer-applied-ai": {
+"first": "2026-06-26",
+"job_id": "0a35b8a1dd0f",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"join.com/companies/caya/16001365-junior-business-automation-und-ai-engineer-m-w-d": {
+"first": "2026-06-26",
+"job_id": "84c3fcbe9433",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"join.com/companies/cyphereurope/16189804-data-and-ai-engineer": {
+"first": "2026-06-29",
+"job_id": "80a20c32fbdf",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"join.com/companies/decentriq/16239248-senior-data-pipeline-engineer-freelance-80-100-remote-zurich-berlin": {
+"first": "2026-06-29",
+"job_id": "cdeb1a62828d",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"join.com/companies/deepeye/15635386-mid-junior-data-scientist-ai-medical-imaging-w-m-d": {
+"first": "2026-06-27",
+"job_id": "8c2ba69ff14f",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"join.com/companies/deeplify/16306232-working-student-ml-engineer": {
+"first": "2026-06-26",
+"job_id": "c9f056a6b884",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"join.com/companies/delicious-data/15671667-working-student-machine-learning-engineer-f-m-d": {
+"first": "2026-06-26",
+"job_id": "af9149b1adf8",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"join.com/companies/enlite/12432580-senior-data-engineer-in-computer-vision": {
+"first": "2026-06-26",
+"job_id": "1e630f5755f3",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"join.com/companies/enlite/14135859-senior-mlops-engineer": {
+"first": "2026-06-25",
+"job_id": "f00e01b62278",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"join.com/companies/feniska/13176562-data-science-and-machine-learning-engineer": {
+"first": "2026-07-12",
+"job_id": "b76c0912725f",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"join.com/companies/fp-robotics": {
+"first": "2026-07-08",
+"job_id": "7e1b77f2be35",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"join.com/companies/green-fusion/15622753-senior-data-scientist-optimization-f-m-d": {
+"first": "2026-06-26",
+"job_id": "4bc38ec8888b",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"join.com/companies/hortiya/7069016-working-student-intern-machine-learning": {
+"first": "2026-07-01",
+"job_id": "01449edf0497",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"join.com/companies/iesfgroup/15053157-senior-ai-ml-engineer-python": {
+"first": "2026-07-15",
+"job_id": "49a98169929b",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"join.com/companies/immobilienscout241/9068394-working-student-data-science-d-f-m": {
+"first": "2026-06-26",
+"job_id": "25907ba92d27",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"join.com/companies/incyclingai/16054764-data-scientist-for-chemical-data-w-m-d": {
+"first": "2026-07-01",
+"job_id": "d3011c312db7",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"join.com/companies/incyclingai/16060417-data-engineer-analytics-engineer-w-m-d": {
+"first": "2026-07-01",
+"job_id": "aca15e36d16a",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"join.com/companies/kineo/6980295-junior-machine-learning-scientist-f-m-d": {
+"first": "2026-06-25",
+"job_id": "43f8cb62f83b",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"join.com/companies/kodex-ai/10567293-working-student-machine-learning-generative-ai": {
+"first": "2026-07-01",
+"job_id": "ef3ed6c82985",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"join.com/companies/legitary/15437386-python-data-engineer": {
+"first": "2026-06-25",
+"job_id": "bba79976194c",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"join.com/companies/linderagmbh/15634171-senior-machine-learning-engineer-ai-integration-engineer": {
+"first": "2026-07-15",
+"job_id": "2ab082368695",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"join.com/companies/lingvano/13215167-data-engineer-and-analyst": {
+"first": "2026-06-25",
+"job_id": "74d6e264b7f2",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"join.com/companies/livello/8585540-data-science-machine-learning-internship-m-f-d-iot-startup": {
+"first": "2026-07-09",
+"job_id": "61a920a7e180",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"join.com/companies/medirion/15292663-ai-architect-machine-learning-engineer-m-f-d": {
+"first": "2026-06-26",
+"job_id": "f03f9ac7aa06",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"join.com/companies/mlreply/4261700-data-scientist-consultant-m-f-d": {
+"first": "2026-06-26",
+"job_id": "efa4b168d6f0",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"join.com/companies/mlreply/9587644-data-engineer-m-w-d": {
+"first": "2026-06-30",
+"job_id": "a910b6bb8391",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"join.com/companies/mondaai/15810124-senior-data-engineer-snowflake-and-data-sharing-d-f-m-berlin": {
+"first": "2026-07-13",
+"job_id": "fc9848c3bd14",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"join.com/companies/moodtalk/13822420-ai-engineer-intern": {
+"first": "2026-06-26",
+"job_id": "887c0114c386",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"join.com/companies/niologic/12815198-junior-data-scientist-m-w-d": {
+"first": "2026-07-01",
+"job_id": "24497729c2ac",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"join.com/companies/niologic/13992038-werkstudent-in-data-engineering-m-w-d": {
+"first": "2026-07-01",
+"job_id": "141419133e15",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"join.com/companies/omnisent/14492978-intern-working-student-machine-learning": {
+"first": "2026-06-26",
+"job_id": "e8e18545b7e7",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"join.com/companies/peax": {
+"first": "2026-06-27",
+"job_id": "fa4ee3c31adf",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"join.com/companies/playnvoice/16226752-senior-ai-engineer-in-healthcare-startup-in-zuerich-80-100": {
+"first": "2026-07-15",
+"job_id": "234299f35b7a",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"join.com/companies/qdrant/14310378-machine-learning-engineer-python-developer": {
+"first": "2026-06-27",
+"job_id": "fc6839cf63f5",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"join.com/companies/ratepay/10183007-senior-data-scientist-m-f-d": {
+"first": "2026-06-26",
+"job_id": "a4072fb01061",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"join.com/companies/riverkincom/16375763-hydrology-data-scientist": {
+"first": "2026-07-10",
+"job_id": "2428f6b6467a",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"join.com/companies/scalefree/16195079-praktikum-m-f-d-data-und-ai-engineering": {
+"first": "2026-11-24",
+"job_id": "62be4b297c80",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"join.com/companies/skalar/16346778-senior-data-engineer-w-m-d": {
+"first": "2026-07-13",
+"job_id": "dc8d533a414c",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"join.com/companies/spacewise/15270467-data-scientist": {
+"first": "2026-06-25",
+"job_id": "98d2f673c67b",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"join.com/companies/sphere-energy/16307213-senior-ai-engineer": {
+"first": "2026-07-05",
+"job_id": "1de5ae294dd3",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"join.com/companies/sphere-energy/16411003-ai-engineer": {
+"first": "2026-07-09",
+"job_id": "4ec8574c77ca",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"join.com/companies/starqube/14258001-data-engineer-junior-h-f": {
+"first": "2026-07-01",
+"job_id": "54eeac7d7c4f",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"join.com/companies/taod/13782904-junior-data-engineer-m-w-d": {
+"first": "2026-06-27",
+"job_id": "fddafa687c32",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"join.com/companies/taod/16201146-junior-data-engineer-m-w-d": {
+"first": "2026-06-27",
+"job_id": "b936ae740c0f",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"join.com/companies/tcc-clinicalsolutions/14661346-data-scientist-machine-learning-engineer-m-w-d": {
+"first": "2026-07-05",
+"job_id": "d152e555c6ca",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"join.com/companies/themisphere/14710706-ml-engineer": {
+"first": "2026-06-30",
+"job_id": "771942a662ee",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"join.com/companies/vidlab71/13147176-intern-working-student-machine-learning": {
+"first": "2026-06-26",
+"job_id": "e10821f190b9",
+"last": "2026-06-28",
+"state": "ingested"
+},
+"join.com/companies/viewpointsystem": {
+"first": "2026-06-26",
+"job_id": "3a2d857c46a1",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"join.com/companies/we-build-ai/15392679-trainee-junior-ai-engineer-m-w-d": {
+"first": "2026-06-26",
+"job_id": "ec904fa538e5",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"join.com/companies/wesort/13471620-werkstudent-datengenerierung-ki-basiertes-recycling-m-w-d": {
+"first": "2026-06-30",
+"job_id": "b5846957e1ad",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"join.com/companies/yuvenda/15065914-junior-ai-engineer-ai-agent-developer-m-w-d": {
+"first": "2026-07-02",
+"job_id": "126da79299b3",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"juliusbaer.wd3.myworkdayjobs.com/de-de/external/job/junior-data-scientist-100---f-m-d-_r-18709-1": {
+"first": "2026-07-03",
+"job_id": "b881db45f786",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"juliusbaer.wd3.myworkdayjobs.com/en-us/external/job/machine-learning-engineer-100---f-m-d-_r-18155": {
+"first": "2026-07-08",
+"job_id": "8de1f02ef8b3",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"juliusbaer.wd3.myworkdayjobs.com/en-us/external/job/zurigo/summer-internship-2026---artificial-intelligence--ai--in-global-products---solutions---gps--100----f-m-d-_r-17981-1": {
+"first": "2026-07-08",
+"job_id": "74392eeaf92c",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"juliusbaer.wd3.myworkdayjobs.com/technology/job/zurich/university-graduate---machine-learning-engineer-100---f-m-d-_r-17698/apply": {
+"first": "2026-06-29",
+"job_id": "472d6a024165",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"juna-ai.jobs.personio.de/job/1823357": {
+"first": "2026-06-26",
+"job_id": "85116986225f",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"karriere.analytical-software.de/data-scientist-ai-engineer-mwd-de-j28.html": {
+"first": "2026-06-23",
+"job_id": "fd7a1caf7881",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"karriere.dcfverlag.de/o/junior-ki-automatisierungsspezialist-mwd-11": {
+"first": "2026-11-24",
+"job_id": "3e646300787d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"karriere.rewe-group.com/konzernzentrale/job/k%c3%b6ln-(senior)-data-scientist-analytics-(mwd)-nw-50933/1020187601": {
+"first": "2026-07-08",
+"job_id": "83d6837e6d87",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"karriere.tuv.at/job/266434": {
+"first": "2026-07-05",
+"job_id": "62da1ab5460a",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"kayzen.io/careers": {
+"first": "2026-06-30",
+"job_id": "a4fc6e9d391a",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"kiwigrid.jobs.personio.de/job/2327992": {
+"first": "2026-07-01",
+"job_id": "59b0d6f540bf",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"knime.workable.com/j/fda6931ff8": {
+"first": "2026-07-05",
+"job_id": "5c8c03674c76",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"lakera.ai/careers": {
+"first": "2026-06-30",
+"job_id": "59332ca69b80",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"lastminute.com/careers": {
+"first": "2026-06-30",
+"job_id": "723f654ffbfd",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"lippepersonal.recruitee.com/o/werkstudent-ki-automatisierung-mwd": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Founder-associate business process automation role"
+},
+"logitech.wd5.myworkdayjobs.com/en-us/logitech/job/lausanne-switzerland/audio-ml-engineer_144590": {
+"first": "2026-06-25",
+"job_id": "a5d9c5e3088b",
+"last": "2026-06-28",
+"state": "ingested"
+},
+"lombardodier.wd3.myworkdayjobs.com/en-us/lombard_odier_careers/job/geneva/internship----data-scientist_r0007203": {
+"first": "2026-07-02",
+"job_id": "fd74a4fa2039",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"lombardodier.wd3.myworkdayjobs.com/en-us/lombard_odier_careers/job/geneva/internship---enhancing-financial-knowledge-access-with-generative-ai_r0007258": {
+"first": "2026-07-02",
+"job_id": "dd13abdcff60",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"machinelearningreply.recruitee.com/o/genai-engineer-mwd-6": {
+"first": "2026-11-24",
+"job_id": "58745623fc7f",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"machinelearningreply.recruitee.com/o/senior-data-scientist-mfd-10": {
+"first": "2026-11-24",
+"job_id": "5bd580f99d49",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"machinelearningreply.recruitee.com/o/senior-genai-engineer-mfd-10": {
+"job_id": "deb99ebe7122",
+"state": "ingested"
+},
+"machinelearningreply.recruitee.com/o/senior-genai-engineer-mfd-8": {
+"first": "2026-07-10",
+"job_id": "deb99ebe7122",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"magenta.onlyfy.jobs/candidate/job/print/t4gujn1v728wpxeof9yr9nnc1tpk6zl": {
+"first": "2026-07-12",
+"job_id": "7c66f23f7aec",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"meetfrank.com/jobs/daedalean/machine-learning-engineer": {
+"first": "2026-06-27",
+"job_id": "9e9dd595e4f2",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"mentorium.join.com/jobs/2569182-python-entwickler-w-m-d-werkstudent-fuer-machine-learning-und-nlp": {
+"first": "2026-07-12",
+"job_id": "1b5665ae1bd9",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"merantix-momentum.com/careers": {
+"first": "2026-06-30",
+"job_id": "ccff2acd1233",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"merantix-momentum.jobs.personio.com/job/2507417": {
+"first": "2026-06-23",
+"job_id": "5fb09cb8d30a",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"mistral.ai/careers": {
+"first": "2026-06-30",
+"job_id": "f6e7c3c4fb3d",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"ml-tuw.github.io/hiring_en/praedoc": {
+"first": "2026-07-11",
+"job_id": "ac297ae557b6",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"mlreply.join.com/jobs/2146587-senior-machine-learning-engineer-m-f-d": {
+"first": "2026-06-30",
+"job_id": "ee6282ce0561",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"mlreply.join.com/jobs/2265723-data-scientist-consultant-m-f-d": {
+"first": "2026-06-30",
+"job_id": "e7de7a5e3a7f",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"mlreply.join.com/jobs/2477537-senior-machine-learning-engineer-m-f-d": {
+"first": "2026-07-07",
+"job_id": "4ff670c4a6ce",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"n26.com/en-eu/careers": {
+"first": "2026-06-30",
+"job_id": "ac2423b73fdc",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"n26.com/en-eu/careers/positions/6688180": {
+"first": "2026-07-01",
+"job_id": "9facfe7ba300",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"n26.com/en-eu/careers/positions/6780858": {
+"first": "2026-06-25",
+"job_id": "8495579d7da0",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"n26.com/en-eu/careers/positions/7410495": {
+"first": "2026-06-30",
+"job_id": "9ba7c7d8c494",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"news.ycombinator.com/item?id=48757283": {
+"first": "2026-07-13",
+"job_id": "bf2fb2a2784e",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"oebb.csod.com/ux/ats/careersite/4/home/requisition/25418?c=oebb": {
+"first": "2026-07-10",
+"job_id": "9d9798659956",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"oeh.jku.at/en/oeh-services/boersen/jobboerse/detail/werkstudent-data-analytics-und-ki-m-w-x": {
+"first": "2026-07-05",
+"job_id": "9f635bcb43b3",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"ommax.jobs.personio.com/job/2579074": {
+"first": "2026-07-12",
+"job_id": "6d8ca72eb294",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"pacemaker.jobs.personio.de/job/1564444": {
+"first": "2026-07-10",
+"job_id": "975cbd94b54a",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"paiqo.recruitee.com/o/data-scientist-senior": {
+"first": "2026-07-01",
+"job_id": "bd6b60aefe2c",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"qualcomm.wd5.myworkdayjobs.com/external/job/austria---remote-aut/staff-engineer-for-computer-vision-and-machine-learning---extended-reality--xr--r-d---remote-location-in-austria_3030215": {
+"first": "2026-07-15",
+"job_id": "75cfde93cd18",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"quantco.com/careers": {
+"first": "2026-06-30",
+"job_id": "e12499b15ff4",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"remotive.com/remote/jobs/ai-ml/internship-working-student-machine-learning-ai-4295801": {
+"first": "2026-06-27",
+"job_id": "a82351751f6b",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"rewe-group.jobs/en/jobs/ref3158u-cbaee71f-82f9-43f6-b118-a73ccdec50ef": {
+"first": "2026-06-27",
+"job_id": "bdf71a89922d",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"saas.group/careers": {
+"first": "2026-06-30",
+"job_id": "0f3f3cbf2ba5",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"samsungsdibs.at/en/jobs/data-scientist": {
+"first": "2026-06-26",
+"job_id": "cb580dd66d1e",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"scalefree.jobs.personio.de/job/1137687": {
+"first": "2026-11-24",
+"job_id": "dd3cb590d247",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"scalefree.jobs.personio.de/job/2653009": {
+"first": "2026-11-24",
+"job_id": "ad0b3a95776f",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"scalefree.jobs.personio.de/job/815799": {
+"first": "2026-11-24",
+"job_id": "ba61c62768af",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"silicon-austria-labs.jobs.personio.de/job/2099846": {
+"first": "2026-06-25",
+"job_id": "a53a7c734ac8",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"smg.swiss/careers": {
+"first": "2026-06-30",
+"job_id": "1406039ad416",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"snapchat.wd1.myworkdayjobs.com/snap/job/vienna-austria/machine-learning-platform-engineer_r0043108-1": {
+"first": "2026-07-15",
+"job_id": "1a545cd2dfed",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"sonyglobal.wd1.myworkdayjobs.com/en-us/sonyglobalcareers/job/research-intern--privacy-preserving-machine-learning-_jr-116992-1": {
+"first": "2026-07-05",
+"job_id": "5f2739b3402c",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"sportradar.wd3.myworkdayjobs.com/en-us/sportradar_careers/job/vienna/senior-data-engineer--m-f-d----advertising-and-data-technologies_jreq941": {
+"first": "2026-07-01",
+"job_id": "07ec92f63cae",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"startup.jobs/ai-engineer-llm-systems-m-f-d-bit-capital-gmbh-7252001": {
+"first": "2026-06-27",
+"job_id": "9125a1e3e6ee",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"startup.jobs/ai-engineer-m-f-d-smartbroker-ag-7796002": {
+"first": "2026-06-27",
+"job_id": "ac9a07273f49",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"startup.jobs/computer-vision-machine-learning-intern-scandit-4250636": {
+"first": "2026-07-05",
+"job_id": "414a700ee320",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"startup.jobs/data-engineer-crm-m-f-x-rewe-international-dienstleist-4303398": {
+"first": "2026-07-05",
+"job_id": "16b71f01dbd9",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"startup.jobs/data-scientist-m-f-x-konux-3205437": {
+"first": "2026-07-08",
+"job_id": "2e4f5141d151",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"startup.jobs/data-scientist-machine-learning-frankfurt-remote-celonis-3127265": {
+"first": "2026-07-09",
+"job_id": "325db1a3ab33",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"startup.jobs/machine-learning-science-internship-working-student-in-berlin-m-f-x-wayfair-2-4587265": {
+"first": "2026-06-25",
+"job_id": "3854cc5af3f6",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"steadforce.jobs.personio.de/job/2282828": {
+"first": "2026-11-24",
+"job_id": "b8eb823d5fc8",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"steadforce.jobs.personio.de/job/2880823": {
+"first": "2026-11-24",
+"job_id": "6e75079d4c2f",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"stellenticket.tu-berlin.de/stellenangebote/205042": {
+"first": "2026-06-23",
+"job_id": "548a5121e7a5",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"sumup.com/careers/positions/8364212002?gh_jid=8364212002": {
+"first": "2026-11-24",
+"job_id": "d81fe937d1b4",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"sumup.com/careers/positions/8712443002?gh_jid=8712443002": {
+"first": "2026-11-24",
+"job_id": "cd93e94a80fa",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"swisscom.wd103.myworkdayjobs.com/en-us/swisscomexternalcareers/job/ai-ml-engineer---data-scientist_r-0001504": {
+"first": "2026-06-25",
+"job_id": "b313c25c88d8",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"swissdevjobs.ch/jobs/comparisch-data-scientist-ai--communications-80-100-mfd": {
+"first": "2026-06-26",
+"job_id": "899fbe8843f2",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"synthavo.jobs.personio.de/job/2437828": {
+"first": "2026-07-13",
+"job_id": "783108e7e1ae",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"talent.bayer.com/careers/job/562949976714152": {
+"first": "2026-07-09",
+"job_id": "18d44ee1adc7",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"talent.bayer.com/careers/job/562949976714152-principal-machine-learning-scientist-alle-geschlechter--berlin-berlin-germany?domain=bayer.com": {
+"first": "2026-07-07",
+"job_id": "3719aadbdfcb",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"talent.headline.com/companies/black-forest-labs-2/jobs/75524475-member-of-technical-staff-post-training": {
+"first": "2026-06-23",
+"job_id": "eddafc214f86",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"talents2germany.com/jobs": {
+"first": "2026-06-30",
+"job_id": "c54549919c09",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"telekom.jobs/karriere/jobs/de/230233/trainee-focus-data-science-(m%7cw%7cd)-_-board-area-germany/bonn.html": {
+"first": "2026-07-10",
+"job_id": "a93be038752e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"tether.recruitee.com/o/ai-research-engineer-model-compression-quantization-zurich": {
+"first": "2026-11-24",
+"job_id": "0fdb00d921f1",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"traderepublic.com/en-de/about?gh_jid=6276388003&jobid=6276388003": {
+"first": "2026-07-08",
+"job_id": "eaf35e628aca",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"trumpf.wd3.myworkdayjobs.com/en-us/trumpf_students/job/werkstudent--w-m-d--im-bereich-data-engineering-und-data-science--ws26-27-_r00039057": {
+"first": "2026-07-13",
+"job_id": "61bd4e0fa316",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"unjobs.org/vacancies/1772719654902": {
+"first": "2026-07-02",
+"job_id": "1ef756f9e062",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"unjobs.org/vacancies/1774878293344": {
+"first": "2026-06-27",
+"job_id": "c08fc2553dde",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"verivox.jobs.personio.de/job/2186077": {
+"first": "2026-06-25",
+"job_id": "76acdc154788",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"vitol.com/careers": {
+"first": "2026-06-30",
+"job_id": "7b29071514ec",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"wellfound.com/jobs/918409-junior-data-scientist-for-conversational-ai-nlp-nlu-company-in-vienna": {
+"first": "2026-06-25",
+"job_id": "9a399d562017",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.aboutyou.com/p/careers": {
+"first": "2026-06-30",
+"job_id": "b9b2202a067d",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.accenture.com/at-en/careers": {
+"first": "2026-07-06",
+"job_id": "b06e8c05bc22",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"www.admiral-technologies.at/job/junior-data-engineer-m-f-x": {
+"first": "2026-07-14",
+"job_id": "f90d2815a4c7",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"www.am.ai/en/career/data-scientist": {
+"first": "2026-06-24",
+"job_id": "fe2ec5beb160",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.am.ai/en/jobs/junior-data-engineer": {
+"first": "2026-06-24",
+"job_id": "ea9cc8b7f686",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.am.ai/en/jobs/junior-machine-learning-engineer": {
+"first": "2026-06-23",
+"job_id": "584b0c2bdfdd",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.amazon.jobs/en/jobs/10443508/applied-scientist-eu-international-technologies": {
+"first": "2026-07-02",
+"job_id": "0739eea26b40",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/actcareers/full-stack-engineer-ai-systems-zurich-269196": {
+"first": "2026-11-24",
+"job_id": "05cfd740430d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/actcareers/machine-learning-engineer-applied-ai-zurich-290885": {
+"first": "2026-11-24",
+"job_id": "717adc4ba0c6",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/actcareers/machine-learning-engineer-ranking-retrieval-zurich-388176": {
+"first": "2026-11-24",
+"job_id": "791bf99dc36a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/cdds-ag/senior-vision-perception-engineer-zurich-390363": {
+"first": "2026-11-24",
+"job_id": "13cccf83e429",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/conipartner-ag/data-scientist-markets-pe-fund-data-zurich-26987": {
+"first": "2026-11-24",
+"job_id": "22b390e06e8c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/enactintelligence/research-scientist-post-training-zurich-164875": {
+"first": "2026-11-24",
+"job_id": "0beb52891cbf",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/gfl-cosmetics/it-applications-ai-specialist-lugano-418292": {
+"first": "2026-11-24",
+"job_id": "e0c8ff457b80",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/gravis-robotics/senior-reinforcement-learning-engineer-zurich-316346": {
+"first": "2026-11-24",
+"job_id": "5b0be6394293",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/harmattan-ai/machine-learning-engineer-intern-computer-vision-lausanne-140058": {
+"first": "2026-11-24",
+"job_id": "6aba3be1031b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/hiconium-ag/data-engineer-automotive-zurich-5960": {
+"first": "2026-11-24",
+"job_id": "e1ea9ed9b5af",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/inspacion-ag/full-stack-software-engineer-for-web-platform-net-3d-ml-schlieren-387085": {
+"first": "2026-11-24",
+"job_id": "547876281843",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/kandou-ai/internship-ai-engineer-saint-sulpice-185169": {
+"first": "2026-11-24",
+"job_id": "0666e157ec25",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/laelaps/research-engineer-foundation-model-multimodal-fusion-distillation-zurich-401053": {
+"first": "2026-11-24",
+"job_id": "970803871bb9",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/laelaps/research-scientist-foundation-model-world-model-site-memory-zurich-448097": {
+"first": "2026-11-24",
+"job_id": "ec74505f2741",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/nebius/senior-applied-scientist-efficient-llm-inference-model-optimization-zurich-356995": {
+"first": "2026-11-24",
+"job_id": "40592c4d48dc",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/nebius/senior-machine-learning-engineer-llm-inference-optimization-zurich-453910": {
+"first": "2026-11-24",
+"job_id": "08230bfbe135",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/prostaff-schweiz-gmbh/test-automation-engineer-ki-mcp-agents-bern-388710": {
+"first": "2026-11-24",
+"job_id": "6ccb466ee0c3",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/skydio/phd-autonomy-engineer-intern-computer-vision-deep-learning-summer-2027-zurich-98951": {
+"first": "2026-11-24",
+"job_id": "3cbb914318f9",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/expert-enterprise-platform-architect-ai-architektur-refnr-48374-bern-255054": {
+"first": "2026-11-24",
+"job_id": "b81dbcb6d69a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/professional-quality-engineer-testautomatisierung-ki-refnr-48375-bern-64980": {
+"first": "2026-11-24",
+"job_id": "d3a15be6e3da",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.co.uk/jobs/companies/chainguard/engineering-manager-ai-cicd-468359": {
+"first": "2026-11-24",
+"job_id": "ffab1cd5796d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.co.uk/jobs/companies/microsoftcorporation/principal-ai-evaluations-platform-engineer-london-167838": {
+"first": "2026-11-24",
+"job_id": "df2ffd93247d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/21bitcoin/senior-platform-security-engineer-cloud-devsecops-ai-agents-munich-18486": {
+"first": "2026-11-24",
+"job_id": "1ed7b5dbf6c9",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/adjoe/senior-staff-ml-scientist-bidding-optimization-berlin-248715": {
+"first": "2026-11-24",
+"job_id": "644f47b6fc57",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/ai-coustics/systems-software-engineer-rust-ml-inference-berlin-427098": {
+"first": "2026-06-25",
+"job_id": "c52417ef8726",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/alphacoders-gmbh/data-scientist-cologne-432170": {
+"first": "2026-06-23",
+"job_id": "0eed3b7c71e3",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/batch-robotics-gmbh/senior-robotics-vision-perception-engineer-munich-314299": {
+"first": "2026-11-24",
+"job_id": "224a79186b1c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/brainlab/working-student-ai-data-management-munich-280070": {
+"first": "2026-06-25",
+"job_id": "525b4533d092",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/cambrion/werksstudentin-ai-machine-learning-engineering-20-std-woche-munich-313153": {
+"first": "2026-06-23",
+"job_id": "63a1c4149fc3",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/coduct-solutions-gmbh/senior-ai-engineer-ai-technical-lead-fur-forschungsprojekt-in-softwarefirma-cologne-91529": {
+"first": "2026-06-23",
+"job_id": "37604465feb5",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/cognitx-ai-gmbh/ai-llm-engineering-werkstudent-darmstadt-29739": {
+"first": "2026-06-25",
+"job_id": "a5bb37a27cb4",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/coreen-gmbh/ki-entwickler-ai-engineer-fur-projekte-im-mittelstand-berlin-60205": {
+"first": "2026-06-22",
+"job_id": "cd82f619eb20",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/datasphere-analytics-gmbh/werkstudent-data-science-machine-learning-berlin-199284": {
+"first": "2026-06-23",
+"job_id": "d7189ea28041",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/dcf-verlag-gmbh/trainee-developer-programmierer-fur-ki-agenten-koblenz-202440": {
+"first": "2026-06-25",
+"job_id": "4aaa4547824b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/denkweit-gmbh/backend-developer-vision-ai-platform-halle-saale-374490": {
+"first": "2026-11-24",
+"job_id": "23decf2018b8",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/denkweit-gmbh/devops-engineer-cloud-ai-infrastructure-halle-saale-45772": {
+"first": "2026-11-24",
+"job_id": "ec1da6fa85fc",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/denkweit-gmbh/frontend-developer-vision-ai-platform-halle-saale-234445": {
+"first": "2026-11-24",
+"job_id": "bf47f7eb7fe7",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/dvision/lead-ai-engineer-head-of-ai-berlin-320509": {
+"first": "2026-06-27",
+"job_id": "de778121cdf7",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/estateanfrage/werkstudent-ai-engineer-munich-182315": {
+"first": "2026-06-22",
+"job_id": "72731c2939b5",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/evoila-frankfurt-gmbh/unit-lead-data-engineering-frankfurt-am-main-192882": {
+"first": "2026-06-23",
+"job_id": "a79ab5b0556a",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/exmox-gmbh/senior-data-analyst-strategy-insights-hamburg-63438": {
+"first": "2026-06-23",
+"job_id": "a1d992a31222",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/expert-analytics-gmbh/werkstudentin-data-science-ai-scientific-computing-munich-441701": {
+"first": "2026-06-23",
+"job_id": "5f0a38770e5a",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/frequentum/werkstudent-ki-kunstliche-intelligenz-claude-munich-276192": {
+"first": "2026-06-25",
+"job_id": "ed0d8e8fc176",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/glassdollar/remote-junior-data-engineer-217259": {
+"first": "2026-06-24",
+"job_id": "2cb1bf2916f1",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/heyjobs/junior-data-engineer-all-genders-berlin-265534": {
+"first": "2026-06-24",
+"job_id": "331e2d2cda95",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/knuddels-gmbh-co-kg/senior-data-scientist-mit-fuhrungsverantwortung-remote-oder-karlsruhe-69972": {
+"first": "2026-06-23",
+"job_id": "8bb74244151b",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/limebit-gmbh/praktikantin-medical-machine-learning-und-data-science-mit-fokus-auf-lehre-berlin-119363": {
+"first": "2026-06-23",
+"job_id": "9e78c98c1afa",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/lippe-personal-gmbh/werkstudent-ki-automatisierung-dusseldorf-434424": {
+"first": "2026-11-24",
+"job_id": "5751297b4bf4",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/machine-learning-reply/agentic-ai-software-engineer-munich-19919": {
+"first": "2026-07-05",
+"job_id": "84be1ffb234f",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/machine-learning-reply/ai-application-engineer-ai-products-llm-rag-berlin-322593": {
+"first": "2026-11-24",
+"job_id": "1542c067b8da",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/machine-learning-reply/data-scientist-munich-288101": {
+"first": "2026-11-24",
+"job_id": "3684b8414b52",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/machine-learning-reply/junior-ai-application-engineer-ai-products-llm-rag-munich-465884": {
+"first": "2026-11-24",
+"job_id": "0ad4ced59ba4",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/makersite-gmbh/remote-senior-data-scientist-research-eu-uk-berlin-88725": {
+"first": "2026-11-24",
+"job_id": "1b429e76d61a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/paul-tech-ag/senior-product-engineer-ai-business-systems-mannheim-467122": {
+"first": "2026-11-24",
+"job_id": "2877c20a89ff",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/pflegia/praktikum-im-business-development-business-analyst-automation-engineer-applied-ai-engineer-berlin-180476": {
+"first": "2026-06-25",
+"job_id": "8f3dbcd94284",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/computer-vision-ai-engineer-n3xt-interceptor-cuas-gilching-191952": {
+"first": "2026-06-22",
+"job_id": "38bdb8c03d0a",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/rocketfactoryaugsburgag/intern-data-analysis-machine-learning-software-engineer-flight-safety-augsburg-bavaria-50271": {
+"first": "2026-06-23",
+"job_id": "e19b477da45f",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/rse-architekten-ingenieure-gmbh/lead-ai-architect-engineer-kassel-498448": {
+"first": "2026-11-24",
+"job_id": "db77f03d5850",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/sikiaai/founding-engineer-applied-ai-engineering-full-stack-berlin-351958": {
+"first": "2026-06-22",
+"job_id": "8ee9ef2998b8",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/strictly-boring-gmbh/software-engineer-ai-systems-mannheim-207551": {
+"first": "2026-06-25",
+"job_id": "3cd381dfc6e1",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/sumup/senior-machine-learning-engineer-ii-berlin-1051": {
+"first": "2026-06-27",
+"job_id": "6fa8b991ec1a",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/team-passerelle/ai-solutions-architect-berlin-417610": {
+"first": "2026-06-25",
+"job_id": "98111ff3611f",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/team-passerelle/data-ai-engineer-berlin-118584": {
+"first": "2026-06-22",
+"job_id": "bc02c061922c",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/senior-ai-devops-llmops-baden-baden-304699": {
+"first": "2026-06-25",
+"job_id": "26e4fad84501",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/tensordyne/working-student-ai-ml-munich-345668": {
+"first": "2026-06-25",
+"job_id": "c70abd04473a",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/terraquantum/applied-machine-learning-engineer-industry-solutions-munich-switzerland-241962": {
+"first": "2026-07-15",
+"job_id": "a33ea74b4cae",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/trustyou/senior-data-engineer-munich-176349": {
+"first": "2026-06-23",
+"job_id": "955554d5eed6",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/twomynds/data-engineer-cologne-312722": {
+"first": "2026-11-24",
+"job_id": "aff797ca7ea3",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/vestiairecollective/senior-data-scientist-applied-scientist-berlin-487392": {
+"first": "2026-11-24",
+"job_id": "b8302d4e87a8",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/wesortai-gmbh/machine-learning-engineer-foundation-models-wurzburg-413681": {
+"first": "2026-06-27",
+"job_id": "64579264f3e2",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.arbeitnow.com/jobs/companies/zapdeck/freelance-senior-ai-engineer-multi-agent-systems-berlin-438081": {
+"first": "2026-06-23",
+"job_id": "b40929058cb3",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.arbeitnow.nl/jobs/companies/anywherenow/remote-ai-engineer-rotterdam-22878": {
+"first": "2026-11-24",
+"job_id": "7696e32d4dc4",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208099598-s": {
+"first": "2026-11-24",
+"job_id": "2ddf2a9311f2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003531032-s": {
+"first": "2026-11-24",
+"job_id": "0ba2024f1872",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003546664-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Website and SEO marketing role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003818217-s": {
+"first": "2026-11-24",
+"job_id": "8bcb8908f6b0",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003827648-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Primarily IT consulting and presales"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003836372-s": {
+"first": "2026-11-24",
+"job_id": "fef0f9341eba",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003862153-s": {
+"first": "2026-11-24",
+"job_id": "cfc68cbe333b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003935510-s": {
+"first": "2026-11-24",
+"job_id": "5f55a239fec7",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003941481-s": {
+"first": "2026-11-24",
+"job_id": "87c8ac293104",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004018125-s": {
+"first": "2026-11-24",
+"job_id": "2cbb88a5f186",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004020720-s": {
+"first": "2026-11-24",
+"job_id": "3bbc440a6d21",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004037377-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "ERP requirements consulting, not AI building"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17242511-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Active Directory security, not data/AI"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17265800-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Information security governance, non-technical"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17288257-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "SOC detection engineering, not data/AI"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17288280-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "SOC security analyst role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17306879-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Secure software lifecycle security role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17311791-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Microsoft security operations, not data/AI"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17315995-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Vulnerability management, security not data"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17340182-s": {
+"first": "2026-11-24",
+"job_id": "e40673eacc1b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17348369-s": {
+"first": "2026-11-24",
+"job_id": "3d26ebcc07c2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17352657-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "CISO security leadership, non-technical"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17354873-s": {
+"first": "2026-11-24",
+"job_id": "0a5d5769c758",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17358298-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "IT security operations, not data engineering"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17365107-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Business continuity consulting role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17366672-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "SOC security operations role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17368278-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "IT security project management, non-technical"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17377256-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Data privacy compliance role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17378249-s": {
+"first": "2026-11-24",
+"job_id": "2b04bcd2308c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17382030-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Information security management role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17383558-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Security sales role, not technical"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17390389-s": {
+"first": "2026-11-24",
+"job_id": "74cf5a22f1ab",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17392383-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "BI/KPI reporting and project leadership"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17393280-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Cyber risk security consulting role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17393631-s": {
+"first": "2026-11-24",
+"job_id": "0ecb4f2c8cb8",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17395674-s": {
+"job_id": "0a5d5769c758",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17395851-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "AI governance and compliance, non-technical"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17403998-s": {
+"first": "2026-11-24",
+"job_id": "67eba0e2b63a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17413819-s": {
+"first": "2026-11-24",
+"job_id": "ee9de6d21c90",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17414945-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "IT security administration, not data or AI"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17416304-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Clinical trial data management, not engineering"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17417048-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Security operations (SOC) role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17417109-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Information risk management role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17417306-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Information security GRC role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17418280-s": {
+"first": "2026-11-24",
+"job_id": "ac7b83d4bb97",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17421841-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "DFIR incident response analyst role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17422169-s": {
+"first": "2026-11-24",
+"job_id": "f9c512ee7c62",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17423308-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "SOC security analyst role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17426356-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Enterprise security risk management role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17426377-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Network security presales, not data engineering"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17428113-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "QMS and ISMS process role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11949-17429113-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Information security CISO consulting role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11956-2972541794697201-s": {
+"first": "2026-11-24",
+"job_id": "0e4ac62c99d9",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/11956-3096331795042800-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "AI enablement and training, not technical"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996072264-s": {
+"first": "2026-11-24",
+"job_id": "d5d131bc3964",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996073083-s": {
+"first": "2026-11-24",
+"job_id": "4eb70c000b6c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12288-5002848046-s": {
+"first": "2026-11-24",
+"job_id": "e49c56201535",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12288-5004201276-s": {
+"first": "2026-11-24",
+"job_id": "857f8aa5e60e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12444-563465370091089-dt-s": {
+"first": "2026-11-24",
+"job_id": "30b7c7ca2388",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12811-2343472-s": {
+"first": "2026-11-24",
+"job_id": "8890b77cf770",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12811-2347687-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Accounting process documentation role"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12811-2356493-s": {
+"first": "2026-11-24",
+"job_id": "cd30ada214f9",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12811-2362675-s": {
+"first": "2026-11-24",
+"job_id": "93031758efd2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12811-2365305-s": {
+"first": "2026-11-24",
+"job_id": "b3ab8453c932",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12811-2372733-s": {
+"first": "2026-11-24",
+"job_id": "4104c24ae590",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/12811-2379263-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "General software dev, AI only a tool"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13509-000021100c7004-s": {
+"first": "2026-11-24",
+"job_id": "d4900f95880b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13509-00002111687001-s": {
+"first": "2026-11-24",
+"job_id": "7b52771dcf5a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13552-f837yiteq8guewa7-s": {
+"first": "2026-11-24",
+"job_id": "ad106d2d5666",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13635-93020cd4_jb5284591-s": {
+"first": "2026-11-24",
+"job_id": "512f4be6bf70",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13635-b83be62b_jb5286145-s": {
+"first": "2026-11-24",
+"job_id": "c09eb4c78e12",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13635-js_bc_84_jb5174580-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "AI rollout and staff training support"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13635-js_tue_4_jb5254126-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "QMS tool rollout and documentation"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13644-226412-s": {
+"first": "2026-11-24",
+"job_id": "b7637387949c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13644-304891-s": {
+"first": "2026-11-24",
+"job_id": "4f33e8484586",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13644-311622-s": {
+"first": "2026-11-24",
+"job_id": "943dba7d57fd",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13644-313959-s": {
+"first": "2026-11-24",
+"job_id": "f0bf06716912",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13644-314332-s": {
+"first": "2026-11-24",
+"job_id": "160c8c9d9c14",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13644-314386-s": {
+"first": "2026-11-24",
+"job_id": "aa2366eda7cd",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/13869-13932026-s": {
+"first": "2026-11-24",
+"job_id": "c0dc93e62924",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/14927-2i51yod0rzc-s": {
+"first": "2026-11-24",
+"job_id": "0b42cc1bbddb",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/15794-471862_50565-1-s": {
+"first": "2026-11-24",
+"job_id": "14210820408f",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/15794-471863_50541-1-s": {
+"first": "2026-11-24",
+"job_id": "15ba6eb58b1c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/16195-0068566737-s": {
+"first": "2026-11-24",
+"job_id": "8b0ce9dd28b3",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/16602-3e1d77c6a19d8fa9-s": {
+"first": "2026-11-24",
+"job_id": "b76c2e432cab",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-40225a25660fac6cf3-s": {
+"first": "2026-11-24",
+"job_id": "aecb6c2ea1a6",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-b654a534c257b2a74e-s": {
+"first": "2026-11-24",
+"job_id": "9a6e7839a091",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-ffe8f36337a9efd919-s": {
+"first": "2026-11-24",
+"job_id": "378eed488125",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s2ad5c49392cfc4d306-s": {
+"first": "2026-11-24",
+"job_id": "62d96d1721a1",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s34e2361678a2738a72-s": {
+"first": "2026-11-24",
+"job_id": "cb8e8493c1fa",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s38fbe984c00ac0c774-s": {
+"first": "2026-11-24",
+"job_id": "6bd593250bf2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s4f510fe4e0e6cf7cfb-s": {
+"first": "2026-11-24",
+"job_id": "c2b4b8c81366",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s53337117a6b6a624ef-s": {
+"first": "2026-11-24",
+"job_id": "8ce25651853b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s571e37d2142e098507-s": {
+"first": "2026-11-24",
+"job_id": "73aff481c431",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s59a90531aa5aaea03b-s": {
+"first": "2026-11-24",
+"job_id": "94184185a4ae",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s703d0a28617c98a730-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Pre-sales consulting role, not technical"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s7a82dac60017176427-s": {
+"first": "2026-11-24",
+"job_id": "e765118521e6",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s7b385f9a8c8271196a-s": {
+"first": "2026-11-24",
+"job_id": "2a685ad1fec2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s83936209f5a80a1b06-s": {
+"first": "2026-11-24",
+"job_id": "a917ac2a6fb2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s891d39fd2c97303aa9-s": {
+"first": "2026-11-24",
+"job_id": "035aae72e1ed",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-s941d39fd2c97303aaa-s": {
+"first": "2026-11-24",
+"job_id": "675ba5b89604",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-sd182dac6001717641f-s": {
+"first": "2026-11-24",
+"job_id": "09c3f2c9499d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-sd8d5c49392cfc4d293-s": {
+"first": "2026-11-24",
+"job_id": "9e4f28b7b597",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17338-sfd904df61070c76f7a-s": {
+"first": "2026-11-24",
+"job_id": "d940b9cdb297",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17402-44591029-1123-s": {
+"first": "2026-11-24",
+"job_id": "39a8a6e8714e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17486-114800855487521478-s": {
+"first": "2026-11-24",
+"job_id": "e929237b7d5f",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17486-135193514559316678-s": {
+"first": "2026-11-24",
+"job_id": "f20be536f544",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17486-143476084111745734-s": {
+"first": "2026-11-24",
+"job_id": "bea4e196c191",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/17486-90398972757058246-s": {
+"first": "2026-11-24",
+"job_id": "a5c53a50a6f9",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/18207-44551115-114-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Research and documentation support, not technical"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/19924-966662498-s": {
+"first": "2026-11-24",
+"job_id": "2766d6a55b31",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/19924-967738413-s": {
+"first": "2026-11-24",
+"job_id": "2c431e6a14ea",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/20119-0067629437-s": {
+"first": "2026-11-24",
+"job_id": "ba7482f6fa97",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/20208-0a0e1a74a31b4e18838-s": {
+"first": "2026-11-24",
+"job_id": "01ae0090ad35",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/20208-50e689aec5ea4bd2a6d-s": {
+"first": "2026-11-24",
+"job_id": "5037385f810a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/20208-74515a7275b3497e86a-s": {
+"first": "2026-11-24",
+"job_id": "a9d8bb7898c9",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.arbeitsagentur.de/jobsuche/jobdetail/20478-2204033-s": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Consulting-only AI strategy role"
+},
+"www.auto1-group.com/jobs/machine-learning-engineer-f-m-x-15113": {
+"first": "2026-06-25",
+"job_id": "2037a63379ef",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.auto1-group.com/jobs/working-student-data-science-f-m-x-46945": {
+"first": "2026-06-23",
+"job_id": "cff8a4bbd2af",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"www.autoscout24.de/karriere": {
+"first": "2026-06-30",
+"job_id": "1f26e67f746b",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.banani.co/de/company/careers/ai-engineer": {
+"first": "2026-11-24",
+"job_id": "c77e429c9350",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.bavest.co/en/careers/internship-data-science": {
+"first": "2026-07-01",
+"job_id": "ec2c86d0841f",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"www.bavest.co/en/careers/internship-machine-learning": {
+"first": "2026-07-01",
+"job_id": "474c7089a909",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"www.bmwgroup.jobs/de/de/jobfinder/job-description.184088.html": {
+"first": "2026-06-27",
+"job_id": "d5913e80a5fc",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"www.bmwgroup.jobs/de/en/jobfinder/job-description-copy.137834.html": {
+"first": "2026-06-30",
+"job_id": "d0fa7db1276c",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.bmwgroup.jobs/de/en/jobfinder/job-description-copy.182180.html": {
+"first": "2026-07-05",
+"job_id": "ed78febed92c",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"www.bmwgroup.jobs/en/jobfinder/job-description-copy.181046.html": {
+"first": "2026-06-30",
+"job_id": "dc3ba180da51",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.bosch.com/careers": {
+"first": "2026-06-30",
+"job_id": "b5ad6e2bb569",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.bosch.de/karriere/job/ref90730i-praktikum-data-scientist-machine-learning-in-der-industrie": {
+"first": "2026-06-24",
+"job_id": "730a84da495b",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"www.brainlab.com/career/jobs/senior-machine-learning-platform-engineer-munich-by-de-744000046353108": {
+"first": "2026-06-23",
+"job_id": "9c7c5889740e",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.brainlab.com/career/jobs/working-student-ai-research-munich-by-de-744000094155072": {
+"first": "2026-06-23",
+"job_id": "4086a30a5ab7",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.brz-jobs.at/job/3185/technical-consultant-(w-m-d)-ai-engineering": {
+"first": "2026-06-29",
+"job_id": "3836151d9ebc",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"www.brz-jobs.at/jobs": {
+"first": "2026-07-05",
+"job_id": "ef5abfbe70a3",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.careers.zurich.com/job/z%c3%bcrich-(senior)-data-engineer,-commercial-insurance-analytics,-80-100/811609202": {
+"first": "2026-06-25",
+"job_id": "cc1087f02cf3",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.careers.zurich.com/job/z%c3%bcrich-working-student-data-scientist-(40-60)-12-months/1348404257": {
+"first": "2026-06-27",
+"job_id": "466f0eeaa916",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"www.commerzbank.de/karriere": {
+"first": "2026-06-30",
+"job_id": "314286ad01fc",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.comparis.ch/people/jobs/detail/2571766": {
+"first": "2026-07-01",
+"job_id": "34d6018121fe",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"www.craftworks.ai/careers/senior-data-scientist-m-f-d-focus-industrial-ai": {
+"first": "2026-07-01",
+"job_id": "e42d92024420",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"www.daedalean.ai/company/careers": {
+"first": "2026-07-08",
+"job_id": "a77da38deae1",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"www.datacareer.ch/job/10206/senior-data-ai-engineer-m-f-d": {
+"first": "2026-06-22",
+"job_id": "273bfc6bf4c1",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.datacareer.ch/job/12791/senior-data-scientist-marketing-science": {
+"first": "2026-06-23",
+"job_id": "4f2913cd58c4",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/12821/ai-engineer": {
+"first": "2026-06-23",
+"job_id": "792bb7674bf0",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/12823/ai-engineer": {
+"first": "2026-06-23",
+"job_id": "69eac316bd97",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/12846/data-scientist": {
+"first": "2026-06-23",
+"job_id": "96a5b2e76df2",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/12872/internship-in-agentic-ai-f-m-d": {
+"first": "2026-06-23",
+"job_id": "883038cd01b4",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/12991/summer-internship-2026-data-scientist-people-data-100-f-m-d": {
+"first": "2026-06-23",
+"job_id": "9ab311af08b8",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13044/research-scientist-group-leader-in-foundational-machine-learning-f-m": {
+"first": "2026-06-23",
+"job_id": "89d67f83efb1",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13223/master-trainee-ai-orchestration-optimization": {
+"first": "2026-06-23",
+"job_id": "e456b5313b72",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13244/aiml-applied-ml-research-scientist-accessibility": {
+"first": "2026-06-23",
+"job_id": "9eec1ae736f8",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13329/machine-learning-engineer": {
+"first": "2026-06-23",
+"job_id": "11cd988e585a",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13366/data-engineer": {
+"first": "2026-06-23",
+"job_id": "2701cf04a404",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13403/associate-ai-engineer-6-month-contract": {
+"first": "2026-06-23",
+"job_id": "9746faad8da8",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13442/ai-research-scientist": {
+"first": "2026-06-23",
+"job_id": "2fdc3a0d7e8d",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13455/scientist-cheminformatics-machine-learning": {
+"first": "2026-06-26",
+"job_id": "4c5c4f5c9c30",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13498/internship-in-security-software-engineering-and-machine-learning": {
+"first": "2026-06-23",
+"job_id": "a075286dd61c",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13514/senior-data-scientist": {
+"first": "2026-06-22",
+"job_id": "66aa01a7987f",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13515/machine-learning-engineer-applied-ml-b2b-saas": {
+"first": "2026-06-22",
+"job_id": "ddfe1c1e37f1",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13521/fullstack-ai-engineer-m-w-d": {
+"first": "2026-06-23",
+"job_id": "65a422a8a665",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13532/data-engineer": {
+"first": "2026-06-23",
+"job_id": "6b241b55f8d1",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13533/machine-learning-engineer-computer-ision": {
+"first": "2026-06-22",
+"job_id": "bb6f98ae6d94",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13534/data-engineering-consultant-w-m-x": {
+"first": "2026-06-23",
+"job_id": "bc42bc1732d3",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13535/ai-engineer": {
+"first": "2026-06-23",
+"job_id": "f97260d0f87a",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13537/ai-research-engineer-multi-modal-vision": {
+"first": "2026-06-27",
+"job_id": "83d13bf0d3d5",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13538/intern-operations-research-data-science-12-months-80-100": {
+"first": "2026-06-24",
+"job_id": "cc4a73a0716f",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13543/business-engineer-ai-genai-w-m-d": {
+"first": "2026-06-24",
+"job_id": "e67776363d7c",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13547/forward-deployed-ai-ml-model-engineer": {
+"first": "2026-06-22",
+"job_id": "e7c1cdb014e2",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13548/ai-big-data-engineer": {
+"first": "2026-06-27",
+"job_id": "c819f2e738bb",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13549/team-leader-data-platform-data-warehouse": {
+"first": "2026-06-24",
+"job_id": "543096a908ba",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13550/ai-native-engineer": {
+"first": "2026-06-24",
+"job_id": "49f1a38091f1",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13551/research-scientist-frontier-ai-deepmind": {
+"first": "2026-06-23",
+"job_id": "6f4c635c1442",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13554/intern-applied-ai-ai-platform": {
+"first": "2026-06-22",
+"job_id": "89988de7181e",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13557/data-engineer": {
+"first": "2026-06-23",
+"job_id": "ad397a85ebc1",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13569/data-engineer-hr-data-analytics": {
+"first": "2026-06-27",
+"job_id": "40d6e0b68957",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13575/senior-statistical-methodology-data-scientist": {
+"first": "2026-06-27",
+"job_id": "13b7ba315d11",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13577/staff-data-scientist-supply-chain-optimisation": {
+"first": "2026-06-27",
+"job_id": "14d14fe931ed",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13578/lead-data-scientist-supply-chain-forecasting": {
+"first": "2026-06-27",
+"job_id": "2220d5a6e205",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13579/sr-genai-ml-specialist-solutions-architect-aspi-auto-manufacturing": {
+"first": "2026-06-27",
+"job_id": "55158af2f738",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13584/internship-in-data-science-data-management": {
+"first": "2026-06-26",
+"job_id": "4d1d8b156e8c",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13587/working-student-powerbi-development-data-analytics-40-60": {
+"first": "2026-06-26",
+"job_id": "0ca6252652a5",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13589/ai-research-scientist-engineer": {
+"first": "2026-06-27",
+"job_id": "add0e0bf8e2f",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13592/sr-ai-research-engineer": {
+"first": "2026-06-27",
+"job_id": "e996b5036dde",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.datacareer.ch/job/13666/ai-platform-system-engineer": {
+"first": "2026-07-15",
+"job_id": "90294a93d305",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.datacareer.de/job/17867/ml-ai-platform-engineer-d-w-m": {
+"first": "2026-07-01",
+"job_id": "c7a1043124c8",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"www.datacareer.de/job/17926/working-student-machine-learning-m-f-d": {
+"first": "2026-06-26",
+"job_id": "d50226542135",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"www.dataiku.com/careers": {
+"first": "2026-06-30",
+"job_id": "2089a75f0855",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.datajob.io/jobs/junior-data-scientist-at-check-24": {
+"first": "2026-06-23",
+"job_id": "9d5c8beafc68",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"www.datev.de/web/de/m/karriere": {
+"first": "2026-06-30",
+"job_id": "3b5d6cbb94d7",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.disneycareers.com/en/job/zurich/disney-research-studio-intern/391/95414410096": {
+"first": "2026-07-06",
+"job_id": "eee7acc284b1",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"www.dynatrace.com/careers/jobs/1328617800": {
+"first": "2026-06-28",
+"job_id": "d93f2a043c42",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"www.dynatrace.com/careers/jobs/1345074100": {
+"first": "2026-06-28",
+"job_id": "57d8f836b24e",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"www.efinancialcareers.com/jobs-germany-munich-gen_ai_engineer_mfd.id23424206": {
+"first": "2026-06-27",
+"job_id": "fb9bc79849a8",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"www.ergon.ch/en/careers/jobs/praktikum-security-software-engineering-und-machine-learning": {
+"first": "2026-06-26",
+"job_id": "12626f142065",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"www.eurotoptech.com/jobs/preview/senior-data-scientist-industry-solution-engineering-microsoft-zurich-118464": {
+"first": "2026-06-29",
+"job_id": "8bc22d1cc1bb",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"www.exmox.com/careers": {
+"first": "2026-06-30",
+"job_id": "1f7c05696a74",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.get-in-it.de/jobsuche/p268223": {
+"first": "2026-06-24",
+"job_id": "c8f60d47d977",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.google.com/about/careers/applications/jobs/results/111459017301074630-ai-engineer": {
+"first": "2026-06-25",
+"job_id": "bfa092a40378",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.google.com/about/careers/applications/jobs/results/122258040807137990-software-engineer-phd-early-career-aimachine-learning-2026-start": {
+"first": "2026-06-25",
+"job_id": "6e95e346d8e3",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.idiap.ch/en/jobs": {
+"first": "2026-06-30",
+"job_id": "5d32bbe18bc6",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.inovex.de/de/karriere/stellenangebote/data-engineer-machine-learning-engineer": {
+"first": "2026-07-13",
+"job_id": "46e0799ffa69",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"www.jobazon.at/job/8595/ai-engineer-m-w-d": {
+"first": "2026-07-10",
+"job_id": "d790a64dcc73",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"www.jobs.ch/de/stellenangebote/detail/2b8a7780-4b67-4d29-9933-bd40b52a1e7c": {
+"first": "2026-06-25",
+"job_id": "9f8e89ab8952",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.jobs.ch/en/vacancies/detail/19143668-a22d-4910-935a-d930a09b6529": {
+"first": "2026-06-25",
+"job_id": "3e1cb014aed9",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.jobs.ch/en/vacancies/detail/429fa8d3-a528-4b68-a199-3a36e58914d8": {
+"first": "2026-07-02",
+"job_id": "ffc6295d2004",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"www.jobs.ch/en/vacancies/detail/4eee070f-28a2-450a-be24-9f9fba172155": {
+"first": "2026-06-25",
+"job_id": "57adc7a37357",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.jobs.ch/en/vacancies/detail/604e22b8-22b9-44fe-8f64-6039cd3c3c2b": {
+"first": "2026-07-06",
+"job_id": "fa18519fcdf1",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"www.jobs.ch/en/vacancies/detail/6de696dc-64e0-4f0a-8dd4-3269cb77b06d": {
+"first": "2026-06-28",
+"job_id": "0280f323b7df",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.jobs.ch/en/vacancies/detail/8a18523f-f59a-4618-b74c-16823f2b3b1d": {
+"first": "2026-07-06",
+"job_id": "9551c35b3a62",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"www.jobs.ch/en/vacancies/detail/a9e42dde-a727-4fb6-b917-532a4725d228": {
+"first": "2026-07-06",
+"job_id": "79b83a90fc95",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"www.jobs.ch/en/vacancies?location=z%c3%bcrich&term=machine+learning+engineer": {
+"first": "2026-07-01",
+"job_id": "b1478e19d4f6",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"www.kapsch.net/en/career/job/posting-senior-machine-learning-deep-learning-engineer-13055": {
+"first": "2026-06-26",
+"job_id": "5419be3a161a",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10004238": {
+"first": "2026-06-23",
+"job_id": "ecb9fd4e5f72",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10005739": {
+"first": "2026-07-11",
+"job_id": "e9baaa382710",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10005859": {
+"first": "2026-06-23",
+"job_id": "39360a6b1eae",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10008107": {
+"first": "2026-06-23",
+"job_id": "1fabd9afc86d",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10014342": {
+"first": "2026-06-23",
+"job_id": "ce2f9cdf7f2e",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10021942": {
+"first": "2026-06-26",
+"job_id": "ed91d265f9c5",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10024629": {
+"first": "2026-07-06",
+"job_id": "01e05e7724c8",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10024871": {
+"first": "2026-07-06",
+"job_id": "01c7949582d1",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10028125": {
+"first": "2026-11-24",
+"job_id": "15b852d10dfe",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10032514": {
+"first": "2026-11-24",
+"job_id": "4bda5f8146a6",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10033210": {
+"first": "2026-11-24",
+"job_id": "f54bbf69e1e7",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10033971": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "IT application administration, AI secondary"
+},
+"www.karriere.at/jobs/10034271": {
+"first": "2026-11-24",
+"job_id": "513e375947e2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10034273": {
+"first": "2026-11-24",
+"job_id": "e9ccf7ce7100",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10036037": {
+"first": "2026-11-24",
+"job_id": "0a3588df07d5",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10036395": {
+"first": "2026-11-24",
+"job_id": "6548a4399fb1",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10036396": {
+"first": "2026-11-24",
+"job_id": "e400da043cf4",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10037729": {
+"first": "2026-11-24",
+"job_id": "6a8ebbca47e2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10037894": {
+"first": "2026-11-24",
+"job_id": "aed93fa45029",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10038403": {
+"first": "2026-11-24",
+"job_id": "1cf693518097",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10038474": {
+"first": "2026-11-24",
+"job_id": "d8744df6b62d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10038568": {
+"job_id": "b5cfcc3bfa5b",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10038618": {
+"first": "2026-11-24",
+"job_id": "b5cfcc3bfa5b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10038755": {
+"first": "2026-11-24",
+"job_id": "06750f1ede0b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/10039233": {
+"first": "2026-11-24",
+"job_id": "504e042a1853",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/6861725": {
+"first": "2026-07-12",
+"job_id": "5d86cdb12de5",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"www.karriere.at/jobs/6981806": {
+"first": "2026-06-23",
+"job_id": "1b1469a22d06",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7586039": {
+"first": "2026-06-23",
+"job_id": "40220d932ec5",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7605735": {
+"first": "2026-06-23",
+"job_id": "f18a65e7cc6f",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7692620": {
+"first": "2026-06-23",
+"job_id": "49c8e575c7f2",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7707455": {
+"first": "2026-11-24",
+"job_id": "9ce12342794e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7711001": {
+"first": "2026-07-12",
+"job_id": "e7cf17700fcd",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7723730": {
+"first": "2026-06-23",
+"job_id": "4df6edf92a07",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7725950": {
+"first": "2026-07-12",
+"job_id": "b1b4a7faeef5",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7728461": {
+"first": "2026-06-23",
+"job_id": "c7b85a11d8bc",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7728902": {
+"first": "2026-06-23",
+"job_id": "21e383b80d73",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7742879": {
+"first": "2026-06-23",
+"job_id": "41db903526d3",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7743941": {
+"first": "2026-06-23",
+"job_id": "150ff0442921",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7754399": {
+"first": "2026-06-23",
+"job_id": "c43c6bab7812",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7760585": {
+"first": "2026-06-23",
+"job_id": "f0fc214c9928",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7768040": {
+"first": "2026-06-23",
+"job_id": "7c3c7acb78ad",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7769267": {
+"first": "2026-06-22",
+"job_id": "62c49c489bcc",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7775465": {
+"first": "2026-06-23",
+"job_id": "3723d19db49c",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7776350": {
+"first": "2026-06-22",
+"job_id": "59b126b3d3d6",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7776353": {
+"first": "2026-06-23",
+"job_id": "0af704afc634",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7780274": {
+"first": "2026-06-23",
+"job_id": "06f20bcc7d91",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7781063": {
+"first": "2026-07-11",
+"job_id": "e7b4bd4b38a4",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7781069": {
+"first": "2026-06-23",
+"job_id": "67f8899d4c75",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7781894": {
+"first": "2026-06-23",
+"job_id": "351864d2a555",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7784849": {
+"first": "2026-06-27",
+"job_id": "4492a431b475",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7786907": {
+"first": "2026-06-22",
+"job_id": "fa3757cb5347",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7787954": {
+"first": "2026-07-06",
+"job_id": "15619ecf8746",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7791104": {
+"first": "2026-06-23",
+"job_id": "bfec86ea3472",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7791500": {
+"first": "2026-06-24",
+"job_id": "c9c176d0497f",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7794140": {
+"first": "2026-06-27",
+"job_id": "6fa6b6997107",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7806818": {
+"first": "2026-06-22",
+"job_id": "cae901090f66",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7809401": {
+"first": "2026-06-27",
+"job_id": "41e5d5f5539e",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7813589": {
+"first": "2026-06-27",
+"job_id": "5e5caee2a674",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7818416": {
+"first": "2026-06-23",
+"job_id": "9fdde1b2e267",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7821053": {
+"first": "2026-06-27",
+"job_id": "683a2beea8f8",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7823237": {
+"first": "2026-11-24",
+"job_id": "019cb686295b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7823240": {
+"first": "2026-06-27",
+"job_id": "ad28cd355e6e",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7824374": {
+"first": "2026-06-24",
+"job_id": "d3a6b8ff68c7",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7826246": {
+"first": "2026-06-23",
+"job_id": "10a47ae64e8c",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7828469": {
+"first": "2026-06-24",
+"job_id": "5e377bfa3457",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7829015": {
+"first": "2026-06-22",
+"job_id": "85e7cfef4923",
+"last": "2026-06-22",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7829159": {
+"first": "2026-06-27",
+"job_id": "097b32d30e9b",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7829819": {
+"first": "2026-06-27",
+"job_id": "f685b05081b7",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7830614": {
+"first": "2026-06-27",
+"job_id": "4ba488ec0631",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7832417": {
+"first": "2026-11-24",
+"job_id": "232ad601675c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7854890": {
+"first": "2026-11-24",
+"job_id": "8cb7e4a33cf6",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7863346": {
+"first": "2026-11-24",
+"job_id": "b3bd01060461",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7865596": {
+"first": "2026-11-24",
+"job_id": "2fe71c7c15c7",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7867318": {
+"first": "2026-11-24",
+"job_id": "a310256d987f",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7872727": {
+"first": "2026-11-24",
+"job_id": "457a3bf390b2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7877449": {
+"first": "2026-11-24",
+"job_id": "eab1ce75b666",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7879159": {
+"first": "2026-11-24",
+"job_id": "a15dca165c0c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7883062": {
+"first": "2026-11-24",
+"job_id": "5ebf81a41d42",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7894792": {
+"first": "2026-11-24",
+"job_id": "5129309fccf7",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7894933": {
+"first": "2026-11-24",
+"job_id": "34cf69e62d4d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7896763": {
+"first": "2026-11-24",
+"job_id": "bcbda431fc79",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7897303": {
+"first": "2026-11-24",
+"job_id": "f9252e0fa52a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7897714": {
+"first": "2026-11-24",
+"job_id": "b20a5eb15475",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7897726": {
+"first": "2026-11-24",
+"job_id": "6aa3bee37fb6",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7897816": {
+"first": "2026-11-24",
+"job_id": "ce5777e6415e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7897987": {
+"first": "2026-11-24",
+"job_id": "42e60f2351c2",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7899577": {
+"first": "2026-11-24",
+"job_id": "a49c3e41447a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7901695": {
+"first": "2026-11-24",
+"job_id": "4b8e6e26ca81",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7901839": {
+"first": "2026-11-24",
+"job_id": "a8ed08ca3505",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7902217": {
+"first": "2026-11-24",
+"job_id": "ea4db42d67bb",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7902463": {
+"first": "2026-11-24",
+"job_id": "926d7f7f9d9f",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7904015": {
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Agile release train coordination, non-technical"
+},
+"www.karriere.at/jobs/7904639": {
+"first": "2026-11-24",
+"job_id": "5af27f947e0f",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7906838": {
+"first": "2026-11-24",
+"job_id": "4c2d133c49a7",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7907879": {
+"job_id": "ada2f533e528",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7908242": {
+"first": "2026-11-24",
+"job_id": "7adf5f501927",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7908338": {
+"first": "2026-11-24",
+"job_id": "6cdad27eb360",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7909472": {
+"first": "2026-11-24",
+"job_id": "2e6d2b056158",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/7912760": {
+"first": "2026-11-24",
+"job_id": "ada2f533e528",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.karriere.at/jobs/data-scientist/graz": {
+"first": "2026-06-23",
+"job_id": "1e11678b5f0f",
+"last": "2026-07-03",
+"state": "ingested"
+},
+"www.karriere.at/jobs/data-scientist/wien": {
+"first": "2026-06-23",
+"job_id": "f2f845dd8be6",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.klarna.com/careers": {
+"first": "2026-07-01",
+"job_id": "d763c10a4f24",
+"last": "2026-07-12",
+"state": "ingested"
+},
+"www.knowron.com/careers/working-student-nlp-engineer": {
+"first": "2026-07-11",
+"job_id": "65a4cdd0590d",
+"last": "2026-07-11",
+"state": "ingested"
+},
+"www.kostal-career.com/en-de/career/werkstudent-fuer-ki-entwicklung-/-artificial-intelligence-development-m/w/d": {
+"first": "2026-06-23",
+"job_id": "be447d90d40c",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.kostal-career.com/en-de/career/werkstudent-fuer-machine-learning-operations-m/w/d/ka": {
+"first": "2026-06-23",
+"job_id": "d2f05be42048",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.lifeatcanva.com/en/jobs/6000000000244736/senior-machine-learning-engineer-photo-ai-canva-austria-m-f-x": {
+"first": "2026-06-25",
+"job_id": "d520f8ba04c3",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.lifeatcanva.com/en/jobs/6000000000498204/research-engineer-evaluations": {
+"first": "2026-06-25",
+"job_id": "db0131985628",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.lifeatcanva.com/en/jobs/6000000000762589/senior-research-scientist-multimodal-agents": {
+"first": "2026-06-30",
+"job_id": "d87bc8df235c",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.lifeatcanva.com/en/jobs/6000000000975882/senior-machine-learning-engineer-multimodal-data": {
+"first": "2026-06-30",
+"job_id": "64ac94325d21",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.lindera.de/careers": {
+"first": "2026-06-30",
+"job_id": "9398757573c4",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.linkedin.com/jobs/view/4420976192": {
+"first": "2026-07-07",
+"job_id": "c81ef083478f",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"www.merckgroup.com/en/careers.html": {
+"first": "2026-07-09",
+"job_id": "51b89585e2d9",
+"last": "2026-07-09",
+"state": "ingested"
+},
+"www.metacareers.com/jobs/1741351903325229": {
+"first": "2026-07-05",
+"job_id": "4ade82c3e7e8",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.metacareers.com/jobs/3522332288060288": {
+"first": "2026-07-02",
+"job_id": "d750f3f90355",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"www.msg.group/en/career/open-jobs": {
+"first": "2026-07-05",
+"job_id": "9d9424b08f79",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.nature.com/naturecareers/job/12844506/phd-position-machine-learning-medical-imaging-m-f-x-": {
+"first": "2026-07-02",
+"job_id": "0c5f2b554d3f",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"www.niologic.com/jobs": {
+"first": "2026-06-30",
+"job_id": "224d23176269",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.novartis.com/careers": {
+"first": "2026-06-30",
+"job_id": "35609f7258f0",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.novartis.com/careers/career-search/job/details/req-10064676-ai-scientist": {
+"first": "2026-06-28",
+"job_id": "e721de1d6131",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.novartis.com/careers/career-search/job/details/req-10065883-machine-learning-intern": {
+"first": "2026-06-25",
+"job_id": "d4bde05b17bb",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"www.pgcareers.com/eu/en/job/r000118216/r-d-internship-data-science-ml-and-ai-m-f-d": {
+"first": "2026-07-07",
+"job_id": "d0a0ab26f54b",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"www.remocate.app/jobs/junior-ai-engineer": {
+"first": "2026-06-25",
+"job_id": "3fa34a4dde05",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.reply.com/data-reply/en/careers": {
+"first": "2026-06-23",
+"job_id": "854e4026d469",
+"last": "2026-06-23",
+"state": "ingested"
+},
+"www.reply.com/de/about/careers/de/job-details/job-10865?country=de": {
+"first": "2026-06-24",
+"job_id": "f2004caefb27",
+"last": "2026-06-24",
+"state": "ingested"
+},
+"www.reprisk.com/careers": {
+"first": "2026-06-30",
+"job_id": "9a27ae4566a6",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.reprisk.com/careers/data-engineer-zurich": {
+"first": "2026-06-28",
+"job_id": "c4ccc3a05fa3",
+"last": "2026-06-28",
+"state": "ingested"
+},
+"www.reprisk.com/careers/senior-machine-learning-platform-engineer-zurich": {
+"first": "2026-06-25",
+"job_id": "3ee15ad06a9b",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"www.roche.com/careers": {
+"first": "2026-06-30",
+"job_id": "74fd26fcead2",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.rohde-schwarz.com/careers": {
+"first": "2026-06-30",
+"job_id": "61bc73455949",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.rohde-schwarz.com/de/karriere/stellenangebote/mlops-engineer-m-w-d-fuer-den-bereich-kuenstliche-intelligenz-artificial-intelligence_251563-1592074.html": {
+"first": "2026-06-29",
+"job_id": "bdc55da6b3b7",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"www.rohde-schwarz.com/de/karriere/stellenangebote/werkstudent-m-w-d-python-fuer-ki-und-llm-engineering-stellenangebot-detailansicht_251563-1592324.html": {
+"first": "2026-07-10",
+"job_id": "f24425443e7c",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"www.rohde-schwarz.com/us/career/jobs/internship-artificial-intelligence-machine-learning-m-f-d_251563-1603521.html": {
+"first": "2026-07-06",
+"job_id": "a0acffb8fb0d",
+"last": "2026-07-06",
+"state": "ingested"
+},
+"www.sixt.jobs/de-en/jobs/571e9584-dd45-4e91-afbe-4cc3b43839ad": {
+"first": "2026-06-25",
+"job_id": "dd8302824957",
+"last": "2026-06-25",
+"state": "ingested"
+},
+"www.skydio.com/jobs/c84945f0-b8e0-4272-b636-265d6611a8eb": {
+"first": "2026-06-29",
+"job_id": "c2053230a2c0",
+"last": "2026-06-29",
+"state": "ingested"
+},
+"www.smartrecruiters.com/jobs": {
+"first": "2026-06-30",
+"job_id": "5c4ead47315a",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.sparkasse.at/erstebank/karriere-spk/job-detail/senior-data-scientist-all-genders/29260": {
+"first": "2026-06-27",
+"job_id": "1dd78d0c9176",
+"last": "2026-06-27",
+"state": "ingested"
+},
+"www.stepstone.de/stellenangebote--machine-learning-engineer-analytics-m-w-d-koeln-rewe-group--10746658-inline.html": {
+"first": "2026-07-08",
+"job_id": "e42abe2b81b9",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"www.stepstone.de/stellenangebote--machine-learning-engineer-muenchen-hypovereinsbank-unicredit-deutschland--11414677-inline.html": {
+"first": "2026-07-10",
+"job_id": "89482dc14e07",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"www.sumup.com/careers/positions/berlin-germany/data-engineerscientist/senior-aiml-engineer/8249610002": {
+"first": "2026-06-28",
+"job_id": "9965fef4f2ff",
+"last": "2026-06-28",
+"state": "ingested"
+},
+"www.sumup.com/careers/positions/berlin-germany/data-engineerscientist/senior-data-scientist/8459126002": {
+"first": "2026-06-28",
+"job_id": "85027cb64db0",
+"last": "2026-06-28",
+"state": "ingested"
+},
+"www.swissre.com/careers/it-careers.html": {
+"first": "2026-06-23",
+"job_id": "a26279f087f4",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"www.swissre.com/careers/job/senior-data-engineer/1218725701": {
+"first": "2026-07-10",
+"job_id": "b5f4110324e7",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"www.talentify.io/job/machine-learning-or-computer-vision-engineer-junior-or-senior-schlieren-zurich-sony-jr-115645": {
+"first": "2026-07-05",
+"job_id": "db34618aa8f7",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.talentify.io/job/research-scientist-privacy-preserving-machine-learning-schlieren-zurich-sony-jr-115577": {
+"first": "2026-07-05",
+"job_id": "077395623482",
+"last": "2026-07-05",
+"state": "ingested"
+},
+"www.truechoice.io/job-post/jr-quantitative-analyst-data-scientist": {
+"first": "2026-07-06",
+"job_id": "3a0d6c1139b5",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"www.ubs.com/global/en/careers.html": {
+"first": "2026-06-30",
+"job_id": "1471d01a8f07",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.vontobel.com/en-ch/about-vontobel/careers/open-positions/8671-senior-ai-architect-80-100": {
+"first": "2026-07-10",
+"job_id": "24ddb674e08f",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"www.welcometothejungle.com/en/companies/artefact/jobs/senior-llm-engineer_lausanne": {
+"first": "2026-06-26",
+"job_id": "28b31479c197",
+"last": "2026-06-26",
+"state": "ingested"
+},
+"www.welcometothejungle.com/en/companies/dynatrace/jobs/senior-analytics-engineer-m-f-x_vienna": {
+"first": "2026-07-08",
+"job_id": "4367add58f74",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"www.welcometothejungle.com/en/companies/swissquote/jobs/junior-data-scientist_gland_swiss_xmgybdy": {
+"first": "2026-06-27",
+"job_id": "8a1becefb1fe",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.welcometothejungle.com/en/companies/tourlane/jobs/data-and-analytics-working-student_berlin_cp5dxq2t": {
+"first": "2026-07-15",
+"job_id": "df5e1eb83929",
+"last": "2026-07-15",
+"state": "ingested"
+},
+"www.zurich.com/en/careers": {
+"first": "2026-06-30",
+"job_id": "c2e1ab8eca46",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"www.zurich.ibm.com/careers/2026_015.html": {
+"first": "2026-07-01",
+"job_id": "f9ed873ef156",
+"last": "2026-07-01",
+"state": "ingested"
+},
+"yoummday-gmbh.jobs.personio.de/job/2127776": {
+"first": "2026-07-01",
+"job_id": "54edf211f281",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"zaubar.com/careers": {
+"first": "2026-06-30",
+"job_id": "b2e7129953c6",
+"last": "2026-06-30",
+"state": "ingested"
+},
+"zeissgroup.wd3.myworkdayjobs.com/en-us/external/job/internship-in-machine-learning-research--f-m-x-_jr_1043544": {
+"first": "2026-06-29",
+"job_id": "2f6026deb093",
+"last": "2026-07-08",
+"state": "ingested"
+},
+"zeissgroup.wd3.myworkdayjobs.com/en-us/external/job/machine-learning-operation-engineer--m-f-x-_jr_1016416": {
+"first": "2026-07-09",
+"job_id": "1c908e37e4e1",
+"last": "2026-07-13",
+"state": "ingested"
+},
+"zeissgroup.wd3.myworkdayjobs.com/en-us/external/job/oberkochen/internship---ai-for-multi-variate-time-series-understanding--f-m-x-_jr_1049422": {
+"first": "2026-07-02",
+"job_id": "a90056ea966a",
+"last": "2026-07-02",
+"state": "ingested"
+},
+"zeissgroup.wd3.myworkdayjobs.com/en-us/external/job/oberkochen/machine-learning-engineer--m-f-x-_jr_1038744-3": {
+"first": "2026-07-01",
+"job_id": "261349ddcbe3",
+"last": "2026-07-10",
+"state": "ingested"
+},
+"zuehlke.wd3.myworkdayjobs.com/en-us/zuhlke-careers/job/schlieren/expert-data-engineer_jr100122": {
+"first": "2026-07-07",
+"job_id": "dc034edd178f",
+"last": "2026-07-07",
+"state": "ingested"
+},
+"zuehlke.wd3.myworkdayjobs.com/zuhlke-careers": {
+"first": "2026-07-06",
+"job_id": "33bb52b1c617",
+"last": "2026-07-14",
+"state": "ingested"
+},
+"zuehlke.wd3.myworkdayjobs.com/zuhlke-careers/job/schlieren/advanced-data-engineer_jr100885": {
+"first": "2026-11-24",
+"job_id": "f79d9c921a02",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"zuehlke.wd3.myworkdayjobs.com/zuhlke-careers/job/vienna/advanced-data-engineer_jr100934": {
+"first": "2026-11-24",
+"job_id": "f090303df432",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"zuehlke.wd3.myworkdayjobs.com/zuhlke-careers/job/vienna/principal-ai---data-consultant_jr100945-1": {
 "last": "2026-11-24",
 "state": "rejected",
 "why": "Consulting and sales focused, not technical"

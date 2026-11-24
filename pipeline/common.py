@@ -250,10 +250,20 @@ def make_job_id(company, title, location):
     key = f"{norm_company(company)}|{norm_title(title)}|{city_of(location)}"
     return hashlib.sha1(key.encode()).hexdigest()[:12]
 
+_TRACKING = re.compile(r"^(utm_\w+|gh_src|src|source|ref|referrer|trk|lever-source|lever-origin|"
+                       r"mode|display|language|lang|fbclid|gclid)$", re.I)
+
 def canon_url(url):
+    """Normalise a posting URL for dedupe: drop fragment + tracking params, keep id-bearing
+    query params (e.g. index.php?id=123, ?gh_jid=…, ?p=35151) so distinct jobs stay distinct."""
+    from urllib.parse import urlsplit, parse_qsl, urlencode
     u = (url or "").strip()
-    u = re.sub(r"[?#].*$", "", u) if "gh_jid" not in u else u
-    return u.rstrip("/").lower()
+    if not u:
+        return ""
+    parts = urlsplit(u)
+    q = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=False) if not _TRACKING.match(k)]
+    base = f"{parts.netloc}{parts.path}".rstrip("/").lower()
+    return base + ("?" + urlencode(sorted(q)).lower() if q else "")
 
 # ---------------------------------------------------------------- CSV / state IO
 

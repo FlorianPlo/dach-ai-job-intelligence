@@ -57,6 +57,16 @@ ALIASES = {
     "iac": "Infrastructure as Code", "ai/automation": "AI Automation", "n8n": "n8n", "dbt": "dbt",
     "pandas": "pandas", "api": "APIs", "apis": "APIs", "ms fabric": "Microsoft Fabric", "fabric": "Microsoft Fabric",
     "llm evaluation": "LLM Evals", "llm evals": "LLM Evals", "evals": "LLM Evals",
+    # --- curated decisions inherited from the cloud agent's analysis_gen (Jun–Jul 2026) ---
+    "langgraph": "LangGraph", "crewai": "CrewAI", "langsmith": "LangSmith", "autogen": "AutoGen",
+    "ollama": "Ollama", "openai": "OpenAI", "openai api": "OpenAI", "anthropic": "Anthropic",
+    "mistral": "Mistral", "llama": "Llama", "amazon sagemaker": "SageMaker", "datamesh": "Data Mesh",
+    "datavault": "Data Vault", "ms-sql": "MS SQL", "restful api": "REST APIs", "restful apis": "REST APIs",
+    "time-series forecasting": "Time Series Forecasting", "time-series analysis": "Time Series Forecasting",
+    "time series analysis": "Time Series Forecasting",
+    "recommendation systems": "Recommender Systems", "recommender systems": "Recommender Systems",
+    "vision language models": "Vision-Language Models", "vlms": "Vision-Language Models",
+    # NOTE (curated): "Data Warehouse" vs "Data Warehousing" stay SPLIT (artifact vs practice).
 }
 
 _SMALL = {"and", "or", "of", "for", "with", "in", "to", "as", "the", "a", "on"}
@@ -86,9 +96,20 @@ def canon(skill):
 
 def canon_list(items):
     if isinstance(items, str):
-        items = re.split(r"[;,]", items)
+        t = items.strip()
+        if t.startswith("[") and t.endswith("]"):       # stringified Python list (seen in Jun 2026 rows)
+            import ast
+            try:
+                v = ast.literal_eval(t)
+                if isinstance(v, (list, tuple)):
+                    items = [str(x) for x in v]
+            except (ValueError, SyntaxError):
+                pass
+        if isinstance(items, str):
+            items = re.split(r";", items) if ";" in items else re.split(r"[;,]", items)
     out, seen = [], set()
-    for it in items or []:
+    items = [p for it in (items or []) for p in str(it).split(";")]   # ';' is the CSV list separator
+    for it in items:
         c = canon(it)
         if c and c.lower() not in seen:
             seen.add(c.lower()); out.append(c)
