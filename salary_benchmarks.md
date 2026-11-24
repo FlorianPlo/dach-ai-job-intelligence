@@ -1,6 +1,6 @@
 # Salary Benchmarks — DACH Data/ML/AI Roles
 
-_Generated 2026-11-24. Only postings with explicitly stated salary — **237 of 1121** disclosed pay. Nothing imputed._
+_Generated 2026-11-24. Only postings with explicitly stated salary — **245 of 1203** disclosed pay. Nothing imputed._
 
 > ⚠️ Small sample; most cells are n=1–2. Austrian monthly figures are typically paid 14×/year.
 
@@ -54,6 +54,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | AI Engineer | Mid | Switzerland | OnlineDoctor AG | 110000 | 115000 | EUR | year | ~112k | ~112k EUR |
 | AI Engineer | Mid | Austria | FiveSquare GmbH | 4000 | – | EUR | month | ~56k | ~56k EUR |
 | AI Engineer | Mid | Germany | Clera | 60000 | 90000 | EUR | year | ~75k | ~75k EUR |
+| AI Engineer | Mid | Austria | AIT Austrian Institute of Technology | 68152 | – | EUR | year | ~68k | ~68k EUR |
 | AI Engineer | Senior | Germany | Sikia.ai | 80000 | 100000 | EUR | year | ~90k | ~90k EUR |
 | AI Engineer | Senior | Austria | FiveSquare GmbH | 4000 | – | EUR | month | ~56k | ~56k EUR |
 | AI Engineer | Senior | Austria | KERN engineering careers GmbH | 4700 | – | EUR | month | ~66k | ~66k EUR |
@@ -79,13 +80,17 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | AI Engineer | Senior | Switzerland | copebit AG | 120000 | 140000 | EUR | year | ~130k | ~130k EUR |
 | AI Engineer | Senior | Germany | Google Germany GmbH | 124000 | 128000 | EUR | year | ~126k | ~126k EUR |
 | AI Engineer | Senior | Germany | Google Germany GmbH | 150000 | 154000 | EUR | year | ~152k | ~152k EUR |
+| AI Engineer | Senior | Germany | Auvaria | 65000 | 85000 | EUR | year | ~75k | ~75k EUR |
+| AI Engineer | Senior | Germany | Auvaria | 65000 | 85000 | EUR | year | ~75k | ~75k EUR |
 | AI Engineer | Lead/Principal | Germany | Team Passerelle | 90000 | 110000 | EUR | year | ~100k | ~100k EUR |
 | AI Engineer | Lead/Principal | Switzerland | JobCloud | 145000 | 160000 | CHF | year | ~152k | ~160k EUR |
 | AI Engineer | Lead/Principal | Germany | Clera | 60000 | 120000 | EUR | year | ~90k | ~90k EUR |
+| AI Engineer | Lead/Principal | Germany | amber | 70000 | 120000 | EUR | year | ~95k | ~95k EUR |
 | AI Researcher | Intern | Austria | TU Wien | 3776 | – | EUR | month | ~53k | ~53k EUR |
 | AI Researcher | Mid | Austria | ISTA | 72100 | – | EUR | year | ~72k | ~72k EUR |
 | AI Researcher | Mid | Austria | Fachhochschule Wiener Neustadt GmbH | 3536.99 | 5019.98 | EUR | month | ~60k | ~60k EUR |
 | AI Researcher | Mid | Austria | NXAI | 85000 | – | EUR | year | ~85k | ~85k EUR |
+| AI Researcher | Mid | Germany | amber | 60000 | 110000 | EUR | year | ~85k | ~85k EUR |
 | AI Researcher | Senior | Austria | Silicon Austria Labs | 85000 | 120000 | EUR | year | ~102k | ~102k EUR |
 | AI Researcher | Senior | Switzerland | Anthropic | 280000 | 680000 | CHF | year | ~480k | ~504k EUR |
 | AI Researcher | Senior | Austria | Dynatrace | 65000 | – | EUR | year | ~65k | ~65k EUR |
@@ -144,6 +149,8 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | Data Engineer | Senior | Switzerland | Rockstar Recruiting AG | 100000 | 130000 | EUR | year | ~115k | ~115k EUR |
 | Data Engineer | Senior | Switzerland | autoSense ag | 90000 | 100000 | EUR | year | ~95k | ~95k EUR |
 | Data Engineer | Senior | Germany | TARGO Technology GmbH | 60000 | 80000 | EUR | year | ~70k | ~70k EUR |
+| Data Engineer | Senior | Austria | Falkensteiner Hotels & Residences | 5000 | – | EUR | month | ~70k | ~70k EUR |
+| Data Engineer | Senior | Austria | Journi | 82000 | – | EUR | year | ~82k | ~82k EUR |
 | Data Engineer | Lead/Principal | Austria | KERN engineering careers GmbH | 4470 | 6000 | EUR | month | ~73k | ~73k EUR |
 | Data Engineer | Lead/Principal | Switzerland | EPAM Systems | 135000 | 150000 | EUR | year | ~142k | ~142k EUR |
 | Data Scientist | Intern | Switzerland | CERN | 3486 | 3486 | CHF | month | ~42k | ~44k EUR |
@@ -237,6 +244,7 @@ _CHF amounts are also shown as an EUR-equivalent (~EUR col) at the pinned rate *
 | ML Engineer | Senior | Austria | Raiffeisen Bank International | 3375 | – | EUR | month | ~47k | ~47k EUR |
 | ML Engineer | Senior | Switzerland | Scalera AG | 100000 | 120000 | EUR | year | ~110k | ~110k EUR |
 | ML Engineer | Lead/Principal | Germany | Bayer | 104000 | 127000 | EUR | year | ~116k | ~116k EUR |
+| ML Engineer | Lead/Principal | Austria | AIT Austrian Institute of Technology | 66598 | – | EUR | year | ~67k | ~67k EUR |
 | Other | Intern | Germany | Lippe Personal GmbH | 20 | – | EUR | hour | ~42k | ~42k EUR |
 | Other | Junior | Austria | ventopay gmbh | 3267 | – | EUR | month | ~46k | ~46k EUR |
 | Other | Mid | Austria | UNIQA Insurance Group AG | 50000 | – | EUR | year | ~50k | ~50k EUR |
@@ -254,11 +262,11 @@ _Pools EUR rows plus CHF rows converted at **1 CHF = 1.05 EUR** (pinned). All fi
 
 | Role | n | Median ~annual | Range |
 |---|---|---|---|
-| AI Engineer | 72 | ~62k | 24k–168k |
-| AI Researcher | 10 | ~79k | 53k–504k |
-| Data Engineer | 54 | ~58k | 18k–165k |
+| AI Engineer | 76 | ~63k | 24k–168k |
+| AI Researcher | 11 | ~85k | 53k–504k |
+| Data Engineer | 56 | ~59k | 18k–165k |
 | Data Scientist | 64 | ~62k | 20k–139k |
-| ML Engineer | 27 | ~66k | 29k–241k |
+| ML Engineer | 28 | ~66k | 29k–241k |
 | Other | 9 | ~50k | 42k–112k |
 
 ## Median by country × seniority (EUR-equivalent)
@@ -267,14 +275,14 @@ _Pools EUR rows plus CHF rows converted at **1 CHF = 1.05 EUR** (pinned). All fi
 |---|---|---|---|---|---|
 | Austria | Intern | 6 | ~47k | 29k–53k | low |
 | Austria | Junior | 11 | ~46k | 36k–60k | ok |
-| Austria | Mid | 83 | ~55k | 38k–140k | ok |
-| Austria | Senior | 49 | ~63k | 35k–102k | ok |
-| Austria | Lead/Principal | 1 | ~73k | 73k–73k | very low |
+| Austria | Mid | 84 | ~55k | 38k–140k | ok |
+| Austria | Senior | 51 | ~63k | 35k–102k | ok |
+| Austria | Lead/Principal | 2 | ~70k | 67k–73k | very low |
 | Germany | Intern | 8 | ~34k | 18k–66k | ok |
 | Germany | Junior | 13 | ~66k | 31k–68k | ok |
-| Germany | Mid | 8 | ~75k | 60k–165k | ok |
-| Germany | Senior | 16 | ~87k | 64k–235k | ok |
-| Germany | Lead/Principal | 6 | ~106k | 80k–116k | low |
+| Germany | Mid | 9 | ~75k | 60k–165k | ok |
+| Germany | Senior | 18 | ~86k | 64k–235k | ok |
+| Germany | Lead/Principal | 7 | ~100k | 80k–116k | low |
 | Switzerland | Intern | 4 | ~55k | 20k–76k | low |
 | Switzerland | Junior | 5 | ~83k | 70k–98k | low |
 | Switzerland | Mid | 9 | ~112k | 84k–241k | ok |

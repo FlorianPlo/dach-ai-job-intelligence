@@ -5,7 +5,7 @@ Also (free, no LLM): bumps last_seen/status of known jobs, records which compani
 were fetched, and auto-adds newly discovered employers to companies.csv so the
 registry keeps growing run after run.
 """
-import datetime as dt, json, sys
+import datetime as dt, json, re, sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from .common import (INBOX, JOBS_CSV, JOB_FIELDS, SEEN_JSON, ENTRY, COMPANY_EXCLUDE, STAFFING, is_relevant_text, canon_url, country_of, is_dach,
                      is_relevant_title, load_json, make_job_id, read_csv, save_json, trim_description, write_csv)
@@ -15,12 +15,17 @@ BATCH = 30
 DONE_STATES = ("ingested", "rejected")
 BOARD_SOURCES = ("Bundesagentur für Arbeit API", "Arbeitnow API", "karriere.at")
 PER_COMPANY = 3          # max new postings per company per run (diversity > volume for skill stats)
+CORE = re.compile(r"\b(machine learning|ML|AI|KI|data scien\w*|data engineer\w*|deep learning|LLM|MLOps|"
+                  r"computer vision|NLP|GenAI|generative)\b", re.I)
+THESIS = re.compile(r"\b(thes[ie]s|masterarbeit|bachelorarbeit|dissertation)\b", re.I)
 
 def priority(p, country_counts):
     """Higher = extract first. Rewards what the dataset lacks (entry level, CH/AT, original
     company postings, salary info) and penalises staffing agencies."""
     s = 0.0
     if p.get("entry_level_hint"): s += 3
+    if CORE.search(p["title"]): s += 2.5          # core AI/data title wins the per-company slots
+    if THESIS.search(p["title"]): s -= 5          # theses are out of scope
     s += {"Switzerland": 3, "Austria": 2}.get(p.get("country"), 0)
     if not p["source"].startswith(("Arbeitnow", "Bundesagentur", "karriere")): s += 2   # own ATS / web
     if p.get("salary_text") or "€" in p["text"] or "EUR" in p["text"] or "CHF" in p["text"]: s += 1
@@ -33,7 +38,11 @@ def _fetch_company(r):
     if not fn:
         return r, None
     try:
-        return r, fn(r["ats_slug"], r["company"])
+        posts = fn(r["ats_slug"], r["company"])
+        for p in posts or []:              # page-based feeds learn the location only in detail
+            if not p["location"] and r.get("country"):
+                p["location"] = r["country"]
+        return r, posts
     except Exception:
         return r, None
 
@@ -42,8 +51,8 @@ def _resolve_detail(p):
     try:
         if "_detail_full" in p:
             full = p.pop("_detail_full")() or {}
-            for k in ("company", "location", "description", "posted", "salary_text", "remote"):
-                if full.get(k):
+            for k in ("title", "company", "location", "description", "posted", "salary_text", "remote"):
+                if full.get(k) and not (k == "company" and p.get("company")):
                     p[k] = full[k]
         if "_detail" in p:
             fn = p.pop("_detail")
@@ -55,7 +64,7 @@ def _resolve_detail(p):
     return p
 
 def run(date=None, sources=("ats", "arbeitnow", "ba", "karriere"), stale_days=0, max_companies=None,
-        workers=12, dry=False, max_new=200):
+        workers=12, dry=False, max_new=200, only=None):
     today = date or dt.date.today().isoformat()
     seen = load_json(SEEN_JSON, {})
     jobs = read_csv(JOBS_CSV)
@@ -69,6 +78,9 @@ def run(date=None, sources=("ats", "arbeitnow", "ba", "karriere"), stale_days=0,
     # ---- company ATS feeds
     if "ats" in sources:
         todo = [r for r in regrows if r.get("ats") and r.get("ats_slug")]
+        if only:
+            todo = [r for r in todo if any(o in r["company"].lower() for o in only)]
+            sources = ("ats",)
         if stale_days:
             cutoff = (dt.date.fromisoformat(today) - dt.timedelta(days=stale_days)).isoformat()
             todo = [r for r in todo if (r.get("last_fetched") or "") < cutoff]

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Single entry point for the DACH job-intelligence pipeline.
 
-  python3 jobs.py fetch [--date D] [--max-new 200] [--sources ats,arbeitnow,ba,karriere] [--stale-days N]
+  python3 jobs.py fetch [--date D] [--max-new 200] [--sources ats,arbeitnow,ba,karriere] [--stale-days N] [--only A,B]
   python3 jobs.py add-url URL [URL ...] [--date D]      # queue postings found by web search
   python3 jobs.py ingest [--date D]                     # merge LLM extractions into jobs.csv
   python3 jobs.py analyze [--date D]                    # regenerate the three reports
@@ -17,7 +17,7 @@ import argparse, datetime as dt, json, subprocess, sys
 from pipeline import companies as reg, fetch, ingest, queries
 from pipeline.common import INBOX, JOBS_CSV, SEEN_JSON, canon_url, country_of, is_dach, load_json, make_job_id, \
     read_csv, save_json, trim_description, http, html_to_text
-from pipeline.boards import jsonld_posting
+from pipeline.ats import _page_full
 
 def add_url(urls, date):
     """Fetch postings found via web search; JSON-LD first (compact), else trimmed page text."""
@@ -32,13 +32,11 @@ def add_url(urls, date):
             cu = canon_url(u)
             if cu in known or seen.get(cu, {}).get("state") in ("ingested", "rejected") or u in queued:
                 print(f"skip (known): {u}"); continue
-            p = jsonld_posting(u)
-            if not p:
-                st, h = http(u, timeout=25, headers={"Accept": "text/html"})
-                if st != 200:
-                    print(f"FAILED {st}: {u}"); continue
-                p = {"company": "", "title": "", "location": "", "url": u, "description": html_to_text(h),
-                     "posted": "", "remote": False, "salary_text": ""}
+            full = _page_full(u)          # JSON-LD if it has a description, else page text + <h1>
+            if not full.get("description"):
+                print(f"FAILED: {u}"); continue
+            p = {"company": "", "title": "", "location": "", "url": u, "posted": "", "remote": False,
+                 "salary_text": "", **full}
             p["source"] = "web search"
             p["country"] = country_of(p["location"])
             p["job_id"] = make_job_id(p["company"], p["title"], p["location"]) if p["company"] else ""
@@ -76,6 +74,7 @@ def main():
     s.add_argument("--sources", default="ats,arbeitnow,ba,karriere"); s.add_argument("--stale-days", type=int, default=0)
     s.add_argument("--max-companies", type=int); s.add_argument("--workers", type=int, default=12)
     s.add_argument("--dry", action="store_true"); s.add_argument("--max-new", type=int, default=200)
+    s.add_argument("--only", default="", help="comma-separated company names (substring match); ATS feeds only")
     s = sub.add_parser("add-url"); s.add_argument("urls", nargs="+"); s.add_argument("--date", default=today)
     s = sub.add_parser("ingest"); s.add_argument("--date", default=today)
     s = sub.add_parser("analyze"); s.add_argument("--date", default=today)
@@ -94,7 +93,8 @@ def main():
     a = ap.parse_args()
 
     if a.cmd == "fetch":
-        fetch.run(a.date, tuple(a.sources.split(",")), a.stale_days, a.max_companies, a.workers, a.dry, a.max_new)
+        fetch.run(a.date, tuple(a.sources.split(",")), a.stale_days, a.max_companies, a.workers, a.dry, a.max_new,
+                  only=[x.strip().lower() for x in a.only.split(",") if x.strip()])
     elif a.cmd == "add-url":
         add_url(a.urls, a.date)
     elif a.cmd == "ingest":

@@ -1641,3 +1641,14 @@ Both histories were merged on 2026-11-24 (1,040 cloud rows + 276 new → 1,121 u
   2026-06-23 and a 2026-06-27 run date). Documented the live `Azure`/`Microsoft Azure` count
   split as an extraction-time bug (backlog #1, still open — highest-impact remaining item).
   Did not touch backlog #2/#3/#4 (each needs a data/convention decision, not just code).
+
+## Missed-jobs audit — 2026-11-24
+A Dealroom Austria "Data Science & Engineering" job list showed AI/data roles we never saw. Causes:
+- **Employer never registered** (nyra health, Journi, Bitmovin, Auvaria, Valneva, TourRadar, woom):
+  none post to BA/karriere.at/Arbeitnow. Only company discovery fixes this — startup databases
+  (Dealroom, startup lists) are the best seed for `import-companies`.
+- **Unsupported career systems**: AIT (own portal, JSON embedded in /Jobs), TalentLyft, Kula,
+  BambooHR, SuccessFactors (UNIQA), plain career pages (Greentube). Added adapters `jobportal`,
+  `talentlyft`, `kula`, `bamboohr`, `sitemap`, `links`.
+- **By design out of scope**: Data Analyst / Database Administrator / AI governance titles fail the
+  title filter (scope is DS/ML/AI/DE/AI research).

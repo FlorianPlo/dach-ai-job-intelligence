@@ -29,10 +29,34 @@
 "last": "2026-11-24",
 "state": "ingested"
 },
+"adorsys.jobs.personio.de/job/2768966": {
+"first": "2026-11-24",
+"job_id": "620835eab214",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"adorsys.jobs.personio.de/job/2883009": {
+"first": "2026-11-24",
+"job_id": "55e3359c88aa",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "adsquare.jobs.personio.de/job/2573280": {
 "first": "2026-07-12",
 "job_id": "fe6583a82d01",
 "last": "2026-07-12",
+"state": "ingested"
+},
+"adsquare.jobs.personio.de/job/2865259": {
+"first": "2026-11-24",
+"job_id": "7b42c235f7b3",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"adsquare.jobs.personio.de/job/2869172": {
+"first": "2026-11-24",
+"job_id": "c453161e5bc3",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "ag.wd3.myworkdayjobs.com/en-us/airbus/job/immenstaad-am-bodensee/internship--d-f-m--in-ai-for-functional-avionics_jr10417809": {
@@ -107,11 +131,37 @@
 "last": "2026-06-30",
 "state": "ingested"
 },
+"anvajo.jobs.personio.de/job/2858135": {
+"first": "2026-11-24",
+"job_id": "e72f88d6e707",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "appliedai.jobs.personio.de/job/2420035": {
 "first": "2026-06-26",
 "job_id": "f96ca3089bf5",
 "last": "2026-06-26",
 "state": "ingested"
+},
+"appliedai.jobs.personio.de/job/2690896": {
+"first": "2026-11-24",
+"job_id": "bd8d0262bfa5",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"appliedai.jobs.personio.de/job/2834638": {
+"first": "2026-11-24",
+"job_id": "4ca2438cdee3",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "non-technical delivery leadership role"
+},
+"appliedai.jobs.personio.de/job/2846436": {
+"first": "2026-11-24",
+"job_id": "c5a91ea3537e",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "consulting and project leadership role"
 },
 "applike-group.com/jobs/f2f88590-c489-4daa-ac08-7402f49b7d53": {
 "first": "2026-07-02",
@@ -161,6 +211,24 @@
 "last": "2026-07-04",
 "state": "ingested"
 },
+"auvaria.jobs.personio.de/job/2824405": {
+"first": "2026-11-24",
+"job_id": "574b2151918c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"auvaria.jobs.personio.de/job/2824418": {
+"first": "2026-11-24",
+"job_id": "2917f4d98f48",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"auvaria.jobs.personio.de/job/2824423": {
+"first": "2026-11-24",
+"job_id": "ed69e69824e7",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "basf.jobs/light_green_eu/job/ludwigshafen-machine-learning-engineer-large-language-models-(mfd)-67061/933147701": {
 "first": "2026-06-27",
 "job_id": "45fa976ca286",
@@ -177,6 +245,12 @@
 "first": "2026-06-26",
 "job_id": "467660287d07",
 "last": "2026-06-26",
+"state": "ingested"
+},
+"bitmovin.com/careers/8916523002?gh_jid=8916523002": {
+"first": "2026-11-24",
+"job_id": "b155d47b51e8",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "blackforestlabs.ai/careers": {
@@ -437,6 +511,12 @@
 "last": "2026-07-12",
 "state": "ingested"
 },
+"careers.hellofresh.com/global/en/job/8113665?gh_jid=8113665": {
+"first": "2026-11-24",
+"job_id": "1e30826cafd9",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "careers.ing.com/en/job/frankfurt-am-main/data-engineer-w-m-d/3121/29874125952": {
 "first": "2026-07-01",
 "job_id": "c01ffcb3005d",
@@ -453,6 +533,12 @@
 "first": "2026-07-08",
 "job_id": "a9b5a88849a8",
 "last": "2026-07-08",
+"state": "ingested"
+},
+"careers.kula.ai/journi/66936-senior-data-engineer-all-genders": {
+"first": "2026-11-24",
+"job_id": "b463431326c4",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "careers.mahle.com/job/stuttgart-praktikum-machine-learning-und-data-science-(mwd)-70376/1371956833": {
@@ -503,6 +589,25 @@
 "last": "2026-07-15",
 "state": "ingested"
 },
+"careers.nebius.com?gh_jid=4948471101": {
+"first": "2026-11-24",
+"job_id": "2b2dd2734bc3",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"careers.nebius.com?gh_jid=4981489101": {
+"first": "2026-11-24",
+"job_id": "7dd2308b5070",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "non-technical science writing role"
+},
+"careers.nebius.com?gh_jid=5008613101": {
+"first": "2026-11-24",
+"job_id": "2f32c959805c",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "careers.osapiens.com/postings/6cc19247-7b48-4132-ae0f-e8b54f143460": {
 "first": "2026-07-13",
 "job_id": "8ce81966300e",
@@ -545,6 +650,18 @@
 "last": "2026-07-03",
 "state": "ingested"
 },
+"careers.trivago.com/apply/8878864002.?gh_jid=8878864002": {
+"first": "2026-11-24",
+"job_id": "87534af1173c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"careers.trivago.com/apply/8899648002.?gh_jid=8899648002": {
+"first": "2026-11-24",
+"job_id": "a2d8a4521e97",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "careers.trivago.com/job/r7996853002": {
 "first": "2026-06-23",
 "job_id": "fd7af9350098",
@@ -556,6 +673,27 @@
 "job_id": "9ab66714afb8",
 "last": "2026-07-06",
 "state": "ingested"
+},
+"careers.uniqagroup.com/job/wien-ai-product-&-adoption-expert-claims-%28wmd%29/1456877133": {
+"first": "2026-11-24",
+"job_id": "2bbe8232afc4",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Business adoption role, not engineering"
+},
+"careers.uniqagroup.com/job/wien-ai-security-&-transformation-coordinator-%28mwd%29-befristet-bis-31_12_2029/1458859033": {
+"first": "2026-11-24",
+"job_id": "4651b59a8bec",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "AI security governance coordination role"
+},
+"careers.uniqagroup.com/job/wien-ai-technology-&-data-expert-claims-%28wmd%29/1456875633": {
+"first": "2026-11-24",
+"job_id": "fc3b1239e70b",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Business requirements and concept role"
 },
 "careers.vattenfall.com/global/job/junior-ml-engineer-in-berlin-jid-50508": {
 "first": "2026-07-13",
@@ -729,6 +867,24 @@
 "last": "2026-07-13",
 "state": "ingested"
 },
+"dida.jobs.personio.de/job/2548260": {
+"first": "2026-11-24",
+"job_id": "21e7738efdf0",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"dida.jobs.personio.de/job/2548265": {
+"first": "2026-11-24",
+"job_id": "f24ff5f83cee",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"dida.jobs.personio.de/job/2892460": {
+"first": "2026-11-24",
+"job_id": "cf7ea3e89160",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "en.comparis.ch/people/jobs/detail/2280110": {
 "first": "2026-07-08",
 "job_id": "b739b1c57589",
@@ -771,6 +927,30 @@
 "last": "2026-06-30",
 "state": "ingested"
 },
+"exmox-gmbh.jobs.personio.de/job/2848938": {
+"first": "2026-11-24",
+"job_id": "3f2a2a498b90",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"exmox-gmbh.jobs.personio.de/job/2848963": {
+"first": "2026-11-24",
+"job_id": "b68fe688849a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"falkensteiner.talentlyft.com/falkensteiner-it/jobs/camerierea-ai-piani-mfd-cgmz": {
+"first": "2026-11-24",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "not DACH"
+},
+"falkensteiner.talentlyft.com/jobs/senior-data-engineer-microsoft-fabric-mfd-cmb6": {
+"first": "2026-11-24",
+"job_id": "97ac14c40fc5",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "felfel.jobs.personio.de/job/2385507": {
 "first": "2026-06-25",
 "job_id": "ebc9e4c3faad",
@@ -781,6 +961,24 @@
 "first": "2026-07-05",
 "job_id": "e8c28cb20ed0",
 "last": "2026-07-05",
+"state": "ingested"
+},
+"flix.careers/job/8645439002?gh_jid=8645439002": {
+"first": "2026-11-24",
+"job_id": "3b5780a352b6",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"flix.careers/job/8645451002?gh_jid=8645451002": {
+"first": "2026-11-24",
+"job_id": "9322368d2bdc",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"flix.careers/job/8690650002?gh_jid=8690650002": {
+"first": "2026-11-24",
+"job_id": "cf638fd279e4",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "free-now.com/careers": {
@@ -805,6 +1003,12 @@
 "first": "2026-06-23",
 "job_id": "f6082050d38b",
 "last": "2026-06-26",
+"state": "ingested"
+},
+"glassdollar.jobs.personio.de/job/2884413": {
+"first": "2026-11-24",
+"job_id": "57bc48ff9b98",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "helsing.ai/jobs": {
@@ -887,6 +1091,18 @@
 "last": "2026-11-24",
 "state": "rejected",
 "why": "Roles based in Barcelona/London"
+},
+"hornetsecurity.jobs.personio.de/job/2502859": {
+"first": "2026-11-24",
+"job_id": "ee9715005b58",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"hornetsecurity.jobs.personio.de/job/2695674": {
+"first": "2026-11-24",
+"job_id": "fef6957a6222",
+"last": "2026-11-24",
+"state": "ingested"
 },
 "https://career.nx-ai.com/o/robotics-research-engineer-fmd": {
 "first": "2026-11-24",
@@ -4631,6 +4847,19 @@
 "state": "rejected",
 "why": "HR people analytics, BI-focused"
 },
+"job-boards.eu.greenhouse.io/buynomics/jobs/4524398101": {
+"first": "2026-11-24",
+"job_id": "7287f49efd59",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.eu.greenhouse.io/buynomics/jobs/4635870101": {
+"first": "2026-11-24",
+"job_id": "c068d5dc74ba",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "outside DACH"
+},
 "job-boards.eu.greenhouse.io/intellishore/jobs/4566420101": {
 "first": "2026-07-01",
 "job_id": "c303d0554232",
@@ -4697,6 +4926,12 @@
 "last": "2026-07-15",
 "state": "ingested"
 },
+"job-boards.eu.greenhouse.io/ultratendency/jobs/5006753101": {
+"first": "2026-11-24",
+"job_id": "62046d985588",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "job-boards.greenhouse.io/anthropic/jobs/5112018008": {
 "first": "2026-11-24",
 "job_id": "2a3d5059aa20",
@@ -4720,10 +4955,36 @@
 "last": "2026-11-24",
 "state": "ingested"
 },
+"job-boards.greenhouse.io/artefact/jobs/8930192002": {
+"first": "2026-11-24",
+"job_id": "166027eac134",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Consulting-only architecture role, no coding"
+},
+"job-boards.greenhouse.io/artefact/jobs/8934523002": {
+"first": "2026-11-24",
+"job_id": "82f087dfad32",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/artefact/jobs/8959922002": {
+"first": "2026-11-24",
+"job_id": "06ce63d47c8b",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "consulting and sales-led strategy role"
+},
 "job-boards.greenhouse.io/artefactjobs/jobs/8388619002": {
 "first": "2026-06-26",
 "job_id": "d2d550980ae0",
 "last": "2026-06-26",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/artefactjobs/jobs/8934525002": {
+"first": "2026-11-24",
+"job_id": "966185a863b2",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "job-boards.greenhouse.io/autoscout24/jobs/7594404003": {
@@ -4732,10 +4993,28 @@
 "last": "2026-07-09",
 "state": "ingested"
 },
+"job-boards.greenhouse.io/autoscout24/jobs/7681898003": {
+"first": "2026-11-24",
+"job_id": "85915b2d8dbb",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "job-boards.greenhouse.io/autoscout24/jobs/7751011003": {
 "first": "2026-06-29",
 "job_id": "fe5fee6ebf22",
 "last": "2026-07-14",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/autoscout24/jobs/8045913003": {
+"first": "2026-11-24",
+"job_id": "fb3bd34cbeaf",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"job-boards.greenhouse.io/autoscout24/jobs/8202620003": {
+"first": "2026-11-24",
+"job_id": "7e6f7a3dd46c",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "job-boards.greenhouse.io/awin/jobs/7571203003": {
@@ -5020,6 +5299,39 @@
 "last": "2026-06-29",
 "state": "ingested"
 },
+"jobs.ait.ac.at/job/266176": {
+"first": "2026-11-24",
+"job_id": "6eec7e8b4be0",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ait.ac.at/job/273043": {
+"first": "2026-11-24",
+"job_id": "7a21b517624b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ait.ac.at/job/273190": {
+"first": "2026-11-24",
+"job_id": "bec8067b525f",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Master's thesis, not a job"
+},
+"jobs.ait.ac.at/job/273193": {
+"first": "2026-11-24",
+"job_id": "bd17b7f5b006",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Energy system modelling, not AI/data"
+},
+"jobs.ait.ac.at/job/273342": {
+"first": "2026-11-24",
+"job_id": "fe7797b2a65c",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Thermal engineering research, not AI/data"
+},
 "jobs.ait.ac.at/jobs": {
 "first": "2026-07-08",
 "job_id": "0fffc5326502",
@@ -5150,11 +5462,50 @@
 "last": "2026-11-24",
 "state": "ingested"
 },
+"jobs.ashbyhq.com/amber/0afd753f-f6d7-4f38-b4d1-47c9b0f49575": {
+"first": "2026-11-24",
+"job_id": "2bdeb964f444",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/amber/2cfe2f6c-dddd-4696-9763-9c9e267a9976": {
+"first": "2026-11-24",
+"job_id": "fe90f9295332",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Customer product support role"
+},
+"jobs.ashbyhq.com/amber/42fa221a-f9c5-4a18-b2c3-a7c37e510798": {
+"first": "2026-11-24",
+"job_id": "3ed45104ab2c",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "jobs.ashbyhq.com/black-forest-labs/e7935ad1-7b9a-4c85-8b40-09cafedf7d63": {
 "first": "2026-11-24",
 "job_id": "2246ed6b6ba8",
 "last": "2026-11-24",
 "state": "ingested"
+},
+"jobs.ashbyhq.com/blp-digital/024c44f4-5b1d-478f-a913-933d581ae775": {
+"first": "2026-11-24",
+"job_id": "ab4df81234c0",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "consulting-focused transformation role"
+},
+"jobs.ashbyhq.com/blp-digital/4f539874-5725-4c2f-82cc-37255222c4ce": {
+"first": "2026-11-24",
+"job_id": "3a3e00bd1629",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/blp-digital/58564593-38db-4147-b67f-ff050bd76af9": {
+"first": "2026-11-24",
+"job_id": "a8f94b0838db",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "consulting-focused transformation role"
 },
 "jobs.ashbyhq.com/blp-digital/ca3b29db-b84a-4652-a935-78827508b1a2": {
 "first": "2026-06-27",
@@ -5298,6 +5649,24 @@
 "last": "2026-11-24",
 "state": "ingested"
 },
+"jobs.ashbyhq.com/getyourguide/931e9e62-2229-424a-8971-3dc66c52acd3": {
+"first": "2026-11-24",
+"job_id": "1bbb80ec5efa",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/getyourguide/c9d4a88a-9c92-4a7b-9f13-d8e91875c427": {
+"first": "2026-11-24",
+"job_id": "384a3055f3eb",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/getyourguide/cffd0c22-a2d7-492e-9fd7-5c9bc1e8607c": {
+"first": "2026-11-24",
+"job_id": "6d1db770a960",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "jobs.ashbyhq.com/harmattan-ai/4e63d35a-935f-4f1d-9076-5a75a7f50ea9": {
 "first": "2026-11-24",
 "job_id": "ebdecad6b6b2",
@@ -5396,10 +5765,34 @@
 "last": "2026-11-24",
 "state": "ingested"
 },
+"jobs.ashbyhq.com/nubank/fac13a25-9ede-43a9-b644-ad0e2760cb6d": {
+"first": "2026-11-24",
+"job_id": "7236c881619b",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "jobs.ashbyhq.com/perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c": {
 "first": "2026-07-08",
 "job_id": "16402298eba0",
 "last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/prior-labs/4c1e34d6-b5b9-4b17-94a0-22dc838af20f": {
+"first": "2026-11-24",
+"job_id": "7be93a037920",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/prior-labs/928de80c-278f-4f38-aeb2-e4d10b79f38e": {
+"first": "2026-11-24",
+"job_id": "50e9c4ebcc6a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/prior-labs/a1d005f1-732d-41c1-bd23-4e37b4ecdc7b": {
+"first": "2026-11-24",
+"job_id": "df6919833c1a",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "jobs.ashbyhq.com/prior-labs/b37463f2-775d-42e0-8c58-4ec26927534b": {
@@ -5411,6 +5804,24 @@
 "jobs.ashbyhq.com/quantexa/f4f43e13-3171-4cb1-9785-507695dafffb": {
 "first": "2026-11-24",
 "job_id": "07602ea51d8c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/scalera/21cf7c42-3a5e-4947-a525-654cda4259a6": {
+"first": "2026-11-24",
+"job_id": "3f0cc96c3c24",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/scalera/b97c6a92-dc84-424b-ab9e-2e63d1c3903a": {
+"first": "2026-11-24",
+"job_id": "23f2a808fdc3",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/scalera/cd753758-2fde-4719-8c3e-1848b20a140b": {
+"first": "2026-11-24",
+"job_id": "b89897eed7d4",
 "last": "2026-11-24",
 "state": "ingested"
 },
@@ -5432,6 +5843,18 @@
 "last": "2026-11-24",
 "state": "ingested"
 },
+"jobs.ashbyhq.com/skalar/66fa9b2c-4ca6-4792-ae6e-428d46d11776": {
+"first": "2026-11-24",
+"job_id": "dc8d533a414c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/skalar/d9b89f4e-b002-4f06-a686-431da34b82db": {
+"first": "2026-11-24",
+"job_id": "b33a59deae6a",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "jobs.ashbyhq.com/skydio/1208ec60-0fb6-4e5d-bf1f-af1312139a84": {
 "first": "2026-11-24",
 "job_id": "7b14d2aae48d",
@@ -5447,6 +5870,24 @@
 "jobs.ashbyhq.com/skydio/bdf927bf-8ec0-4bf4-9145-8211db836b6a": {
 "first": "2026-11-24",
 "job_id": "054ad87a46f3",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/statista/27f98734-2ba5-439a-a5c0-df5060013761": {
+"first": "2026-11-24",
+"job_id": "a4e72ed22836",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/statista/759ae11e-eb39-470a-a774-3b9c84d2d7a1": {
+"first": "2026-11-24",
+"job_id": "f84090c23eb6",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.ashbyhq.com/statista/c105dbda-f665-41ac-b991-1f153cf55fc0": {
+"first": "2026-11-24",
+"job_id": "ddd1df01f9da",
 "last": "2026-11-24",
 "state": "ingested"
 },
@@ -5774,11 +6215,31 @@
 "last": "2026-06-29",
 "state": "ingested"
 },
+"jobs.lever.co/jobgether/755df3d9-090f-4f96-a374-02cbfc79aa12": {
+"first": "2026-11-24",
+"job_id": "e268ef1ec9ac",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.lever.co/jobgether/85136962-d86f-408a-9aa1-efc4f071f5e0": {
+"first": "2026-11-24",
+"job_id": "aab45d6b4271",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "AI evaluation domain expert, non-technical"
+},
 "jobs.lever.co/jobgether/ba1a3875-3df5-4cfd-b3d9-3e04b5860dcf": {
 "first": "2026-06-29",
 "job_id": "45785ab5674c",
 "last": "2026-06-29",
 "state": "ingested"
+},
+"jobs.lever.co/jobgether/cd563b5b-9565-4879-bd15-fe12258a5ad6": {
+"first": "2026-11-24",
+"job_id": "bfcbd03ea57b",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Content writing role, non-technical"
 },
 "jobs.lever.co/kpler/fd027bed-7a3f-4e51-ab7b-6da91fcf26bb": {
 "first": "2026-11-24",
@@ -5828,10 +6289,28 @@
 "last": "2026-06-26",
 "state": "ingested"
 },
+"jobs.lever.co/qualysoft/39a890d4-dbee-40fe-b115-969e02116a63": {
+"first": "2026-11-24",
+"job_id": "d5555d093126",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "jobs.lever.co/qualysoft/53170833-319a-413e-ba21-e05a0d48c111": {
 "first": "2026-07-10",
 "job_id": "c67293fea279",
 "last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.lever.co/qualysoft/8af4898f-84b9-496d-b68e-8ef6802078cb": {
+"first": "2026-11-24",
+"job_id": "2c6653e273cf",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.lever.co/qualysoft/e4c278d1-bcfb-4d36-88b1-ce6d5a651577": {
+"first": "2026-11-24",
+"job_id": "90036355db53",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "jobs.lever.co/quantco-/3e18574e-ab5a-46a2-8714-a0221fb937e7": {
@@ -5904,6 +6383,12 @@
 "first": "2026-06-29",
 "job_id": "8f12360f987e",
 "last": "2026-06-29",
+"state": "ingested"
+},
+"jobs.lever.co/vestiairecollective/5acc2413-e54c-421e-a06c-54bfb36c04a2": {
+"first": "2026-11-24",
+"job_id": "fcee7b851719",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "jobs.lever.co/vestiairecollective/cf3e89a2-0444-4ed5-8f95-c10aec6fda2a": {
@@ -6440,6 +6925,24 @@
 "last": "2026-06-25",
 "state": "ingested"
 },
+"jobs.smartrecruiters.com/aboutyougmbh/744000159664899": {
+"first": "2026-11-24",
+"job_id": "4254de633f3b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/aboutyougmbh/744000160641371": {
+"first": "2026-11-24",
+"job_id": "4f67bb65188a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/aboutyougmbh/744000162363959": {
+"first": "2026-11-24",
+"job_id": "b6d79676155b",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "jobs.smartrecruiters.com/adevinta/743999710473644-data-engineer-m-f-x-": {
 "first": "2026-06-27",
 "job_id": "d410a2c3330e",
@@ -6451,6 +6954,13 @@
 "job_id": "da56c6e3c9d3",
 "last": "2026-07-12",
 "state": "ingested"
+},
+"jobs.smartrecruiters.com/axelspringernewsmedianational/744000152826889": {
+"first": "2026-11-24",
+"job_id": "dfbee111b762",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "non-technical journalism editorial role"
 },
 "jobs.smartrecruiters.com/boschgroup/743999702351828-internship-in-the-area-of-ml-robotics-data-and-process-analytics": {
 "first": "2026-07-03",
@@ -6505,6 +7015,19 @@
 "job_id": "873d325bcd35",
 "last": "2026-07-08",
 "state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/744000161292279": {
+"first": "2026-11-24",
+"job_id": "48f9d04760f9",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/boschgroup/744000162485519": {
+"first": "2026-11-24",
+"job_id": "6ac5e42c0510",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Non-technical process and benchmarking internship"
 },
 "jobs.smartrecruiters.com/boschgroup/744000162486754": {
 "first": "2026-11-24",
@@ -6578,6 +7101,13 @@
 "last": "2026-11-24",
 "state": "ingested"
 },
+"jobs.smartrecruiters.com/continental/744000162544998": {
+"first": "2026-11-24",
+"job_id": "e75c0e10bfe1",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Dual-study programme, out of scope"
+},
 "jobs.smartrecruiters.com/deliveryhero/744000158026859": {
 "first": "2026-11-24",
 "job_id": "4a352c646743",
@@ -6626,6 +7156,13 @@
 "last": "2026-07-12",
 "state": "ingested"
 },
+"jobs.smartrecruiters.com/nagarro1/744000162083309": {
+"first": "2026-11-24",
+"job_id": "4cf43012cf55",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Account sales director role"
+},
 "jobs.smartrecruiters.com/nexthink/744000040852235-junior-ai-engineer": {
 "first": "2026-06-25",
 "job_id": "41cd2ae11e14",
@@ -6668,10 +7205,23 @@
 "last": "2026-07-07",
 "state": "ingested"
 },
+"jobs.smartrecruiters.com/renesaselectronics/744000154364654": {
+"first": "2026-11-24",
+"job_id": "824044fbaac7",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Hardware RTL/SoC design, not AI/data"
+},
 "jobs.smartrecruiters.com/repriskag/744000130408989-senior-ai-engineer": {
 "first": "2026-06-25",
 "job_id": "e5ac6cb87b13",
 "last": "2026-07-15",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/repriskag/744000161832414": {
+"first": "2026-11-24",
+"job_id": "57a6656a405a",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "jobs.smartrecruiters.com/reweinternationaldienstleistungsgesellschaftmbh/744000021114549-expert-data-engineer-m-w-x-": {
@@ -6696,6 +7246,24 @@
 "first": "2026-07-08",
 "job_id": "8e9c390321da",
 "last": "2026-07-08",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/rolandberger/744000148170417": {
+"first": "2026-11-24",
+"job_id": "b7d5e282ca5c",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/rolandberger/744000148171009": {
+"first": "2026-11-24",
+"job_id": "a0e4447614ad",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/rolandberger/744000157833009": {
+"first": "2026-11-24",
+"job_id": "9fef6963a480",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "jobs.smartrecruiters.com/scalablecapitalgmbh/743999767119901--junior-data-engineer-m-f-x-onsite-or-remote-in-germany-": {
@@ -6746,6 +7314,24 @@
 "last": "2026-07-12",
 "state": "ingested"
 },
+"jobs.smartrecruiters.com/scalablegmbh/744000156493644": {
+"first": "2026-11-24",
+"job_id": "063796d8d091",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/scalablegmbh/744000156503599": {
+"first": "2026-11-24",
+"job_id": "fc4d69aa233b",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/scalablegmbh/744000157997674": {
+"first": "2026-11-24",
+"job_id": "c1619e4fd4e2",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "jobs.smartrecruiters.com/sevensenders/744000133372730-working-student-ai-process-automation-f-m-x-": {
 "first": "2026-07-10",
 "job_id": "abcf2ef26cd2",
@@ -6762,6 +7348,24 @@
 "first": "2026-06-25",
 "job_id": "a14def617149",
 "last": "2026-07-05",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sixt/744000160193358": {
+"first": "2026-11-24",
+"job_id": "8776968ca04e",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sixt/744000160204446": {
+"first": "2026-11-24",
+"job_id": "8feb917496b7",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/sixt/744000160569754": {
+"first": "2026-11-24",
+"job_id": "8021ca556fdf",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "jobs.smartrecruiters.com/smgswissmarketplacegroup/744000072617465-head-of-data-engineering-f-m-d-80-100-hybrid-working-model-zurich-switzerland": {
@@ -6834,6 +7438,18 @@
 "first": "2026-07-14",
 "job_id": "03b4d984db5a",
 "last": "2026-07-14",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/vattenfall/744000161733070": {
+"first": "2026-11-24",
+"job_id": "7cba345d5f21",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"jobs.smartrecruiters.com/vattenfall/744000161733159": {
+"first": "2026-11-24",
+"job_id": "3774c1a5eadd",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "jobs.ubimet.com/o/meteorological-machine-learning": {
@@ -7487,6 +8103,12 @@
 "last": "2026-07-14",
 "state": "ingested"
 },
+"merantix-momentum.jobs.personio.de/job/2888607": {
+"first": "2026-11-24",
+"job_id": "2536a3e5cd5f",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "mistral.ai/careers": {
 "first": "2026-06-30",
 "job_id": "f6e7c3c4fb3d",
@@ -7517,6 +8139,12 @@
 "last": "2026-07-07",
 "state": "ingested"
 },
+"mp-corporate-finance.jobs.personio.de/job/2857956": {
+"first": "2026-11-24",
+"job_id": "6a8ebbca47e2",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "n26.com/en-eu/careers": {
 "first": "2026-06-30",
 "job_id": "ac2423b73fdc",
@@ -7541,11 +8169,54 @@
 "last": "2026-07-01",
 "state": "ingested"
 },
+"n26.com/en-eu/careers/positions/7818361?gh_jid=7818361": {
+"first": "2026-11-24",
+"job_id": "59831853306d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"n26.com/en-eu/careers/positions/7841923?gh_jid=7841923": {
+"first": "2026-11-24",
+"job_id": "59831853306d",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"netconomy.recruitee.com/o/data-engineer-fmx-3": {
+"first": "2026-11-24",
+"job_id": "ced822646850",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"netconomy.recruitee.com/o/data-engineer-fmx-4": {
+"first": "2026-11-24",
+"job_id": "fd2f0f1bd746",
+"last": "2026-11-24",
+"state": "ingested"
+},
 "news.ycombinator.com/item?id=48757283": {
 "first": "2026-07-13",
 "job_id": "bf2fb2a2784e",
 "last": "2026-07-13",
 "state": "ingested"
+},
+"nyrahealth.recruitee.com/o/ai-engineer-automation-internal-systems": {
+"first": "2026-11-24",
+"job_id": "050e128c12a5",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"nyrahealth.recruitee.com/o/machine-learning-researcher-3": {
+"first": "2026-11-24",
+"job_id": "35c174f88fbc",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"nyrahealth.recruitee.com/o/senior-fullstack-engineer-ai-native": {
+"first": "2026-11-24",
+"job_id": "9f906eb82769",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Generic fullstack web role"
 },
 "oebb.csod.com/ux/ats/careersite/4/home/requisition/25418?c=oebb": {
 "first": "2026-07-10",
@@ -7564,6 +8235,25 @@
 "job_id": "6d8ca72eb294",
 "last": "2026-07-12",
 "state": "ingested"
+},
+"ommax.jobs.personio.de/job/2579097": {
+"first": "2026-11-24",
+"job_id": "3867049e374a",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"ommax.jobs.personio.de/job/2800337": {
+"first": "2026-11-24",
+"job_id": "f5849deddd88",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"ommax.jobs.personio.de/job/948584": {
+"first": "2026-11-24",
+"job_id": "2cfbfc419609",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "Consulting-only due diligence internship"
 },
 "pacemaker.jobs.personio.de/job/1564444": {
 "first": "2026-07-10",
@@ -7701,6 +8391,25 @@
 "first": "2026-06-25",
 "job_id": "3854cc5af3f6",
 "last": "2026-06-25",
+"state": "ingested"
+},
+"statworx.jobs.personio.de/job/1660565": {
+"first": "2026-11-24",
+"job_id": "7f758ea6d855",
+"last": "2026-11-24",
+"state": "ingested"
+},
+"statworx.jobs.personio.de/job/2069893": {
+"first": "2026-11-24",
+"job_id": "e0a31f367060",
+"last": "2026-11-24",
+"state": "rejected",
+"why": "AI education consulting, non-technical role"
+},
+"statworx.jobs.personio.de/job/2605138": {
+"first": "2026-11-24",
+"job_id": "aa2366eda7cd",
+"last": "2026-11-24",
 "state": "ingested"
 },
 "steadforce.jobs.personio.de/job/2282828": {

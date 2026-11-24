@@ -1,8 +1,8 @@
 # Open Jobs — DACH Data/ML/AI
 
-_Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 in jobs.csv; 561 closed, 215 could not be verified (site blocks automated checks). Filter `jobs.csv` on `status` (2nd column) for the full data._
+_Generated 2026-11-24. **427 postings confirmed open** (status = open) of 1203 in jobs.csv; 561 closed, 215 could not be verified (site blocks automated checks). Filter `jobs.csv` on `status` (2nd column) for the full data._
 
-## Switzerland (79)
+## Switzerland (87)
 
 | Level | Role | Title | Company | City | Last seen |
 |---|---|---|---|---|---|
@@ -56,12 +56,17 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Mid | Other | [Professional Quality Engineer - Testautomatisierung & KI (Ref.Nr.: 48375)](https://www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/professional-quality-engineer-testautomatisierung-ki-refnr-48375-bern-64980) | Wavestone Germany AG | Bern | 2026-11-24 |
 | Senior | AI Engineer | [Senior Software Engineer – AI-driven Development 80%-100% - Hybrid](https://www.arbeitsagentur.de/jobsuche/jobdetail/17338-sfd904df61070c76f7a-S) | copebit AG | Zurich | 2026-11-24 |
 | Senior | AI Engineer | [Software Engineer, Agentic AI - Remote](https://www.arbeitsagentur.de/jobsuche/jobdetail/17338-s38fbe984c00ac0c774-S) | Institute of Medical Procedures | Bern | 2026-11-24 |
+| Senior | AI Engineer | [Forward Deployed Engineer (AI & Digital Experience Platforms)](https://jobs.lever.co/jobgether/755df3d9-090f-4f96-a374-02cbfc79aa12) | Jobgether | Switzerland | 2026-11-24 |
 | Senior | AI Engineer | [Senior Backend & AI Engineer - 100% - Hybrid](https://www.arbeitsagentur.de/jobsuche/jobdetail/17338-s4f510fe4e0e6cf7cfb-S) | SCAIT | Rotkreuz | 2026-11-24 |
 | Senior | AI Engineer | [Senior Backend & AI Engineer - Hybrid](https://www.arbeitsagentur.de/jobsuche/jobdetail/17338-sd8d5c49392cfc4d293-S) | Scalera AG | Zurich | 2026-11-24 |
+| Senior | AI Engineer | [Senior Backend & AI Engineer](https://jobs.ashbyhq.com/scalera/cd753758-2fde-4719-8c3e-1848b20a140b) | Scalera AG | Zurich | 2026-11-24 |
+| Senior | AI Engineer | [Senior Backend & AI Engineer (Remote)](https://jobs.ashbyhq.com/scalera/21cf7c42-3a5e-4947-a525-654cda4259a6) | Scalera AG | Zurich | 2026-11-24 |
 | Senior | AI Researcher | [Research Engineer, Production Model Post-Training](https://job-boards.greenhouse.io/anthropic/jobs/5112018008) | Anthropic | Zurich | 2026-11-24 |
 | Senior | AI Researcher | [Research Scientist: Post-Training](https://www.arbeitnow.ch/jobs/companies/enactintelligence/research-scientist-post-training-zurich-164875) | Enactintelligence | Zurich | 2026-11-24 |
 | Senior | AI Researcher | [Research Scientist, Foundation Model (World Model & Site Memory)](https://www.arbeitnow.ch/jobs/companies/laelaps/research-scientist-foundation-model-world-model-site-memory-zurich-448097) | Laelaps | Zurich | 2026-11-24 |
 | Senior | AI Researcher | [Senior Applied Scientist, Efficient LLM Inference & Model Optimization](https://www.arbeitnow.ch/jobs/companies/nebius/senior-applied-scientist-efficient-llm-inference-model-optimization-zurich-356995) | Nebius | Zurich | 2026-11-24 |
+| Senior | Data Engineer | [Senior Data Engineer (Databricks)](https://job-boards.greenhouse.io/artefactjobs/jobs/8934525002) | Artefact | Lausanne | 2026-11-24 |
+| Senior | Data Engineer | [Senior Data Engineer (Databricks)](https://job-boards.greenhouse.io/artefact/jobs/8934523002) | Artefact (Effixis) | Lausanne | 2026-11-24 |
 | Senior | Data Engineer | [Senior Data Engineer - Hybrid](https://www.arbeitsagentur.de/jobsuche/jobdetail/17338-s53337117a6b6a624ef-S) | autoSense ag | Zurich | 2026-11-24 |
 | Senior | Data Engineer | [Senior Data & Analytics Engineer im IT-Consulting - Hybrid](https://www.arbeitsagentur.de/jobsuche/jobdetail/17338-sd182dac6001717641f-S) | Innovation Process Technology AG | Zurich | 2026-11-24 |
 | Senior | Data Engineer | [Data Engineer, AI Infra](https://job-boards.greenhouse.io/microsoftcorporation/jobs/4398696009) | Microsoft | Zurich | 2026-11-24 |
@@ -76,36 +81,46 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Senior | ML Engineer | [Senior / Staff ML Engineer, AI Security (Runtime Defenses)](https://jobs.smartrecruiters.com/checkpointsoftwaretechnologies2/744000162276705) | Lakera | Zurich | 2026-11-24 |
 | Senior | ML Engineer | [AI Infrastructure, Inference](https://job-boards.greenhouse.io/microsoftcorporation/jobs/4390719009) | Microsoft | Zurich | 2026-11-24 |
 | Senior | ML Engineer | [Senior Machine Learning Engineer, LLM Inference Optimization](https://www.arbeitnow.ch/jobs/companies/nebius/senior-machine-learning-engineer-llm-inference-optimization-zurich-453910) | Nebius | Zurich | 2026-11-24 |
+| Senior | ML Engineer | [Senior ML Engineer (Agentic Search)](https://careers.nebius.com/?gh_jid=5008613101) | Nebius | Zurich | 2026-11-24 |
 | Senior | ML Engineer | [Senior AL/ML Engineer - Hybrid](https://www.arbeitsagentur.de/jobsuche/jobdetail/17338-s2ad5c49392cfc4d306-S) | Scalera AG | Zurich | 2026-11-24 |
+| Senior | ML Engineer | [Senior AI/ML Engineer](https://jobs.ashbyhq.com/scalera/b97c6a92-dc84-424b-ab9e-2e63d1c3903a) | Scalera AG | Zurich | 2026-11-24 |
 | Senior | ML Engineer | [Senior Autonomy Engineer - Deep Learning](https://jobs.ashbyhq.com/skydio/4ded3e5e-cdfe-4dc5-bbaf-0d3023521246) | Skydio | Zurich | 2026-11-24 |
 | Senior | ML Engineer | [Machine Learning Scientist (AI for Code)](https://jobs.lever.co/sonarsource/a0535931-bce3-4159-b43d-15ca3eb4d17f) | SonarSource | Geneva | 2026-11-24 |
 | Senior | Other | [Senior CAE and AI Expert](https://jobs.ashbyhq.com/neuralconcept/b8c0c95e-3279-4259-8c21-80014db3b4dd) | Neural Concept | Lausanne | 2026-11-24 |
 | Senior | Other | [Expert Enterprise Platform Architect - AI-Architektur (Ref.Nr.: 48374)](https://www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/expert-enterprise-platform-architect-ai-architektur-refnr-48374-bern-255054) | Wavestone Germany AG | Bern | 2026-11-24 |
 | Lead/Principal | AI Engineer | [Principal AI Evaluations Platform Engineer](https://www.arbeitnow.co.uk/jobs/companies/microsoftcorporation/principal-ai-evaluations-platform-engineer-london-167838) | Microsoft | Zurich | 2026-11-24 |
+| Lead/Principal | AI Researcher | [Staff Applied AI Researcher (Agentic Search)](https://careers.nebius.com/?gh_jid=4948471101) | Nebius | Zurich | 2026-11-24 |
 | Lead/Principal | Data Engineer | [Lead Forward-Deployed Engineer (Data platform) - Hybrid](https://www.arbeitsagentur.de/jobsuche/jobdetail/17338-s34e2361678a2738a72-S) | EPAM Systems | Zurich | 2026-11-24 |
 | Lead/Principal | Data Engineer | [Staff Data Engineer](https://jobs.lever.co/sonarsource/19d88777-744e-4496-a94a-6560770198bd) | SonarSource | Geneva | 2026-11-24 |
 | Lead/Principal | ML Engineer | [Senior ML Manager, Runtime Defenses](https://jobs.smartrecruiters.com/checkpointsoftwaretechnologies2/744000162344134) | Lakera | Zurich | 2026-11-24 |
 
-## Germany (196)
+## Germany (256)
 
 | Level | Role | Title | Company | City | Last seen |
 |---|---|---|---|---|---|
+| Intern | AI Engineer | [Working Student AI Engineering & Product Development](https://appliedai.jobs.personio.de/job/2690896) | appliedAI | Munich | 2026-11-24 |
 | Intern | AI Engineer | [Praktikum in der Entwicklung einer KI-basierten Wettbewerbsdatenbank und eines T](https://jobs.smartrecruiters.com/BoschGroup/744000162723399) | Bosch Group | Ulm | 2026-11-24 |
 | Intern | AI Engineer | [Internship in Development of an AI-Based Competitive Database and Product Matchi](https://jobs.smartrecruiters.com/BoschGroup/744000162723219) | Bosch Group | Ulm | 2026-11-24 |
 | Intern | AI Engineer | [Venture Development / AI Engineering - Internship](https://jobs.ashbyhq.com/enpal/f0cdd84d-bbd8-4841-8e4a-2755181a1bf1) | Enpal | Berlin | 2026-11-24 |
+| Intern | AI Engineer | [Intern AI & Data Engineering](https://ommax.jobs.personio.de/job/2800337) | OMMAX GmbH | Munich | 2026-11-24 |
+| Intern | AI Engineer | [GenAI Consulting Intern](https://jobs.smartrecruiters.com/rolandberger/744000148171009) | Roland Berger | Munich | 2026-11-24 |
+| Intern | AI Engineer | [Internship - AI/ML Engineering](https://jobs.smartrecruiters.com/scalablegmbh/744000156493644) | Scalable GmbH | Berlin | 2026-11-24 |
 | Intern | AI Engineer | [Werkstudent KI-Automatisierung, Prof. Schumann GmbH](https://www.arbeitsagentur.de/jobsuche/jobdetail/12811-2372733-S) | SCHUMANN DE | Göttingen | 2026-11-24 |
+| Intern | AI Engineer | [Praktikum als Applied AI Engineer](https://jobs.smartrecruiters.com/sixt/744000160193358) | SIXT | Munich | 2026-11-24 |
 | Intern | AI Engineer | [Working Student - LLM Inference Performance](https://job-boards.greenhouse.io/tensordyne/jobs/8926410002) | Tensordyne | Munich | 2026-11-24 |
 | Intern | AI Engineer | [Working Student AI-Driven Process Planning Generative Artificial Intelligence](https://jobs.volkswagen-group.com/Volkswagen/job/Wolfsburg-Working-Student-AI-Driven-Process-Planning-Generative-Artificial-Intelligence-(fmd)-38436/1230366301/) | Volkswagen AG | Wolfsburg | 2026-11-24 |
 | Intern | AI Engineer | [Working Student AI assisted software architecture & engineering automation](https://jobs.volkswagen-group.com/VW_Infotainment/job/Bochum-Working-student-AI-assisted-software-architecture-&-engineering-automation-(mfd)-Nort-44803/1401655533/) | Volkswagen AG Infotainment | Bochum | 2026-11-24 |
 | Intern | AI Engineer | [Werkstudent KI & Automatisierung, Waltenhofen](https://www.arbeitsagentur.de/jobsuche/jobdetail/12811-2356493-S) | Wilhelm Geiger GmbH & Co. KG | Waltenhofen | 2026-11-24 |
 | Intern | AI Researcher | [AI Research Intern (PhD) - 3D Computer Vision](https://helsing.ai/jobs/4941957101?gh_jid=4941957101) | Helsing | Munich | 2026-11-24 |
 | Intern | AI Researcher | [Werkstudent*in Erforschung KI-Anwendungen](https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004018125-S) | Lovion GmbH | Dortmund | 2026-11-24 |
+| Intern | AI Researcher | [Research Scientist Intern (PhD) - Cohort '27](https://jobs.ashbyhq.com/prior-labs/4c1e34d6-b5b9-4b17-94a0-22dc838af20f) | Prior Labs | Berlin | 2026-11-24 |
 | Intern | AI Researcher | [Working Student - LLM Quantization & Inference Performance](https://job-boards.greenhouse.io/tensordyne/jobs/8886436002) | Tensordyne | Munich | 2026-11-24 |
 | Intern | Data Engineer | [Internship / Working Student - Large Language Models (LLMs), AI Agents & Data En](https://jobs.volkswagen-group.com/cariad/job/Berlin-Internship-Working-Student-Large-Language-Models-(LLMs),-AI-Agents-&-Data-Engineering-(fmd)-10587/1260367101/) | CARIAD | Berlin | 2026-11-24 |
 | Intern | Data Engineer | [Werkstudent im Bereich Data & AI](https://inovex.recruitee.com/o/werkstudent-in-im-bereich-data-ai) | inovex GmbH | Karlsruhe | 2026-11-24 |
 | Intern | Data Engineer | [Werkstudent Data Engineering](https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1208099598-S) | Köster GmbH | Osnabrück | 2026-11-24 |
 | Intern | Data Engineer | [Intern - Data & AI Engineering](https://scalefree.jobs.personio.de/job/1137687) | Scalefree | Hanover | 2026-11-24 |
 | Intern | Data Engineer | [Praktikum - Data & AI Engineering](https://join.com/companies/scalefree/16195079-praktikum-m-f-d-data-und-ai-engineering) | Scalefree International GmbH | Hannover | 2026-11-24 |
+| Intern | Data Engineer | [Working Student - Content Data Engineer](https://careers.trivago.com/apply/8878864002.?gh_jid=8878864002) | trivago | Düsseldorf | 2026-11-24 |
 | Intern | Data Scientist | [Working Student - Data Science](https://jobs.ashbyhq.com/adjoe/2fefdfde-0c43-4c56-b572-4775aba10257) | adjoe | Hamburg | 2026-11-24 |
 | Intern | Data Scientist | [Pflichtpraktikum Data Science im Qualitätsmanagement](https://jobs.smartrecruiters.com/BoschGroup/744000162486754) | Bosch Group | Stuttgart | 2026-11-24 |
 | Intern | Data Scientist | [Praktikant Data Science and Artificial Intelligence](https://brlriskconsulting.recruitee.com/o/praktikant-wmd-data-science-artificial-intelligence-dsa-im-bereich-risk-advisory-services-ras) | BRL Risk Consulting | Berlin | 2026-11-24 |
@@ -114,6 +129,7 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Intern | Data Scientist | [Praktikum Data Science](https://jobs.porsche.com/index.php?ac=jobad&id=18514) | Porsche | Ludwigsburg | 2026-11-24 |
 | Intern | Data Scientist | [Data Science Intern](https://jobs.lever.co/quantco-/a9862eb3-bbfa-4cdc-862d-ad614f20b1e4) | QuantCo | Berlin | 2026-11-24 |
 | Intern | Data Scientist | [Internship Analytics Consulting (all genders)](https://jobs.smartrecruiters.com/RolandBerger/744000023786885-internship-analytics-consulting-m-f-d-) | Roland Berger | Munich | 2026-11-24 |
+| Intern | Data Scientist | [Consulting Intern AI & Data](https://jobs.smartrecruiters.com/rolandberger/744000148170417) | Roland Berger | Munich | 2026-11-24 |
 | Intern | Data Scientist | [Werkstudent Data Science & Künstliche Intelligenz (m/w/d)](https://careers.soprasteria.de/job/werkstudent-data-science-and-kuenstliche-intelligenz-m-w-d-in-muenchen-germany-jid-2748) | Sopra Steria | Munich | 2026-11-24 |
 | Intern | ML Engineer | [Working Student - Deep Learning for ADAS/AD (f/m/d)](https://jobs.volkswagen-group.com/cariad/job/M%C3%BCnchen-Working-Student-Deep-Learning-for-ADASAD-(fmd)-80807/1222153201/) | CARIAD | Munich | 2026-11-24 |
 | Intern | ML Engineer | [Working Student / Internship / Thesis - End-to-end Automated Driving with World ](https://jobs.volkswagen-group.com/cariad/job/Ingolstadt-Working-Student-Internship-Thesis-End-to-end-Automated-Driving-with-World-Models-(mwd)-85053/1288004101/) | CARIAD | Ingolstadt | 2026-11-24 |
@@ -138,6 +154,7 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Junior | AI Engineer | [Junior AI Application Engineer – AI Products (LLM & RAG)](https://www.arbeitnow.com/jobs/companies/machine-learning-reply/junior-ai-application-engineer-ai-products-llm-rag-munich-465884) | Machine Learning Reply | Munich | 2026-11-24 |
 | Junior | AI Engineer | [AI Solutions Engineer](https://job-boards.eu.greenhouse.io/skdse/jobs/5043809101) | Skdse | Munich | 2026-11-24 |
 | Junior | AI Engineer | [AI Solutions Engineer](https://job-boards.eu.greenhouse.io/skdse/jobs/5043808101) | Skdse | Berlin | 2026-11-24 |
+| Junior | AI Engineer | [Trainee AI Engineer](https://statworx.jobs.personio.de/job/1660565) | statworx | Frankfurt | 2026-11-24 |
 | Junior | AI Researcher | [AI Researcher - Pre-training](https://jobs.ashbyhq.com/AlephAlpha/518d3da6-eecc-439f-9e6f-7105b649eaa4) | Aleph Alpha | Heidelberg | 2026-11-24 |
 | Junior | AI Researcher | [Doktorand Graph Machine Learning & Financial Crime Analytics](https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996073083-S) | findic | Berlin | 2026-11-24 |
 | Junior | AI Researcher | [Wissenschaftliche Mitarbeitende mit Promotionsoption im Bereich KI (all genders)](https://jobs.fraunhofer.de/job/Bayreuth-Wissenschaftliche-Mitarbeitende-mit-Promotionsoption-im-Bereich-K%C3%BCnstliche-Intelligenz-(all-genders)-95444/1292150301/) | Fraunhofer-Gesellschaft | Bayreuth | 2026-11-24 |
@@ -172,9 +189,11 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Junior | ML Engineer | [Datenanalyst / Machine Learning Engineer](https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003836372-S) | Petkus Technologie GmbH | Wutha-Farnroda | 2026-11-24 |
 | Junior | ML Engineer | [(Junior) Machine Learning Engineer](https://www.arbeitsagentur.de/jobsuche/jobdetail/13644-314386-S) | statworx | Frankfurt | 2026-11-24 |
 | Junior | ML Engineer | [(Junior) ML Engineer](https://careers.vattenfall.com/global/job/junior-ml-engineer-in-berlin-jid-50508) | Vattenfall | Berlin | 2026-11-24 |
+| Junior | Other | [AI Automation Specialist](https://jobs.ashbyhq.com/blp-digital/4f539874-5725-4c2f-82cc-37255222c4ce) | BLP Digital AG | Munich | 2026-11-24 |
 | Junior | Other | [Associate AI and Data Consultant - Galaxy Graduate Program](https://job-boards.greenhouse.io/celonis/jobs/8209081003?gh_jid=8209081003) | Celonis | Munich | 2026-11-24 |
 | Junior | Other | [(Junior) Full-Stack Entwickler AI & Digital Innovation Reise](https://www.arbeitsagentur.de/jobsuche/jobdetail/20208-74515a7275b3497e86a-S) | CHECK24 Services Personal GmbH | Leipzig | 2026-11-24 |
 | Junior | Other | [Junior IT & Technology Engineer AI](https://www.arbeitsagentur.de/jobsuche/jobdetail/13635-93020cd4_JB5284591-S) | Schmetterling International GmbH u. Co.  | Obertrubach | 2026-11-24 |
+| Mid | AI Engineer | [AI Engineer](https://adorsys.jobs.personio.de/job/2768966) | adorsys GmbH & Co. KG | Nuremberg | 2026-11-24 |
 | Mid | AI Engineer | [Founding AI-Engineer: Wir bauen die Autonomous Workforce.](https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003531032-S) | AIFOREU GmbH | Osnabrück | 2026-11-24 |
 | Mid | AI Engineer | [AI R&D Engineer – Model Training](https://jobs.ashbyhq.com/AlephAlpha/0ed0c9ef-8e9f-4161-80e6-55fc95c93736) | Aleph Alpha | Heidelberg | 2026-11-24 |
 | Mid | AI Engineer | [AI Engineer](https://www.arbeitnow.nl/jobs/companies/anywherenow/remote-ai-engineer-rotterdam-22878) | AnywhereNow | Remote | 2026-11-24 |
@@ -188,43 +207,63 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Mid | AI Engineer | [AI-Engineer - Generative AI, LLM & KI-Konzepte](https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003862153-S) | Green IT Das Systemhaus GmbH | Dortmund | 2026-11-24 |
 | Mid | AI Engineer | [Deployed AI Engineer](https://helsing.ai/jobs/4516967101) | Helsing | Munich | 2026-11-24 |
 | Mid | AI Engineer | [Deployed AI Engineer](https://helsing.ai/jobs/4516967101?gh_jid=4516967101) | Helsing | Berlin | 2026-11-24 |
+| Mid | AI Engineer | [AI Automation Architect - SDLC](https://hornetsecurity.jobs.personio.de/job/2695674) | Hornetsecurity GmbH | Hannover | 2026-11-24 |
+| Mid | AI Engineer | [AI Research Engineer – Prototyping, AI & Research](https://hornetsecurity.jobs.personio.de/job/2502859) | Hornetsecurity GmbH | Hannover | 2026-11-24 |
 | Mid | AI Engineer | [Forward Deployed AI Engineer](https://juna-ai.jobs.personio.de/job/1823357) | juna.ai | Berlin | 2026-11-24 |
 | Mid | AI Engineer | [AI Application Engineer – AI Products (LLM & RAG)](https://www.arbeitnow.com/jobs/companies/machine-learning-reply/ai-application-engineer-ai-products-llm-rag-berlin-322593) | Machine Learning Reply | Berlin | 2026-11-24 |
 | Mid | AI Engineer | [GenAI Engineer](https://machinelearningreply.recruitee.com/o/genai-engineer-mwd-6) | Machine Learning Reply | Munich | 2026-11-24 |
+| Mid | AI Engineer | [AI Full Stack Engineer](https://merantix-momentum.jobs.personio.de/job/2888607) | Merantix Momentum | Berlin | 2026-11-24 |
 | Mid | AI Engineer | [AI Solution Specialist](https://www.arbeitsagentur.de/jobsuche/jobdetail/13552-F837YITEQ8GUEWA7-S) | N.O.C Engineering GmbH | Offenbach am Main | 2026-11-24 |
 | Mid | AI Engineer | [AI Software Engineer - Python (m/f/x)](https://jobs.smartrecruiters.com/ScalableGmbH/744000124572789-ai-software-engineer-python-m-f-x-) | Scalable Capital | Berlin | 2026-11-24 |
 | Mid | AI Engineer | [Forward Deployed Engineer, Applied AI](https://jobs.ashbyhq.com/se3/1a038a2a-1f1f-4c43-a2a1-8147205ac6dd) | Se3 | Munich | 2026-11-24 |
 | Mid | AI Engineer | [KI-Entwickler Datenmigration](https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003818217-S) | SIV.AG - Service für Informationsverarbe | Roggentin near Rostock | 2026-11-24 |
 | Mid | AI Engineer | [Softwareentwickler Forschungs-IT – Kotlin/JVM & KI](https://www.arbeitsagentur.de/jobsuche/jobdetail/19924-967738413-S) | univativ GmbH | Bonn | 2026-11-24 |
+| Mid | AI Researcher | [AI Researcher](https://jobs.ashbyhq.com/amber/42fa221a-f9c5-4a18-b2c3-a7c37e510798) | amber | Aachen | 2026-11-24 |
 | Mid | AI Researcher | [Applied Research Engineer, Evaluation](https://jobs.ashbyhq.com/black-forest-labs/e7935ad1-7b9a-4c85-8b40-09cafedf7d63) | Black Forest Labs | Freiburg | 2026-11-24 |
+| Mid | AI Researcher | [Machine Learning Researcher](https://dida.jobs.personio.de/job/2548265) | dida Datenschmiede | Berlin | 2026-11-24 |
+| Mid | AI Researcher | [Machine Learning Scientist](https://dida.jobs.personio.de/job/2548260) | dida Datenschmiede | Berlin | 2026-11-24 |
 | Mid | AI Researcher | [Machine Learning Scientist](https://jobs.fraunhofer.de/job/Berlin-Machine-Learning-Scientist-10587/1275765001/) | Fraunhofer-Gesellschaft | Berlin | 2026-11-24 |
 | Mid | AI Researcher | [AI Research Engineer - Reinforcement Learning](https://helsing.ai/jobs/4676357101) | Helsing | Munich | 2026-11-24 |
 | Mid | AI Researcher | [AI Research Engineer - GPU Simulation](https://helsing.ai/jobs/4953387101?gh_jid=4953387101) | Helsing | Berlin | 2026-11-24 |
 | Mid | AI Researcher | [Research Engineer - Robotics RL & Post Training](https://jobs.ashbyhq.com/microagi/81992690-b991-4804-bf47-f97ab98fbaa6) | microagi | Munich | 2026-11-24 |
+| Mid | AI Researcher | [Research Engineer, Foundation Model](https://jobs.ashbyhq.com/prior-labs/a1d005f1-732d-41c1-bd23-4e37b4ecdc7b) | Prior Labs | Berlin | 2026-11-24 |
+| Mid | Data Engineer | [Analytics Engineer - Shop Analytics](https://jobs.smartrecruiters.com/aboutyougmbh/744000159664899) | ABOUT YOU SE & Co. KG | Berlin | 2026-11-24 |
 | Mid | Data Engineer | [(Senior) Data Engineer](https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004020720-S) | Bruker EAS GmbH | Hanau | 2026-11-24 |
 | Mid | Data Engineer | [Data Engineer](https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-5002848046-S) | ELA Container GmbH | Haren (Ems) | 2026-11-24 |
+| Mid | Data Engineer | [Data Platform Engineer](https://flix.careers/job/8690650002?gh_jid=8690650002) | Flix SE | Berlin | 2026-11-24 |
 | Mid | Data Engineer | [Haema GmbH: Data Analyst / Data Engineer](https://www.arbeitsagentur.de/jobsuche/jobdetail/11956-2972541794697201-S) | Haema GmbH | Leipzig | 2026-11-24 |
 | Mid | Data Engineer | [Data Engineer / Machine Learning Engineer](https://www.inovex.de/de/karriere/stellenangebote/data-engineer-machine-learning-engineer/) | inovex GmbH | Karlsruhe | 2026-11-24 |
 | Mid | Data Engineer | [BI & Data Platform Engineer](https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996072264-S) | KA Resources | Koblenz | 2026-11-24 |
 | Mid | Data Engineer | [AI & Data Engineer](https://www.arbeitsagentur.de/jobsuche/jobdetail/14927-2i51yod0rzc-S) | Kraftverkehr Nagel SE & Co. KG | Versmold | 2026-11-24 |
 | Mid | Data Engineer | [AI & Data Engineer](https://www.arbeitsagentur.de/jobsuche/jobdetail/16602-3e1d77c6a19d8fa9-S) | Nagel-Group Logistics SE | Versmold | 2026-11-24 |
+| Mid | Data Engineer | [Data Engineer](https://netconomy.recruitee.com/o/data-engineer-fmx-4) | NETCONOMY | Berlin | 2026-11-24 |
 | Mid | Data Engineer | [Data Platform Engineer – Data Operations](https://job-boards.eu.greenhouse.io/skdse/jobs/4994136101) | Skdse | Munich | 2026-11-24 |
+| Mid | Data Engineer | [Data Engineer - Data Platform & Ontology](https://jobs.ashbyhq.com/statista/c105dbda-f665-41ac-b991-1f153cf55fc0) | Statista | Hamburg | 2026-11-24 |
+| Mid | Data Engineer | [Analytics Engineer](https://jobs.ashbyhq.com/statista/27f98734-2ba5-439a-a5c0-df5060013761) | Statista | Hamburg | 2026-11-24 |
+| Mid | Data Engineer | [Data & Analytics Engineer](https://jobs.ashbyhq.com/statista/759ae11e-eb39-470a-a774-3b9c84d2d7a1) | Statista | Hamburg | 2026-11-24 |
 | Mid | Data Engineer | [Data Engineer Azure & Databricks / Cloud & Streaming](https://steadforce.jobs.personio.de/job/2282828) | Steadforce | Munich | 2026-11-24 |
 | Mid | Data Engineer | [Data Platform Engineer (Mid-Level)](https://sumup.com/careers/positions/8364212002?gh_jid=8364212002) | SumUp | Berlin | 2026-11-24 |
 | Mid | Data Engineer | [Data Engineer](https://www.arbeitnow.com/jobs/companies/twomynds/data-engineer-cologne-312722) | twomynds | Cologne | 2026-11-24 |
+| Mid | Data Engineer | [Data Engineer – Databricks](https://job-boards.eu.greenhouse.io/ultratendency/jobs/5006753101) | Ultra Tendency | Magdeburg | 2026-11-24 |
 | Mid | Data Engineer | [IT-Anwendungsentwickler / Data Engineer](https://www.arbeitsagentur.de/jobsuche/jobdetail/13644-304891-S) | W&B | Lübeck | 2026-11-24 |
 | Mid | Data Scientist | [Data Scientist (m/f/d)](https://job-boards.greenhouse.io/autoscout24/jobs/7751011003) | AutoScout24 | Munich | 2026-11-24 |
 | Mid | Data Scientist | [Data Scientist](https://www.arbeitnow.com/jobs/companies/machine-learning-reply/data-scientist-munich-288101) | Machine Learning Reply | Munich | 2026-11-24 |
 | Mid | Data Scientist | [(Senior) Data Scientist (m/f/d)](https://ommax.jobs.personio.com/job/2579074) | OMMAX GmbH | Munich | 2026-11-24 |
 | Mid | Data Scientist | [Experienced AI Data Scientist](https://jobs.siemens-energy.com/en_US/jobs/FolderDetailApplied?folderId=281763) | Siemens Energy | Munich | 2026-11-24 |
+| Mid | Data Scientist | [Data Scientist - AI Search & Ranking](https://careers.trivago.com/apply/8899648002.?gh_jid=8899648002) | trivago | Düsseldorf | 2026-11-24 |
 | Mid | ML Engineer | [(Senior) Robotics Vision & Perception Engineer](https://www.arbeitnow.com/jobs/companies/batch-robotics-gmbh/senior-robotics-vision-perception-engineer-munich-314299) | Batch Robotics GmbH | Munich | 2026-11-24 |
 | Mid | ML Engineer | [Software Engineer, ML Ops](https://jobs.ashbyhq.com/cohere/2a9a9b65-4f1b-4387-aa7f-d58c78e738c4) | Cohere | Berlin | 2026-11-24 |
 | Mid | ML Engineer | [Robotic Foundation Model Engineer](https://jobs.neura-robotics.com/offer/robotic-foundation-model-engineer-h/37112c1f-ec36-471a-8888-adf2140f77bd) | NEURA Robotics | Metzingen | 2026-11-24 |
 | Mid | ML Engineer | [Machine Learning Engineer (Hamburg)](https://careers.vattenfall.com/job/machine-learning-engineer-in-hamburg-jid-50261) | Vattenfall | Hamburg | 2026-11-24 |
+| Mid | Other | [DevSecOps Engineer Schwerpunkt AI Platforms](https://adorsys.jobs.personio.de/job/2883009) | adorsys GmbH & Co. KG | Nuremberg | 2026-11-24 |
 | Mid | Other | [Backend Developer – Vision AI Platform](https://www.arbeitnow.com/jobs/companies/denkweit-gmbh/backend-developer-vision-ai-platform-halle-saale-374490) | DENKweit GmbH | Halle (Saale) | 2026-11-24 |
 | Mid | Other | [Frontend Developer – Vision AI Platform](https://www.arbeitnow.com/jobs/companies/denkweit-gmbh/frontend-developer-vision-ai-platform-halle-saale-234445) | DENKweit GmbH | Halle (Saale) | 2026-11-24 |
 | Mid | Other | [DevOps Engineer – Cloud & AI Infrastructure](https://www.arbeitnow.com/jobs/companies/denkweit-gmbh/devops-engineer-cloud-ai-infrastructure-halle-saale-45772) | DENKweit GmbH | Halle (Saale) | 2026-11-24 |
+| Mid | Other | [AI Transformation Consultant](https://dida.jobs.personio.de/job/2892460) | dida Datenschmiede | Berlin | 2026-11-24 |
+| Mid | Other | [AI Workflow Specialist](https://careers.hellofresh.com/global/en/job/8113665?gh_jid=8113665) | HelloFresh | Berlin | 2026-11-24 |
 | Mid | Other | [Platform Engineer - KI und Developer Experience](https://www.arbeitsagentur.de/jobsuche/jobdetail/13644-313959-S) | LVM Versicherung | Münster | 2026-11-24 |
+| Senior | AI Engineer | [Senior Solutions Architect - Data & AI / AWS Cloud Engineering](https://auvaria.jobs.personio.de/job/2824418) | Auvaria | Hamburg | 2026-11-24 |
+| Senior | AI Engineer | [Senior Solutions Architect - Data & AI / AWS Cloud Engineering](https://auvaria.jobs.personio.de/job/2824423) | Auvaria | Munich | 2026-11-24 |
 | Senior | AI Engineer | [Senior AI Engineer](https://www.arbeitsagentur.de/jobsuche/jobdetail/13509-000021100c7004-S) | BWI GmbH | Hamburg | 2026-11-24 |
 | Senior | AI Engineer | [AI Architect](https://job-boards.greenhouse.io/capco/jobs/7682127) | capco | Berlin | 2026-11-24 |
 | Senior | AI Engineer | [Senior AI Engineer (Agentic AI)](https://careers.deliveryhero.com/job/senior-ai-engineer-agentic-ai-in-berlin-germany-jid-5224) | Delivery Hero | Berlin | 2026-11-24 |
@@ -234,7 +273,10 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Senior | AI Engineer | [AI Innovation Engineer, Deutsche Borse Group, Google Cloud](https://www.arbeitsagentur.de/jobsuche/jobdetail/17486-135193514559316678-S) | Google Germany GmbH | Frankfurt am Main | 2026-11-24 |
 | Senior | AI Engineer | [Senior Software Engineer – Schwerpunkt LLM – pricenxt](https://www.arbeitsagentur.de/jobsuche/jobdetail/17338-40225a25660fac6cf3-S) | KI Group | Bad Homburg | 2026-11-24 |
 | Senior | AI Engineer | [(Senior) AI/LLM Engineer](https://jobs.ashbyhq.com/mercura/90bb4d91-9311-4d6c-a30b-a2d6dc783a13) | Mercura | Munich | 2026-11-24 |
+| Senior | AI Engineer | [AI Engineer, Design](https://jobs.ashbyhq.com/nubank/fac13a25-9ede-43a9-b644-ad0e2760cb6d) | Nubank | Berlin | 2026-11-24 |
+| Senior | AI Engineer | [(Senior) AI Engineer](https://ommax.jobs.personio.de/job/2579097) | OMMAX GmbH | Munich | 2026-11-24 |
 | Senior | AI Engineer | [Senior KI- Entwickler INTERN](https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003941481-S) | Sipas IT-Consulting Schwandt Jürgen Schw | Stuttgart | 2026-11-24 |
+| Senior | AI Engineer | [Senior Data Scientist mit Fokus AI](https://jobs.ashbyhq.com/Skalar/d9b89f4e-b002-4f06-a686-431da34b82db) | Skalar | Munich | 2026-11-24 |
 | Senior | AI Engineer | [Senior AI & ML Engineer / Architect](https://steadforce.jobs.personio.de/job/2880823) | Steadforce | Munich | 2026-11-24 |
 | Senior | AI Engineer | [Senior Softwareentwickler - Fokus KI](https://www.arbeitsagentur.de/jobsuche/jobdetail/13869-13932026-S) | Tintschl Technik GmbH Hannover | Bremen | 2026-11-24 |
 | Senior | AI Researcher | [Senior ML Research Scientist – AI & Generative Recommendation](https://jobs.ashbyhq.com/adjoe/147d4798-84f3-4110-b7c4-3ffb2106bb51) | adjoe | Berlin | 2026-11-24 |
@@ -243,22 +285,39 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Senior | AI Researcher | [Senior Research Scientist on Human-centred Machine Learning](https://jobs.fraunhofer.de/job/Sankt-Augustin-Senior-Research-Scientist-on-Human-centred-Machine-Learning-53757/925350701/) | Fraunhofer IAIS | Sankt Augustin | 2026-11-24 |
 | Senior | AI Researcher | [Research Scientist, Foundation Model](https://jobs.ashbyhq.com/prior-labs/b37463f2-775d-42e0-8c58-4ec26927534b) | Prior Labs | Berlin | 2026-11-24 |
 | Senior | AI Researcher | [Senior Tensor AI Scientist](https://job-boards.eu.greenhouse.io/terraquantum/jobs/4334807101) | Terra Quantum | Munich | 2026-11-24 |
+| Senior | Data Engineer | [Senior Analytics Engineer - Supply Data Solutions](https://jobs.smartrecruiters.com/aboutyougmbh/744000162363959) | ABOUT YOU SE & Co. KG | Hamburg | 2026-11-24 |
+| Senior | Data Engineer | [Senior Financial Analytics Engineer](https://jobs.smartrecruiters.com/aboutyougmbh/744000160641371) | ABOUT YOU SE & Co. KG | Hamburg | 2026-11-24 |
 | Senior | Data Engineer | [Senior Data Engineer](https://adjoe.io/careers/open-positions/1f4c2a9e-366d-40dc-ab3c-b27263dc9e22/) | adjoe | Hamburg | 2026-11-24 |
+| Senior | Data Engineer | [Senior Analytics Engineer](https://job-boards.greenhouse.io/autoscout24/jobs/8202620003) | AutoScout24 | Berlin | 2026-11-24 |
+| Senior | Data Engineer | [Senior AI-Native Data Engineer](https://exmox-gmbh.jobs.personio.de/job/2848963) | exmox GmbH | Hamburg | 2026-11-24 |
+| Senior | Data Engineer | [Senior Data Engineer](https://exmox-gmbh.jobs.personio.de/job/2848938) | exmox GmbH | Hamburg | 2026-11-24 |
+| Senior | Data Engineer | [Senior Data Engineer, Growth Data Engineering](https://jobs.ashbyhq.com/GetYourGuide/c9d4a88a-9c92-4a7b-9f13-d8e91875c427) | GetYourGuide | Berlin | 2026-11-24 |
+| Senior | Data Engineer | [Senior Data Engineer](https://glassdollar.jobs.personio.de/job/2884413) | Glassdollar | Berlin | 2026-11-24 |
 | Senior | Data Engineer | [Senior Data Engineer Microsoft Fabric](https://inovex.recruitee.com/o/senior-data-engineer-microsoft-fabric) | inovex GmbH | Karlsruhe | 2026-11-24 |
 | Senior | Data Engineer | [Senior Data Engineer](https://jobs.ashbyhq.com/kayak/2063db99-2a6c-415c-b8d1-8f6e358c6942) | Kayak | Berlin | 2026-11-24 |
 | Senior | Data Engineer | [Senior Data Engineer](https://jobs.lever.co/kpler/fd027bed-7a3f-4e51-ab7b-6da91fcf26bb) | Kpler | Germany | 2026-11-24 |
 | Senior | Data Engineer | [Senior Data Engineer Risk Regulation - Hybrid](https://www.arbeitsagentur.de/jobsuche/jobdetail/17338-ffe8f36337a9efd919-S) | TARGO Technology GmbH | Duisburg | 2026-11-24 |
 | Senior | Data Scientist | [Senior Data Scientist - (Global Search, Consumer)](https://jobs.smartrecruiters.com/deliveryhero/744000158026859) | Delivery Hero SE | Berlin | 2026-11-24 |
+| Senior | Data Scientist | [Senior Data Scientist](https://flix.careers/job/8645439002?gh_jid=8645439002) | Flix SE | Berlin | 2026-11-24 |
+| Senior | Data Scientist | [Senior Data Scientist](https://flix.careers/job/8645451002?gh_jid=8645451002) | Flix SE | Munich | 2026-11-24 |
+| Senior | Data Scientist | [Senior Data Scientist, Central Data Products](https://jobs.ashbyhq.com/GetYourGuide/cffd0c22-a2d7-492e-9fd7-5c9bc1e8607c) | GetYourGuide | Berlin | 2026-11-24 |
 | Senior | Data Scientist | [Data Scientist, Chrome](https://www.arbeitsagentur.de/jobsuche/jobdetail/17486-90398972757058246-S) | Google Germany GmbH | Munich | 2026-11-24 |
 | Senior | Data Scientist | [Senior Data Scientist - Research EU/UK](https://www.arbeitnow.com/jobs/companies/makersite-gmbh/remote-senior-data-scientist-research-eu-uk-berlin-88725) | Makersite GmbH | Remote | 2026-11-24 |
 | Senior | Data Scientist | [(Senior) Data Scientist Analytics (m/w/d)](https://karriere.rewe-group.com/konzernzentrale/job/K%C3%B6ln-(Senior)-Data-Scientist-Analytics-(mwd)-NW-50933/1020187601/) | REWE Group | Cologne | 2026-11-24 |
+| Senior | Data Scientist | [Senior Data Scientist](https://jobs.smartrecruiters.com/rolandberger/744000157833009) | Roland Berger | Munich | 2026-11-24 |
+| Senior | Data Scientist | [Senior Data Scientist & ML Analyst](https://jobs.smartrecruiters.com/vattenfall/744000161733159) | Vattenfall | Hamburg | 2026-11-24 |
+| Senior | Data Scientist | [Senior Data Scientist & ML Analyst](https://jobs.smartrecruiters.com/vattenfall/744000161733070) | Vattenfall | Berlin | 2026-11-24 |
+| Senior | Data Scientist | [Senior Data Scientist - Applied Scientist](https://jobs.lever.co/vestiairecollective/5acc2413-e54c-421e-a06c-54bfb36c04a2) | Vestiaire Collective | Berlin | 2026-11-24 |
 | Senior | Data Scientist | [Senior Data Scientist - Applied Scientist](https://www.arbeitnow.com/jobs/companies/vestiairecollective/senior-data-scientist-applied-scientist-berlin-487392) | Vestiairecollective | Berlin | 2026-11-24 |
 | Senior | Data Scientist | [Senior Data Scientist, Generative AI](https://careers.vinted.com/jobs/4995959101?gh_jid=4995959101) | Vinted | Berlin | 2026-11-24 |
 | Senior | ML Engineer | [Senior/Staff ML Scientist - Bidding & Optimization](https://www.arbeitnow.com/jobs/companies/adjoe/senior-staff-ml-scientist-bidding-optimization-berlin-248715) | adjoe | Berlin | 2026-11-24 |
 | Senior | ML Engineer | [Senior AI R&D Engineer - Performance - Pre-training](https://jobs.ashbyhq.com/AlephAlpha/2faca6ec-69bd-4e04-b055-05f24ddf0f4d) | Aleph Alpha | Heidelberg | 2026-11-24 |
 | Senior | ML Engineer | [Senior AI R&D Engineer - Model Training](https://jobs.ashbyhq.com/AlephAlpha/47d5c59a-5ec5-481a-820f-f1227d9242d9) | Aleph Alpha | Heidelberg | 2026-11-24 |
+| Senior | ML Engineer | [(Senior) Machine Learning Engineer](https://anvajo.jobs.personio.de/job/2858135) | anvajo GmbH | Dresden | 2026-11-24 |
 | Senior | ML Engineer | [AI Research Engineer - ML Engineering](https://helsing.ai/jobs/4778869101) | Helsing | Munich | 2026-11-24 |
 | Senior | ML Engineer | [AI Research Engineer - ML & Signal Processing](https://helsing.ai/jobs/4372802101) | Helsing | Berlin | 2026-11-24 |
+| Senior | ML Engineer | [ML Engineer, Forward Deployed](https://jobs.ashbyhq.com/prior-labs/928de80c-278f-4f38-aeb2-e4d10b79f38e) | Prior Labs | Berlin | 2026-11-24 |
+| Senior | ML Engineer | [Senior Machine Learning Platform Engineer](https://jobs.smartrecruiters.com/repriskag/744000161832414) | RepRisk AG | Berlin | 2026-11-24 |
 | Senior | ML Engineer | [(Senior) ML Engineer / Software Engineer Machine Learning & AI (m/f/x)](https://jobs.smartrecruiters.com/ScalableGmbH/743999996830855--senior-ml-engineer-software-engineer-machine-learning-ai-m-f-x-onsite-or-remote-in-germany) | Scalable Capital | Munich | 2026-11-24 |
 | Senior | ML Engineer | [Senior Machine Learning Engineer - Platform Team](https://sumup.com/careers/positions/8712443002?gh_jid=8712443002) | SumUp | Berlin | 2026-11-24 |
 | Senior | ML Engineer | [Senior Software Engineer — ML Inference & Numerics](https://job-boards.greenhouse.io/tensordyne/jobs/8926409002) | Tensordyne | Munich | 2026-11-24 |
@@ -267,7 +326,9 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Senior | Other | [Senior AI Specialist (Operations)](https://jobs.ashbyhq.com/doctolib/d5da6e90-5168-4ec9-b69a-6cbb768a8e51) | Doctolib | Berlin | 2026-11-24 |
 | Senior | Other | [Senior Technical Data & AI Consultant](https://inovex.recruitee.com/o/senior-technical-data-und-ai-consultant) | inovex GmbH | Karlsruhe | 2026-11-24 |
 | Senior | Other | [Senior Product Engineer (AI & Business Systems)](https://www.arbeitnow.com/jobs/companies/paul-tech-ag/senior-product-engineer-ai-business-systems-mannheim-467122) | PAUL Tech AG | Mannheim | 2026-11-24 |
+| Senior | Other | [Senior SEO Engineer - Automation & AI](https://jobs.smartrecruiters.com/sixt/744000160204446) | SIXT | Munich | 2026-11-24 |
 | Senior | Other | [Senior Data Architect](https://jobs.ashbyhq.com/true-talent-solutions-partners/860cc897-534b-4000-b975-2788eb51d05c) | True Talent Solutions Partners | Hanover | 2026-11-24 |
+| Lead/Principal | AI Engineer | [AI Lead](https://jobs.ashbyhq.com/amber/0afd753f-f6d7-4f38-b4d1-47c9b0f49575) | amber | Cologne | 2026-11-24 |
 | Lead/Principal | AI Engineer | [Architect AI Data Strategy - AI Architecture (m/f/d)](https://jobs.volkswagen-group.com/cariad/job/Berlin-Architect-AI-Data-Strategy-AI-Architecture-(mfd)-10587/1253926901/) | CARIAD | Berlin | 2026-11-24 |
 | Lead/Principal | AI Engineer | [Founding Engineer, NLP Systems & Infrastructure](https://jobs.ashbyhq.com/Clera/e10ecb2e-5055-4bcf-a7bc-ff06203fe411) | Clera | Munich | 2026-11-24 |
 | Lead/Principal | AI Engineer | [Lead Solutions Architect - Generative AI (EMEA Emerging DNB)](https://databricks.com/company/careers/open-positions/job?gh_jid=8892971002) | databricks | Germany | 2026-11-24 |
@@ -275,9 +336,14 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Lead/Principal | AI Engineer | [Staff Computer Vision Engineer - Localization](https://jobs.ashbyhq.com/se3/1c7105fb-26f1-4b1e-bc62-aea0af2ce690) | Se3 | Munich | 2026-11-24 |
 | Lead/Principal | AI Engineer | [Staff Computer Vision Engineer - Perception](https://jobs.ashbyhq.com/se3/6e8bb35e-4205-4f26-885d-d74a8a173212) | Se3 | Munich | 2026-11-24 |
 | Lead/Principal | AI Engineer | [Staff Forward Deployed AI Engineer](https://jobs.smartrecruiters.com/sportradar/744000160833376) | SPORTRADAR Austria | Leipzig | 2026-11-24 |
+| Lead/Principal | Data Engineer | [Staff Data Platform Engineer](https://adsquare.jobs.personio.de/job/2869172) | Adsquare | Berlin | 2026-11-24 |
+| Lead/Principal | Data Engineer | [Engineering Manager - Data Platform](https://job-boards.greenhouse.io/autoscout24/jobs/8045913003) | AutoScout24 | Berlin | 2026-11-24 |
 | Lead/Principal | Data Engineer | [Staff Data Platform Engineer](https://jobs.ashbyhq.com/kayak/3d64ffdf-5cec-4bf1-b0c7-53acee834163) | Kayak | Berlin | 2026-11-24 |
 | Lead/Principal | Data Engineer | [Lead Data Engineer](https://jobs.ashbyhq.com/quantexa/f4f43e13-3171-4cb1-9785-507695dafffb) | Quantexa | Munich | 2026-11-24 |
+| Lead/Principal | Data Scientist | [Staff Data Scientist](https://adsquare.jobs.personio.de/job/2865259) | Adsquare | Berlin | 2026-11-24 |
+| Lead/Principal | Data Scientist | [Principal Data Scientist](https://job-boards.greenhouse.io/autoscout24/jobs/7681898003) | AutoScout24 | Munich | 2026-11-24 |
 | Lead/Principal | Data Scientist | [Staff Data Scientist - Global Search, Consumer](https://jobs.smartrecruiters.com/deliveryhero/744000162541049) | Delivery Hero SE | Berlin | 2026-11-24 |
+| Lead/Principal | Data Scientist | [Staff Data Scientist, Growth Data Products](https://jobs.ashbyhq.com/GetYourGuide/931e9e62-2229-424a-8971-3dc66c52acd3) | GetYourGuide | Berlin | 2026-11-24 |
 | Lead/Principal | Data Scientist | [Staff Data Scientist](https://jobs.volkswagen-group.com/VWFS/job/Staff-Data-Scientist/1280806801/) | Volkswagen | Wolfsburg | 2026-11-24 |
 | Lead/Principal | ML Engineer | [Head of Computer Vision Engineering](https://job-boards.eu.greenhouse.io/alpineeagle/jobs/4584007101) | Alpine Eagle | Karlsruhe | 2026-11-24 |
 | Lead/Principal | ML Engineer | [Staff Engineer, Robotics Perception](https://job-boards.eu.greenhouse.io/arxroboticsgmbh/jobs/4875205101) | ARX Robotics | Munich | 2026-11-24 |
@@ -285,9 +351,11 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Lead/Principal | ML Engineer | [Principal Machine Learning Engineer - Applied AI & LLMs (x/f/m)](https://www.linkedin.com/jobs/view/4420976192) | Doctolib | Berlin | 2026-11-24 |
 | Lead/Principal | Other | [Engineering Manager, AI CICD](https://www.arbeitnow.co.uk/jobs/companies/chainguard/engineering-manager-ai-cicd-468359) | Chainguard | Germany | 2026-11-24 |
 | Lead/Principal | Other | [Senior Manager, AI Forward Deployed Engineering](https://databricks.com/company/careers/open-positions/job?gh_jid=8948870002) | databricks | Munich | 2026-11-24 |
+| Lead/Principal | Other | [Engineering Manager - Data Platform](https://n26.com/en-eu/careers/positions/7818361?gh_jid=7818361) | N26 | Berlin | 2026-11-24 |
+| Lead/Principal | Other | [Director AI & Automation Fleet Operations](https://jobs.smartrecruiters.com/sixt/744000160569754) | SIXT | Munich | 2026-11-24 |
 | Lead/Principal | Other | [Head of AI Solutions](https://www.arbeitsagentur.de/jobsuche/jobdetail/19924-966662498-S) | univativ GmbH | Hanau | 2026-11-24 |
 
-## Austria (70)
+## Austria (84)
 
 | Level | Role | Title | Company | City | Last seen |
 |---|---|---|---|---|---|
@@ -297,11 +365,13 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Intern | Data Scientist | [Praktikant:in Customer Insights / AI & Trigger LogicI](https://www.karriere.at/jobs/7897714) | Magenta Telekom | Vienna | 2026-11-24 |
 | Intern | Data Scientist | [Data Scientist](https://www.karriere.at/jobs/7865596) | voestalpine AG | Krems an der Donau | 2026-11-24 |
 | Intern | Data Scientist | [Data Scientist](https://www.arbeitsagentur.de/jobsuche/jobdetail/11949-17393631-S) | voestalpine Krems GmbH | Krems an der Donau | 2026-11-24 |
+| Intern | Other | [Software Engineer Intern - Summer 2027 (AI & Beyond Incubator)](https://bitmovin.com/careers/8916523002?gh_jid=8916523002) | Bitmovin | Vienna | 2026-11-24 |
 | Junior | AI Engineer | [AI & Digitalization Engineer (m/f/d) - 20h/week](https://careers.andritz.com/andritz/job/Graz-AI-Digitalization-Engineer-(mfd)-for-20hweek-Styr/1357640757/) | Andritz | Graz | 2026-11-24 |
 | Junior | AI Engineer | [Softwareentwickler, KI, ML](https://www.karriere.at/jobs/10033210) | TRANSFORMAS Consulting Solutions GmbH | Wels | 2026-11-24 |
 | Junior | Data Scientist | [Jr Quantitative Analyst / Data Scientist](https://www.truechoice.io/job-post/jr-quantitative-analyst-data-scientist) | TrueChoice Solutions | Vienna | 2026-11-24 |
 | Junior | Other | [Software Development with Artificial Intelligence](https://www.karriere.at/jobs/10039233) | ventopay gmbh | Hagenberg im Mühlkreis | 2026-11-24 |
 | Mid | AI Engineer | [AI Platform Engineer](https://www.karriere.at/jobs/10032514) | AGILOX Services GmbH | Linz | 2026-11-24 |
+| Mid | AI Engineer | [AI Innovation & Solution Engineer](https://jobs.ait.ac.at/Job/266176) | AIT Austrian Institute of Technology | Vienna | 2026-11-24 |
 | Mid | AI Engineer | [AI & Digitalization Engineer (m/f/d) for 20h/week](https://careers.andritz.com/andritz/job/Graz-AI-&-Digitalization-Engineer-(mfd)-for-20hweek-Styr/1357640757/) | ANDRITZ AG | Graz | 2026-11-24 |
 | Mid | AI Engineer | [AI Engineer](https://www.karriere.at/jobs/10036396) | Barmherzige Brüder Österreich | St. Veit an der Glan | 2026-11-24 |
 | Mid | AI Engineer | [Data & AI Engineer](https://www.karriere.at/jobs/7894792) | epunkt GmbH | Graz | 2026-11-24 |
@@ -311,8 +381,10 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Mid | AI Engineer | [AI Engineer](https://www.karriere.at/jobs/10034273) | Helvetia Versicherungen AG | Vienna | 2026-11-24 |
 | Mid | AI Engineer | [AI Developer](https://www.karriere.at/jobs/7823237) | KNAPP | Hart bei Graz | 2026-11-24 |
 | Mid | AI Engineer | [Software Developer - Focus Artificial Intelligence](https://www.karriere.at/jobs/7879159) | KNAPP | Hart bei Graz | 2026-11-24 |
+| Mid | AI Engineer | [AI Engineer — Automation & Internal Systems](https://nyrahealth.recruitee.com/o/ai-engineer-automation-internal-systems) | nyra health | Vienna | 2026-11-24 |
 | Mid | AI Engineer | [KI-Experte / AI Automation Developer](https://www.karriere.at/jobs/7894933) | PMC International GmbH | Vienna | 2026-11-24 |
 | Mid | AI Engineer | [Azure AI / ML Engineer (m/w/d)](https://jobs.lever.co/qualysoft/53170833-319a-413e-ba21-e05a0d48c111) | Qualysoft | Vienna | 2026-11-24 |
+| Mid | AI Engineer | [AI Software Engineer – Python](https://jobs.smartrecruiters.com/scalablegmbh/744000157997674) | Scalable GmbH | Vienna | 2026-11-24 |
 | Mid | AI Engineer | [Robotics / Physical AI Experte](https://www.karriere.at/jobs/7883062) | SCHULMEISTER Management Consulting GmbH | Austria | 2026-11-24 |
 | Mid | AI Engineer | [AI Solutions Engineer](https://www.karriere.at/jobs/7901695) | SCHULMEISTER Management Consulting GmbH | Linz | 2026-11-24 |
 | Mid | AI Engineer | [Forward Deployed AI Engineer](https://jobs.smartrecruiters.com/sportradar/744000160916399) | SPORTRADAR Austria | Vienna | 2026-11-24 |
@@ -320,11 +392,13 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Mid | AI Engineer | [Data Scientist & AI Engineer](https://www.karriere.at/jobs/7908338) | Österreichische Lotterien | Vienna | 2026-11-24 |
 | Mid | AI Researcher | [(Senior) Lecturer & Researcher, Institute of Computer Science, Focus AI & Embodi](https://www.karriere.at/jobs/7896763) | Fachhochschule Wiener Neustadt GmbH | Wiener Neustadt | 2026-11-24 |
 | Mid | AI Researcher | [Robotics Research Engineer](https://career.nx-ai.com/o/robotics-research-engineer-fmd) | NXAI | Linz | 2026-11-24 |
+| Mid | AI Researcher | [Machine Learning Researcher](https://nyrahealth.recruitee.com/o/machine-learning-researcher-3) | nyra health | Vienna | 2026-11-24 |
 | Mid | Data Engineer | [Cloud Data Engineer](https://www.karriere.at/jobs/7832417) | BTV Vier Länder Bank AG | Innsbruck | 2026-11-24 |
 | Mid | Data Engineer | [Data Scientist](https://www.arbeitsagentur.de/jobsuche/jobdetail/11949-17340182-S) | Cops Gesellschaft für angewandte Systema | Vienna | 2026-11-24 |
 | Mid | Data Engineer | [Data Scientist](https://www.arbeitsagentur.de/jobsuche/jobdetail/11949-17390389-S) | GEBRÜDER WEISS GmbH | Maria-Lanzendorf | 2026-11-24 |
 | Mid | Data Engineer | [DATA ENGINEER](https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003935510-S) | ISG Personalmanagement GmbH | Flachgau Nord | 2026-11-24 |
 | Mid | Data Engineer | [Data Scientist](https://www.arbeitsagentur.de/jobsuche/jobdetail/11949-17418280-S) | Merkur Versicherung Generaldirektion Gra | Graz | 2026-11-24 |
+| Mid | Data Engineer | [Data Engineer](https://netconomy.recruitee.com/o/data-engineer-fmx-3) | NETCONOMY | Graz | 2026-11-24 |
 | Mid | Data Engineer | [Cloud Data Platform Engineer](https://www.karriere.at/jobs/10038618) | norika | Vienna | 2026-11-24 |
 | Mid | Data Engineer | [Data Engineer](https://www.karriere.at/jobs/10038403) | smaXtec animal care GmbH | Graz | 2026-11-24 |
 | Mid | Data Engineer | [Data & Analytics - Data Engineer](https://www.karriere.at/jobs/7707455) | Vienna Insurance Group AG Wiener Versich | Vienna | 2026-11-24 |
@@ -339,11 +413,15 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Mid | Data Scientist | [Data Scientist](https://www.arbeitsagentur.de/jobsuche/jobdetail/11949-17422169-S) | niceshops GmbH | Graz | 2026-11-24 |
 | Mid | Data Scientist | [Data Scientist mit KI-Fokus und Kundenkontakt](https://www.karriere.at/jobs/10036037) | Reppublika Data Analytics & Technologies | Vienna | 2026-11-24 |
 | Mid | ML Engineer | [AI/ML Ops Engineer](https://www.karriere.at/jobs/7872727) | KNAPP | Hart bei Graz | 2026-11-24 |
+| Mid | ML Engineer | [Databricks AI / ML Engineer](https://jobs.lever.co/qualysoft/8af4898f-84b9-496d-b68e-8ef6802078cb) | Qualysoft | Vienna | 2026-11-24 |
+| Mid | ML Engineer | [MLOps Engineer](https://jobs.lever.co/qualysoft/e4c278d1-bcfb-4d36-88b1-ce6d5a651577) | Qualysoft | Vienna | 2026-11-24 |
 | Mid | Other | [Software Engineer - Odoo & AI Solutions](https://www.karriere.at/jobs/10028125) | Datenpol Gmbh | Vienna | 2026-11-24 |
 | Mid | Other | [Data & KI Specialist](https://www.karriere.at/jobs/10038755) | LARS NYSØM | Vienna | 2026-11-24 |
+| Mid | Other | [Platform Engineer (AI / Data Platform)](https://jobs.lever.co/qualysoft/39a890d4-dbee-40fe-b115-969e02116a63) | Qualysoft | Vienna | 2026-11-24 |
 | Mid | Other | [DevOps Engineer Observability, Automation & AI](https://www.karriere.at/jobs/7906838) | UNIQA Insurance Group AG | Vienna | 2026-11-24 |
 | Mid | Other | [DevOps Network & Observability Engineer - AI & Automation](https://www.karriere.at/jobs/7904639) | UNIQA Insurance Group AG | Vienna | 2026-11-24 |
 | Senior | AI Engineer | [Data Scientist](https://www.arbeitsagentur.de/jobsuche/jobdetail/11949-17413819-S) | adesso Austria GmbH | Graz | 2026-11-24 |
+| Senior | AI Engineer | [Senior Solutions Architect - Data & AI Engineer (4-Days-Week), German Speaking](https://auvaria.jobs.personio.de/job/2824405) | Auvaria | Vienna | 2026-11-24 |
 | Senior | AI Engineer | [AI Solutions Architect](https://www.karriere.at/jobs/10036395) | Barmherzige Brüder Österreich | St. Veit an der Glan | 2026-11-24 |
 | Senior | AI Engineer | [Technical Consultant (w/m/d) AI Engineering](https://www.brz-jobs.at/Job/3185/Technical-Consultant-(w-m-d)-AI-Engineering) | BRZ Bundesrechenzentrum | Vienna | 2026-11-24 |
 | Senior | AI Engineer | [Data Scientist](https://www.arbeitsagentur.de/jobsuche/jobdetail/11949-17378249-S) | BUNDESRECHENZENTRUM GmbH | Vienna | 2026-11-24 |
@@ -352,8 +430,11 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Senior | AI Engineer | [Senior AI Consultant](https://www.karriere.at/jobs/7902217) | EBCONT | Graz | 2026-11-24 |
 | Senior | AI Engineer | [Senior AI Engineer](https://www.karriere.at/jobs/10038474) | Fabasoft | Linz | 2026-11-24 |
 | Senior | AI Engineer | [(Senior) GenAI Engineer (m/f/d)](https://machinelearningreply.recruitee.com/o/senior-genai-engineer-mfd-8) | Machine Learning Reply | Vienna | 2026-11-24 |
+| Senior | AI Engineer | [Senior AI Software Engineer](https://jobs.smartrecruiters.com/boschgroup/744000161292279) | Robert Bosch GmbH | Linz | 2026-11-24 |
 | Senior | Data Engineer | [Senior Data Engineer](https://www.karriere.at/jobs/7897987) | Bundesrechenzentrum GmbH | Vienna | 2026-11-24 |
+| Senior | Data Engineer | [Senior Data Engineer – Microsoft Fabric](https://falkensteiner.talentlyft.com/jobs/senior-data-engineer-microsoft-fabric-mfd-cmb6) | Falkensteiner Hotels & Residences | Vienna | 2026-11-24 |
 | Senior | Data Engineer | [(Senior) Data Platform Engineer](https://www.karriere.at/jobs/7899577) | Fresenius Kabi Austria GmbH | Graz | 2026-11-24 |
+| Senior | Data Engineer | [Senior Data Engineer](https://careers.kula.ai/journi/66936-senior-data-engineer-all-genders) | Journi | Vienna | 2026-11-24 |
 | Senior | Data Engineer | [(Senior) Data Engineer](https://www.karriere.at/jobs/7908242) | Merkur Versicherung AG | Graz | 2026-11-24 |
 | Senior | Data Engineer | [Senior Data Engineer](https://www.karriere.at/jobs/7901839) | SPORTRADAR Austria | Vienna | 2026-11-24 |
 | Senior | Data Scientist | [Quality Medicine Data Scientist (m/f/d)](https://jobs.boehringer-ingelheim.com/job/Vienna-Quality-Medicine-Data-Scientist-(mfd)-Aust/1366863933/) | Boehringer Ingelheim RCV GmbH | Vienna | 2026-11-24 |
@@ -361,3 +442,4 @@ _Generated 2026-11-24. **345 postings confirmed open** (status = open) of 1121 i
 | Senior | Other | [AI Architect](https://www.karriere.at/jobs/7863346) | Capgemini | Vienna | 2026-11-24 |
 | Senior | Other | [Senior Software Developer C#/.NET - AI/KI](https://www.karriere.at/jobs/7854890) | RUBICON IT GmbH | Vienna | 2026-11-24 |
 | Lead/Principal | AI Engineer | [Staff Forward Deployed AI Engineer](https://jobs.smartrecruiters.com/sportradar/744000160915461) | SPORTRADAR Austria | Vienna | 2026-11-24 |
+| Lead/Principal | ML Engineer | [Senior AI Platform Engineer (Full-Time / Part-Time)](https://jobs.ait.ac.at/Job/273043) | AIT Austrian Institute of Technology | Vienna | 2026-11-24 |

@@ -31,7 +31,10 @@ python3 jobs.py analyze --date $D          # 5. regenerate skills_by_level.md, s
 
 ### 1. Fetch (automated, free)
 `jobs.py fetch` pulls: every company in `companies.csv` that has a known ATS feed (Greenhouse,
-Lever, Ashby, Personio, Recruitee, SmartRecruiters, Workable, Workday), the **Arbeitnow API**,
+Lever, Ashby, Personio, Recruitee, SmartRecruiters, Workable, Workday, BambooHR, TalentLyft, Kula —
+plus three generic career-site readers for employers without an API: `sitemap` (slug = sitemap.xml URL,
+e.g. SuccessFactors sites), `links` (slug = listing page URL; same-site posting links) and `jobportal`
+(slug = host; pages embedding `"Jobs":[...]` JSON, e.g. jobs.ait.ac.at)), the **Arbeitnow API**,
 the **Bundesagentur für Arbeit API** (largest DE source, also lists some CH/AT jobs), and
 **karriere.at** (AT, via schema.org JSON-LD). It filters by title relevance + DACH location,
 skips everything already in `state/seen.json` / `jobs.csv`, bumps `last_seen_date` / `status` of
@@ -51,6 +54,9 @@ Covers what feeds miss — mainly **Switzerland** and companies without a public
   ATS feed detected and fetched automatically from then on) and/or, if you found the employer's
   own posting URL, `python3 jobs.py add-url <url>` (extracts JSON-LD / trimmed text into
   `inbox/$D/batch_web.jsonl` — much cheaper than WebFetch).
+  If `detect` finds no feed but the company has a careers page, register it by hand with one of
+  the generic readers, e.g. `add-company "X" --ats links --slug https://x.com/careers` or
+  `--ats sitemap --slug https://careers.x.com/sitemap.xml` — test first with `fetch --only X --dry`.
 - The search engine largely **ignores `site:` operators** — the snippets still name employers.
   Spend roughly a third of the searches on **company discovery** ("AI startups Zurich",
   "KI Startups Wien", "ML spin-offs Lausanne", funding-round news) and register every DACH
